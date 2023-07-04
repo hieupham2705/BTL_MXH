@@ -14,7 +14,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/frame6" />
+        app:srcCompat="@drawable/image_register_signin" />
 
     <TextView
         android:id="@+id/textView3"
@@ -31,8 +31,10 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/sign_in"
-        android:layout_width="342dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/borderappcombatbutton"
         android:backgroundTint="@color/orange"
@@ -40,12 +42,12 @@
         android:textColor="@color/white"
         android:textSize="18dp"
         app:layout_constraintBottom_toTopOf="@+id/register"
-        app:layout_constraintEnd_toEndOf="@+id/textView3"
-        app:layout_constraintStart_toStartOf="@+id/textView3" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/register"
-        android:layout_width="342dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="70dp"
         android:background="@drawable/borderappcombatbutton"
