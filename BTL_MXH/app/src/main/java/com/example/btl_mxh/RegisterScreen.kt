@@ -11,6 +11,6 @@ class RegisterScreen : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
         binding.signInRegister.setOnClickListener { startActivity(Intent(this,SignInScreen::class.java)) }
-        binding.create.setOnClickListener { startActivity(Intent(this,HomeScreen::class.java)) }
+        binding.next.setOnClickListener { startActivity(Intent(this,RegisterPasswordScreen::class.java)) }
     }
 }
