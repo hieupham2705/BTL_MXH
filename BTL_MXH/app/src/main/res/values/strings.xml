@@ -13,4 +13,8 @@
     <string name="ex_abc_gmail_com">Ex: abc@gmail.com</string>
     <string name="create">CREATE</string>
     <string name="forgot_password">Forgot password</string>
+    <string name="create_your_account">Create Your Account</string>
+    <string name="phone">Phone</string>
+    <string name="next">NEXT</string>
+    <string name="log_in">LOG IN</string>
 </resources>
