@@ -14,28 +14,28 @@
         android:theme="@style/Theme.BTL_MXH"
         tools:targetApi="31">
         <activity
-            android:name=".RegisterPasswordScreen"
+            android:name=".group.RegisterPasswordScreen"
             android:exported="false" />
         <activity
-            android:name=".HomeScreen"
+            android:name=".group.HomeScreen"
             android:exported="false" />
         <activity
-            android:name=".ForgotPasswordScreen"
+            android:name=".group.ForgotPasswordScreen"
             android:exported="false" />
         <activity
-            android:name=".RegisterScreen"
+            android:name=".group.RegisterScreen"
             android:exported="false" />
         <activity
-            android:name=".SignInScreen"
+            android:name=".group.SignInScreen"
             android:exported="false" />
         <activity
             android:name=".RegisterSignInScreen"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".group.MainActivity"
             android:exported="false" />
         <activity
-            android:name=".SplashScreen"
+            android:name=".group.SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,4 +1,4 @@
-package com.example.btl_mxh
+package com.example.btl_mxh.group
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -10,7 +10,7 @@ class RegisterScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-        binding.signInRegister.setOnClickListener { startActivity(Intent(this,SignInScreen::class.java)) }
-        binding.next.setOnClickListener { startActivity(Intent(this,RegisterPasswordScreen::class.java)) }
+        binding.signInRegister.setOnClickListener { startActivity(Intent(this, SignInScreen::class.java)) }
+        binding.next.setOnClickListener { startActivity(Intent(this, RegisterPasswordScreen::class.java)) }
     }
 }
