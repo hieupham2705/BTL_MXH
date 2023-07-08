@@ -1,4 +1,4 @@
-package com.example.btl_mxh
+package com.example.btl_mxh.group
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -10,7 +10,17 @@ class ForgotPasswordScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-        binding.submitForgotPassword.setOnClickListener { startActivity(Intent(this,HomeScreen::class.java)) }
-        binding.signInForgotPassword.setOnClickListener { startActivity(Intent(this,SignInScreen::class.java)) }
+        binding.submitForgotPassword.setOnClickListener {
+            startActivity(Intent(this, HomeScreen::class.java))
+            finish()
+        }
+        binding.signInForgotPassword.setOnClickListener {
+            startActivity(
+                Intent(
+                    this,
+                    SignInScreen::class.java
+                )
+            )
+        }
     }
 }

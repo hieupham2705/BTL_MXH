@@ -1,4 +1,4 @@
-package com.example.btl_mxh
+package com.example.btl_mxh.group
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

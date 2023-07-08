@@ -1,11 +1,8 @@
-package com.example.btl_mxh
+package com.example.btl_mxh.group
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.method.HideReturnsTransformationMethod
-import android.text.method.PasswordTransformationMethod
-import android.view.View
 import com.example.btl_mxh.databinding.ActivitySignInScreenBinding
 
 class SignInScreen : AppCompatActivity() {
@@ -29,16 +26,6 @@ class SignInScreen : AppCompatActivity() {
                     ForgotPasswordScreen::class.java
                 )
             )
-        }
-        binding.visibility.setOnClickListener {
-            binding.visibilityOff.visibility = View.VISIBLE
-            binding.visibility.visibility = View.GONE
-            binding.passwordSignIn.transformationMethod = HideReturnsTransformationMethod.getInstance()
-        }
-        binding.visibilityOff.setOnClickListener {
-            binding.visibility.visibility = View.VISIBLE
-            binding.visibilityOff.visibility = View.GONE
-            binding.passwordSignIn.transformationMethod = PasswordTransformationMethod.getInstance()
         }
     }
 }

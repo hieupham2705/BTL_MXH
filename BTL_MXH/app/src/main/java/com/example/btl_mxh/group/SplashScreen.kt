@@ -1,10 +1,9 @@
-package com.example.btl_mxh
+package com.example.btl_mxh.group
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
-import com.example.btl_mxh.databinding.ActivityMainBinding
 import com.example.btl_mxh.databinding.ActivitySplashScreenBinding
 
 class SplashScreen : AppCompatActivity() {
@@ -14,7 +13,8 @@ class SplashScreen : AppCompatActivity() {
         setContentView(binding.root)
         Handler().postDelayed(
                 {
-                    startActivity(Intent(this,SignInScreen::class.java))
+                    startActivity(Intent(this, SignInScreen::class.java))
+                    finish()
                 },
         2000
         )

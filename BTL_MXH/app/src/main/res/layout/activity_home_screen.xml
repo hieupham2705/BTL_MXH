@@ -5,9 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bgr"
-    tools:context=".HomeScreen">
+    tools:context=".group.HomeScreen">
 
     <FrameLayout
+        android:id="@+id/framelayout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
@@ -20,6 +21,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:menu="@menu/btnv_home"
         app:itemTextColor="@color/setmenu"
-        app:itemIconTint="@color/setmenu" />
+        app:itemIconTint="@color/setmenu"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

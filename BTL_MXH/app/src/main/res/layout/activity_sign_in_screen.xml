@@ -5,7 +5,7 @@
     android:background="@drawable/bgr"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignInScreen">
+    tools:context=".group.SignInScreen">
 
     <ImageView
         android:id="@+id/imageView3"
@@ -47,58 +47,43 @@
         app:layout_constraintStart_toEndOf="@+id/textView5"
         app:layout_constraintTop_toTopOf="@+id/textView5" />
 
-    <EditText
-        android:id="@+id/email_sign_in"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout3"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
         android:layout_width="0dp"
-        android:layout_height="54dp"
-        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
-        android:background="@drawable/border_edittext"
-        android:ems="10"
-        android:hint="Email"
-        android:inputType="textEmailAddress"
-        android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/textView5"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView6">
 
-    <EditText
-        android:id="@+id/password_sign_in"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
         android:layout_width="0dp"
-        android:layout_height="54dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:background="@drawable/border_edittext"
-        android:ems="10"
-        android:hint="Password"
-        android:inputType="textPassword"
-        android:password="false"
-        android:padding="10dp"
-        app:layout_constraintEnd_toEndOf="@+id/email_sign_in"
-        app:layout_constraintStart_toStartOf="@+id/email_sign_in"
-        app:layout_constraintTop_toBottomOf="@+id/email_sign_in" />
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout3"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout3"
+        app:passwordToggleEnabled="true">
 
-    <ImageView
-        android:id="@+id/visibility_off"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="@+id/visibility"
-        app:layout_constraintEnd_toEndOf="@+id/password_sign_in"
-        app:layout_constraintTop_toTopOf="@+id/visibility"
-        app:srcCompat="@drawable/visibility_off" />
-
-    <ImageView
-        android:id="@+id/visibility"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="@+id/password_sign_in"
-        app:layout_constraintEnd_toEndOf="@+id/password_sign_in"
-        app:layout_constraintTop_toBottomOf="@+id/email_sign_in"
-        app:srcCompat="@drawable/visibility" />
-
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
     <CheckBox
         android:id="@+id/remember_me_sign_in"
         android:layout_width="wrap_content"
@@ -106,8 +91,8 @@
         android:text="Remember Me"
         android:textColor="@color/orange"
         android:textColorHint="@color/orange"
-        app:layout_constraintStart_toStartOf="@+id/password_sign_in"
-        app:layout_constraintTop_toBottomOf="@+id/password_sign_in" />
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/sign_in"
@@ -119,7 +104,7 @@
         android:textColor="@color/white"
         android:textSize="18dp"
         android:text="@string/log_in"
-        app:layout_constraintEnd_toEndOf="@+id/password_sign_in"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout"
         app:layout_constraintStart_toStartOf="@+id/remember_me_sign_in"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
