@@ -17,9 +17,9 @@ class HomeScreen : AppCompatActivity() {
         replaceFragments(HomeFragment())
         binding.bottomNavigationView.setOnItemSelectedListener {
             when (it.itemId) {
-                R.id.home ->replaceFragments(HomeFragment())
-                R.id.notifications ->replaceFragments(NotificationFragment())
-                R.id.profile ->replaceFragments(ProfileFragment())
+                R.id.home -> replaceFragments(HomeFragment())
+                R.id.notifications -> replaceFragments(NotificationFragment())
+                R.id.profile -> replaceFragments(ProfileFragment())
 
             }
             true
@@ -27,6 +27,6 @@ class HomeScreen : AppCompatActivity() {
     }
 
     private fun replaceFragments(fragment: Fragment) {
-        supportFragmentManager.beginTransaction().replace(R.id.framelayout,fragment).commit()
+        supportFragmentManager.beginTransaction().replace(binding.framelayout.id, fragment).commit()
     }
 }

@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bgr"
-    tools:context=".group.RegisterScreen">
+    tools:context=".group.RegisterScreen"
+    android:paddingTop="20dp">
 
     <ImageView
         android:id="@+id/imageView4"
