@@ -26,4 +26,13 @@
     <string name="profile">Profile</string>
     <string name="change_password">Change Password</string>
     <string name="log_out">Log out</string>
+    <string name="update">UPDATE</string>
+    <string name="current_password">Current Password</string>
+    <string name="new_password">New Password</string>
+    <string name="new_password_again">New Password (again)</string>
+    <string name="system_and_services_update">System and services update</string>
+    <string name="app_updates">App updates</string>
+    <string name="vibrate">Vibrate</string>
+    <string name="general_notification">General Notification</string>
+    <string name="common">Common</string>
 </resources>

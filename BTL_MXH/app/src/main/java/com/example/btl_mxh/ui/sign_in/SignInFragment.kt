@@ -27,12 +27,15 @@ class SignInFragment : BaseFragment<FragmentSignInBinding>(FragmentSignInBinding
         binding.apply {
             signIn.setOnClickListener {
                 viewModel.logIn(
-                    binding.textInputLayout3.editText?.text.toString(),
-                    binding.textInputLayout.editText?.text.toString()
+                    binding.email.text.toString(),
+                    binding.password.text.toString()
                 )
             }
-            forgotPasswordSignIn.setOnClickListener {
-//
+            forgotPassword.setOnClickListener {
+                findNavController().navigate(R.id.action_signInFragment_to_forgotPasswordFragment)
+            }
+            register.setOnClickListener {
+                findNavController().navigate((R.id.action_signInFragment_to_registerFragment))
             }
         }
     }

@@ -5,7 +5,7 @@
     android:background="@drawable/bgr"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".group.SignInScreen">
+    tools:context=".ui.sign_in.SignInFragment">
 
     <ImageView
         android:id="@+id/imageView3"
@@ -33,10 +33,10 @@
         android:text="Don’t have an account?"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="@+id/textView6"
-        app:layout_constraintTop_toBottomOf="@+id/remember_me_sign_in" />
+        app:layout_constraintTop_toBottomOf="@+id/remember_me" />
 
     <TextView
-        android:id="@+id/no_register_from_sign_in_sceen"
+        android:id="@+id/register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -59,7 +59,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView6">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/email_sign_in"
+            android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/email"
@@ -78,14 +78,14 @@
         app:passwordToggleEnabled="true">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/password_sign_in"
+            android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/password"
             android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
     <CheckBox
-        android:id="@+id/remember_me_sign_in"
+        android:id="@+id/remember_me"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Remember Me"
@@ -103,13 +103,13 @@
         android:backgroundTint="@color/orange"
         android:textColor="@color/white"
         android:textSize="18dp"
-        android:text="@string/log_in"
+        android:text="@string/sign_in"
         app:layout_constraintEnd_toEndOf="@+id/textInputLayout"
-        app:layout_constraintStart_toStartOf="@+id/remember_me_sign_in"
+        app:layout_constraintStart_toStartOf="@+id/remember_me"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/forgot_password_sign_in"
+        android:id="@+id/forgot_password"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
