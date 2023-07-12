@@ -1,14 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/orange"
-    tools:context=".profile.ProfileFragment">
+    android:background="@drawable/bgr"
+    tools:context=".ui.profile.ProfileFragment">
 
-    <TextView
+    <LinearLayout
+        android:gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="10dp">
 
-</FrameLayout>
+        <androidx.cardview.widget.CardView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:cardCornerRadius="100dp">
+
+            <ImageView
+                android:id="@+id/avatar_profile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/hit" />
+        </androidx.cardview.widget.CardView>
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="0dp"/>
+        <LinearLayout
+            android:gravity="center|start"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="@color/black"
+                android:fontFamily="@font/comfortaasemibold"
+                android:textSize="16sp"
+                android:id="@+id/fullname_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/full_name" />
+
+            <TextView
+                android:textSize="14sp"
+                android:fontFamily="@font/comfortaasemibold"
+                android:id="@+id/username_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/user_name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/setting_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/baseline_settings_24" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginStart="30dp"
+        android:fontFamily="@font/comfortaasemibold"
+        android:text="@string/you_only_live_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:background="@color/orange"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:paddingHorizontal="5dp"
+        android:id="@+id/recyclerview_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>
