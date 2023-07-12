@@ -1,5 +1,7 @@
-package com.example.btl_mxh.profile
+package com.example.btl_mxh.ui.profile
 
+import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -35,6 +37,7 @@ class ProfileFragment : Fragment() {
         binding.recyclerviewProfile.layoutManager=GridLayoutManager(context,3,RecyclerView.VERTICAL,false)
         adapterProfile.setList(list)
         binding.recyclerviewProfile.adapter=adapterProfile
+        binding.settingProfile.setOnClickListener { startActivity(Intent(requireContext(), SettingProfileScreen::class.java)) }
         return binding.root
     }
 

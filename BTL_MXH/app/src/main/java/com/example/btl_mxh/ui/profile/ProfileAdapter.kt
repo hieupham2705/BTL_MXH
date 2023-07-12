@@ -1,4 +1,4 @@
-package com.example.btl_mxh.profile
+package com.example.btl_mxh.ui.profile
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
