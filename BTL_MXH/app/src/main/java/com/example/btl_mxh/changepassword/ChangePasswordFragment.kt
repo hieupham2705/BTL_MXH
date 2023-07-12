@@ -1,4 +1,4 @@
-package com.example.btl_mxh.ui.home
+package com.example.btl_mxh.changepassword
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -9,11 +9,11 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.btl_mxh.R
 import com.example.btl_mxh.base.BaseFragment
 import com.example.btl_mxh.base.BaseViewModel
-import com.example.btl_mxh.databinding.FragmentHomeBinding
+import com.example.btl_mxh.databinding.FragmentChangePasswordBinding
 
-class HomeFragment : BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::inflate) {
-    override val viewModel: HomeViewModel
-        get() = ViewModelProvider(this)[HomeViewModel::class.java]
+class ChangePasswordFragment : BaseFragment<FragmentChangePasswordBinding>(FragmentChangePasswordBinding::inflate) {
+    override val viewModel: ChangePasswordViewModel
+        get() = ViewModelProvider(this)[ChangePasswordViewModel::class.java]
 
     override fun initData() {
         
@@ -26,6 +26,5 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::infl
     override fun bindData() {
         
     }
-
 
 }

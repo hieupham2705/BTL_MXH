@@ -21,7 +21,7 @@
             app:cardCornerRadius="100dp">
 
             <ImageView
-                android:id="@+id/avatar_profile"
+                android:id="@+id/avatar"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/hit" />
@@ -40,7 +40,7 @@
                 android:textColor="@color/black"
                 android:fontFamily="@font/comfortaasemibold"
                 android:textSize="16sp"
-                android:id="@+id/fullname_profile"
+                android:id="@+id/fullname"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/full_name" />
@@ -48,7 +48,7 @@
             <TextView
                 android:textSize="14sp"
                 android:fontFamily="@font/comfortaasemibold"
-                android:id="@+id/username_profile"
+                android:id="@+id/username"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/user_name" />
@@ -60,7 +60,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1">
             <ImageView
-                android:id="@+id/setting_profile"
+                android:id="@+id/setting"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/baseline_settings_24" />
@@ -81,7 +81,7 @@
         android:layout_height="3dp"/>
     <androidx.recyclerview.widget.RecyclerView
         android:paddingHorizontal="5dp"
-        android:id="@+id/recyclerview_profile"
+        android:id="@+id/recyclerview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
