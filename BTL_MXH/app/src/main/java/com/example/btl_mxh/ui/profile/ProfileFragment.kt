@@ -18,22 +18,26 @@ import com.example.btl_mxh.base.BaseViewModel
 import com.example.btl_mxh.databinding.FragmentProfileBinding
 
 class ProfileFragment : BaseFragment<FragmentProfileBinding>(FragmentProfileBinding::inflate) {
-    //    private var list = listOf<Int>(
-//        R.drawable.hit, R.drawable.hit,
-//        R.drawable.hit, R.drawable.hit,
-//        R.drawable.hit, R.drawable.hit,
-//        R.drawable.hit, R.drawable.hit,
-//        R.drawable.hit, R.drawable.hit,
-//        R.drawable.hit, R.drawable.hit,
-//        R.drawable.hit, R.drawable.hit,
-//        R.drawable.hit, R.drawable.hit
-//    )
-//    private val binding by lazy { FragmentProfileBinding.inflate(layoutInflater) }
-//    private val adapterProfile by lazy {
-//        ProfileAdapter(
-//        )
-//    }
-//
+    private var list = listOf<Int>(
+        R.drawable.hit, R.drawable.hit,
+        R.drawable.hit, R.drawable.hit,
+        R.drawable.hit, R.drawable.hit,
+        R.drawable.hit, R.drawable.hit,
+        R.drawable.hit, R.drawable.hit,
+        R.drawable.hit, R.drawable.hit,
+        R.drawable.hit, R.drawable.hit,
+        R.drawable.hit, R.drawable.hit
+    )
+
+    //    private val binding by lazy { FragmentProfileBinding.inflate(layoutInflater) }
+    private val adapterProfile by lazy {
+        ProfileAdapter(
+            requireContext()
+
+        )
+    }
+
+    //
 //    override fun onCreateView(
 //        inflater: LayoutInflater, container: ViewGroup?,
 //        savedInstanceState: Bundle?
@@ -48,7 +52,7 @@ class ProfileFragment : BaseFragment<FragmentProfileBinding>(FragmentProfileBind
         get() = ViewModelProvider(this)[ProfileViewModel::class.java]
 
     override fun initData() {
-        
+
     }
 
     override fun handleEvent() {
@@ -56,11 +60,14 @@ class ProfileFragment : BaseFragment<FragmentProfileBinding>(FragmentProfileBind
             setting.setOnClickListener {
                 findNavController().navigate(R.id.action_profileFragment_to_settingFragment)
             }
+            recyclerview.layoutManager = GridLayoutManager(requireContext(), 3, RecyclerView.VERTICAL,false)
+//            adapterProfile.setList(list)
+            recyclerview.adapter = adapterProfile
         }
     }
 
     override fun bindData() {
-        
+
     }
 
 

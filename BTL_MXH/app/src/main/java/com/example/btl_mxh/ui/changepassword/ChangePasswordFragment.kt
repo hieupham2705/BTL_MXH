@@ -1,4 +1,4 @@
-package com.example.btl_mxh.changepassword
+package com.example.btl_mxh.ui.changepassword
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

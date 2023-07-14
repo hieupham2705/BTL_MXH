@@ -20,7 +20,7 @@ class SignInViewModel : BaseViewModel() {
                 _stateLogin.value = Pair(true, it)
             },
             onError = {
-                _stateLogin.value = Pair(false, it.message.toString())
+                _stateLogin.value = Pair(true, it.message.toString())
             }
         )
     }
