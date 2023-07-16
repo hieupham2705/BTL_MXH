@@ -70,9 +70,9 @@ class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::infl
         binding.textScreen.text = name
     }
 
-//    private fun setNavigationVisible(isVisible: Boolean = false) {
-//        binding.navView.isVisible = isVisible
-//        binding.tbBack.isVisible = isVisible
-//    }
+    private fun setNavigationVisible(isVisible: Boolean = false) {
+        binding.navView.isVisible = isVisible
+        binding.tbBack.isVisible = isVisible
+    }
 
 }

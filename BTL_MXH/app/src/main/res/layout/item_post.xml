@@ -123,13 +123,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            app:srcCompat="@drawable/baseline_favorite_24" />
+            app:srcCompat="@drawable/heart" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
-            android:text="@string/love" />
+            android:text="150" />
     </LinearLayout>
 
     <LinearLayout
@@ -140,11 +140,11 @@
         android:gravity="center"
         android:orientation="horizontal">
 
-        <ImageView
+        <TextView
+            android:text="50"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            app:srcCompat="@drawable/baseline_chat_bubble_24" />
+            android:layout_gravity="center" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -175,7 +175,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                app:srcCompat="@drawable/baseline_favorite_24" />
+                app:srcCompat="@drawable/heart"  />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -196,7 +196,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                app:srcCompat="@drawable/baseline_chat_bubble_24" />
+                app:srcCompat="@drawable/comment" />
 
             <TextView
                 android:layout_width="wrap_content"
