@@ -35,4 +35,7 @@
     <string name="vibrate">Vibrate</string>
     <string name="general_notification">General Notification</string>
     <string name="common">Common</string>
+    <string name="what_are_you_thinking">What are you thinking?</string>
+    <string name="love">Love</string>
+    <string name="comment">Comment</string>
 </resources>

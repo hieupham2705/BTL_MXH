@@ -23,12 +23,13 @@ class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::infl
     }
 
     override fun bindData() {
-        setupWithNavController(binding.navView, navController)
+//        setupWithNavController(binding.navView, navController)
+        setupWithNavController(binding.navView,navController)
         navController.addOnDestinationChangedListener { _, destination, _ ->
             when (destination.id) {
                 R.id.homeFragment -> {
                     setNavigationVisible(true)
-                    setNameScreen("Home")
+                    setNameScreen("HIT Circle")
                 }
                 R.id.notificationFragment -> {
                     setNavigationVisible(true)
@@ -37,6 +38,26 @@ class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::infl
                 R.id.profileFragment -> {
                     setNavigationVisible(true)
                     setNameScreen("Profile")
+                }
+                R.id.settingFragment -> {
+                    setNavigationVisible(true)
+                    setNameScreen("Setting")
+                    binding.tbBack.setNavigationIcon(R.drawable.baseline_arrow_back_ios_24)
+                }
+                R.id.settingFragment -> {
+                    setNavigationVisible(true)
+                    setNameScreen("Setting")
+                    binding.tbBack.setNavigationIcon(R.drawable.baseline_arrow_back_ios_24)
+                }
+                R.id.changePasswordFragment -> {
+                    setNavigationVisible(true)
+                    setNameScreen("Change Password")
+                    binding.tbBack.setNavigationIcon(R.drawable.baseline_arrow_back_ios_24)
+                }
+                R.id.notificationSettingFragment -> {
+                    setNavigationVisible(true)
+                    setNameScreen("Notifications")
+                    binding.tbBack.setNavigationIcon(R.drawable.baseline_arrow_back_ios_24)
                 }
                 else -> {
                     setNavigationVisible()
@@ -47,11 +68,11 @@ class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::infl
 
     private fun setNameScreen(name: String) {
         binding.textScreen.text = name
-//        binding.textScreen.visibility = View.VISIBLE
     }
 
     private fun setNavigationVisible(isVisible: Boolean = false) {
         binding.navView.isVisible = isVisible
+        binding.tbBack.isVisible = isVisible
     }
 
 }

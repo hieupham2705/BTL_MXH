@@ -29,7 +29,8 @@
         android:id="@+id/notificationFragment"
         android:name="com.example.btl_mxh.ui.notification.NotificationFragment"
         android:label="fragment_notification"
-        tools:layout="@layout/fragment_notification" />
+        tools:layout="@layout/fragment_notification" >
+    </fragment>
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.example.btl_mxh.ui.profile.ProfileFragment"
@@ -95,7 +96,7 @@
     </fragment>
     <fragment
         android:id="@+id/changePasswordFragment"
-        android:name="com.example.btl_mxh.changepassword.ChangePasswordFragment"
+        android:name="com.example.btl_mxh.ui.changepassword.ChangePasswordFragment"
         android:label="fragment_change_password"
         tools:layout="@layout/fragment_change_password" />
     <fragment
