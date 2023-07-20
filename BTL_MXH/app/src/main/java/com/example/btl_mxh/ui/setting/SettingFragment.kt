@@ -15,6 +15,10 @@ class SettingFragment : BaseFragment<FragmentSettingBinding>(FragmentSettingBind
     }
 
     override fun handleEvent() {
+
+    }
+
+    override fun bindData() {
         binding.apply {
             chanePassword.setOnClickListener {
                 findNavController().navigate(R.id.action_settingFragment_to_changePasswordFragment)
@@ -22,11 +26,10 @@ class SettingFragment : BaseFragment<FragmentSettingBinding>(FragmentSettingBind
             notification.setOnClickListener {
                 findNavController().navigate(R.id.action_settingFragment_to_notificationSettingFragment)
             }
+            logOut.setOnClickListener {
+                openDialogQuestion()
+            }
         }
-    }
-
-    override fun bindData() {
-        
     }
 
 }

@@ -24,7 +24,11 @@
         android:id="@+id/homeFragment"
         android:name="com.example.btl_mxh.ui.home.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_listMessFragment"
+            app:destination="@id/listMessFragment" />
+    </fragment>
     <fragment
         android:id="@+id/notificationFragment"
         android:name="com.example.btl_mxh.ui.notification.NotificationFragment"
@@ -104,4 +108,9 @@
         android:name="com.example.btl_mxh.ui.notificationsetting.NotificationSettingFragment"
         android:label="fragment_notification_setting"
         tools:layout="@layout/fragment_notification_setting" />
+    <fragment
+        android:id="@+id/listMessFragment"
+        android:name="com.example.btl_mxh.ui.listmess.ListMessFragment"
+        android:label="fragment_list_mess"
+        tools:layout="@layout/fragment_list_mess" />
 </navigation>

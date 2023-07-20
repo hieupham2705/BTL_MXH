@@ -5,6 +5,7 @@ import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.view.Gravity
 import android.view.WindowManager
+import com.example.btl_mxh.databinding.DialogDeleteBinding
 import com.example.btl_mxh.databinding.DlLoadingCommonBinding
 
 
@@ -25,4 +26,33 @@ fun Dialog.start(stopFlag: Boolean = false) {
     }
     setCancelable(stopFlag)
     show()
+}
+
+fun Dialog.openDialogQuestion() {
+    this.let {
+        val binding = DialogDeleteBinding.inflate(layoutInflater)
+        it.setContentView(binding.root)
+        it.window?.apply {
+            setLayout(
+                WindowManager.LayoutParams.MATCH_PARENT,
+                WindowManager.LayoutParams.WRAP_CONTENT
+            )
+            setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+            attributes.apply {
+//                y = Constant.DIALOGCONFIG.MARGIN_Y
+                y = -170
+                gravity = Gravity.CENTER
+
+            }
+        }
+        binding.btnCancle.setOnClickListener {
+            dismiss()
+        }
+        binding.btnConfirm.setOnClickListener {
+//            confirmAction()
+            dismiss()
+        }
+        it.setCancelable(true)
+        it.show()
+    }
 }
