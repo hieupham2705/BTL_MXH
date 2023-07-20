@@ -11,6 +11,7 @@ class HomeAdapter(
     private val onClickPost: (String) -> Unit,
     private val onClickSearch: ((String) -> Unit)? = null,
     private val onClickCreatePost: (String) -> Unit,
+    private val onClickMessage: () -> Unit
 ) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     val typeSearch = 13424832
     val typeCreatePost = 2509345
@@ -58,6 +59,9 @@ class HomeAdapter(
         if (holder is ViewHolderSearch) {
             holder.binding.root.setOnClickListener {
                 onClickSearch?.invoke(holder.binding.edtSearch.text.toString())
+            }
+            holder.binding.imageViewMessage.setOnClickListener {
+                onClickMessage()
             }
         }
 

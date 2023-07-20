@@ -6,36 +6,58 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.btl_mxh.databinding.ItemImageProfileBinding
-import kotlinx.coroutines.currentCoroutineContext
-import kotlin.coroutines.CoroutineContext
-import kotlin.coroutines.coroutineContext
+import com.example.btl_mxh.databinding.ItemInfomationProfileBinding
+import com.example.btl_mxh.model.profile
 
 class ProfileAdapter(
-    private val context: Context
-) : RecyclerView.Adapter<ProfileAdapter.ViewHolder>() {
-    private var listprofile = listOf<Int>()
+    private val onclickSetting: () -> Unit
+) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+    private var listprofile = listOf<profile>()
+    private val typeInformation = 0;
+    private val typeImage = 1;
 
-    class ViewHolder(val binding: ItemImageProfileBinding) : RecyclerView.ViewHolder(binding.root) {
+    class ViewHolderInformation(val binding: ItemInfomationProfileBinding) :
+        RecyclerView.ViewHolder(binding.root) {
     }
 
+    class ViewHolderImage(val binding: ItemImageProfileBinding) :
+        RecyclerView.ViewHolder(binding.root) {
+    }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+    override fun getItemViewType(position: Int): Int {
+        val positionImformation = 0;
+        return when (position) {
+            positionImformation -> typeInformation
+            else -> typeImage
+        }
+    }
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
-        val binding = ItemImageProfileBinding.inflate(layoutInflater, parent, false)
-        return ViewHolder(binding)
+        val bindingInfomation = ItemInfomationProfileBinding.inflate(layoutInflater, parent, false)
+        val bindingImage = ItemImageProfileBinding.inflate(layoutInflater, parent, false)
+        return when (viewType) {
+            typeInformation -> ViewHolderInformation(bindingInfomation)
+            else -> ViewHolderImage(bindingImage)
+        }
     }
 
-    override fun getItemCount(): Int = 20
+    override fun getItemCount(): Int = listprofile.size
 
-    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-//        holder.binding.root.setImageResource(listprofile[position])
-        Glide.with(context)
-            .load("https://kuesports.net/wp-content/uploads/2023/06/yua-mikami-6.jpg")
-            .into(holder.binding.root)
+    override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
+        if (holder is ViewHolderInformation) {
+            holder.binding.setting.setOnClickListener {
+                onclickSetting()
+            }
+        }
+        if (holder is ViewHolderImage) {
+            listprofile[position].image1?.let { holder.binding.imageView1.setImageResource(it) }
+            listprofile[position].image2?.let { holder.binding.imageView2.setImageResource(it) }
+            listprofile[position].image3?.let { holder.binding.imageView3.setImageResource(it) }
+        }
     }
 
-
-    fun setList(list: List<Int>) {
+    fun setList(list: List<profile>) {
         listprofile = list
     }
 }

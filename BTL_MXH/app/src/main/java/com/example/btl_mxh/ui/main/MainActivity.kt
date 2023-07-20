@@ -28,39 +28,39 @@ class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::infl
         navController.addOnDestinationChangedListener { _, destination, _ ->
             when (destination.id) {
                 R.id.homeFragment -> {
-                    setNavigationVisible(true)
+                    setNavigationVisible(isVisiblenavView = true)
                     setNameScreen("HIT Circle")
                 }
                 R.id.notificationFragment -> {
-                    setNavigationVisible(true)
+                    setNavigationVisible(isVisiblenavView = true)
                     setNameScreen("Notification")
                 }
                 R.id.profileFragment -> {
-                    setNavigationVisible(true)
+                    setNavigationVisible(isVisiblenavView = true)
                     setNameScreen("Profile")
                 }
                 R.id.settingFragment -> {
-                    setNavigationVisible(true)
-                    setNameScreen("Setting")
-                    binding.tbBack.setNavigationIcon(R.drawable.baseline_arrow_back_ios_24)
-                }
-                R.id.settingFragment -> {
-                    setNavigationVisible(true)
+                    setNavigationVisible()
                     setNameScreen("Setting")
                     binding.tbBack.setNavigationIcon(R.drawable.baseline_arrow_back_ios_24)
                 }
                 R.id.changePasswordFragment -> {
-                    setNavigationVisible(true)
+                    setNavigationVisible()
                     setNameScreen("Change Password")
                     binding.tbBack.setNavigationIcon(R.drawable.baseline_arrow_back_ios_24)
                 }
                 R.id.notificationSettingFragment -> {
-                    setNavigationVisible(true)
+                    setNavigationVisible()
                     setNameScreen("Notifications")
                     binding.tbBack.setNavigationIcon(R.drawable.baseline_arrow_back_ios_24)
                 }
-                else -> {
+                R.id.listMessFragment -> {
                     setNavigationVisible()
+                    setNameScreen("Chat")
+                    binding.tbBack.setNavigationIcon(R.drawable.baseline_arrow_back_ios_24)
+                }
+                else -> {
+                    setNavigationVisible(false)
                 }
             }
         }
@@ -70,9 +70,9 @@ class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::infl
         binding.textScreen.text = name
     }
 
-    private fun setNavigationVisible(isVisible: Boolean = false) {
-        binding.navView.isVisible = isVisible
-        binding.tbBack.isVisible = isVisible
+    private fun setNavigationVisible(isVisibletbBackView: Boolean = true,isVisiblenavView: Boolean = false) {
+        binding.tbBack.isVisible = isVisibletbBackView
+        binding.navView.isVisible = isVisiblenavView
     }
 
 }
