@@ -4,24 +4,40 @@
         "source": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-57:\\layout\\fragment_change_password.xml"
     },
     {
-        "merged": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-mergeDebugResources-54:\\layout\\fragment_list_mess.xml",
-        "source": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-57:\\layout\\fragment_list_mess.xml"
-    },
-    {
         "merged": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-mergeDebugResources-54:\\layout\\fragment_register_password.xml",
         "source": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-57:\\layout\\fragment_register_password.xml"
     },
     {
-        "merged": "com.example.btl_mxh.app-mergeDebugResources-54:/layout/dialog_delete.xml",
-        "source": "com.example.btl_mxh.app-main-57:/layout/dialog_delete.xml"
+        "merged": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-mergeDebugResources-54:\\layout\\fragment_list_mess.xml",
+        "source": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-57:\\layout\\fragment_list_mess.xml"
+    },
+    {
+        "merged": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-mergeDebugResources-54:\\layout\\item_add_image.xml",
+        "source": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-57:\\layout\\item_add_image.xml"
+    },
+    {
+        "merged": "com.example.btl_mxh.app-mergeDebugResources-54:/layout/item_infomation_profile.xml",
+        "source": "com.example.btl_mxh.app-main-57:/layout/item_infomation_profile.xml"
+    },
+    {
+        "merged": "com.example.btl_mxh.app-mergeDebugResources-54:/layout/item_notification.xml",
+        "source": "com.example.btl_mxh.app-main-57:/layout/item_notification.xml"
+    },
+    {
+        "merged": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-mergeDebugResources-54:\\layout\\item_post.xml",
+        "source": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-57:\\layout\\item_post.xml"
     },
     {
         "merged": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-mergeDebugResources-54:\\layout\\fragment_profile.xml",
         "source": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-57:\\layout\\fragment_profile.xml"
     },
     {
-        "merged": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-mergeDebugResources-54:\\layout\\item_post.xml",
-        "source": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-57:\\layout\\item_post.xml"
+        "merged": "com.example.btl_mxh.app-mergeDebugResources-54:/layout/item_create_post.xml",
+        "source": "com.example.btl_mxh.app-main-57:/layout/item_create_post.xml"
+    },
+    {
+        "merged": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-mergeDebugResources-54:\\layout\\dialog_delete.xml",
+        "source": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-57:\\layout\\dialog_delete.xml"
     },
     {
         "merged": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-mergeDebugResources-54:\\layout\\fragment_sign_in.xml",
@@ -40,18 +56,6 @@
         "source": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-57:\\layout\\fragment_forgot_password.xml"
     },
     {
-        "merged": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-mergeDebugResources-54:\\layout\\fragment_splash.xml",
-        "source": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-57:\\layout\\fragment_splash.xml"
-    },
-    {
-        "merged": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-mergeDebugResources-54:\\layout\\item_listmess.xml",
-        "source": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-57:\\layout\\item_listmess.xml"
-    },
-    {
-        "merged": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-mergeDebugResources-54:\\layout\\activity_main.xml",
-        "source": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-57:\\layout\\activity_main.xml"
-    },
-    {
         "merged": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-mergeDebugResources-54:\\layout\\fragment_notification_setting.xml",
         "source": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-57:\\layout\\fragment_notification_setting.xml"
     },
@@ -60,8 +64,64 @@
         "source": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-57:\\layout\\fragment_edit_profile.xml"
     },
     {
+        "merged": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-mergeDebugResources-54:\\layout\\fragment_add_text.xml",
+        "source": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-57:\\layout\\fragment_add_text.xml"
+    },
+    {
         "merged": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-mergeDebugResources-54:\\layout\\dl_loading_common.xml",
         "source": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-57:\\layout\\dl_loading_common.xml"
+    },
+    {
+        "merged": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-mergeDebugResources-54:\\layout\\fragment_add_image.xml",
+        "source": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-57:\\layout\\fragment_add_image.xml"
+    },
+    {
+        "merged": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-mergeDebugResources-54:\\layout\\fragment_search.xml",
+        "source": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-57:\\layout\\fragment_search.xml"
+    },
+    {
+        "merged": "com.example.btl_mxh.app-mergeDebugResources-54:/layout/fragment_friend.xml",
+        "source": "com.example.btl_mxh.app-main-57:/layout/fragment_friend.xml"
+    },
+    {
+        "merged": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-mergeDebugResources-54:\\layout\\item_search.xml",
+        "source": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-57:\\layout\\item_search.xml"
+    },
+    {
+        "merged": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-mergeDebugResources-54:\\layout\\fragment_home.xml",
+        "source": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-57:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-mergeDebugResources-54:\\layout\\item_notification.xml",
+        "source": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-57:\\layout\\item_notification.xml"
+    },
+    {
+        "merged": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-mergeDebugResources-54:\\layout\\item_search_user.xml",
+        "source": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-57:\\layout\\item_search_user.xml"
+    },
+    {
+        "merged": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-mergeDebugResources-54:\\layout\\fragment_friend.xml",
+        "source": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-57:\\layout\\fragment_friend.xml"
+    },
+    {
+        "merged": "com.example.btl_mxh.app-mergeDebugResources-54:/layout/item_post.xml",
+        "source": "com.example.btl_mxh.app-main-57:/layout/item_post.xml"
+    },
+    {
+        "merged": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-mergeDebugResources-54:\\layout\\fragment_splash.xml",
+        "source": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-57:\\layout\\fragment_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-mergeDebugResources-54:\\layout\\item_listmess.xml",
+        "source": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-57:\\layout\\item_listmess.xml"
+    },
+    {
+        "merged": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-mergeDebugResources-54:\\layout\\item_list_search.xml",
+        "source": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-57:\\layout\\item_list_search.xml"
+    },
+    {
+        "merged": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-mergeDebugResources-54:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-57:\\layout\\activity_main.xml"
     },
     {
         "merged": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-mergeDebugResources-54:\\layout\\item_image_profile.xml",
@@ -74,14 +134,6 @@
     {
         "merged": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-mergeDebugResources-54:\\layout\\fragment_notification.xml",
         "source": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-57:\\layout\\fragment_notification.xml"
-    },
-    {
-        "merged": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-mergeDebugResources-54:\\layout\\item_search.xml",
-        "source": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-57:\\layout\\item_search.xml"
-    },
-    {
-        "merged": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-mergeDebugResources-54:\\layout\\fragment_home.xml",
-        "source": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-57:\\layout\\fragment_home.xml"
     },
     {
         "merged": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-mergeDebugResources-54:\\layout\\fragment_setting.xml",

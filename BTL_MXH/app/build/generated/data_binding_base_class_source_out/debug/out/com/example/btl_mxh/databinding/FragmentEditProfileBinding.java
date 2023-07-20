@@ -4,7 +4,7 @@ package com.example.btl_mxh.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.FrameLayout;
+import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
@@ -14,15 +14,15 @@ import java.lang.Override;
 
 public final class FragmentEditProfileBinding implements ViewBinding {
   @NonNull
-  private final FrameLayout rootView;
+  private final LinearLayout rootView;
 
-  private FragmentEditProfileBinding(@NonNull FrameLayout rootView) {
+  private FragmentEditProfileBinding(@NonNull LinearLayout rootView) {
     this.rootView = rootView;
   }
 
   @Override
   @NonNull
-  public FrameLayout getRoot() {
+  public LinearLayout getRoot() {
     return rootView;
   }
 
@@ -47,6 +47,6 @@ public final class FragmentEditProfileBinding implements ViewBinding {
       throw new NullPointerException("rootView");
     }
 
-    return new FragmentEditProfileBinding((FrameLayout) rootView);
+    return new FragmentEditProfileBinding((LinearLayout) rootView);
   }
 }

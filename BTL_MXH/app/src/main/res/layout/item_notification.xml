@@ -38,15 +38,15 @@
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="70dp"
-            android:text="MiMi just added 3 new photos to her diary"
+            android:text="@string/mimi_just_added_3_new_photos_to_her_diary"
             android:gravity="center|start"
             android:layout_gravity="start"
             android:paddingStart="5dp"
-            android:textSize="20sp"
+            android:textSize="14sp"
             android:textColor="@color/black"
             android:fontFamily="@font/comfortaaregular"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/avatar"
+            app:layout_constraintStart_toEndOf="@id/imv_avatar"
             app:layout_constraintTop_toTopOf="parent" />
 
     </LinearLayout>

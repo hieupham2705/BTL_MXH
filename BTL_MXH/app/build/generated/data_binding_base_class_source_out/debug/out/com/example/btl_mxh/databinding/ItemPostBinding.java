@@ -23,9 +23,6 @@ public final class ItemPostBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final ImageView avatar;
-
-  @NonNull
   public final CardView cardView2;
 
   @NonNull
@@ -50,6 +47,9 @@ public final class ItemPostBinding implements ViewBinding {
   public final ImageView imagepost;
 
   @NonNull
+  public final ImageView imvAvatar;
+
+  @NonNull
   public final LinearLayout linearLayout;
 
   @NonNull
@@ -64,15 +64,14 @@ public final class ItemPostBinding implements ViewBinding {
   @NonNull
   public final TextView username;
 
-  private ItemPostBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView avatar,
-      @NonNull CardView cardView2, @NonNull ImageView comment,
-      @NonNull ConstraintLayout constraintLayout2, @NonNull TextView content,
-      @NonNull ImageView heart, @NonNull TextView hour, @NonNull ImageView imageView8,
-      @NonNull ImageView imagepost, @NonNull LinearLayout linearLayout,
-      @NonNull LinearLayout linearLayout2, @NonNull LinearLayout linearLayout4,
-      @NonNull ImageView moreVert, @NonNull TextView username) {
+  private ItemPostBinding(@NonNull ConstraintLayout rootView, @NonNull CardView cardView2,
+      @NonNull ImageView comment, @NonNull ConstraintLayout constraintLayout2,
+      @NonNull TextView content, @NonNull ImageView heart, @NonNull TextView hour,
+      @NonNull ImageView imageView8, @NonNull ImageView imagepost, @NonNull ImageView imvAvatar,
+      @NonNull LinearLayout linearLayout, @NonNull LinearLayout linearLayout2,
+      @NonNull LinearLayout linearLayout4, @NonNull ImageView moreVert,
+      @NonNull TextView username) {
     this.rootView = rootView;
-    this.avatar = avatar;
     this.cardView2 = cardView2;
     this.comment = comment;
     this.constraintLayout2 = constraintLayout2;
@@ -81,6 +80,7 @@ public final class ItemPostBinding implements ViewBinding {
     this.hour = hour;
     this.imageView8 = imageView8;
     this.imagepost = imagepost;
+    this.imvAvatar = imvAvatar;
     this.linearLayout = linearLayout;
     this.linearLayout2 = linearLayout2;
     this.linearLayout4 = linearLayout4;
@@ -115,12 +115,6 @@ public final class ItemPostBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.avatar;
-      ImageView avatar = ViewBindings.findChildViewById(rootView, id);
-      if (avatar == null) {
-        break missingId;
-      }
-
       id = R.id.cardView2;
       CardView cardView2 = ViewBindings.findChildViewById(rootView, id);
       if (cardView2 == null) {
@@ -169,6 +163,12 @@ public final class ItemPostBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.imv_avatar;
+      ImageView imvAvatar = ViewBindings.findChildViewById(rootView, id);
+      if (imvAvatar == null) {
+        break missingId;
+      }
+
       id = R.id.linearLayout;
       LinearLayout linearLayout = ViewBindings.findChildViewById(rootView, id);
       if (linearLayout == null) {
@@ -199,9 +199,9 @@ public final class ItemPostBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ItemPostBinding((ConstraintLayout) rootView, avatar, cardView2, comment,
-          constraintLayout2, content, heart, hour, imageView8, imagepost, linearLayout,
-          linearLayout2, linearLayout4, moreVert, username);
+      return new ItemPostBinding((ConstraintLayout) rootView, cardView2, comment, constraintLayout2,
+          content, heart, hour, imageView8, imagepost, imvAvatar, linearLayout, linearLayout2,
+          linearLayout4, moreVert, username);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

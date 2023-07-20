@@ -13,9 +13,14 @@ import com.example.btl_mxh.base.BaseFragment
 import com.example.btl_mxh.base.BaseViewModel
 import com.example.btl_mxh.databinding.FragmentSearchBinding
 
-class SearchFragment : BaseFragment<FragmentSearchBinding>(FragmentSearchBinding :: inflate) {
+class SearchFragment : BaseFragment<FragmentSearchBinding>(FragmentSearchBinding::inflate) {
+    private val adapter by lazy { SearchAdapter(
+        onclickFriend = {
+            findNavController().navigate(R.id.action_searchFragment_to_friendFragment)
+        }
+    ) }
     override val viewModel: SearchViewModel
-        get() = ViewModelProvider(this)[SearchViewModel :: class.java]
+        get() = ViewModelProvider(this)[SearchViewModel::class.java]
 
     override fun initData() {
 
@@ -23,9 +28,7 @@ class SearchFragment : BaseFragment<FragmentSearchBinding>(FragmentSearchBinding
 
     override fun handleEvent() {
         binding.apply {
-            edtSearch.setOnClickListener {
-                findNavController().navigate(R.id.action_searchFragment_to_friendFragment)
-            }
+            recyclerview.adapter = adapter
         }
 
     }

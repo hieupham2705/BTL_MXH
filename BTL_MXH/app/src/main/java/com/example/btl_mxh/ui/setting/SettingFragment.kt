@@ -20,13 +20,16 @@ class SettingFragment : BaseFragment<FragmentSettingBinding>(FragmentSettingBind
 
     override fun bindData() {
         binding.apply {
-            chanePassword.setOnClickListener {
+            changePassword.setOnClickListener {
                 findNavController().navigate(R.id.action_settingFragment_to_changePasswordFragment)
             }
             notification.setOnClickListener {
                 findNavController().navigate(R.id.action_settingFragment_to_notificationSettingFragment)
             }
             logOut.setOnClickListener {
+            }
+            editProfile.setOnClickListener {
+                findNavController().navigate(R.id.action_settingFragment_to_editProfileFragment)
             }
         }
     }

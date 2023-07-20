@@ -26,14 +26,26 @@
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
+            android:id="@+id/action_homeFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_addTextFragment"
+            app:destination="@id/addTextFragment" />
+        <action
             android:id="@+id/action_homeFragment_to_listMessFragment"
             app:destination="@id/listMessFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_friendFragment"
+            app:destination="@id/friendFragment" />
     </fragment>
     <fragment
         android:id="@+id/notificationFragment"
         android:name="com.example.btl_mxh.ui.notification.NotificationFragment"
         android:label="fragment_notification"
         tools:layout="@layout/fragment_notification" >
+        <action
+            android:id="@+id/action_notificationFragment_to_friendFragment"
+            app:destination="@id/friendFragment" />
     </fragment>
     <fragment
         android:id="@+id/profileFragment"
@@ -97,6 +109,9 @@
         <action
             android:id="@+id/action_settingFragment_to_notificationSettingFragment"
             app:destination="@id/notificationSettingFragment" />
+        <action
+            android:id="@+id/action_settingFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
     </fragment>
     <fragment
         android:id="@+id/changePasswordFragment"
@@ -108,6 +123,39 @@
         android:name="com.example.btl_mxh.ui.notificationsetting.NotificationSettingFragment"
         android:label="fragment_notification_setting"
         tools:layout="@layout/fragment_notification_setting" />
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.example.btl_mxh.ui.editprofile.EditProfileFragment"
+        android:label="fragment_edit_profile"
+        tools:layout="@layout/fragment_edit_profile" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.btl_mxh.ui.search.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_searchFragment_to_friendFragment"
+            app:destination="@id/friendFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/friendFragment"
+        android:name="com.example.btl_mxh.ui.friend.FriendFragment"
+        android:label="fragment_friend"
+        tools:layout="@layout/fragment_friend" />
+    <fragment
+        android:id="@+id/addTextFragment"
+        android:name="com.example.btl_mxh.ui.addpost_text.AddTextFragment"
+        android:label="fragment_add_text"
+        tools:layout="@layout/fragment_add_text" >
+        <action
+            android:id="@+id/action_addTextFragment_to_addImageFragment"
+            app:destination="@id/addImageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addImageFragment"
+        android:name="com.example.btl_mxh.ui.addpost_image.AddImageFragment"
+        android:label="fragment_add_image"
+        tools:layout="@layout/fragment_add_image" />
     <fragment
         android:id="@+id/listMessFragment"
         android:name="com.example.btl_mxh.ui.listmess.ListMessFragment"

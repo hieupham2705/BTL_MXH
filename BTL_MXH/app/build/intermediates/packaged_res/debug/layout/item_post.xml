@@ -16,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/avatar"
+            android:id="@+id/imv_avatar"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/hit" />

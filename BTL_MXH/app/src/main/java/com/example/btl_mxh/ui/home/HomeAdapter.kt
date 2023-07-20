@@ -8,10 +8,12 @@ import com.example.btl_mxh.databinding.ItemPostBinding
 import com.example.btl_mxh.databinding.ItemSearchBinding
 
 class HomeAdapter(
-    private val onClickPost: (String) -> Unit,
-    private val onClickSearch: ((String) -> Unit)? = null,
-    private val onClickCreatePost: (String) -> Unit,
-    private val onClickMessage: () -> Unit
+    private val onClickPost: () -> Unit,
+    private val onClickSearch: () -> Unit,
+    private val onClickCreatePost: () -> Unit,
+    private val onClickMessage: () -> Unit,
+    private val onClickimvavatarpost: () -> Unit
+
 ) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     val typeSearch = 13424832
     val typeCreatePost = 2509345
@@ -57,11 +59,21 @@ class HomeAdapter(
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         if (holder is ViewHolderSearch) {
-            holder.binding.root.setOnClickListener {
-                onClickSearch?.invoke(holder.binding.edtSearch.text.toString())
+            holder.binding.edtSearch.setOnClickListener {
+                onClickSearch.invoke()
             }
             holder.binding.imageViewMessage.setOnClickListener {
-                onClickMessage()
+                onClickMessage.invoke()
+            }
+        }
+        if (holder is ViewHolderCreatePost) {
+            holder.binding.edtCreactPost.setOnClickListener {
+                onClickCreatePost.invoke()
+            }
+        }
+        if(holder is ViewHolder){
+            holder.binding.imvAvatar.setOnClickListener {
+                onClickimvavatarpost.invoke()
             }
         }
 
