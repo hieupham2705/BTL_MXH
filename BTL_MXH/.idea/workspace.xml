@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="43c78165-e82c-481a-ae26-d1238ed62562" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/.idea/deploymentTargetDropDown.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/androidTest/java/com/example/btl_mxh/ExampleInstrumentedTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/java/com/example/btl_mxh/base/BaseActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/java/com/example/btl_mxh/base/BaseAdapter.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/java/com/example/btl_mxh/base/BaseFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/java/com/example/btl_mxh/base/BaseRepository.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/java/com/example/btl_mxh/base/BaseViewHolder.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/java/com/example/btl_mxh/base/BaseViewModel.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/java/com/example/btl_mxh/base/DataResult.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/java/com/example/btl_mxh/ui/addpost_image/AddImageAdapter.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/java/com/example/btl_mxh/ui/addpost_image/AddImageFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/java/com/example/btl_mxh/ui/addpost_image/AddImageViewModel.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/java/com/example/btl_mxh/ui/addpost_text/AddTextFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/java/com/example/btl_mxh/ui/addpost_text/AddTextViewModel.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/java/com/example/btl_mxh/ui/changepassword/ChangePasswordFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/java/com/example/btl_mxh/ui/changepassword/ChangePasswordViewModel.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/java/com/example/btl_mxh/ui/editprofile/EditProfileFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/java/com/example/btl_mxh/ui/editprofile/EditProfileViewModel.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/java/com/example/btl_mxh/ui/forgotpassword/FogotPasswordViewModel.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/java/com/example/btl_mxh/ui/forgotpassword/ForgotPasswordFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/java/com/example/btl_mxh/ui/friend/FriendAdapter.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/java/com/example/btl_mxh/ui/friend/FriendFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/java/com/example/btl_mxh/ui/friend/FriendViewModel.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/java/com/example/btl_mxh/ui/home/HomeAdapter.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/java/com/example/btl_mxh/ui/home/HomeFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/java/com/example/btl_mxh/ui/home/HomeViewModel.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/java/com/example/btl_mxh/ui/main/MainActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/java/com/example/btl_mxh/ui/notification/NotificationAdapter.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/java/com/example/btl_mxh/ui/notification/NotificationFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/java/com/example/btl_mxh/ui/notification/NotificationViewModel.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/java/com/example/btl_mxh/ui/notificationsetting/NotificationSettingFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/java/com/example/btl_mxh/ui/profile/ProfileAdapter.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/java/com/example/btl_mxh/ui/profile/ProfileFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/java/com/example/btl_mxh/ui/profile/ProfileViewModel.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/java/com/example/btl_mxh/ui/register/RegisterFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/java/com/example/btl_mxh/ui/register/RegisterViewModel.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/java/com/example/btl_mxh/ui/registerpassword/RegisterPasswordFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/java/com/example/btl_mxh/ui/registerpassword/RegisterPasswordViewModel.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/java/com/example/btl_mxh/ui/search/SearchAdapter.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/java/com/example/btl_mxh/ui/search/SearchFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/java/com/example/btl_mxh/ui/search/SearchViewModel.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/java/com/example/btl_mxh/ui/setting/SettingFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/java/com/example/btl_mxh/ui/sign_in/SignInFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/java/com/example/btl_mxh/ui/sign_in/SignInViewModel.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/java/com/example/btl_mxh/ui/splash/SplashFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/java/com/example/btl_mxh/utils/extension/DialogExtension.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/java/com/example/btl_mxh/utils/extension/FragmentExtension.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/color/bottom_navigation_selected.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/color/setmenu.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/drawable/baseline_arrow_back_ios_24.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/drawable/baseline_chat_bubble_24.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/drawable/baseline_favorite_24.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/drawable/baseline_home_24.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/drawable/baseline_more_vert_24.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/drawable/baseline_notifications_none_24.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/drawable/baseline_person_outline_24.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/drawable/baseline_settings_24.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/drawable/bell_den.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/drawable/bg_toolbar_border_bottom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/drawable/bgr.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/drawable/boder_add.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/drawable/boder_editprofile.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/drawable/boder_post_text.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/drawable/boder_search.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/drawable/boder_update.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/drawable/border_edittext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/drawable/border_settingscr.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/drawable/borderappcombatbutton.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/drawable/borderctlo.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/drawable/change_password.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/drawable/comment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/drawable/edit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/drawable/globe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/drawable/heart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/drawable/hit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/drawable/home_den.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/drawable/image_change_password.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/drawable/image_register_signin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/drawable/img_forgotpasswordscr.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/drawable/img_registerscr.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/drawable/img_signinscr.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/drawable/logout.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/drawable/mayanh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/drawable/messenger.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/drawable/padlock.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/drawable/photo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/drawable/search.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/drawable/theme.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/drawable/user_en.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/drawable/visibility.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/drawable/visibility_off.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/font/comfortaabold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/font/comfortaalight.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/font/comfortaamedium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/font/comfortaaregular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/font/comfortaasemibold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/font/comfortaavariablefontwght.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/font/interblack.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/font/interbold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/font/interextrabold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/font/interextralight.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/font/interlight.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/font/intermedium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/font/interregular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/font/intersemibold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/font/interthin.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/font/kavoonregular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/font/nunito_black.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/font/nunito_blackitalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/font/nunito_bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/font/nunito_bolditalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/font/nunito_extrabold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/font/nunito_extrabolditalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/font/nunito_extralight.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/font/nunito_extralightitalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/font/nunito_italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/font/nunito_light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/font/nunito_lightitalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/font/nunito_medium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/font/nunito_mediumitalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/font/nunito_regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/font/nunito_semibold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/font/nunito_semibolditalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/layout/dl_loading_common.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/layout/fragment_add_image.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/layout/fragment_add_text.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/layout/fragment_change_password.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/layout/fragment_edit_profile.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/layout/fragment_forgot_password.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/layout/fragment_friend.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/layout/fragment_home.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/layout/fragment_notification.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/layout/fragment_notification_setting.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/layout/fragment_profile.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/layout/fragment_register.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/layout/fragment_register_password.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/layout/fragment_search.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/layout/fragment_setting.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/layout/fragment_sign_in.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/layout/fragment_splash.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/layout/item_add_image.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/layout/item_create_post.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/layout/item_image_profile.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/layout/item_infomation_profile.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/layout/item_list_search.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/layout/item_notification.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/layout/item_post.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/layout/item_search.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/menu/btnv_home.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/mipmap-anydpi-v33/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/mipmap-hdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/mipmap-mdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/navigation/nav_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/values-night/themes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/values/themes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/xml/backup_rules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/main/res/xml/data_extraction_rules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/app/src/test/java/com/example/btl_mxh/ExampleUnitTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BTL_MXH/settings.gradle" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[ec6fe26]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/app">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="BTL_MXH" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="BTL_MXH" type="f1a62948:ProjectNode" />
+                <item name="app" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="BTL_MXH" type="f1a62948:ProjectNode" />
+                <item name="app" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="BTL_MXH" type="f1a62948:ProjectNode" />
+                <item name="app" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="other" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="navigationResourceFile" />
+        <option value="Class" />
+        <option value="Kotlin Data Class" />
+        <option value="Kotlin File" />
+        <option value="Kotlin Class" />
+        <option value="layoutResourceFile" />
+        <option value="resourceFile" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2RJQF6hm6FbHNOqG91r5ZBwETW9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;android-custom-viewE:/code/android/BTL/BTL_MXH/app/src/main/java/com/example/btl_mxh/base/BaseTextInputEditText.kt_SELECTED&quot;: &quot;BaseTextInputEditText&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;E:/code/android/BTL/BTL_MXH/app/src/test/java&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/code/android/BTL/BTL_MXH&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\code\android\BTL\BTL_MXH\app\src\main\res\drawable" />
+      <recent name="E:\code\android\BTL\BTL_MXH\app\src\main\res\layout" />
+      <recent name="E:\code\android\BTL\BTL_MXH\app\src\main\java\com\example\btl_mxh\utils\extension" />
+      <recent name="E:\code\android\BTL\BTL_MXH\app\src\main\java\com\example\btl_mxh\base" />
+      <recent name="E:\code\android\BTL\BTL_MXH\app\src\main\res" />
+    </key>
+    <key name="android.template.1931202349">
+      <recent name="com.example.btl_mxh.profile" />
+    </key>
+    <key name="CreateKotlinClassDialog.RecentsKey">
+      <recent name="com.example.btl_mxh.ui.listmess" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.example.btl_mxh.ui.listmess" />
+      <recent name="com.example.btl_mxh.ui.main" />
+      <recent name="com.example.btl_mxh.group" />
+      <recent name="com.example.btl_mxh.Group1" />
+    </key>
+    <key name="android.template.674987509">
+      <recent name="com.example.btl_mxh.profile" />
+    </key>
+    <key name="android.template.2045831616">
+      <recent name="com.example.btl_mxh" />
+    </key>
+    <key name="android.template.63407901">
+      <recent name="com.example.btl_mxh" />
+    </key>
+    <key name="android.template.1724957206">
+      <recent name="com.example.btl_mxh" />
+    </key>
+    <key name="android.template.100455216">
+      <recent name="com.example.btl_mxh" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
+      <module name="BTL_MXH.app.main" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="CLEAR_APP_STORAGE" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="INSPECTION_WITHOUT_ACTIVITY_RESTART" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="43c78165-e82c-481a-ae26-d1238ed62562" name="Changes" comment="" />
+      <created>1686965597833</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1686965597833</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-function">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/btl_mxh/ui/setting/SettingFragment.kt</url>
+          <line>10</line>
+          <properties class="com.example.btl_mxh.ui.setting.SettingFragment" method="getViewModel">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
