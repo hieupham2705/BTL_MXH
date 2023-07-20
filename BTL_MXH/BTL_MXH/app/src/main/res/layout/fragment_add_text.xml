@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.addpost_text.AddTextFragment"
+    android:background="@drawable/bgr"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="200dp"
+            >
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/hit"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="260dp"
+            android:layout_height="70dp"
+            android:text="Hoa Hoa"
+            android:gravity="start|center"
+            android:fontFamily="@font/comfortaabold"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:paddingStart="15dp"
+            />
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:id="@+id/imv_add_image"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/photo"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:backgroundTint="@color/orange"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:hint="Hoa, what are you thinking?"
+        android:gravity="top"
+        android:fontFamily="@font/comfortaasemibold"
+        android:textSize="16sp"
+        android:paddingStart="10sp"
+        android:paddingTop="10dp"
+        android:background="@color/transparent"
+        />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/post"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/boder_update"
+        android:text="@string/post"
+        android:fontFamily="@font/nunito_extrabold"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        />
+
+
+
+</LinearLayout>
