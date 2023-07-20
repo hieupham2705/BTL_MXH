@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.addpost_image.AddImageFragment"
+    android:background="@drawable/bgr"
+    android:padding="15dp">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@drawable/boder_add"
+        android:text="@string/add"
+        android:fontFamily="@font/nunito_extrabold"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:layout_marginStart="260dp"
+        />
+
+
+</FrameLayout>
