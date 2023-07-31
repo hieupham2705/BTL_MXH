@@ -1,36 +1,61 @@
 package com.example.btl_mxh.ui.sign_in
 
+import android.content.SharedPreferences
+import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.viewModelScope
+import com.example.btl_mxh.base.BaseResponse
 import com.example.btl_mxh.base.BaseViewModel
-import com.example.btl_mxh.base.DataResult
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.launch
+import com.example.btl_mxh.data.remote.repository.account.IAccountRepository
+import com.example.btl_mxh.model.Auth
+import com.example.btl_mxh.model.Login
+import com.example.btl_mxh.model.LoginEntity
+import com.example.btl_mxh.utils.extension.saveTokenLogin
 
-class SignInViewModel : BaseViewModel() {
 
-    private val emailTrue = "123"
-    private val passTrue = "456"
-    private val _stateLogin = MutableLiveData<Pair<Boolean, String>>()
-    val stateLogin: LiveData<Pair<Boolean, String>> = _stateLogin
+private const val TAG = "SignInViewModel"
 
-    fun logIn(email: String, pass: String) {
+class SignInViewModel(
+    private val accountRepo: IAccountRepository,
+    private val sharedPreferences: SharedPreferences
+) : BaseViewModel() {
+    private val _stateLogin = MutableLiveData<Login>()
+    val stateLogin: LiveData<Login>
+        get() = _stateLogin
+
+    private val _stateAuth = MutableLiveData<Auth>()
+    val stateAuth: LiveData<Auth> = _stateAuth
+
+    fun logIn(email: String, password: String, checkSavePassword: Boolean) {
         executeTask(
-            request = { callApiLogin(email, pass) },
+            request = { accountRepo.login(LoginEntity(email, password)) },
             onSuccess = {
-                _stateLogin.value = Pair(true, it)
+                if (it.status == "SUCCESS") {
+                    it.data?.let { _login ->
+                        if (checkSavePassword)
+                            sharedPreferences.saveTokenLogin(_login.accessToken)
+                        _stateLogin.value = _login
+                    }
+                } else {
+                    Log.e(TAG, "logIn: ${it.message}")
+                }
             },
             onError = {
-                _stateLogin.value = Pair(true, it.message.toString())
-            }
+                Log.e(TAG, "login:${it.message.toString()}")
+            }, showLoading = true
         )
     }
 
-    suspend fun callApiLogin(email: String, pass: String): DataResult<String> {
-        delay(3000)
-        if (email == emailTrue && passTrue == pass)
-            return DataResult.Success<String>("Thành công")
-        return DataResult.Error(Exception("Tài khoản sai !"))
+    fun auth() {
+        executeTask(
+            request = { accountRepo.authLogin() },
+            onSuccess = {
+                _stateAuth.value = it.data!!
+            },
+            onError = {
+                Log.e(TAG, "login:${it.message.toString()}")
+
+            }
+        )
     }
 }

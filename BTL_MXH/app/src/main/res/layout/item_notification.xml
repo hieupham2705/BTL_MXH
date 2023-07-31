@@ -2,12 +2,16 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="70dp"
+    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="horizontal"
-    android:layout_margin="10dp">
+    android:background="#CCFFFF"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:orientation="horizontal">
 
     <LinearLayout
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="20dp"
+        android:gravity="center"
         android:id="@+id/layout_noti"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -16,13 +20,13 @@
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:cardCornerRadius="200dp"
+            app:cardCornerRadius="100dp"
             >
 
             <ImageView
                 android:id="@+id/avatar_notification"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:src="@drawable/hit"
                 android:gravity="center"
                 android:textSize="30sp"
@@ -35,11 +39,9 @@
 
         <TextView
             android:id="@+id/text_notification"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="70dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:text="@string/mimi_just_added_3_new_photos_to_her_diary"
-            android:gravity="center|start"
             android:layout_gravity="start"
             android:paddingStart="5dp"
             android:textSize="14sp"

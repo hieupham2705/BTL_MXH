@@ -1,5 +1,6 @@
 package com.example.btl_mxh.base
 
+import android.util.Log
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -14,7 +15,7 @@ open class BaseRepository {
         return withContext(dispatcher) {
             try {
                 DataResult.Success(request())
-            } catch (e: IOException) {
+            } catch (e: Exception) {
                 DataResult.Error(e)
             }
         }

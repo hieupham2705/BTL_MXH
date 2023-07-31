@@ -1,29 +1,20 @@
 package com.example.btl_mxh.ui.home
 
+import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import com.example.btl_mxh.base.BaseResponse
 import com.example.btl_mxh.base.BaseViewModel
 import com.example.btl_mxh.base.DataResult
+import com.example.btl_mxh.data.remote.repository.account.IAccountRepository
+import com.example.btl_mxh.data.remote.repository.search.ISearchRepository
+import com.example.btl_mxh.model.Auth
 import kotlinx.coroutines.delay
 
-class HomeViewModel:BaseViewModel() {
-    private val _stateLogin = MutableLiveData<List<String>>()
-    val stateLogin: LiveData<List<String>> = _stateLogin
+private const val TAG = "HomeViewModel"
 
-    fun logIn() {
-        executeTask(
-            request = { callApiLogin() },
-            onSuccess = {
-                _stateLogin.value = it
-            },
-            onError = {
-//                _stateLogin.value = Pair(true, it.message.toString())
-            }
-        )
-    }
+class HomeViewModel(
+    private val accountRepo: IAccountRepository
+) : BaseViewModel() {
 
-    suspend fun callApiLogin(): DataResult<List<String>> {
-        return DataResult.Success<List<String>>(listOf("Hung, Hieu"))
-
-    }
 }

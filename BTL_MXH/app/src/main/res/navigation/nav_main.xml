@@ -6,21 +6,6 @@
     app:startDestination="@id/splashFragment">
 
     <fragment
-        android:id="@+id/splashFragment"
-        android:name="com.example.btl_mxh.ui.splash.SplashFragment"
-        android:label="SplashFragment" >
-        <action
-            android:id="@+id/action_splashFragment_to_homeFragment"
-            app:destination="@id/homeFragment"
-            app:popUpTo="@id/splashFragment"
-            app:popUpToInclusive="true"/>
-        <action
-            android:id="@+id/action_splashFragment_to_signInFragment"
-            app:destination="@id/signInFragment"
-            app:popUpTo="@id/splashFragment"
-            app:popUpToInclusive="true"/>
-    </fragment>
-    <fragment
         android:id="@+id/homeFragment"
         android:name="com.example.btl_mxh.ui.home.HomeFragment"
         android:label="fragment_home"
@@ -63,8 +48,9 @@
         <action
             android:id="@+id/action_signInFragment_to_homeFragment"
             app:destination="@id/homeFragment"
+            app:launchSingleTop="true"
             app:popUpTo="@id/signInFragment"
-            app:popUpToInclusive="true"/>
+            app:popUpToInclusive="true" />
         <action
             android:id="@+id/action_signInFragment_to_registerFragment"
             app:destination="@id/registerFragment" />
@@ -112,6 +98,9 @@
         <action
             android:id="@+id/action_settingFragment_to_editProfileFragment"
             app:destination="@id/editProfileFragment" />
+        <action
+            android:id="@+id/action_settingFragment_to_signInFragment"
+            app:destination="@id/signInFragment"/>
     </fragment>
     <fragment
         android:id="@+id/changePasswordFragment"
@@ -160,5 +149,32 @@
         android:id="@+id/listMessFragment"
         android:name="com.example.btl_mxh.ui.listmess.ListMessFragment"
         android:label="fragment_list_mess"
-        tools:layout="@layout/fragment_list_mess" />
+        tools:layout="@layout/fragment_list_mess" >
+        <action
+            android:id="@+id/action_listMessFragment_to_messengerFragment"
+            app:destination="@id/messengerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.btl_mxh.ui.splas.SplashFragment"
+        android:label="SplashFragment" >
+        <action
+            android:id="@+id/action_splashFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+
+            app:launchSingleTop="true"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_splashFragment_to_signInFragment"
+            app:destination="@id/signInFragment"
+
+            app:launchSingleTop="true"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/messengerFragment"
+        android:name="com.example.btl_mxh.ui.messenger.MessengerFragment"
+        android:label="MessengerFragment" />
 </navigation>

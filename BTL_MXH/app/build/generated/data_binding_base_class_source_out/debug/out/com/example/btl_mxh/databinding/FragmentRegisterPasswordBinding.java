@@ -50,12 +50,19 @@ public final class FragmentRegisterPasswordBinding implements ViewBinding {
   @NonNull
   public final TextView textView7;
 
+  @NonNull
+  public final TextView tvErrorCondition;
+
+  @NonNull
+  public final TextView tvErrorJoint;
+
   private FragmentRegisterPasswordBinding(@NonNull FrameLayout rootView,
       @NonNull AppCompatButton create, @NonNull ImageView imageView4,
       @NonNull BaseTextInputEditText password, @NonNull BaseTextInputEditText passwordAgain,
       @NonNull TextView signIn, @NonNull TextInputLayout textInputLayout1,
       @NonNull TextInputLayout textInputLayout2, @NonNull TextView textView4,
-      @NonNull TextView textView7) {
+      @NonNull TextView textView7, @NonNull TextView tvErrorCondition,
+      @NonNull TextView tvErrorJoint) {
     this.rootView = rootView;
     this.create = create;
     this.imageView4 = imageView4;
@@ -66,6 +73,8 @@ public final class FragmentRegisterPasswordBinding implements ViewBinding {
     this.textInputLayout2 = textInputLayout2;
     this.textView4 = textView4;
     this.textView7 = textView7;
+    this.tvErrorCondition = tvErrorCondition;
+    this.tvErrorJoint = tvErrorJoint;
   }
 
   @Override
@@ -149,9 +158,21 @@ public final class FragmentRegisterPasswordBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tv_error_condition;
+      TextView tvErrorCondition = ViewBindings.findChildViewById(rootView, id);
+      if (tvErrorCondition == null) {
+        break missingId;
+      }
+
+      id = R.id.tv_error_joint;
+      TextView tvErrorJoint = ViewBindings.findChildViewById(rootView, id);
+      if (tvErrorJoint == null) {
+        break missingId;
+      }
+
       return new FragmentRegisterPasswordBinding((FrameLayout) rootView, create, imageView4,
-          password, passwordAgain, signIn, textInputLayout1, textInputLayout2, textView4,
-          textView7);
+          password, passwordAgain, signIn, textInputLayout1, textInputLayout2, textView4, textView7,
+          tvErrorCondition, tvErrorJoint);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

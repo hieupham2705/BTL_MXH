@@ -1,8 +1,10 @@
 R_DEF: Internal format may change without notice
 local
 color Blue1
+color Green_3A
 color Grey
 color Grey1
+color Red
 color black
 color bottom_navigation_selected
 color orange
@@ -23,6 +25,7 @@ drawable baseline_notifications_none_24
 drawable baseline_person_outline_24
 drawable baseline_settings_24
 drawable bell_den
+drawable bg_green3a_border_15dp
 drawable bg_toolbar_border_bottom
 drawable bgr
 drawable boder_add
@@ -31,6 +34,7 @@ drawable boder_post_text
 drawable boder_search
 drawable boder_update
 drawable border_btm_dialog
+drawable border_dialog
 drawable border_edittext
 drawable border_settingscr
 drawable borderappcombatbutton
@@ -42,6 +46,11 @@ drawable globe
 drawable heart
 drawable hit
 drawable home_den
+drawable ic_baseline_call_24
+drawable ic_baseline_camera_alt_24
+drawable ic_baseline_image_24
+drawable ic_baseline_send_24
+drawable ic_baseline_videocam_24
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable image_change_password
@@ -54,6 +63,7 @@ drawable mayanh
 drawable messenger
 drawable padlock
 drawable photo
+drawable rounded_toast_background
 drawable search
 drawable theme
 drawable user_en
@@ -97,6 +107,7 @@ id action_homeFragment_to_addTextFragment
 id action_homeFragment_to_friendFragment
 id action_homeFragment_to_listMessFragment
 id action_homeFragment_to_searchFragment
+id action_listMessFragment_to_messengerFragment
 id action_notificationFragment_to_friendFragment
 id action_profileFragment_to_settingFragment
 id action_registerFragment_to_registerPasswordFragment
@@ -106,6 +117,7 @@ id action_searchFragment_to_friendFragment
 id action_settingFragment_to_changePasswordFragment
 id action_settingFragment_to_editProfileFragment
 id action_settingFragment_to_notificationSettingFragment
+id action_settingFragment_to_signInFragment
 id action_signInFragment_to_forgotPasswordFragment
 id action_signInFragment_to_homeFragment
 id action_signInFragment_to_registerFragment
@@ -113,11 +125,17 @@ id action_splashFragment_to_homeFragment
 id action_splashFragment_to_signInFragment
 id addImageFragment
 id addTextFragment
+id appCompatButton
 id app_updates
 id avatar_notification
 id avatar_search
 id btn_cancle
 id btn_confirm
+id btn_search
+id button_call
+id button_image
+id button_send
+id button_video_call
 id cardView
 id cardView2
 id cardView3
@@ -128,9 +146,11 @@ id comment
 id constraintLayout
 id constraintLayout2
 id constraintLayout3
+id container_text_box
 id content
 id create
 id current_password
+id custom_toast_container
 id editProfileFragment
 id edit_profile
 id edt_creact_post
@@ -152,6 +172,7 @@ id imageView5
 id imageView6
 id imageView8
 id imageView9
+id image_avatar
 id image_view_1
 id image_view_2
 id image_view_3
@@ -159,6 +180,7 @@ id image_view_message
 id imagepost
 id imv_add_image
 id imv_avatar
+id imv_gallery_photo
 id layout_noti
 id linearLayout
 id linearLayout2
@@ -166,6 +188,7 @@ id linearLayout3
 id linearLayout4
 id listMessFragment
 id log_out
+id messengerFragment
 id more_vert
 id name_text_search
 id nav_host_fragment_activity_main
@@ -201,14 +224,15 @@ id textInputLayout
 id textInputLayout1
 id textInputLayout10
 id textInputLayout11
+id textInputLayout12
 id textInputLayout2
 id textInputLayout3
 id textInputLayout4
-id textInputLayout5
 id textInputLayout6
-id textInputLayout7
 id textInputLayout8
 id textInputLayout9
+id textInputLayoutEmail
+id textInputLayoutPhone
 id textView
 id textView10
 id textView11
@@ -226,15 +250,24 @@ id textView6
 id textView7
 id textView8
 id textView9
+id textViewToast
+id text_message
+id text_name
 id text_name_search
 id text_notification
 id text_screen
+id text_status
+id tool_bar
+id tv_error_condition
+id tv_error_joint
 id tv_name
 id update
 id username
 id vibrate
 layout activity_main
+layout custom_toast_layout
 layout dialog_delete
+layout dialog_notification
 layout dl_loading_common
 layout fragment_add_image
 layout fragment_add_text
@@ -244,6 +277,7 @@ layout fragment_forgot_password
 layout fragment_friend
 layout fragment_home
 layout fragment_list_mess
+layout fragment_messenger
 layout fragment_notification
 layout fragment_notification_setting
 layout fragment_profile
@@ -263,6 +297,7 @@ layout item_notification
 layout item_post
 layout item_search
 layout item_search_user
+layout item_send
 menu btnv_home
 mipmap ic_launcher
 mipmap ic_launcher_round
@@ -283,6 +318,7 @@ string current_password
 string do_you_already_have_an_account
 string edit_profile_information
 string email
+string enter_mess
 string ex_abc_gmail_com
 string forgot_password
 string full_name
@@ -293,6 +329,8 @@ string home
 string log_in
 string log_out
 string love
+string m_t_kh_u_kh_ng_c_k_t_c_bi_t_v_l_n_h_n_8_k_t
+string m_t_kh_u_kh_ng_kh_p
 string mimi_just_added_3_new_photos_to_her_diary
 string new_password
 string new_password_again
@@ -308,9 +346,12 @@ string search
 string sign_in
 string submit
 string system_and_services_update
+string text_show_toast
+string timkiem
 string update
 string user_name
 string vibrate
+string we_have_just_sent_you_a_new_password_please_check_your_email
 string what_are_you_thinking
 string you_only_live_one
 style Theme.BTL_MXH

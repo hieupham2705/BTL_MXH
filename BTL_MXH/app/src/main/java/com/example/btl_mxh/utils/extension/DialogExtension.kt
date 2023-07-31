@@ -6,7 +6,9 @@ import android.graphics.drawable.ColorDrawable
 import android.view.Gravity
 import android.view.WindowManager
 import com.example.btl_mxh.databinding.DialogDeleteBinding
+import com.example.btl_mxh.databinding.DialogNotificationBinding
 import com.example.btl_mxh.databinding.DlLoadingCommonBinding
+import com.example.btl_mxh.utils.constant.Constant
 
 
 fun Dialog.start(stopFlag: Boolean = false) {
@@ -28,18 +30,18 @@ fun Dialog.start(stopFlag: Boolean = false) {
     show()
 }
 
-fun Dialog.openDialogQuestion() {
+fun Dialog.openDialogQuestion(confirmAction: () -> Unit) {
     this.let {
         val binding = DialogDeleteBinding.inflate(layoutInflater)
         it.setContentView(binding.root)
         it.window?.apply {
             setLayout(
-                WindowManager.LayoutParams.MATCH_PARENT,
+                WindowManager.LayoutParams.WRAP_CONTENT,
                 WindowManager.LayoutParams.WRAP_CONTENT
             )
             setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
             attributes.apply {
-//                y = Constant.DIALOGCONFIG.MARGIN_Y
+                y = Constant.DIALOGCONFIG.MARGIN_Y
                 y = -170
                 gravity = Gravity.CENTER
 
@@ -49,8 +51,29 @@ fun Dialog.openDialogQuestion() {
             dismiss()
         }
         binding.btnConfirm.setOnClickListener {
-//            confirmAction()
+            confirmAction()
             dismiss()
+        }
+        it.setCancelable(true)
+        it.show()
+    }
+}
+fun Dialog.openDialogNotification() {
+    this.let {
+        val binding = DialogNotificationBinding.inflate(layoutInflater)
+        it.setContentView(binding.root)
+        it.window?.apply {
+            setLayout(
+                WindowManager.LayoutParams.WRAP_CONTENT,
+                WindowManager.LayoutParams.WRAP_CONTENT
+            )
+            setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+            attributes.apply {
+                y = Constant.DIALOGCONFIG.MARGIN_Y
+                y = -170
+                gravity = Gravity.CENTER
+
+            }
         }
         it.setCancelable(true)
         it.show()
