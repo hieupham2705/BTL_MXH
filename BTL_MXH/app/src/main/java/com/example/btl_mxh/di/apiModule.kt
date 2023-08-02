@@ -7,4 +7,5 @@ import retrofit2.Retrofit
 val apiModule = module {
 //    single { get<Retrofit>().create(ApiService.SearchService::class.java) }
     single { get<Retrofit>().create(ApiService.AccountService::class.java) }
+    single { get<Retrofit>().create(ApiService.PostService::class.java) }
 }

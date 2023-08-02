@@ -34,18 +34,22 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::infl
     }
     override val viewModel by viewModel<HomeViewModel>()
     override fun initData() {
+        viewModel.auth()
+        viewModel.postGetAll()
     }
 
     override fun handleEvent() {
     }
 
     override fun bindData() {
-        val auth = arguments?.getParcelable<Auth>("auth")
-        Log.e(TAG,auth.toString())
-        if (auth != null) {
-            adapter.setAdapter(auth)
-        }
-        binding.recyclerview.adapter = adapter
+//        viewModel.stateAuth.observe(viewLifecycleOwner) { _auth ->
+//            viewModel.statePostGetAll.observe(viewLifecycleOwner) { postGetAll ->
+//                Log.e(TAG,postGetAll.toString())
+//                adapter.setAdapter(viewModel.stateAuth.value!!, postGetAll)
+                binding.recyclerview.adapter = adapter
+//            }
+
+//        }
     }
 
 }

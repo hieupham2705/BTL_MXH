@@ -23,9 +23,6 @@ class SignInViewModel(
     val stateLogin: LiveData<Login>
         get() = _stateLogin
 
-    private val _stateAuth = MutableLiveData<Auth>()
-    val stateAuth: LiveData<Auth> = _stateAuth
-
     fun logIn(email: String, password: String, checkSavePassword: Boolean) {
         executeTask(
             request = { accountRepo.login(LoginEntity(email, password)) },
@@ -46,16 +43,6 @@ class SignInViewModel(
         )
     }
 
-    fun auth() {
-        executeTask(
-            request = { accountRepo.authLogin() },
-            onSuccess = {
-                _stateAuth.value = it.data!!
-            },
-            onError = {
-                Log.e(TAG, "login:${it.message.toString()}")
 
-            }
-        )
-    }
+
 }

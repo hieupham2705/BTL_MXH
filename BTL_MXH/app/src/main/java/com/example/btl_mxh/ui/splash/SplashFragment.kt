@@ -34,9 +34,7 @@ class SplashFragment(
                 Log.e("xx","ddssa")
             }
             else{
-                findNavController().navigate(R.id.action_splashFragment_to_homeFragment,
-                    bundleOf("auth" to viewModel.stateAuth.value!!.data)
-                )
+                findNavController().navigate(R.id.action_splashFragment_to_homeFragment)
                 showToast("Logged in successfully !")
             }
 

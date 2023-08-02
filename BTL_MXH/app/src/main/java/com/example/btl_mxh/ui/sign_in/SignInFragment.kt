@@ -40,11 +40,8 @@ class SignInFragment : BaseFragment<FragmentSignInBinding>(FragmentSignInBinding
 
     override fun bindData(){
         viewModel.stateLogin.observe(viewLifecycleOwner) {
-//            viewModel.auth()
             findNavController().navigate(R.id.action_signInFragment_to_homeFragment)
             showToast("Logged in successfully !")
-        }
-        viewModel.stateAuth.observe(viewLifecycleOwner){
         }
         viewModel.isError.observe(viewLifecycleOwner) {
             showToast(it)

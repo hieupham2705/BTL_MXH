@@ -2983,6 +2983,7 @@ drawable avd_hide_password
 drawable avd_show_password
 drawable baseline_arrow_back_ios_24
 drawable baseline_chat_bubble_24
+drawable baseline_close_24
 drawable baseline_favorite_24
 drawable baseline_home_24
 drawable baseline_more_vert_24
@@ -3217,6 +3218,7 @@ id accessibility_custom_action_9
 id actionDown
 id actionDownUp
 id actionUp
+id action_addImageFragment_to_addTextFragment
 id action_addTextFragment_to_addImageFragment
 id action_bar
 id action_bar_activity_content
@@ -3272,7 +3274,6 @@ id animateToEnd
 id animateToStart
 id antiClockwise
 id anticipate
-id appCompatButton
 id app_updates
 id arc
 id asConfigured
@@ -3294,6 +3295,8 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btn_accept
+id btn_add_image
 id btn_cancle
 id btn_confirm
 id btn_search
@@ -3394,6 +3397,7 @@ id edge
 id editProfileFragment
 id edit_profile
 id edit_query
+id edt_caption
 id edt_creact_post
 id edt_search
 id elastic
@@ -3798,6 +3802,7 @@ id textinput_helper_text
 id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
+id textiplu
 id time
 id title
 id titleDividerNoCustom
@@ -4152,6 +4157,7 @@ string general_notification
 string genger
 string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
+string hoa_what_are_you_thinking
 string home
 string icon_content_description
 string in_progress

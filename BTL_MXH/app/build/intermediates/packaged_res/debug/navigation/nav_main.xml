@@ -133,7 +133,7 @@
         tools:layout="@layout/fragment_friend" />
     <fragment
         android:id="@+id/addTextFragment"
-        android:name="com.example.btl_mxh.ui.addpost_text.AddTextFragment"
+        android:name="com.example.btl_mxh.ui.addpost.AddPostFragment"
         android:label="fragment_add_text"
         tools:layout="@layout/fragment_add_text" >
         <action
@@ -144,7 +144,14 @@
         android:id="@+id/addImageFragment"
         android:name="com.example.btl_mxh.ui.addpost_image.AddImageFragment"
         android:label="fragment_add_image"
-        tools:layout="@layout/fragment_add_image" />
+        tools:layout="@layout/fragment_add_image" >
+        <action
+            app:launchSingleTop="true"
+            app:popUpTo="@id/addImageFragment"
+            app:popUpToInclusive="true"
+            android:id="@+id/action_addImageFragment_to_addTextFragment"
+            app:destination="@id/addTextFragment" />
+    </fragment>
     <fragment
         android:id="@+id/listMessFragment"
         android:name="com.example.btl_mxh.ui.listmess.ListMessFragment"
@@ -161,7 +168,6 @@
         <action
             android:id="@+id/action_splashFragment_to_homeFragment"
             app:destination="@id/homeFragment"
-
             app:launchSingleTop="true"
             app:popUpTo="@id/splashFragment"
             app:popUpToInclusive="true"/>

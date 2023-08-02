@@ -2982,6 +2982,7 @@ int drawable avd_hide_password 0x7f070078
 int drawable avd_show_password 0x7f070079
 int drawable baseline_arrow_back_ios_24 0x7f07007a
 int drawable baseline_chat_bubble_24 0x7f07007b
+int drawable baseline_close_24 0x7f070113
 int drawable baseline_favorite_24 0x7f07007c
 int drawable baseline_home_24 0x7f07007d
 int drawable baseline_more_vert_24 0x7f07007e
@@ -3216,6 +3217,7 @@ int id accessibility_custom_action_9 0x7f09002f
 int id actionDown 0x7f090030
 int id actionDownUp 0x7f090031
 int id actionUp 0x7f090032
+int id action_addImageFragment_to_addTextFragment 0x7f0902ae
 int id action_addTextFragment_to_addImageFragment 0x7f090033
 int id action_bar 0x7f090034
 int id action_bar_activity_content 0x7f090035
@@ -3271,7 +3273,6 @@ int id animateToEnd 0x7f090065
 int id animateToStart 0x7f090066
 int id antiClockwise 0x7f090067
 int id anticipate 0x7f090068
-int id appCompatButton 0x7f090069
 int id app_updates 0x7f09006a
 int id arc 0x7f09006b
 int id asConfigured 0x7f09006c
@@ -3293,6 +3294,8 @@ int id bounce 0x7f09007b
 int id bounceBoth 0x7f09007c
 int id bounceEnd 0x7f09007d
 int id bounceStart 0x7f09007e
+int id btn_accept 0x7f0902af
+int id btn_add_image 0x7f0902ab
 int id btn_cancle 0x7f09007f
 int id btn_confirm 0x7f090080
 int id btn_search 0x7f090081
@@ -3393,6 +3396,7 @@ int id edge 0x7f0900d9
 int id editProfileFragment 0x7f0900da
 int id edit_profile 0x7f0900db
 int id edit_query 0x7f0900dc
+int id edt_caption 0x7f0902b0
 int id edt_creact_post 0x7f0900dd
 int id edt_search 0x7f0900de
 int id elastic 0x7f0900df
@@ -3797,6 +3801,7 @@ int id textinput_helper_text 0x7f090267
 int id textinput_placeholder 0x7f090268
 int id textinput_prefix_text 0x7f090269
 int id textinput_suffix_text 0x7f09026a
+int id textiplu 0x7f0902b1
 int id time 0x7f09026b
 int id title 0x7f09026c
 int id titleDividerNoCustom 0x7f09026d
@@ -4151,6 +4156,7 @@ int string general_notification 0x7f120045
 int string genger 0x7f120046
 int string hello_blank_fragment 0x7f120047
 int string hide_bottom_view_on_scroll_behavior 0x7f120048
+int string hoa_what_are_you_thinking 0x7f1200e5
 int string home 0x7f120049
 int string icon_content_description 0x7f12004a
 int string in_progress 0x7f12004b

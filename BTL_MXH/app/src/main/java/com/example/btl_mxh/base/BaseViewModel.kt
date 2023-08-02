@@ -10,7 +10,7 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 import retrofit2.HttpException
 
-
+private const val TAG = "BaseViewModel"
 open class BaseViewModel : ViewModel() {
 
     private val loading: MutableLiveData<Boolean> = MutableLiveData(false)
@@ -44,13 +44,14 @@ open class BaseViewModel : ViewModel() {
                             val errorMessage = errorResponse.message
                             error.postValue(errorMessage.toString())
                             // Xử lý thông báo lỗi (errorMessage) tại đây
+                            Log.e(TAG,"hihi")
                         } catch (e: Exception) {
                             // Xử lý nếu có lỗi khi phân tích dữ liệu phản hồi JSON
                             error.postValue(response.exception.toString())
                         }
-                        onError(response.exception)
                         hideLoading()
                     }
+                    onError(response.exception)
                 }
             }
         }

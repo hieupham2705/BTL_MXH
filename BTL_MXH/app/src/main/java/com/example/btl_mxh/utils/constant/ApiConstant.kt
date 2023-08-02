@@ -18,12 +18,15 @@ object ApiConstant {
         const val AUTH = "auth"
         const val USER = "user"
         const val SEARCH = "search"
+        const val POST = "post"
         const val SEARCH_USER = "$SEARCH/users"
         const val USER_CURRENT = "$USER/current"
         const val AUTH_LOGIN = "$AUTH/login"
         const val AUTH_LOGOUT = "$AUTH/logout"
         const val AUTH_REGISTER = "$AUTH/register"
         const val AUTH_RESET_PASSWORD = "$AUTH/reset-password"
+        const val POST_CREATE_NEW_POST = "$POST/create_new_post"
+        const val POST_GET_ALL = "$POST/get_all"
     }
 
     object FILED {
@@ -35,6 +38,8 @@ object ApiConstant {
         const val ID_BOOK = "idBook"
         const val ID = "id"
         const val URL = "url"
+        const val CAPTION = "caption"
+        const val FILES = "files"
     }
 
     object TYPEOFBILL {

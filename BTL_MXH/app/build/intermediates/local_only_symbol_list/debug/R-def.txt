@@ -18,6 +18,7 @@ color transparent
 color white
 drawable baseline_arrow_back_ios_24
 drawable baseline_chat_bubble_24
+drawable baseline_close_24
 drawable baseline_favorite_24
 drawable baseline_home_24
 drawable baseline_more_vert_24
@@ -101,6 +102,7 @@ font nunito_mediumitalic
 font nunito_regular
 font nunito_semibold
 font nunito_semibolditalic
+id action_addImageFragment_to_addTextFragment
 id action_addTextFragment_to_addImageFragment
 id action_forgotPasswordFragment_to_signInFragment
 id action_homeFragment_to_addTextFragment
@@ -125,10 +127,11 @@ id action_splashFragment_to_homeFragment
 id action_splashFragment_to_signInFragment
 id addImageFragment
 id addTextFragment
-id appCompatButton
 id app_updates
 id avatar_notification
 id avatar_search
+id btn_accept
+id btn_add_image
 id btn_cancle
 id btn_confirm
 id btn_search
@@ -153,6 +156,7 @@ id current_password
 id custom_toast_container
 id editProfileFragment
 id edit_profile
+id edt_caption
 id edt_creact_post
 id edt_search
 id email
@@ -257,6 +261,7 @@ id text_name_search
 id text_notification
 id text_screen
 id text_status
+id textiplu
 id tool_bar
 id tv_error_condition
 id tv_error_joint
@@ -325,6 +330,7 @@ string full_name
 string general_notification
 string genger
 string hello_blank_fragment
+string hoa_what_are_you_thinking
 string home
 string log_in
 string log_out

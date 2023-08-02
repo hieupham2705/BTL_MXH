@@ -7,6 +7,7 @@ import com.example.btl_mxh.databinding.ItemCreatePostBinding
 import com.example.btl_mxh.databinding.ItemPostBinding
 import com.example.btl_mxh.databinding.ItemSearchBinding
 import com.example.btl_mxh.model.Auth
+import com.example.btl_mxh.model.PostGetAll
 import com.example.btl_mxh.utils.extension.loadImageFromUrl
 
 class HomeAdapter(
@@ -21,7 +22,9 @@ class HomeAdapter(
     val typeCreatePost = 2509345
     val typePost = 34230843
 
-    private lateinit var  createPost: Auth
+    private lateinit var createPost: Auth
+    private lateinit var listPost : PostGetAll
+
 
     class ViewHolder(val binding: ItemPostBinding) : RecyclerView.ViewHolder(binding.root) {
 
@@ -75,15 +78,19 @@ class HomeAdapter(
             }
         }
         if (holder is ViewHolder) {
-            holder.binding.imvAvatar.setOnClickListener {
-                onClickimvavatarpost.invoke()
+            holder.binding.apply {
+                imvAvatar.setOnClickListener { onClickimvavatarpost.invoke() }
+//                imvAvatar.loadImageFromUrl(listPost.data[position].)
+//                imagepost.loadImageFromUrl(listPost.data[position].mediaFiles.get(0))
             }
+
         }
 
     }
 
-    fun setAdapter(auth: Auth) {
+    fun setAdapter(auth: Auth, list: PostGetAll) {
         createPost = auth
+        listPost = list
         notifyDataSetChanged()
     }
 
