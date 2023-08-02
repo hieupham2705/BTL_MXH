@@ -4,6 +4,7 @@ package com.example.btl_mxh.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import androidx.annotation.NonNull;
@@ -22,20 +23,25 @@ public final class ItemCreatePostBinding implements ViewBinding {
   private final FrameLayout rootView;
 
   @NonNull
-  public final ImageView avatar;
-
-  @NonNull
   public final CardView cardView;
 
   @NonNull
   public final ConstraintLayout constraintLayout3;
 
-  private ItemCreatePostBinding(@NonNull FrameLayout rootView, @NonNull ImageView avatar,
-      @NonNull CardView cardView, @NonNull ConstraintLayout constraintLayout3) {
+  @NonNull
+  public final EditText edtCreactPost;
+
+  @NonNull
+  public final ImageView imvAvatar;
+
+  private ItemCreatePostBinding(@NonNull FrameLayout rootView, @NonNull CardView cardView,
+      @NonNull ConstraintLayout constraintLayout3, @NonNull EditText edtCreactPost,
+      @NonNull ImageView imvAvatar) {
     this.rootView = rootView;
-    this.avatar = avatar;
     this.cardView = cardView;
     this.constraintLayout3 = constraintLayout3;
+    this.edtCreactPost = edtCreactPost;
+    this.imvAvatar = imvAvatar;
   }
 
   @Override
@@ -65,12 +71,6 @@ public final class ItemCreatePostBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.avatar;
-      ImageView avatar = ViewBindings.findChildViewById(rootView, id);
-      if (avatar == null) {
-        break missingId;
-      }
-
       id = R.id.cardView;
       CardView cardView = ViewBindings.findChildViewById(rootView, id);
       if (cardView == null) {
@@ -83,7 +83,20 @@ public final class ItemCreatePostBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ItemCreatePostBinding((FrameLayout) rootView, avatar, cardView, constraintLayout3);
+      id = R.id.edt_creact_post;
+      EditText edtCreactPost = ViewBindings.findChildViewById(rootView, id);
+      if (edtCreactPost == null) {
+        break missingId;
+      }
+
+      id = R.id.imv_avatar;
+      ImageView imvAvatar = ViewBindings.findChildViewById(rootView, id);
+      if (imvAvatar == null) {
+        break missingId;
+      }
+
+      return new ItemCreatePostBinding((FrameLayout) rootView, cardView, constraintLayout3,
+          edtCreactPost, imvAvatar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

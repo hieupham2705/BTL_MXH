@@ -7,22 +7,30 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
 import com.example.btl_mxh.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
+import java.lang.String;
 
 public final class ItemAddImageBinding implements ViewBinding {
   @NonNull
-  private final ImageView rootView;
+  private final ConstraintLayout rootView;
 
-  private ItemAddImageBinding(@NonNull ImageView rootView) {
+  @NonNull
+  public final ImageView imvGalleryPhoto;
+
+  private ItemAddImageBinding(@NonNull ConstraintLayout rootView,
+      @NonNull ImageView imvGalleryPhoto) {
     this.rootView = rootView;
+    this.imvGalleryPhoto = imvGalleryPhoto;
   }
 
   @Override
   @NonNull
-  public ImageView getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -43,10 +51,19 @@ public final class ItemAddImageBinding implements ViewBinding {
 
   @NonNull
   public static ItemAddImageBinding bind(@NonNull View rootView) {
-    if (rootView == null) {
-      throw new NullPointerException("rootView");
-    }
+    // The body of this method is generated in a way you would not otherwise write.
+    // This is done to optimize the compiled bytecode for size and performance.
+    int id;
+    missingId: {
+      id = R.id.imv_gallery_photo;
+      ImageView imvGalleryPhoto = ViewBindings.findChildViewById(rootView, id);
+      if (imvGalleryPhoto == null) {
+        break missingId;
+      }
 
-    return new ItemAddImageBinding((ImageView) rootView);
+      return new ItemAddImageBinding((ConstraintLayout) rootView, imvGalleryPhoto);
+    }
+    String missingId = rootView.getResources().getResourceName(id);
+    throw new NullPointerException("Missing required view with ID: ".concat(missingId));
   }
 }

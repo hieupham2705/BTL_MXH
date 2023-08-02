@@ -22,10 +22,10 @@ public final class FragmentSettingBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
-  public final LinearLayout chanePassword;
+  public final LinearLayout changePassword;
 
   @NonNull
-  public final LinearLayout editSetting;
+  public final LinearLayout editProfile;
 
   @NonNull
   public final ImageView imageView5;
@@ -43,13 +43,13 @@ public final class FragmentSettingBinding implements ViewBinding {
   public final TextView textView3;
 
   private FragmentSettingBinding(@NonNull LinearLayout rootView,
-      @NonNull LinearLayout chanePassword, @NonNull LinearLayout editSetting,
+      @NonNull LinearLayout changePassword, @NonNull LinearLayout editProfile,
       @NonNull ImageView imageView5, @NonNull LinearLayout logOut,
       @NonNull LinearLayout notification, @NonNull SwitchCompat swichTheme,
       @NonNull TextView textView3) {
     this.rootView = rootView;
-    this.chanePassword = chanePassword;
-    this.editSetting = editSetting;
+    this.changePassword = changePassword;
+    this.editProfile = editProfile;
     this.imageView5 = imageView5;
     this.logOut = logOut;
     this.notification = notification;
@@ -84,15 +84,15 @@ public final class FragmentSettingBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.chane_password;
-      LinearLayout chanePassword = ViewBindings.findChildViewById(rootView, id);
-      if (chanePassword == null) {
+      id = R.id.change_password;
+      LinearLayout changePassword = ViewBindings.findChildViewById(rootView, id);
+      if (changePassword == null) {
         break missingId;
       }
 
-      id = R.id.edit_setting;
-      LinearLayout editSetting = ViewBindings.findChildViewById(rootView, id);
-      if (editSetting == null) {
+      id = R.id.edit_profile;
+      LinearLayout editProfile = ViewBindings.findChildViewById(rootView, id);
+      if (editProfile == null) {
         break missingId;
       }
 
@@ -126,7 +126,7 @@ public final class FragmentSettingBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentSettingBinding((LinearLayout) rootView, chanePassword, editSetting,
+      return new FragmentSettingBinding((LinearLayout) rootView, changePassword, editProfile,
           imageView5, logOut, notification, swichTheme, textView3);
     }
     String missingId = rootView.getResources().getResourceName(id);

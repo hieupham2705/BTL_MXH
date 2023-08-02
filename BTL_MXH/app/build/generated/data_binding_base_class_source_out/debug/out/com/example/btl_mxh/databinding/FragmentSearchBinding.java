@@ -4,14 +4,16 @@ package com.example.btl_mxh.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
 import android.widget.FrameLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.btl_mxh.R;
+import com.example.btl_mxh.base.BaseTextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -21,16 +23,25 @@ public final class FragmentSearchBinding implements ViewBinding {
   private final FrameLayout rootView;
 
   @NonNull
-  public final EditText edtSearch;
+  public final AppCompatButton btnSearch;
+
+  @NonNull
+  public final BaseTextInputEditText edtSearch;
 
   @NonNull
   public final RecyclerView recyclerview;
 
-  private FragmentSearchBinding(@NonNull FrameLayout rootView, @NonNull EditText edtSearch,
-      @NonNull RecyclerView recyclerview) {
+  @NonNull
+  public final TextInputLayout textInputLayout12;
+
+  private FragmentSearchBinding(@NonNull FrameLayout rootView, @NonNull AppCompatButton btnSearch,
+      @NonNull BaseTextInputEditText edtSearch, @NonNull RecyclerView recyclerview,
+      @NonNull TextInputLayout textInputLayout12) {
     this.rootView = rootView;
+    this.btnSearch = btnSearch;
     this.edtSearch = edtSearch;
     this.recyclerview = recyclerview;
+    this.textInputLayout12 = textInputLayout12;
   }
 
   @Override
@@ -60,8 +71,14 @@ public final class FragmentSearchBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btn_search;
+      AppCompatButton btnSearch = ViewBindings.findChildViewById(rootView, id);
+      if (btnSearch == null) {
+        break missingId;
+      }
+
       id = R.id.edt_search;
-      EditText edtSearch = ViewBindings.findChildViewById(rootView, id);
+      BaseTextInputEditText edtSearch = ViewBindings.findChildViewById(rootView, id);
       if (edtSearch == null) {
         break missingId;
       }
@@ -72,7 +89,14 @@ public final class FragmentSearchBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentSearchBinding((FrameLayout) rootView, edtSearch, recyclerview);
+      id = R.id.textInputLayout12;
+      TextInputLayout textInputLayout12 = ViewBindings.findChildViewById(rootView, id);
+      if (textInputLayout12 == null) {
+        break missingId;
+      }
+
+      return new FragmentSearchBinding((FrameLayout) rootView, btnSearch, edtSearch, recyclerview,
+          textInputLayout12);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

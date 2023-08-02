@@ -1,36 +1,47 @@
 package com.example.btl_mxh.ui.search
 
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
 import androidx.recyclerview.widget.RecyclerView
-import com.example.btl_mxh.databinding.ItemNotificationBinding
-import com.example.btl_mxh.databinding.ItemSearchBinding
-import com.example.btl_mxh.ui.notification.NotificationAdapter
+import com.bumptech.glide.Glide
+import com.example.btl_mxh.databinding.ItemSearchUserBinding
+import com.example.btl_mxh.model.Search
 
-class SearchAdapter() : RecyclerView.Adapter<SearchAdapter.ViewHolder>(){
+class SearchAdapter(
+    private val context: Context,
+    private val onclickFriend: () -> Unit
+) : RecyclerView.Adapter<SearchAdapter.ViewHolder>() {
 
-    private var listsearch = listOf<Int>()
+    private var listSearch = MutableLiveData<Search>()
 
-    class ViewHolder (val binding: ItemSearchBinding) : RecyclerView.ViewHolder(binding.root) {
+    class ViewHolder(val binding: ItemSearchUserBinding) : RecyclerView.ViewHolder(binding.root) {
 
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SearchAdapter.ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
-        val binding = ItemSearchBinding.inflate(layoutInflater, parent, false)
-        return SearchAdapter.ViewHolder(binding)
+        val binding = ItemSearchUserBinding.inflate(layoutInflater, parent, false)
+        return ViewHolder(binding)
     }
 
-    override fun onBindViewHolder(holder: SearchAdapter.ViewHolder, position: Int) {
-//        holder.binding.avatarSearch.setImageResource(listsearch[position])
-//        holder.binding.textNameSearch.text = listsearch[position].toString()
-
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+        holder.binding.tvName.text = listSearch.value?.items?.get(position)?.login
+        Glide.with(context).load(listSearch.value?.items?.get(position)?.avatarUrl).into(holder.binding.imvAvatar)
+        holder.binding.root.setOnClickListener {
+            onclickFriend.invoke()
+        }
     }
 
-    override fun getItemCount(): Int = listsearch.size
+    override fun getItemCount(): Int = listSearch.value?.items?.size ?: 0
 
-
+    fun setlist(list: LiveData<Search>) {
+        listSearch = list as MutableLiveData<Search>
+        notifyDataSetChanged()
+    }
 
 }

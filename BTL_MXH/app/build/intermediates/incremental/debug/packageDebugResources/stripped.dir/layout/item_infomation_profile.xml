@@ -17,6 +17,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <androidx.cardview.widget.CardView
+            android:foreground="?android:attr/selectableItemBackground"
             android:layout_width="80dp"
             android:layout_height="80dp"
             app:cardCornerRadius="100dp">
@@ -64,6 +65,7 @@
             android:gravity="end">
 
             <ImageView
+                android:foreground="?android:attr/selectableItemBackground"
                 android:id="@+id/setting"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

@@ -18,12 +18,13 @@
         android:layout_marginTop="10dp">
 
         <androidx.cardview.widget.CardView
+            android:foreground="?android:attr/selectableItemBackground"
             android:layout_width="80dp"
             android:layout_height="80dp"
             app:cardCornerRadius="100dp">
 
             <ImageView
-                android:id="@+id/avatar"
+                android:id="@+id/imv_avatar"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/hit" />
@@ -72,10 +73,11 @@
             android:layout_weight="1">
 
             <Button
+                android:foreground="?android:attr/selectableItemBackground"
                 android:id="@+id/setting"
-                android:layout_width="130dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:backgroundTint="@color/Blue1"
+                android:backgroundTint="#2196F3"
                 android:gravity="center"
                 android:text="Follow"
                 android:fontFamily="@font/comfortaabold"

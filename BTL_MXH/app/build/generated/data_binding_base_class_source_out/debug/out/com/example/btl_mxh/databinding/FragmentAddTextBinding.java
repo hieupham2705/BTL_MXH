@@ -9,9 +9,12 @@ import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatButton;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.btl_mxh.R;
+import com.example.btl_mxh.base.BaseTextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -21,16 +24,30 @@ public final class FragmentAddTextBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
+  public final BaseTextInputEditText edtCaption;
+
+  @NonNull
   public final ImageView imvAddImage;
 
   @NonNull
   public final AppCompatButton post;
 
-  private FragmentAddTextBinding(@NonNull LinearLayout rootView, @NonNull ImageView imvAddImage,
-      @NonNull AppCompatButton post) {
+  @NonNull
+  public final RecyclerView recyclerview;
+
+  @NonNull
+  public final TextInputLayout textiplu;
+
+  private FragmentAddTextBinding(@NonNull LinearLayout rootView,
+      @NonNull BaseTextInputEditText edtCaption, @NonNull ImageView imvAddImage,
+      @NonNull AppCompatButton post, @NonNull RecyclerView recyclerview,
+      @NonNull TextInputLayout textiplu) {
     this.rootView = rootView;
+    this.edtCaption = edtCaption;
     this.imvAddImage = imvAddImage;
     this.post = post;
+    this.recyclerview = recyclerview;
+    this.textiplu = textiplu;
   }
 
   @Override
@@ -60,6 +77,12 @@ public final class FragmentAddTextBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.edt_caption;
+      BaseTextInputEditText edtCaption = ViewBindings.findChildViewById(rootView, id);
+      if (edtCaption == null) {
+        break missingId;
+      }
+
       id = R.id.imv_add_image;
       ImageView imvAddImage = ViewBindings.findChildViewById(rootView, id);
       if (imvAddImage == null) {
@@ -72,7 +95,20 @@ public final class FragmentAddTextBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentAddTextBinding((LinearLayout) rootView, imvAddImage, post);
+      id = R.id.recyclerview;
+      RecyclerView recyclerview = ViewBindings.findChildViewById(rootView, id);
+      if (recyclerview == null) {
+        break missingId;
+      }
+
+      id = R.id.textiplu;
+      TextInputLayout textiplu = ViewBindings.findChildViewById(rootView, id);
+      if (textiplu == null) {
+        break missingId;
+      }
+
+      return new FragmentAddTextBinding((LinearLayout) rootView, edtCaption, imvAddImage, post,
+          recyclerview, textiplu);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

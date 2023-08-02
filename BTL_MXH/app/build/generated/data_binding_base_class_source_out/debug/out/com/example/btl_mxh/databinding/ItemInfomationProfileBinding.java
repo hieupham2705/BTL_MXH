@@ -22,10 +22,10 @@ public final class ItemInfomationProfileBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final ImageView avatar;
+  public final TextView fullname;
 
   @NonNull
-  public final TextView fullname;
+  public final ImageView imvAvatar;
 
   @NonNull
   public final LinearLayout linearLayout3;
@@ -37,11 +37,11 @@ public final class ItemInfomationProfileBinding implements ViewBinding {
   public final TextView username;
 
   private ItemInfomationProfileBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ImageView avatar, @NonNull TextView fullname, @NonNull LinearLayout linearLayout3,
+      @NonNull TextView fullname, @NonNull ImageView imvAvatar, @NonNull LinearLayout linearLayout3,
       @NonNull ImageView setting, @NonNull TextView username) {
     this.rootView = rootView;
-    this.avatar = avatar;
     this.fullname = fullname;
+    this.imvAvatar = imvAvatar;
     this.linearLayout3 = linearLayout3;
     this.setting = setting;
     this.username = username;
@@ -74,15 +74,15 @@ public final class ItemInfomationProfileBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.avatar;
-      ImageView avatar = ViewBindings.findChildViewById(rootView, id);
-      if (avatar == null) {
-        break missingId;
-      }
-
       id = R.id.fullname;
       TextView fullname = ViewBindings.findChildViewById(rootView, id);
       if (fullname == null) {
+        break missingId;
+      }
+
+      id = R.id.imv_avatar;
+      ImageView imvAvatar = ViewBindings.findChildViewById(rootView, id);
+      if (imvAvatar == null) {
         break missingId;
       }
 
@@ -104,7 +104,7 @@ public final class ItemInfomationProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ItemInfomationProfileBinding((ConstraintLayout) rootView, avatar, fullname,
+      return new ItemInfomationProfileBinding((ConstraintLayout) rootView, fullname, imvAvatar,
           linearLayout3, setting, username);
     }
     String missingId = rootView.getResources().getResourceName(id);

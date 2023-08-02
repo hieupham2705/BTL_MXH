@@ -1,21 +1,23 @@
 package com.example.btl_mxh.ui.search
 
-import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import android.view.ViewOutlineProvider
-import androidx.lifecycle.ViewModelProvider
+import android.util.Log
+import com.example.btl_mxh.BuildConfig
 import androidx.navigation.fragment.findNavController
 import com.example.btl_mxh.R
 import com.example.btl_mxh.base.BaseFragment
-import com.example.btl_mxh.base.BaseViewModel
 import com.example.btl_mxh.databinding.FragmentSearchBinding
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
-class SearchFragment : BaseFragment<FragmentSearchBinding>(FragmentSearchBinding :: inflate) {
-    override val viewModel: SearchViewModel
-        get() = ViewModelProvider(this)[SearchViewModel :: class.java]
+class SearchFragment : BaseFragment<FragmentSearchBinding>(FragmentSearchBinding::inflate) {
+    private val adapter by lazy {
+        SearchAdapter(
+            requireContext(),
+            onclickFriend = {
+                findNavController().navigate(R.id.action_searchFragment_to_friendFragment)
+            }
+        )
+    }
+    override val viewModel by viewModel<SearchViewModel>()
 
     override fun initData() {
 
@@ -23,15 +25,21 @@ class SearchFragment : BaseFragment<FragmentSearchBinding>(FragmentSearchBinding
 
     override fun handleEvent() {
         binding.apply {
-            edtSearch.setOnClickListener {
-                findNavController().navigate(R.id.action_searchFragment_to_friendFragment)
-            }
+//            btnSearch.setOnClickListener {
+//                viewModel.searchByName(edtSearch.text.toString())
+//            }
         }
-
     }
 
     override fun bindData() {
+        binding.apply {
+            recyclerview.adapter = adapter
+        }
+//        viewModel.searchResult.observe(this) {
+//            adapter.setlist(viewModel.searchResult)
 
+
+//        }
     }
 
 }

@@ -1,57 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.addpost_text.AddTextFragment"
     android:background="@drawable/bgr"
     android:orientation="vertical"
-    android:padding="15dp">
+    android:padding="15dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".ui.addpost.AddPostFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
+        android:orientation="horizontal">
 
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:cardCornerRadius="200dp"
-            >
+            app:cardCornerRadius="200dp">
 
             <ImageView
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-                android:src="@drawable/hit"
-                />
+                android:src="@drawable/hit" />
 
         </androidx.cardview.widget.CardView>
 
         <TextView
-            android:layout_width="260dp"
-            android:layout_height="70dp"
-            android:text="Hoa Hoa"
-            android:gravity="start|center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:fontFamily="@font/comfortaabold"
-            android:textSize="20sp"
-            android:textColor="@color/black"
+            android:gravity="start|center"
             android:paddingStart="15dp"
-            />
+            android:text="Hoa Hoa"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
 
         <LinearLayout
-            android:layout_width="50dp"
-            android:layout_height="70dp"
-            android:gravity="center"
-            >
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end">
 
             <ImageView
                 android:id="@+id/imv_add_image"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
-                android:src="@drawable/photo"
-                />
+                android:background="@drawable/photo"
+                android:foreground="?android:attr/selectableItemBackground" />
 
         </LinearLayout>
 
@@ -59,40 +58,51 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="15dp"/>
+        android:layout_height="15dp" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="2dp"
-        android:backgroundTint="@color/orange"
-        />
+        android:backgroundTint="@color/orange" />
 
-    <EditText
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:id="@+id/textiplu"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:hint="Hoa, what are you thinking?"
-        android:gravity="top"
-        android:fontFamily="@font/comfortaasemibold"
-        android:textSize="16sp"
-        android:paddingStart="10sp"
-        android:paddingTop="10dp"
-        />
+        android:layout_height="70dp"
+        android:layout_marginBottom="8dp"
+        android:paddingTop="10dp">
+
+        <com.example.btl_mxh.base.BaseTextInputEditText
+            android:id="@+id/edt_caption"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/comfortaasemibold"
+            android:gravity="top"
+            android:hint="@string/hoa_what_are_you_thinking"
+            android:inputType="text"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="15dp"/>
+        android:layout_height="15dp" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/post"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="@drawable/boder_update"
-        android:text="@string/post"
         android:fontFamily="@font/nunito_extrabold"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="@string/post"
         android:textColor="@color/white"
-        android:textSize="18sp"
-        />
-
+        android:textSize="18sp" />
 
 
 </LinearLayout>
