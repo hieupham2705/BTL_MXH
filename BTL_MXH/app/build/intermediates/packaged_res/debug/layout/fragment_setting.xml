@@ -27,6 +27,8 @@
         <TextView
             android:layout_gravity="center"
             android:text="@string/edit_profile_information"
+            android:fontFamily="@font/comfortaasemibold"
+            android:textColor="@color/black"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
     </LinearLayout>
@@ -52,6 +54,8 @@
         <TextView
             android:layout_gravity="center"
             android:text="@string/notifications"
+            android:textColor="@color/black"
+            android:fontFamily="@font/comfortaasemibold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
     </LinearLayout>
@@ -83,6 +87,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
             android:text="Theme"
+            android:textColor="@color/black"
+            android:fontFamily="@font/comfortaasemibold"
             android:layout_gravity="center"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageView5"
@@ -122,12 +128,44 @@
         <TextView
             android:layout_gravity="center"
             android:text="@string/change_password"
+            android:textColor="@color/black"
             android:layout_width="wrap_content"
+            android:fontFamily="@font/comfortaasemibold"
             android:layout_height="wrap_content"/>
     </LinearLayout>
     <Space
         android:layout_width="0dp"
         android:layout_height="10dp"/>
+    <LinearLayout
+        android:id="@+id/save_post"
+        android:layout_marginHorizontal="30dp"
+        android:padding="10dp"
+        android:background="@drawable/border_settingscr"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="21dp"
+            android:layout_height="22dp"
+            android:background="@drawable/bookmark" />
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="0dp"/>
+        <TextView
+            android:layout_gravity="center"
+            android:text="@string/save_post"
+            android:textColor="@color/black"
+            android:layout_marginStart="2dp"
+            android:fontFamily="@font/comfortaasemibold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="10dp"/>
+
     <LinearLayout
         android:id="@+id/log_out"
         android:layout_marginHorizontal="30dp"
@@ -148,7 +186,10 @@
         <TextView
             android:layout_gravity="center"
             android:text="@string/log_out"
+            android:textColor="@color/black"
+            android:fontFamily="@font/comfortaasemibold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
     </LinearLayout>
+
 </LinearLayout>

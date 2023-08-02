@@ -19,8 +19,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="xxx"
+            android:fontFamily="@font/comfortaabold"
             android:textColor="@color/white"
-            android:textSize="20sp"
+            android:textSize="26sp"
             android:textStyle="bold" />
     </androidx.appcompat.widget.Toolbar>
         <FrameLayout

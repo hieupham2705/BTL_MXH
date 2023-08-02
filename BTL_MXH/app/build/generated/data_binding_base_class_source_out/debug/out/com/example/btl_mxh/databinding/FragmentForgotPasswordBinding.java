@@ -13,7 +13,7 @@ import androidx.appcompat.widget.AppCompatButton;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.btl_mxh.R;
-import com.example.btl_mxh.base.BaseTextInputEditText;
+import com.example.btl_mxh.ui.notificationsetting.base.BaseTextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -30,7 +30,7 @@ public final class FragmentForgotPasswordBinding implements ViewBinding {
   public final ImageView imageView2;
 
   @NonNull
-  public final TextView signIn;
+  public final TextView logIn;
 
   @NonNull
   public final AppCompatButton submit;
@@ -48,13 +48,13 @@ public final class FragmentForgotPasswordBinding implements ViewBinding {
   public final TextView textView9;
 
   private FragmentForgotPasswordBinding(@NonNull FrameLayout rootView,
-      @NonNull BaseTextInputEditText email, @NonNull ImageView imageView2, @NonNull TextView signIn,
+      @NonNull BaseTextInputEditText email, @NonNull ImageView imageView2, @NonNull TextView logIn,
       @NonNull AppCompatButton submit, @NonNull TextInputLayout textInputLayout8,
       @NonNull TextView textView10, @NonNull TextView textView12, @NonNull TextView textView9) {
     this.rootView = rootView;
     this.email = email;
     this.imageView2 = imageView2;
-    this.signIn = signIn;
+    this.logIn = logIn;
     this.submit = submit;
     this.textInputLayout8 = textInputLayout8;
     this.textView10 = textView10;
@@ -101,9 +101,9 @@ public final class FragmentForgotPasswordBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.sign_in;
-      TextView signIn = ViewBindings.findChildViewById(rootView, id);
-      if (signIn == null) {
+      id = R.id.log_in;
+      TextView logIn = ViewBindings.findChildViewById(rootView, id);
+      if (logIn == null) {
         break missingId;
       }
 
@@ -137,7 +137,7 @@ public final class FragmentForgotPasswordBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentForgotPasswordBinding((FrameLayout) rootView, email, imageView2, signIn,
+      return new FragmentForgotPasswordBinding((FrameLayout) rootView, email, imageView2, logIn,
           submit, textInputLayout8, textView10, textView12, textView9);
     }
     String missingId = rootView.getResources().getResourceName(id);

@@ -2,8 +2,8 @@ package com.example.btl_mxh.ui.setting
 
 import androidx.navigation.fragment.findNavController
 import com.example.btl_mxh.R
-import com.example.btl_mxh.base.BaseFragment
-import com.example.btl_mxh.base.BaseViewModel
+import com.example.btl_mxh.ui.notificationsetting.base.BaseFragment
+import com.example.btl_mxh.ui.notificationsetting.base.BaseViewModel
 import com.example.btl_mxh.databinding.FragmentSettingBinding
 
 class SettingFragment : BaseFragment<FragmentSettingBinding>(FragmentSettingBinding::inflate) {
@@ -31,6 +31,10 @@ class SettingFragment : BaseFragment<FragmentSettingBinding>(FragmentSettingBind
             editProfile.setOnClickListener {
                 findNavController().navigate(R.id.action_settingFragment_to_editProfileFragment)
             }
+            savePost.setOnClickListener {
+                findNavController().navigate((R.id.action_settingFragment_to_savedPostsFragment))
+            }
+
         }
     }
 

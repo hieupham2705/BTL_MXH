@@ -13,7 +13,7 @@ import androidx.appcompat.widget.AppCompatButton;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.btl_mxh.R;
-import com.example.btl_mxh.base.BaseTextInputEditText;
+import com.example.btl_mxh.ui.notificationsetting.base.BaseTextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -33,13 +33,13 @@ public final class FragmentRegisterBinding implements ViewBinding {
   public final ImageView imageView4;
 
   @NonNull
+  public final TextView logIn;
+
+  @NonNull
   public final AppCompatButton next;
 
   @NonNull
   public final BaseTextInputEditText phone;
-
-  @NonNull
-  public final TextView signIn;
 
   @NonNull
   public final TextInputLayout textInputLayout4;
@@ -64,19 +64,18 @@ public final class FragmentRegisterBinding implements ViewBinding {
 
   private FragmentRegisterBinding(@NonNull FrameLayout rootView,
       @NonNull BaseTextInputEditText email, @NonNull BaseTextInputEditText fullname,
-      @NonNull ImageView imageView4, @NonNull AppCompatButton next,
-      @NonNull BaseTextInputEditText phone, @NonNull TextView signIn,
-      @NonNull TextInputLayout textInputLayout4, @NonNull TextInputLayout textInputLayout5,
-      @NonNull TextInputLayout textInputLayout6, @NonNull TextInputLayout textInputLayout7,
-      @NonNull TextView textView4, @NonNull TextView textView7,
-      @NonNull BaseTextInputEditText username) {
+      @NonNull ImageView imageView4, @NonNull TextView logIn, @NonNull AppCompatButton next,
+      @NonNull BaseTextInputEditText phone, @NonNull TextInputLayout textInputLayout4,
+      @NonNull TextInputLayout textInputLayout5, @NonNull TextInputLayout textInputLayout6,
+      @NonNull TextInputLayout textInputLayout7, @NonNull TextView textView4,
+      @NonNull TextView textView7, @NonNull BaseTextInputEditText username) {
     this.rootView = rootView;
     this.email = email;
     this.fullname = fullname;
     this.imageView4 = imageView4;
+    this.logIn = logIn;
     this.next = next;
     this.phone = phone;
-    this.signIn = signIn;
     this.textInputLayout4 = textInputLayout4;
     this.textInputLayout5 = textInputLayout5;
     this.textInputLayout6 = textInputLayout6;
@@ -131,6 +130,12 @@ public final class FragmentRegisterBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.log_in;
+      TextView logIn = ViewBindings.findChildViewById(rootView, id);
+      if (logIn == null) {
+        break missingId;
+      }
+
       id = R.id.next;
       AppCompatButton next = ViewBindings.findChildViewById(rootView, id);
       if (next == null) {
@@ -140,12 +145,6 @@ public final class FragmentRegisterBinding implements ViewBinding {
       id = R.id.phone;
       BaseTextInputEditText phone = ViewBindings.findChildViewById(rootView, id);
       if (phone == null) {
-        break missingId;
-      }
-
-      id = R.id.sign_in;
-      TextView signIn = ViewBindings.findChildViewById(rootView, id);
-      if (signIn == null) {
         break missingId;
       }
 
@@ -191,8 +190,8 @@ public final class FragmentRegisterBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentRegisterBinding((FrameLayout) rootView, email, fullname, imageView4, next,
-          phone, signIn, textInputLayout4, textInputLayout5, textInputLayout6, textInputLayout7,
+      return new FragmentRegisterBinding((FrameLayout) rootView, email, fullname, imageView4, logIn,
+          next, phone, textInputLayout4, textInputLayout5, textInputLayout6, textInputLayout7,
           textView4, textView7, username);
     }
     String missingId = rootView.getResources().getResourceName(id);

@@ -30,7 +30,7 @@
         </androidx.cardview.widget.CardView>
 
         <TextView
-            android:layout_width="260dp"
+            android:layout_width="240dp"
             android:layout_height="70dp"
             android:text="Hoa Hoa"
             android:gravity="start|center"
@@ -76,6 +76,7 @@
         android:textSize="16sp"
         android:paddingStart="10sp"
         android:paddingTop="10dp"
+        android:background="@drawable/boder_post_text"
         />
 
     <Space

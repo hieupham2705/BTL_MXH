@@ -2,11 +2,11 @@ package com.example.btl_mxh.ui.home
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.example.btl_mxh.base.BaseViewModel
-import com.example.btl_mxh.base.DataResult
+import com.example.btl_mxh.ui.notificationsetting.base.BaseViewModel
+import com.example.btl_mxh.ui.notificationsetting.base.DataResult
 import kotlinx.coroutines.delay
 
-class HomeViewModel:BaseViewModel() {
+class HomeViewModel: BaseViewModel() {
     private val _stateLogin = MutableLiveData<List<String>>()
     val stateLogin: LiveData<List<String>> = _stateLogin
 

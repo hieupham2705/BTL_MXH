@@ -63,46 +63,65 @@
         >
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-        <com.example.btl_mxh.base.BaseTextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="54dp"
-            android:background="@drawable/boder_editprofile"
-            android:hint="@string/full_name"
-            android:paddingStart="10dp"
-            android:fontFamily="@font/comfortaaregular"
-            />
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            >
+
+            <com.example.btl_mxh.ui.notificationsetting.base.BaseTextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:background="@drawable/boder_editprofile"
+                android:hint="@string/full_name"
+                android:paddingStart="10dp"
+                android:fontFamily="@font/comfortaaregular"
+                android:textColor="@color/black"
+                />
+
         </com.google.android.material.textfield.TextInputLayout>
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="10dp"/>
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-        <com.example.btl_mxh.base.BaseTextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="54dp"
-            android:background="@drawable/boder_editprofile"
-            android:hint="@string/user_name"
-            android:paddingStart="10dp"
-            android:fontFamily="@font/comfortaaregular"
-            />
-        </com.google.android.material.textfield.TextInputLayout>
+
         <Space
             android:layout_width="match_parent"
             android:layout_height="10dp"/>
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <com.example.btl_mxh.base.BaseTextInputEditText
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+
+            >
+
+            <com.example.btl_mxh.ui.notificationsetting.base.BaseTextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:background="@drawable/boder_editprofile"
+                android:hint="@string/user_name"
+                android:paddingStart="10dp"
+                android:fontFamily="@font/comfortaaregular"
+                android:textColor="@color/black"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            >
+
+            <com.example.btl_mxh.ui.notificationsetting.base.BaseTextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="54dp"
                 android:background="@drawable/boder_editprofile"
                 android:hint="@string/email"
                 android:paddingStart="10dp"
                 android:fontFamily="@font/comfortaaregular"
+                android:textColor="@color/black"
                 />
+
         </com.google.android.material.textfield.TextInputLayout>
 
         <Space
@@ -111,15 +130,20 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <com.example.btl_mxh.base.BaseTextInputEditText
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            >
+
+            <com.example.btl_mxh.ui.notificationsetting.base.BaseTextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="54dp"
                 android:background="@drawable/boder_editprofile"
                 android:hint="@string/genger"
                 android:paddingStart="10dp"
                 android:fontFamily="@font/comfortaaregular"
+                android:textColor="@color/black"
                 />
+
         </com.google.android.material.textfield.TextInputLayout>
 
         <Space
@@ -128,15 +152,20 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <com.example.btl_mxh.base.BaseTextInputEditText
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            >
+
+            <com.example.btl_mxh.ui.notificationsetting.base.BaseTextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="54dp"
                 android:background="@drawable/boder_editprofile"
                 android:hint="@string/birthday"
                 android:paddingStart="10dp"
                 android:fontFamily="@font/comfortaaregular"
+                android:textColor="@color/black"
                 />
+
         </com.google.android.material.textfield.TextInputLayout>
 
         <Space
@@ -148,9 +177,10 @@
             android:layout_height="60dp"
             android:background="@drawable/boder_update"
             android:text="@string/update"
+            android:gravity="center"
             android:textColor="@color/white"
-            android:textSize="17sp"
-            android:fontFamily="@font/comfortaabold"
+            android:textSize="18sp"
+            android:fontFamily="@font/nunito_extrabold"
             />
 
     </LinearLayout>

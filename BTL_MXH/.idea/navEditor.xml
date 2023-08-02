@@ -46,8 +46,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="500" />
-                            <option name="y" value="12" />
+                            <option name="x" value="515" />
+                            <option name="y" value="40" />
                           </Point>
                         </option>
                       </LayoutPositions>
@@ -91,8 +91,29 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="2208" />
-                            <option name="y" value="54" />
+                            <option name="x" value="2134" />
+                            <option name="y" value="-354" />
+                          </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_friendFragment_to_friendPostsFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="friendPostsFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="2421" />
+                            <option name="y" value="-346" />
                           </Point>
                         </option>
                       </LayoutPositions>
@@ -110,6 +131,11 @@
                         <option name="myPositions">
                           <map>
                             <entry key="action_homeFragment_to_addTextFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="action_homeFragment_to_friendFragment">
                               <value>
                                 <LayoutPositions />
                               </value>
@@ -137,6 +163,27 @@
                             <option name="x" value="1964" />
                             <option name="y" value="724" />
                           </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="myPostsFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="93" />
+                            <option name="y" value="-326" />
+                          </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_myPostsFragment_to_profileFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
                         </option>
                       </LayoutPositions>
                     </value>
@@ -185,6 +232,11 @@
                         </option>
                         <option name="myPositions">
                           <map>
+                            <entry key="action_profileFragment_to_myPostsFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
                             <entry key="action_profileFragment_to_settingFragment">
                               <value>
                                 <LayoutPositions />
@@ -242,6 +294,27 @@
                       </LayoutPositions>
                     </value>
                   </entry>
+                  <entry key="savedPostsFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="585" />
+                            <option name="y" value="-322" />
+                          </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_savedPostsFragment_to_friendFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
                   <entry key="searchFragment">
                     <value>
                       <LayoutPositions>
@@ -285,6 +358,11 @@
                               </value>
                             </entry>
                             <entry key="action_settingFragment_to_notificationSettingFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="action_settingFragment_to_savedPostsFragment">
                               <value>
                                 <LayoutPositions />
                               </value>

@@ -3,8 +3,8 @@ package com.example.btl_mxh.ui.home
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.example.btl_mxh.R
-import com.example.btl_mxh.base.BaseFragment
-import com.example.btl_mxh.base.BaseViewModel
+import com.example.btl_mxh.ui.notificationsetting.base.BaseFragment
+import com.example.btl_mxh.ui.notificationsetting.base.BaseViewModel
 import com.example.btl_mxh.databinding.FragmentHomeBinding
 
 private const val TAG = "HomeFragment"
@@ -45,7 +45,7 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::infl
         viewModel.stateLogin.observe(this) {
             adapterPost.setAdapter(it)
         }
-        binding.recyclerview.adapter = adapterPost
+        binding.recyclerviewHome.adapter = adapterPost
     }
 
 }

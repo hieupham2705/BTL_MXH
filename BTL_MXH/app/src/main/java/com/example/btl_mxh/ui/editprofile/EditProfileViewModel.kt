@@ -1,6 +1,6 @@
 package com.example.btl_mxh.ui.editprofile
 
-import com.example.btl_mxh.base.BaseViewModel
+import com.example.btl_mxh.ui.notificationsetting.base.BaseViewModel
 
-class EditProfileViewModel:BaseViewModel() {
+class EditProfileViewModel: BaseViewModel() {
 }

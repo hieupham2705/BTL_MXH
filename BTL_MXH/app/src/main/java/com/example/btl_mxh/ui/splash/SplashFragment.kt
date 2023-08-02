@@ -4,8 +4,8 @@ import android.os.Handler
 import android.os.Looper
 import androidx.navigation.fragment.findNavController
 import com.example.btl_mxh.R
-import com.example.btl_mxh.base.BaseFragment
-import com.example.btl_mxh.base.BaseViewModel
+import com.example.btl_mxh.ui.notificationsetting.base.BaseFragment
+import com.example.btl_mxh.ui.notificationsetting.base.BaseViewModel
 import com.example.btl_mxh.databinding.FragmentSplashBinding
 
 

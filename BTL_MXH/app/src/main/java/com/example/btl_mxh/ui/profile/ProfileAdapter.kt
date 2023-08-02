@@ -7,10 +7,16 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.btl_mxh.databinding.ItemImageProfileBinding
 import com.example.btl_mxh.databinding.ItemInfomationProfileBinding
+import com.example.btl_mxh.model.friend
 import com.example.btl_mxh.model.profile
+import com.example.btl_mxh.ui.my_posts.MyPostsAdapter
 
 class ProfileAdapter(
-    private val onclickSetting: () -> Unit
+
+    private val onclickSetting: () -> Unit,
+    private val onClickImage: () -> Unit
+
+
 ) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     private var listprofile = listOf<profile>()
     private val typeInformation = 0;
@@ -54,10 +60,16 @@ class ProfileAdapter(
             listprofile[position].image1?.let { holder.binding.imageView1.setImageResource(it) }
             listprofile[position].image2?.let { holder.binding.imageView2.setImageResource(it) }
             listprofile[position].image3?.let { holder.binding.imageView3.setImageResource(it) }
+            holder.binding.apply {
+                imageView1.setOnClickListener { onClickImage() }
+                imageView2.setOnClickListener { onClickImage() }
+                imageView3.setOnClickListener { onClickImage() }
+            }
         }
     }
 
-    fun setList(list: List<profile>) {
+    fun setListProfile(list: List<profile>) {
         listprofile = list
     }
+
 }

@@ -26,8 +26,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:text="Sign in"
+        android:text="HIT Circle"
         android:textSize="32sp"
+        android:fontFamily="@font/comfortaabold"
+        android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
@@ -36,6 +38,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Don’t have an account?"
+        android:fontFamily="@font/comfortaamedium"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="@+id/textView6"
         app:layout_constraintTop_toBottomOf="@+id/remember_me" />
@@ -47,6 +50,7 @@
         android:layout_marginStart="8dp"
         android:text="REGISTER"
         android:textColor="@color/orange"
+        android:fontFamily="@font/comfortaabold"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/textView5"
@@ -63,11 +67,12 @@
         app:layout_constraintStart_toStartOf="@+id/textView6"
         app:layout_constraintTop_toBottomOf="@+id/textView6">
 
-        <com.example.btl_mxh.base.BaseTextInputEditText
+        <com.example.btl_mxh.ui.notificationsetting.base.BaseTextInputEditText
             android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/email"
+            android:fontFamily="@font/comfortaaregular"
             android:inputType="textEmailAddress"/>
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -82,11 +87,12 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout3"
         app:passwordToggleEnabled="true">
 
-        <com.example.btl_mxh.base.BaseTextInputEditText
+        <com.example.btl_mxh.ui.notificationsetting.base.BaseTextInputEditText
             android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/password"
+            android:fontFamily="@font/comfortaaregular"
             android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
     <CheckBox
@@ -94,6 +100,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Remember Me"
+        android:fontFamily="@font/comfortaaregular"
         android:textColor="@color/orange"
         android:textColorHint="@color/orange"
         app:layout_constraintStart_toStartOf="@+id/textInputLayout"
@@ -108,7 +115,8 @@
         android:backgroundTint="@color/orange"
         android:textColor="@color/white"
         android:textSize="18dp"
-        android:text="@string/sign_in"
+        android:fontFamily="@font/nunito_extrabold"
+        android:text="@string/log_in"
         app:layout_constraintEnd_toEndOf="@+id/textInputLayout"
         app:layout_constraintStart_toStartOf="@+id/remember_me"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
@@ -123,6 +131,7 @@
         android:text="@string/forgot_password"
         android:textColor="@color/white"
         android:textSize="18dp"
+        android:fontFamily="@font/nunito_extrabold"
         app:layout_constraintEnd_toEndOf="@+id/sign_in"
         app:layout_constraintStart_toStartOf="@+id/sign_in"
         app:layout_constraintTop_toBottomOf="@+id/sign_in" />

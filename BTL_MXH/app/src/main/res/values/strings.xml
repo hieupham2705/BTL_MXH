@@ -43,7 +43,10 @@
     <string name="confirm">Confirm</string>
     <string name="search">Search</string>
     <string name="post">Post</string>
+    <string name="save_post">Save Post</string>
     <string name="add">Add</string>
+    <string name="follower">Follower</string>
+    <string name="following">Following</string>
     <string name="birthday">Birthday</string>
     <string name="mimi_just_added_3_new_photos_to_her_diary">MiMi just added 3 new photos to her diary</string>
 </resources>

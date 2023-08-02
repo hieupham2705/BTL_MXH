@@ -7,7 +7,7 @@ import androidx.core.view.isVisible
 import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI.setupWithNavController
 import com.example.btl_mxh.R
-import com.example.btl_mxh.base.BaseActivity
+import com.example.btl_mxh.ui.notificationsetting.base.BaseActivity
 import com.example.btl_mxh.databinding.ActivityMainBinding
 
 class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::inflate) {
@@ -56,7 +56,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::infl
                     binding.tbBack.setNavigationIcon(R.drawable.baseline_arrow_back_ios_24)
                 }
                 R.id.listMessFragment -> {
-                    setNavigationVisible(name = "Mess")
+                    setNavigationVisible(name = "Chat")
                     binding.tbBack.setNavigationIcon(R.drawable.baseline_arrow_back_ios_24)
                 }
                 R.id.editProfileFragment -> {
@@ -73,6 +73,18 @@ class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::infl
                 }
                 R.id.searchFragment -> {
                     setNavigationVisible(name = "Search")
+                    binding.tbBack.setNavigationIcon(R.drawable.baseline_arrow_back_ios_24)
+                }
+                R.id.friendPostsFragment -> {
+                    setNavigationVisible(name = "Friend Posts")
+                    binding.tbBack.setNavigationIcon(R.drawable.baseline_arrow_back_ios_24)
+                }
+                R.id.myPostsFragment -> {
+                    setNavigationVisible(name = "My Posts")
+                    binding.tbBack.setNavigationIcon(R.drawable.baseline_arrow_back_ios_24)
+                }
+                R.id.savedPostsFragment -> {
+                    setNavigationVisible(name = "Saved Posts")
                     binding.tbBack.setNavigationIcon(R.drawable.baseline_arrow_back_ios_24)
                 }
                 else -> {

@@ -29,6 +29,8 @@
     <string name="edit_profile_information">Edit profile information</string>
     <string name="email">Email</string>
     <string name="ex_abc_gmail_com">Ex: abc@gmail.com</string>
+    <string name="follower">Follower</string>
+    <string name="following">Following</string>
     <string name="forgot_password">Forgot password</string>
     <string name="full_name">Full Name</string>
     <string name="general_notification">General Notification</string>
@@ -49,6 +51,7 @@
     <string name="post">Post</string>
     <string name="profile">Profile</string>
     <string name="recover_you_password_if_you_have_forgot_the_password">Recover you password if you have forgot the password!</string>
+    <string name="save_post">Save Post</string>
     <string name="search">Search</string>
     <string name="sign_in">SIGN IN</string>
     <string name="submit">SUBMIT</string>
