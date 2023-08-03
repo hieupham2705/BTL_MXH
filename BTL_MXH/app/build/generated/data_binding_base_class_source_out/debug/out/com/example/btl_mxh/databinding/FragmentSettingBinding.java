@@ -37,6 +37,9 @@ public final class FragmentSettingBinding implements ViewBinding {
   public final LinearLayout notification;
 
   @NonNull
+  public final LinearLayout savePost;
+
+  @NonNull
   public final SwitchCompat swichTheme;
 
   @NonNull
@@ -45,14 +48,15 @@ public final class FragmentSettingBinding implements ViewBinding {
   private FragmentSettingBinding(@NonNull LinearLayout rootView,
       @NonNull LinearLayout changePassword, @NonNull LinearLayout editProfile,
       @NonNull ImageView imageView5, @NonNull LinearLayout logOut,
-      @NonNull LinearLayout notification, @NonNull SwitchCompat swichTheme,
-      @NonNull TextView textView3) {
+      @NonNull LinearLayout notification, @NonNull LinearLayout savePost,
+      @NonNull SwitchCompat swichTheme, @NonNull TextView textView3) {
     this.rootView = rootView;
     this.changePassword = changePassword;
     this.editProfile = editProfile;
     this.imageView5 = imageView5;
     this.logOut = logOut;
     this.notification = notification;
+    this.savePost = savePost;
     this.swichTheme = swichTheme;
     this.textView3 = textView3;
   }
@@ -114,6 +118,12 @@ public final class FragmentSettingBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.save_post;
+      LinearLayout savePost = ViewBindings.findChildViewById(rootView, id);
+      if (savePost == null) {
+        break missingId;
+      }
+
       id = R.id.swich_theme;
       SwitchCompat swichTheme = ViewBindings.findChildViewById(rootView, id);
       if (swichTheme == null) {
@@ -127,7 +137,7 @@ public final class FragmentSettingBinding implements ViewBinding {
       }
 
       return new FragmentSettingBinding((LinearLayout) rootView, changePassword, editProfile,
-          imageView5, logOut, notification, swichTheme, textView3);
+          imageView5, logOut, notification, savePost, swichTheme, textView3);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -1,16 +1,25 @@
 package com.example.btl_mxh.ui.home
 
+import android.content.Context
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.core.view.isVisible
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.btl_mxh.databinding.ItemCreatePostBinding
 import com.example.btl_mxh.databinding.ItemPostBinding
 import com.example.btl_mxh.databinding.ItemSearchBinding
 import com.example.btl_mxh.model.Auth
+import com.example.btl_mxh.model.Post
 import com.example.btl_mxh.model.PostGetAll
 import com.example.btl_mxh.utils.extension.loadImageFromUrl
 
+private const val TAG = "HomeAdapter"
+
 class HomeAdapter(
+    private val context: Context,
     private val onClickPost: () -> Unit,
     private val onClickSearch: () -> Unit,
     private val onClickCreatePost: () -> Unit,
@@ -23,7 +32,7 @@ class HomeAdapter(
     val typePost = 34230843
 
     private lateinit var createPost: Auth
-    private lateinit var listPost : PostGetAll
+    private var listPost = mutableListOf<Post>()
 
 
     class ViewHolder(val binding: ItemPostBinding) : RecyclerView.ViewHolder(binding.root) {
@@ -72,7 +81,7 @@ class HomeAdapter(
             }
         }
         if (holder is ViewHolderCreatePost) {
-//            holder.binding.imvAvatar.loadImageFromUrl(createPost.avatar.toString())
+            holder.binding.imvAvatar.loadImageFromUrl(createPost.avatar.toString())
             holder.binding.edtCreactPost.setOnClickListener {
                 onClickCreatePost.invoke()
             }
@@ -80,19 +89,43 @@ class HomeAdapter(
         if (holder is ViewHolder) {
             holder.binding.apply {
                 imvAvatar.setOnClickListener { onClickimvavatarpost.invoke() }
-//                imvAvatar.loadImageFromUrl(listPost.data[position].)
-//                imagepost.loadImageFromUrl(listPost.data[position].mediaFiles.get(0))
+                imvAvatar.loadImageFromUrl(createPost.avatar.toString())
+                content.text = listPost[position].caption
+                hour.text = listPost[position].createdDate
+                when (listPost.size) {
+                    0 -> {
+                        recyclerview.isVisible = false
+                    }
+                    1 -> {
+                        recyclerview.layoutManager = LinearLayoutManager(context)
+                    }
+                    2 -> {
+                        recyclerview.layoutManager =
+                            GridLayoutManager(context, 2, RecyclerView.VERTICAL, false)
+                    }
+                    else -> {
+                        recyclerview.layoutManager =
+                            GridLayoutManager(context, 3, RecyclerView.VERTICAL, false)
+                    }
+                }
+                listPost[position].mediaFiles?.let {
+                    PostAdapter().setListImage(it)
+                }
+                recyclerview.adapter = PostAdapter()
+                Log.e(TAG, listPost[position].mediaFiles.toString())
             }
 
         }
 
     }
 
-    fun setAdapter(auth: Auth, list: PostGetAll) {
+    fun setAdapter(auth: Auth, list: List<Post>) {
         createPost = auth
-        listPost = list
+        listPost.clear()
+        listPost.addAll(list)
         notifyDataSetChanged()
     }
 
-    override fun getItemCount(): Int = 20
+
+    override fun getItemCount(): Int = listPost.size
 }

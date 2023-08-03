@@ -60,9 +60,9 @@ class ProfileAdapter(
             }
         }
         if (holder is ViewHolderImage) {
-//            listprofile[position].image1?.let { holder.binding.imageView1.setImageResource(it) }
-//            listprofile[position].image2?.let { holder.binding.imageView2.setImageResource(it) }
-//            listprofile[position].image3?.let { holder.binding.imageView3.setImageResource(it) }
+            listprofile[position].image1?.let { holder.binding.imageView1.setImageResource(it) }
+            listprofile[position].image2?.let { holder.binding.imageView2.setImageResource(it) }
+            listprofile[position].image3?.let { holder.binding.imageView3.setImageResource(it) }
         }
     }
 

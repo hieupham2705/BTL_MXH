@@ -74,10 +74,6 @@ class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::infl
                     setNavigationVisible(name = "Search")
                     binding.tbBack.setNavigationIcon(R.drawable.baseline_arrow_back_ios_24)
                 }
-                R.id.addImageFragment -> {
-                    setNavigationVisible(name = "Add Post")
-                    binding.tbBack.setNavigationIcon(R.drawable.baseline_arrow_back_ios_24)
-                }
                 else -> {
                     setNavigationVisible(false, name = "")
                 }

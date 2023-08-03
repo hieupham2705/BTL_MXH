@@ -13,7 +13,7 @@ class PostRemoteDataSource(private val service: ApiService.PostService) :
         return service.createNewPost(caption,files)
     }
 
-    override suspend fun postGetAll(): BaseResponse<PostGetAll> {
+    override suspend fun postGetAll(): BaseResponse<List<Post>> {
         return service.postGetAll()
     }
 

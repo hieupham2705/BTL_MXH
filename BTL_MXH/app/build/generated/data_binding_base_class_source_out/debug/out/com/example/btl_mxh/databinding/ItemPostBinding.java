@@ -11,6 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.btl_mxh.R;
@@ -44,9 +45,6 @@ public final class ItemPostBinding implements ViewBinding {
   public final ImageView imageView8;
 
   @NonNull
-  public final ImageView imagepost;
-
-  @NonNull
   public final ImageView imvAvatar;
 
   @NonNull
@@ -62,15 +60,18 @@ public final class ItemPostBinding implements ViewBinding {
   public final ImageView moreVert;
 
   @NonNull
+  public final RecyclerView recyclerview;
+
+  @NonNull
   public final TextView username;
 
   private ItemPostBinding(@NonNull ConstraintLayout rootView, @NonNull CardView cardView2,
       @NonNull ImageView comment, @NonNull ConstraintLayout constraintLayout2,
       @NonNull TextView content, @NonNull ImageView heart, @NonNull TextView hour,
-      @NonNull ImageView imageView8, @NonNull ImageView imagepost, @NonNull ImageView imvAvatar,
+      @NonNull ImageView imageView8, @NonNull ImageView imvAvatar,
       @NonNull LinearLayout linearLayout, @NonNull LinearLayout linearLayout2,
       @NonNull LinearLayout linearLayout4, @NonNull ImageView moreVert,
-      @NonNull TextView username) {
+      @NonNull RecyclerView recyclerview, @NonNull TextView username) {
     this.rootView = rootView;
     this.cardView2 = cardView2;
     this.comment = comment;
@@ -79,12 +80,12 @@ public final class ItemPostBinding implements ViewBinding {
     this.heart = heart;
     this.hour = hour;
     this.imageView8 = imageView8;
-    this.imagepost = imagepost;
     this.imvAvatar = imvAvatar;
     this.linearLayout = linearLayout;
     this.linearLayout2 = linearLayout2;
     this.linearLayout4 = linearLayout4;
     this.moreVert = moreVert;
+    this.recyclerview = recyclerview;
     this.username = username;
   }
 
@@ -157,12 +158,6 @@ public final class ItemPostBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.imagepost;
-      ImageView imagepost = ViewBindings.findChildViewById(rootView, id);
-      if (imagepost == null) {
-        break missingId;
-      }
-
       id = R.id.imv_avatar;
       ImageView imvAvatar = ViewBindings.findChildViewById(rootView, id);
       if (imvAvatar == null) {
@@ -193,6 +188,12 @@ public final class ItemPostBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.recyclerview;
+      RecyclerView recyclerview = ViewBindings.findChildViewById(rootView, id);
+      if (recyclerview == null) {
+        break missingId;
+      }
+
       id = R.id.username;
       TextView username = ViewBindings.findChildViewById(rootView, id);
       if (username == null) {
@@ -200,8 +201,8 @@ public final class ItemPostBinding implements ViewBinding {
       }
 
       return new ItemPostBinding((ConstraintLayout) rootView, cardView2, comment, constraintLayout2,
-          content, heart, hour, imageView8, imagepost, imvAvatar, linearLayout, linearLayout2,
-          linearLayout4, moreVert, username);
+          content, heart, hour, imageView8, imvAvatar, linearLayout, linearLayout2, linearLayout4,
+          moreVert, recyclerview, username);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
