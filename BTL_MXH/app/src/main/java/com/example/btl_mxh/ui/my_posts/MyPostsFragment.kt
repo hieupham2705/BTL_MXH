@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.example.btl_mxh.R
-import com.example.btl_mxh.ui.notificationsetting.base.BaseFragment
+import com.example.btl_mxh.base.BaseFragment
 import com.example.btl_mxh.databinding.FragmentMyPostsBinding
 import com.example.btl_mxh.ui.friend_posts.FriendPostsAdapter
 import com.example.btl_mxh.ui.home.HomeViewModel

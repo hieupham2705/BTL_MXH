@@ -3,7 +3,7 @@ package com.example.btl_mxh.ui.friend_posts
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.example.btl_mxh.R
-import com.example.btl_mxh.ui.notificationsetting.base.BaseFragment
+import com.example.btl_mxh.base.BaseFragment
 import com.example.btl_mxh.databinding.FragmentFriendPostsBinding
 import com.example.btl_mxh.ui.home.HomeAdapter
 

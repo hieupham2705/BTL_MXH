@@ -6,6 +6,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.btl_mxh.databinding.ItemCreatePostBinding
 import com.example.btl_mxh.databinding.ItemPostBinding
 import com.example.btl_mxh.databinding.ItemSearchBinding
+import com.example.btl_mxh.model.Auth
+import com.example.btl_mxh.model.PostGetAll
+import com.example.btl_mxh.utils.extension.loadImageFromUrl
 
 class HomeAdapter(
     private val onClickPost: () -> Unit,
@@ -19,7 +22,9 @@ class HomeAdapter(
     val typeCreatePost = 2509345
     val typePost = 34230843
 
-    private val listPost = mutableListOf<String>()
+    private lateinit var createPost: Auth
+    private lateinit var listPost : PostGetAll
+
 
     class ViewHolder(val binding: ItemPostBinding) : RecyclerView.ViewHolder(binding.root) {
 
@@ -66,21 +71,25 @@ class HomeAdapter(
             }
         }
         if (holder is ViewHolderCreatePost) {
+//            holder.binding.imvAvatar.loadImageFromUrl(createPost.avatar.toString())
             holder.binding.edtCreactPost.setOnClickListener {
                 onClickCreatePost.invoke()
             }
         }
-        if(holder is ViewHolder){
-            holder.binding.imvAvatar.setOnClickListener {
-                onClickimvavatarpost.invoke()
+        if (holder is ViewHolder) {
+            holder.binding.apply {
+                imvAvatar.setOnClickListener { onClickimvavatarpost.invoke() }
+//                imvAvatar.loadImageFromUrl(listPost.data[position].)
+//                imagepost.loadImageFromUrl(listPost.data[position].mediaFiles.get(0))
             }
+
         }
 
     }
 
-    fun setAdapter(list: List<String>) {
-        listPost.clear()
-        listPost.addAll(list)
+    fun setAdapter(auth: Auth, list: PostGetAll) {
+        createPost = auth
+        listPost = list
         notifyDataSetChanged()
     }
 

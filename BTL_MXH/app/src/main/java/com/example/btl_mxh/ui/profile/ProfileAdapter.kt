@@ -7,9 +7,14 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.btl_mxh.databinding.ItemImageProfileBinding
 import com.example.btl_mxh.databinding.ItemInfomationProfileBinding
+
 import com.example.btl_mxh.model.friend
-import com.example.btl_mxh.model.profile
 import com.example.btl_mxh.ui.my_posts.MyPostsAdapter
+
+import com.example.btl_mxh.model.Auth
+import com.example.btl_mxh.model.profile
+import com.example.btl_mxh.utils.extension.loadImageFromUrl
+
 
 class ProfileAdapter(
 
@@ -21,6 +26,8 @@ class ProfileAdapter(
     private var listprofile = listOf<profile>()
     private val typeInformation = 0;
     private val typeImage = 1;
+
+    private lateinit var information: Auth
 
     class ViewHolderInformation(val binding: ItemInfomationProfileBinding) :
         RecyclerView.ViewHolder(binding.root) {
@@ -48,12 +55,17 @@ class ProfileAdapter(
         }
     }
 
-    override fun getItemCount(): Int = listprofile.size
+    override fun getItemCount(): Int = 10
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         if (holder is ViewHolderInformation) {
-            holder.binding.setting.setOnClickListener {
-                onclickSetting()
+            holder.binding.apply {
+                setting.setOnClickListener {
+                    onclickSetting()
+                }
+                fullname.text = information.fullName
+                username.text=information.username
+                imvAvatar.loadImageFromUrl(information.avatar.toString())
             }
         }
         if (holder is ViewHolderImage) {
@@ -70,6 +82,15 @@ class ProfileAdapter(
 
     fun setListProfile(list: List<profile>) {
         listprofile = list
+//            listprofile[position].image1?.let { holder.binding.imageView1.setImageResource(it) }
+//            listprofile[position].image2?.let { holder.binding.imageView2.setImageResource(it) }
+//            listprofile[position].image3?.let { holder.binding.imageView3.setImageResource(it) }
+        }
+    }
+
+    fun setData(auth: Auth) {
+        information = auth
+        notifyDataSetChanged()
     }
 
 }

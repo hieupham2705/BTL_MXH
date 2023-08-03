@@ -10,8 +10,8 @@ import androidx.navigation.fragment.findNavController
 import com.example.btl_mxh.R
 import com.example.btl_mxh.databinding.FragmentSavedPostsBinding
 import com.example.btl_mxh.ui.friend_posts.FriendPostsAdapter
-import com.example.btl_mxh.ui.notificationsetting.base.BaseFragment
-import com.example.btl_mxh.ui.notificationsetting.base.BaseViewModel
+import com.example.btl_mxh.base.BaseFragment
+import com.example.btl_mxh.base.BaseViewModel
 
 class SavedPostsFragment : BaseFragment<FragmentSavedPostsBinding>(FragmentSavedPostsBinding :: inflate) {
 

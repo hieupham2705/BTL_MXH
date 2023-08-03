@@ -62,12 +62,12 @@
         android:orientation="vertical"
         >
         <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
-            >
+            tools:ignore="ExtraText">
 
-            <com.example.btl_mxh.ui.notificationsetting.base.BaseTextInputEditText
+            <com.example.btl_mxh.base.BaseTextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="54dp"
                 android:background="@drawable/boder_editprofile"
@@ -76,6 +76,34 @@
                 android:fontFamily="@font/comfortaaregular"
                 android:textColor="@color/black"
                 />
+            android:layout_height="wrap_content">
+
+            <com.example.btl_mxh.base.BaseTextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:background="@drawable/boder_editprofile"
+                android:fontFamily="@font/comfortaaregular"
+                android:hint="@string/full_name"
+                android:paddingStart="10dp"
+                tools:ignore="MissingClass" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <com.example.btl_mxh.base.BaseTextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="@drawable/boder_editprofile"
+            android:hint="@string/user_name"
+            android:paddingStart="10dp"
+            android:fontFamily="@font/comfortaaregular"
+            tools:ignore="MissingClass" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -84,13 +112,12 @@
             android:layout_height="10dp"/>
 
         <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
-
             >
 
-            <com.example.btl_mxh.ui.notificationsetting.base.BaseTextInputEditText
+            <com.example.btl_mxh.base.BaseTextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="54dp"
                 android:background="@drawable/boder_editprofile"
@@ -112,7 +139,7 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             >
 
-            <com.example.btl_mxh.ui.notificationsetting.base.BaseTextInputEditText
+            <com.example.btl_mxh.base.BaseTextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="54dp"
                 android:background="@drawable/boder_editprofile"
@@ -129,12 +156,12 @@
             android:layout_height="10dp"/>
 
         <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             >
 
-            <com.example.btl_mxh.ui.notificationsetting.base.BaseTextInputEditText
+            <com.example.btl_mxh.base.BaseTextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="54dp"
                 android:background="@drawable/boder_editprofile"
@@ -151,12 +178,12 @@
             android:layout_height="10dp"/>
 
         <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             >
 
-            <com.example.btl_mxh.ui.notificationsetting.base.BaseTextInputEditText
+            <com.example.btl_mxh.base.BaseTextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="54dp"
                 android:background="@drawable/boder_editprofile"
@@ -173,6 +200,7 @@
             android:layout_height="10dp"/>
 
         <androidx.appcompat.widget.AppCompatButton
+            android:foreground="?android:attr/selectableItemBackground"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:background="@drawable/boder_update"

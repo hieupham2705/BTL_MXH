@@ -5,7 +5,9 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.btl_mxh.databinding.ItemListmessBinding
 
-class ListMessAdapter : RecyclerView.Adapter<ListMessAdapter.ViewHolder>() {
+class ListMessAdapter(
+    private val onClickMessFriend: () -> Unit
+) : RecyclerView.Adapter<ListMessAdapter.ViewHolder>() {
     class ViewHolder(val binding: ItemListmessBinding) : RecyclerView.ViewHolder(binding.root) {
 
     }
@@ -19,6 +21,8 @@ class ListMessAdapter : RecyclerView.Adapter<ListMessAdapter.ViewHolder>() {
     override fun getItemCount(): Int = 20
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-
+        holder.binding.root.setOnClickListener {
+            onClickMessFriend.invoke()
+        }
     }
 }

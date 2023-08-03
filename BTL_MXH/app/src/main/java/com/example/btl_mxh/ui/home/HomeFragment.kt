@@ -1,16 +1,21 @@
 package com.example.btl_mxh.ui.home
 
+import android.util.Log
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.example.btl_mxh.R
-import com.example.btl_mxh.ui.notificationsetting.base.BaseFragment
-import com.example.btl_mxh.ui.notificationsetting.base.BaseViewModel
+import com.example.btl_mxh.base.BaseFragment
+import com.example.btl_mxh.base.BaseViewModel
 import com.example.btl_mxh.databinding.FragmentHomeBinding
+import com.example.btl_mxh.model.Auth
+import com.example.btl_mxh.model.RegisterEntity
+import com.example.btl_mxh.ui.profile.viewModel
+
 
 private const val TAG = "HomeFragment"
 
 class HomeFragment : BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::inflate) {
-    private val adapterPost by lazy {
+    private val adapter by lazy {
         HomeAdapter(
             onClickPost = {
             },
@@ -28,24 +33,31 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::infl
             }
         )
     }
-    override val viewModel: HomeViewModel
-        get() = ViewModelProvider(this)[HomeViewModel::class.java]
-
+    override val viewModel by viewModel<HomeViewModel>()
     override fun initData() {
-        viewModel.logIn()
+        viewModel.auth()
+        viewModel.postGetAll()
     }
 
     override fun handleEvent() {
-        binding.apply {
-
-        }
     }
 
     override fun bindData() {
+
         viewModel.stateLogin.observe(this) {
             adapterPost.setAdapter(it)
         }
         binding.recyclerviewHome.adapter = adapterPost
+
+//        viewModel.stateAuth.observe(viewLifecycleOwner) { _auth ->
+//            viewModel.statePostGetAll.observe(viewLifecycleOwner) { postGetAll ->
+//                Log.e(TAG,postGetAll.toString())
+//                adapter.setAdapter(viewModel.stateAuth.value!!, postGetAll)
+                binding.recyclerview.adapter = adapter
+//            }
+
+//        }
+
     }
 
 }

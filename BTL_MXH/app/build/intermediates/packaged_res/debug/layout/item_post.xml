@@ -16,6 +16,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
+            android:foreground="?android:attr/selectableItemBackground"
             android:id="@+id/imv_avatar"
             android:layout_width="50dp"
             android:layout_height="50dp"
@@ -38,6 +39,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="16sp"
+            android:foreground="?android:attr/selectableItemBackground"
             android:fontFamily="@font/comfortaabold"
             android:textStyle="bold"
             android:textColor="@color/black"
@@ -86,6 +88,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
+        android:foreground="?android:attr/selectableItemBackground"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/constraintLayout2"
         app:srcCompat="@drawable/baseline_more_vert_24" />
@@ -93,6 +96,7 @@
     <ImageView
         android:id="@+id/imagepost"
         android:layout_width="0dp"
+        android:foreground="?android:attr/selectableItemBackground"
         android:layout_height="200dp"
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"

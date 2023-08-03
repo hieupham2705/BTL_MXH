@@ -7,9 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
 import com.example.btl_mxh.R
-import com.example.btl_mxh.ui.notificationsetting.base.BaseFragment
-import com.example.btl_mxh.ui.notificationsetting.base.BaseViewModel
-import com.example.btl_mxh.databinding.FragmentAddImageBinding
+import com.example.btl_mxh.base.BaseFragment
+import com.example.btl_mxh.base.BaseViewModel
 import com.example.btl_mxh.databinding.FragmentAddTextBinding
 
 class AddImageFragment : BaseFragment<FragmentAddImageBinding>(FragmentAddImageBinding :: inflate) {

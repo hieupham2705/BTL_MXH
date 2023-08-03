@@ -1,11 +1,13 @@
 package com.example.btl_mxh.ui.profile
 
 import androidx.lifecycle.ViewModelProvider
+import android.util.Log
 import androidx.navigation.fragment.findNavController
 import com.example.btl_mxh.R
-import com.example.btl_mxh.ui.notificationsetting.base.BaseFragment
+import com.example.btl_mxh.base.BaseFragment
 import com.example.btl_mxh.databinding.FragmentProfileBinding
 
+private const val TAG = "ProfileFragment"
 
 class ProfileFragment : BaseFragment<FragmentProfileBinding>(FragmentProfileBinding::inflate) {
 
@@ -18,9 +20,13 @@ class ProfileFragment : BaseFragment<FragmentProfileBinding>(FragmentProfileBind
 
     override val viewModel: ProfileViewModel
         get() = ViewModelProvider(this)[ProfileViewModel::class.java]
+            onclickSetting = { findNavController().navigate(R.id.action_profileFragment_to_settingFragment) }
+        )
+    }
+    override val viewModel by viewModel<ProfileViewModel>()
 
     override fun initData() {
-
+        viewModel.auth()
     }
 
     override fun handleEvent() {
@@ -28,6 +34,7 @@ class ProfileFragment : BaseFragment<FragmentProfileBinding>(FragmentProfileBind
     }
 
     override fun bindData() {
+
         binding.apply {
             adapterProfile.setListProfile(viewModel.list)
             recyclerviewProfile.adapter = adapterProfile
@@ -43,8 +50,11 @@ class ProfileFragment : BaseFragment<FragmentProfileBinding>(FragmentProfileBind
     }
 
 
-
-    
-
+        viewModel.stateAuth.observe(viewLifecycleOwner) {
+            adapterProfile.setData(it)
+            binding.recyclerviewProfile.adapter = adapterProfile
+            Log.e(TAG, it.toString())
+        }
+    }
 
 }

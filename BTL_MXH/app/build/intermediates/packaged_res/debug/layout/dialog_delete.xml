@@ -4,16 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:paddingHorizontal="40dp"
     android:paddingVertical="20dp"
+
     android:background="#FFA767"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:elevation="20dp">
+
+
 
     <TextView
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="16sp"
+        android:gravity="center"
         android:fontFamily="@font/comfortaabold"
         android:textColor="@color/black"
         android:text="@string/are_you_sure_want_to_log_out"

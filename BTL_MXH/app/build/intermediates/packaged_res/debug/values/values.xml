@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="Blue1">#67B6FF</color>
+    <color name="Green_3A">#ffdabf</color>
     <color name="Grey">#B3B3B3</color>
     <color name="Grey1">#D6D6D6</color>
+    <color name="Red">#FF0000</color>
     <color name="black">#FF000000</color>
     <color name="orange">#FFA767</color>
     <color name="purple_200">#FFBB86FC</color>
@@ -28,6 +30,7 @@
     <string name="do_you_already_have_an_account">Do you already have an account?</string>
     <string name="edit_profile_information">Edit profile information</string>
     <string name="email">Email</string>
+    <string name="enter_mess">Enter message...</string>
     <string name="ex_abc_gmail_com">Ex: abc@gmail.com</string>
     <string name="follower">Follower</string>
     <string name="following">Following</string>
@@ -36,10 +39,13 @@
     <string name="general_notification">General Notification</string>
     <string name="genger">Genger</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hoa_what_are_you_thinking">You, what are you thinking?</string>
     <string name="home">Home</string>
     <string name="log_in">LOG IN</string>
     <string name="log_out">Log out</string>
     <string name="love">Love</string>
+    <string name="m_t_kh_u_kh_ng_c_k_t_c_bi_t_v_l_n_h_n_8_k_t">Mật khẩu không có ký tự đặc biệt và lớn hơn 8 ký tự !</string>
+    <string name="m_t_kh_u_kh_ng_kh_p">Mật khẩu không khớp !</string>
     <string name="mimi_just_added_3_new_photos_to_her_diary">MiMi just added 3 new photos to her diary</string>
     <string name="new_password">New Password</string>
     <string name="new_password_again">New Password (again)</string>
@@ -56,9 +62,12 @@
     <string name="sign_in">SIGN IN</string>
     <string name="submit">SUBMIT</string>
     <string name="system_and_services_update">System and services update</string>
+    <string name="text_show_toast">Lỗi</string>
+    <string name="timkiem">Tìm Kiếm</string>
     <string name="update">UPDATE</string>
     <string name="user_name">User Name</string>
     <string name="vibrate">Vibrate</string>
+    <string name="we_have_just_sent_you_a_new_password_please_check_your_email">We have just sent you a new password, please check your email!!!</string>
     <string name="what_are_you_thinking">What are you thinking?</string>
     <string name="you_only_live_one">You only live one!</string>
     <style name="Theme.BTL_MXH" parent="Theme.MaterialComponents.DayNight.NoActionBar">

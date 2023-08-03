@@ -13,7 +13,7 @@ import androidx.appcompat.widget.AppCompatButton;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.btl_mxh.R;
-import com.example.btl_mxh.ui.notificationsetting.base.BaseTextInputEditText;
+import com.example.btl_mxh.base.BaseTextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -42,6 +42,9 @@ public final class FragmentRegisterBinding implements ViewBinding {
   public final BaseTextInputEditText phone;
 
   @NonNull
+  public final TextView signIn;
+
+  @NonNull
   public final TextInputLayout textInputLayout4;
 
   @NonNull
@@ -52,6 +55,12 @@ public final class FragmentRegisterBinding implements ViewBinding {
 
   @NonNull
   public final TextInputLayout textInputLayout7;
+
+  @NonNull
+  public final TextInputLayout textInputLayoutEmail;
+
+  @NonNull
+  public final TextInputLayout textInputLayoutPhone;
 
   @NonNull
   public final TextView textView4;
@@ -65,10 +74,12 @@ public final class FragmentRegisterBinding implements ViewBinding {
   private FragmentRegisterBinding(@NonNull FrameLayout rootView,
       @NonNull BaseTextInputEditText email, @NonNull BaseTextInputEditText fullname,
       @NonNull ImageView imageView4, @NonNull TextView logIn, @NonNull AppCompatButton next,
-      @NonNull BaseTextInputEditText phone, @NonNull TextInputLayout textInputLayout4,
-      @NonNull TextInputLayout textInputLayout5, @NonNull TextInputLayout textInputLayout6,
-      @NonNull TextInputLayout textInputLayout7, @NonNull TextView textView4,
-      @NonNull TextView textView7, @NonNull BaseTextInputEditText username) {
+      @NonNull BaseTextInputEditText phone, @NonNull TextView signIn,
+      @NonNull TextInputLayout textInputLayout4, @NonNull TextInputLayout textInputLayout5,
+      @NonNull TextInputLayout textInputLayout6, @NonNull TextInputLayout textInputLayout7,
+      @NonNull TextInputLayout textInputLayoutEmail, @NonNull TextInputLayout textInputLayoutPhone,
+      @NonNull TextView textView4, @NonNull TextView textView7,
+      @NonNull BaseTextInputEditText username) {
     this.rootView = rootView;
     this.email = email;
     this.fullname = fullname;
@@ -76,10 +87,13 @@ public final class FragmentRegisterBinding implements ViewBinding {
     this.logIn = logIn;
     this.next = next;
     this.phone = phone;
+    this.signIn = signIn;
     this.textInputLayout4 = textInputLayout4;
     this.textInputLayout5 = textInputLayout5;
     this.textInputLayout6 = textInputLayout6;
     this.textInputLayout7 = textInputLayout7;
+    this.textInputLayoutEmail = textInputLayoutEmail;
+    this.textInputLayoutPhone = textInputLayoutPhone;
     this.textView4 = textView4;
     this.textView7 = textView7;
     this.username = username;
@@ -148,6 +162,12 @@ public final class FragmentRegisterBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.sign_in;
+      TextView signIn = ViewBindings.findChildViewById(rootView, id);
+      if (signIn == null) {
+        break missingId;
+      }
+
       id = R.id.textInputLayout4;
       TextInputLayout textInputLayout4 = ViewBindings.findChildViewById(rootView, id);
       if (textInputLayout4 == null) {
@@ -172,6 +192,18 @@ public final class FragmentRegisterBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.textInputLayoutEmail;
+      TextInputLayout textInputLayoutEmail = ViewBindings.findChildViewById(rootView, id);
+      if (textInputLayoutEmail == null) {
+        break missingId;
+      }
+
+      id = R.id.textInputLayoutPhone;
+      TextInputLayout textInputLayoutPhone = ViewBindings.findChildViewById(rootView, id);
+      if (textInputLayoutPhone == null) {
+        break missingId;
+      }
+
       id = R.id.textView4;
       TextView textView4 = ViewBindings.findChildViewById(rootView, id);
       if (textView4 == null) {
@@ -191,8 +223,9 @@ public final class FragmentRegisterBinding implements ViewBinding {
       }
 
       return new FragmentRegisterBinding((FrameLayout) rootView, email, fullname, imageView4, logIn,
-          next, phone, textInputLayout4, textInputLayout5, textInputLayout6, textInputLayout7,
-          textView4, textView7, username);
+          next, phone, signIn, textInputLayout4, textInputLayout5, textInputLayout6,
+          textInputLayout7, textInputLayoutEmail, textInputLayoutPhone, textView4, textView7,
+          username);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

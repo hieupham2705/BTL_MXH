@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.btl_mxh.databinding.ItemNotificationBinding
+import com.example.btl_mxh.model.Notification
 
 class NotificationAdapter(
     private val onclickavartarNotification: () -> Unit
@@ -25,6 +26,8 @@ class NotificationAdapter(
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.binding.avatarNotification.setImageResource(listnotification[position])
+//        holder.binding.textNotification.text = listnotification[position].text
+//        holder.binding.root.setBackgroundResource()
         holder.binding.avatarNotification.setOnClickListener {
             onclickavartarNotification.invoke()
         }

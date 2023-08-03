@@ -14,7 +14,7 @@ import androidx.appcompat.widget.AppCompatButton;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.btl_mxh.R;
-import com.example.btl_mxh.ui.notificationsetting.base.BaseTextInputEditText;
+import com.example.btl_mxh.base.BaseTextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 import java.lang.NullPointerException;
 import java.lang.Override;
