@@ -45,6 +45,10 @@ class SettingFragment : BaseFragment<FragmentSettingBinding>(FragmentSettingBind
                 findNavController().navigate(R.id.action_settingFragment_to_editProfileFragment)
 
             }
+            savePost.setOnClickListener {
+                findNavController().navigate((R.id.action_settingFragment_to_savedPostsFragment))
+            }
+
         }
     }
 

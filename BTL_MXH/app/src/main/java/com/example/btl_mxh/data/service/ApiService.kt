@@ -34,7 +34,8 @@ interface ApiService {
 
     interface PostService {
         @GET(ApiConstant.ENDPOINT.POST_GET_ALL)
-        suspend fun postGetAll(): BaseResponse<PostGetAll>
+        suspend fun postGetAll(): BaseResponse<List<Post>>
+
         @Multipart
         @POST(ApiConstant.ENDPOINT.POST_CREATE_NEW_POST)
         suspend fun createNewPost(

@@ -8,5 +8,5 @@ import okhttp3.RequestBody
 
 interface IPostRepository {
     suspend fun createNewPost(caption: RequestBody, files: Array<MultipartBody.Part>): DataResult<BaseResponse<CreateNewPost>>
-    suspend fun postGetAll():DataResult<BaseResponse<PostGetAll>>
+    suspend fun postGetAll():DataResult<BaseResponse<List<Post>>>
 }

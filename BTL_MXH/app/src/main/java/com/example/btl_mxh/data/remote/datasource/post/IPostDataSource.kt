@@ -11,6 +11,6 @@ interface IPostDataSource {
 
     interface Remote {
         suspend fun createNewPost(caption: RequestBody, files: Array<MultipartBody.Part>): BaseResponse<CreateNewPost>
-        suspend fun postGetAll():BaseResponse<PostGetAll>
+        suspend fun postGetAll():BaseResponse<List<Post>>
     }
 }

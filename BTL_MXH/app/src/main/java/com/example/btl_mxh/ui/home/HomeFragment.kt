@@ -16,6 +16,7 @@ private const val TAG = "HomeFragment"
 class HomeFragment : BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::inflate) {
     private val adapter by lazy {
         HomeAdapter(
+            context = requireContext(),
             onClickPost = {
             },
             onClickSearch = {
@@ -42,14 +43,14 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::infl
     }
 
     override fun bindData() {
-//        viewModel.stateAuth.observe(viewLifecycleOwner) { _auth ->
-//            viewModel.statePostGetAll.observe(viewLifecycleOwner) { postGetAll ->
-//                Log.e(TAG,postGetAll.toString())
-//                adapter.setAdapter(viewModel.stateAuth.value!!, postGetAll)
+        viewModel.stateAuth.observe(viewLifecycleOwner) { _auth ->
+            viewModel.statePostGetAll.observe(viewLifecycleOwner) { postGetAll ->
+                Log.e(TAG, postGetAll.toString())
+                adapter.setAdapter(viewModel.stateAuth.value!!, postGetAll)
                 binding.recyclerview.adapter = adapter
-//            }
+            }
 
-//        }
+        }
     }
 
 }

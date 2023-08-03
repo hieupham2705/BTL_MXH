@@ -90,18 +90,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/constraintLayout2"
         app:srcCompat="@drawable/baseline_more_vert_24" />
-
-    <ImageView
-        android:id="@+id/imagepost"
-        android:layout_width="0dp"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:foreground="?android:attr/selectableItemBackground"
-        android:layout_height="200dp"
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/content"
-        tools:srcCompat="@drawable/hit" />
+        app:layout_constraintTop_toBottomOf="@+id/content"/>
 
     <LinearLayout
         android:id="@+id/linearLayout4"
@@ -112,7 +110,7 @@
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imagepost">
+        app:layout_constraintTop_toBottomOf="@+id/recyclerview">
 
     <LinearLayout
         android:id="@+id/linearLayout2"

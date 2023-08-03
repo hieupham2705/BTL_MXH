@@ -21,7 +21,7 @@ class PostRepositoryImpl(private val remote: IPostDataSource.Remote) : BaseRepos
             )
         }
 
-    override suspend fun postGetAll(): DataResult<BaseResponse<PostGetAll>> =
+    override suspend fun postGetAll(): DataResult<BaseResponse<List<Post>>> =
         getResult { remote.postGetAll() }
 
 

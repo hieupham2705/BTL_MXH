@@ -55,6 +55,7 @@
     <string name="post">Post</string>
     <string name="profile">Profile</string>
     <string name="recover_you_password_if_you_have_forgot_the_password">Recover you password if you have forgot the password!</string>
+    <string name="save_post">save_post</string>
     <string name="search">Search</string>
     <string name="sign_in">SIGN IN</string>
     <string name="submit">SUBMIT</string>
