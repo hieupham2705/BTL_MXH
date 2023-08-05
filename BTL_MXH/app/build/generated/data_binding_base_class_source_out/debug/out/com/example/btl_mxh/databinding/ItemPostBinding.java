@@ -63,6 +63,12 @@ public final class ItemPostBinding implements ViewBinding {
   public final RecyclerView recyclerview;
 
   @NonNull
+  public final TextView tvComment;
+
+  @NonNull
+  public final TextView tvLove;
+
+  @NonNull
   public final TextView username;
 
   private ItemPostBinding(@NonNull ConstraintLayout rootView, @NonNull CardView cardView2,
@@ -71,7 +77,8 @@ public final class ItemPostBinding implements ViewBinding {
       @NonNull ImageView imageView8, @NonNull ImageView imvAvatar,
       @NonNull LinearLayout linearLayout, @NonNull LinearLayout linearLayout2,
       @NonNull LinearLayout linearLayout4, @NonNull ImageView moreVert,
-      @NonNull RecyclerView recyclerview, @NonNull TextView username) {
+      @NonNull RecyclerView recyclerview, @NonNull TextView tvComment, @NonNull TextView tvLove,
+      @NonNull TextView username) {
     this.rootView = rootView;
     this.cardView2 = cardView2;
     this.comment = comment;
@@ -86,6 +93,8 @@ public final class ItemPostBinding implements ViewBinding {
     this.linearLayout4 = linearLayout4;
     this.moreVert = moreVert;
     this.recyclerview = recyclerview;
+    this.tvComment = tvComment;
+    this.tvLove = tvLove;
     this.username = username;
   }
 
@@ -194,6 +203,18 @@ public final class ItemPostBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tv_comment;
+      TextView tvComment = ViewBindings.findChildViewById(rootView, id);
+      if (tvComment == null) {
+        break missingId;
+      }
+
+      id = R.id.tv_love;
+      TextView tvLove = ViewBindings.findChildViewById(rootView, id);
+      if (tvLove == null) {
+        break missingId;
+      }
+
       id = R.id.username;
       TextView username = ViewBindings.findChildViewById(rootView, id);
       if (username == null) {
@@ -202,7 +223,7 @@ public final class ItemPostBinding implements ViewBinding {
 
       return new ItemPostBinding((ConstraintLayout) rootView, cardView2, comment, constraintLayout2,
           content, heart, hour, imageView8, imvAvatar, linearLayout, linearLayout2, linearLayout4,
-          moreVert, recyclerview, username);
+          moreVert, recyclerview, tvComment, tvLove, username);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

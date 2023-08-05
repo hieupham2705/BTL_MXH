@@ -4,20 +4,81 @@ package com.example.btl_mxh.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
 import com.example.btl_mxh.R;
+import com.example.btl_mxh.base.BaseTextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
 import java.lang.NullPointerException;
 import java.lang.Override;
+import java.lang.String;
 
 public final class FragmentEditProfileBinding implements ViewBinding {
   @NonNull
   private final LinearLayout rootView;
 
-  private FragmentEditProfileBinding(@NonNull LinearLayout rootView) {
+  @NonNull
+  public final BaseTextInputEditText edtBirthday;
+
+  @NonNull
+  public final BaseTextInputEditText edtEmail;
+
+  @NonNull
+  public final BaseTextInputEditText edtFullName;
+
+  @NonNull
+  public final BaseTextInputEditText edtGender;
+
+  @NonNull
+  public final BaseTextInputEditText edtUserName;
+
+  @NonNull
+  public final ImageView imvAvatar;
+
+  @NonNull
+  public final ImageView imvCamera;
+
+  @NonNull
+  public final TextInputLayout textInputLayoutBirthday;
+
+  @NonNull
+  public final TextInputLayout textInputLayoutEmail;
+
+  @NonNull
+  public final TextInputLayout textInputLayoutFullname;
+
+  @NonNull
+  public final TextInputLayout textInputLayoutGender;
+
+  @NonNull
+  public final TextInputLayout textInputLayoutUsername;
+
+  private FragmentEditProfileBinding(@NonNull LinearLayout rootView,
+      @NonNull BaseTextInputEditText edtBirthday, @NonNull BaseTextInputEditText edtEmail,
+      @NonNull BaseTextInputEditText edtFullName, @NonNull BaseTextInputEditText edtGender,
+      @NonNull BaseTextInputEditText edtUserName, @NonNull ImageView imvAvatar,
+      @NonNull ImageView imvCamera, @NonNull TextInputLayout textInputLayoutBirthday,
+      @NonNull TextInputLayout textInputLayoutEmail,
+      @NonNull TextInputLayout textInputLayoutFullname,
+      @NonNull TextInputLayout textInputLayoutGender,
+      @NonNull TextInputLayout textInputLayoutUsername) {
     this.rootView = rootView;
+    this.edtBirthday = edtBirthday;
+    this.edtEmail = edtEmail;
+    this.edtFullName = edtFullName;
+    this.edtGender = edtGender;
+    this.edtUserName = edtUserName;
+    this.imvAvatar = imvAvatar;
+    this.imvCamera = imvCamera;
+    this.textInputLayoutBirthday = textInputLayoutBirthday;
+    this.textInputLayoutEmail = textInputLayoutEmail;
+    this.textInputLayoutFullname = textInputLayoutFullname;
+    this.textInputLayoutGender = textInputLayoutGender;
+    this.textInputLayoutUsername = textInputLayoutUsername;
   }
 
   @Override
@@ -43,10 +104,88 @@ public final class FragmentEditProfileBinding implements ViewBinding {
 
   @NonNull
   public static FragmentEditProfileBinding bind(@NonNull View rootView) {
-    if (rootView == null) {
-      throw new NullPointerException("rootView");
-    }
+    // The body of this method is generated in a way you would not otherwise write.
+    // This is done to optimize the compiled bytecode for size and performance.
+    int id;
+    missingId: {
+      id = R.id.edt_birthday;
+      BaseTextInputEditText edtBirthday = ViewBindings.findChildViewById(rootView, id);
+      if (edtBirthday == null) {
+        break missingId;
+      }
 
-    return new FragmentEditProfileBinding((LinearLayout) rootView);
+      id = R.id.edt_email;
+      BaseTextInputEditText edtEmail = ViewBindings.findChildViewById(rootView, id);
+      if (edtEmail == null) {
+        break missingId;
+      }
+
+      id = R.id.edt_full_name;
+      BaseTextInputEditText edtFullName = ViewBindings.findChildViewById(rootView, id);
+      if (edtFullName == null) {
+        break missingId;
+      }
+
+      id = R.id.edt_gender;
+      BaseTextInputEditText edtGender = ViewBindings.findChildViewById(rootView, id);
+      if (edtGender == null) {
+        break missingId;
+      }
+
+      id = R.id.edt_user_name;
+      BaseTextInputEditText edtUserName = ViewBindings.findChildViewById(rootView, id);
+      if (edtUserName == null) {
+        break missingId;
+      }
+
+      id = R.id.imv_avatar;
+      ImageView imvAvatar = ViewBindings.findChildViewById(rootView, id);
+      if (imvAvatar == null) {
+        break missingId;
+      }
+
+      id = R.id.imv_camera;
+      ImageView imvCamera = ViewBindings.findChildViewById(rootView, id);
+      if (imvCamera == null) {
+        break missingId;
+      }
+
+      id = R.id.textInputLayout_birthday;
+      TextInputLayout textInputLayoutBirthday = ViewBindings.findChildViewById(rootView, id);
+      if (textInputLayoutBirthday == null) {
+        break missingId;
+      }
+
+      id = R.id.textInputLayout_email;
+      TextInputLayout textInputLayoutEmail = ViewBindings.findChildViewById(rootView, id);
+      if (textInputLayoutEmail == null) {
+        break missingId;
+      }
+
+      id = R.id.textInputLayout_fullname;
+      TextInputLayout textInputLayoutFullname = ViewBindings.findChildViewById(rootView, id);
+      if (textInputLayoutFullname == null) {
+        break missingId;
+      }
+
+      id = R.id.textInputLayout_gender;
+      TextInputLayout textInputLayoutGender = ViewBindings.findChildViewById(rootView, id);
+      if (textInputLayoutGender == null) {
+        break missingId;
+      }
+
+      id = R.id.textInputLayout_username;
+      TextInputLayout textInputLayoutUsername = ViewBindings.findChildViewById(rootView, id);
+      if (textInputLayoutUsername == null) {
+        break missingId;
+      }
+
+      return new FragmentEditProfileBinding((LinearLayout) rootView, edtBirthday, edtEmail,
+          edtFullName, edtGender, edtUserName, imvAvatar, imvCamera, textInputLayoutBirthday,
+          textInputLayoutEmail, textInputLayoutFullname, textInputLayoutGender,
+          textInputLayoutUsername);
+    }
+    String missingId = rootView.getResources().getResourceName(id);
+    throw new NullPointerException("Missing required view with ID: ".concat(missingId));
   }
 }

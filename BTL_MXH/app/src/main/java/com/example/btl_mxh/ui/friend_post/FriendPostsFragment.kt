@@ -5,7 +5,7 @@ import androidx.navigation.fragment.findNavController
 import com.example.btl_mxh.R
 import com.example.btl_mxh.base.BaseFragment
 import com.example.btl_mxh.databinding.FragmentFriendPostsBinding
-import com.example.btl_mxh.ui.home.HomeAdapter
+import com.example.btl_mxh.ui.home.adapter.HomeAdapter
 
 
 class FriendPostsFragment : BaseFragment<FragmentFriendPostsBinding>(FragmentFriendPostsBinding :: inflate) {

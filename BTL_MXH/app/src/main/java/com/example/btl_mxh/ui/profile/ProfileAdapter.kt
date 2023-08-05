@@ -3,6 +3,7 @@ package com.example.btl_mxh.ui.profile
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.btl_mxh.databinding.ItemImageProfileBinding
@@ -14,11 +15,12 @@ import com.example.btl_mxh.utils.extension.loadImageFromUrl
 class ProfileAdapter(
     private val onclickSetting: () -> Unit
 ) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
-    private var listprofile = listOf<profile>()
+    private var listAllImagePost = mutableListOf<String>()
+    private var information: Auth? = null
+    private val adapterListImagePostProfile by lazy { ImageProfileAdapter() }
     private val typeInformation = 0;
     private val typeImage = 1;
 
-    private lateinit var information: Auth
 
     class ViewHolderInformation(val binding: ItemInfomationProfileBinding) :
         RecyclerView.ViewHolder(binding.root) {
@@ -46,7 +48,7 @@ class ProfileAdapter(
         }
     }
 
-    override fun getItemCount(): Int = 10
+    override fun getItemCount(): Int = 2
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         if (holder is ViewHolderInformation) {
@@ -54,20 +56,29 @@ class ProfileAdapter(
                 setting.setOnClickListener {
                     onclickSetting()
                 }
-                fullname.text = information.fullName
-                username.text=information.username
-                imvAvatar.loadImageFromUrl(information.avatar.toString())
+                fullname.text = information?.fullName
+                username.text = information?.username
+                imvAvatar.loadImageFromUrl(information?.avatar.toString())
             }
         }
         if (holder is ViewHolderImage) {
-            listprofile[position].image1?.let { holder.binding.imageView1.setImageResource(it) }
-            listprofile[position].image2?.let { holder.binding.imageView2.setImageResource(it) }
-            listprofile[position].image3?.let { holder.binding.imageView3.setImageResource(it) }
+            holder.binding.apply {
+                recyclerview.layoutManager =
+                    GridLayoutManager(holder.itemView.context, 3, RecyclerView.VERTICAL, false)
+                recyclerview.adapter = adapterListImagePostProfile
+            }
+            adapterListImagePostProfile.setListImage(listAllImagePost)
         }
     }
 
-    fun setData(auth: Auth) {
-        information = auth
+    fun setData(auth: Auth? = null, list: List<String>? = emptyList()) {
+        if (auth != null) {
+            information = auth
+        }
+        if (list != null) {
+            listAllImagePost.clear()
+            listAllImagePost.addAll(list)
+        }
         notifyDataSetChanged()
     }
 }

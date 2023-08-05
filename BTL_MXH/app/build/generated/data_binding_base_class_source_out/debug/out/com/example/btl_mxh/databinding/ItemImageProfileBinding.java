@@ -4,10 +4,10 @@ package com.example.btl_mxh.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.btl_mxh.R;
@@ -17,28 +17,20 @@ import java.lang.String;
 
 public final class ItemImageProfileBinding implements ViewBinding {
   @NonNull
-  private final LinearLayout rootView;
+  private final ConstraintLayout rootView;
 
   @NonNull
-  public final ImageView imageView1;
+  public final RecyclerView recyclerview;
 
-  @NonNull
-  public final ImageView imageView2;
-
-  @NonNull
-  public final ImageView imageView3;
-
-  private ItemImageProfileBinding(@NonNull LinearLayout rootView, @NonNull ImageView imageView1,
-      @NonNull ImageView imageView2, @NonNull ImageView imageView3) {
+  private ItemImageProfileBinding(@NonNull ConstraintLayout rootView,
+      @NonNull RecyclerView recyclerview) {
     this.rootView = rootView;
-    this.imageView1 = imageView1;
-    this.imageView2 = imageView2;
-    this.imageView3 = imageView3;
+    this.recyclerview = recyclerview;
   }
 
   @Override
   @NonNull
-  public LinearLayout getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -63,26 +55,13 @@ public final class ItemImageProfileBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.image_view_1;
-      ImageView imageView1 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView1 == null) {
+      id = R.id.recyclerview;
+      RecyclerView recyclerview = ViewBindings.findChildViewById(rootView, id);
+      if (recyclerview == null) {
         break missingId;
       }
 
-      id = R.id.image_view_2;
-      ImageView imageView2 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView2 == null) {
-        break missingId;
-      }
-
-      id = R.id.image_view_3;
-      ImageView imageView3 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView3 == null) {
-        break missingId;
-      }
-
-      return new ItemImageProfileBinding((LinearLayout) rootView, imageView1, imageView2,
-          imageView3);
+      return new ItemImageProfileBinding((ConstraintLayout) rootView, recyclerview);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

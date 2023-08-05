@@ -27,6 +27,7 @@ object ApiConstant {
         const val AUTH_RESET_PASSWORD = "$AUTH/reset-password"
         const val POST_CREATE_NEW_POST = "$POST/create_new_post"
         const val POST_GET_ALL = "$POST/get_all"
+        const val GET_ALL_BY_USER_NAME = "$POST/get_all_by_username"
     }
 
     object FILED {

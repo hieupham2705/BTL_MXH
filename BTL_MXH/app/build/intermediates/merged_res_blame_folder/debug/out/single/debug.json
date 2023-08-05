@@ -60,6 +60,10 @@
         "source": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\boder_search.xml"
     },
     {
+        "merged": "com.example.btl_mxh.app-merged_res-71:/layout_item_infomation_profile.xml.flat",
+        "source": "com.example.btl_mxh.app-main-73:/layout/item_infomation_profile.xml"
+    },
+    {
         "merged": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\layout_fragment_setting.xml.flat",
         "source": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\layout\\fragment_setting.xml"
     },
@@ -452,8 +456,8 @@
         "source": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\font\\comfortaasemibold.ttf"
     },
     {
-        "merged": "com.example.btl_mxh.app-merged_res-71:/layout_item_post.xml.flat",
-        "source": "com.example.btl_mxh.app-main-73:/layout/item_post.xml"
+        "merged": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_border_follower.xml.flat",
+        "source": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\border_follower.xml"
     },
     {
         "merged": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\layout_item_listmess.xml.flat",

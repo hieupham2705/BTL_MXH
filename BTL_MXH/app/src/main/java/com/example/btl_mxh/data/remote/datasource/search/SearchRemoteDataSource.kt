@@ -1,15 +1,12 @@
 package com.example.btl_mxh.data.remote.datasource.search
 
+import Search
+import com.example.btl_mxh.base.BaseResponse
 import com.example.btl_mxh.data.service.ApiService
-import com.example.btl_mxh.model.Search
 
-class SearchRemoteDataSource(private val service: ApiService.SearchService) :
-    ISearchDataSource.Remote {
-
-
-    override suspend fun searchByName(searchKey: String): Search {
-        return service.searchByName(searchKey)
+class SearchRemoteDataSource(private val service: ApiService.SearchService) : ISearchDataSource.Remote {
+    override suspend fun searchUserId(id: String): BaseResponse<Search> {
+        return service.searchUserId(id)
     }
-
 
 }

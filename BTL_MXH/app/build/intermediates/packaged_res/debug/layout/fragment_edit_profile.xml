@@ -32,6 +32,7 @@
                 >
 
                 <ImageView
+                    android:id="@+id/imv_avatar"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:src="@drawable/hit"
@@ -40,6 +41,7 @@
             </androidx.cardview.widget.CardView>
 
             <ImageView
+                android:id="@+id/imv_camera"
                 android:layout_marginTop="80dp"
                 android:layout_marginStart="90dp"
                 android:layout_width="25dp"
@@ -62,11 +64,13 @@
         android:orientation="vertical"
         >
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout_fullname"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <com.example.btl_mxh.base.BaseTextInputEditText
+                android:id="@+id/edt_full_name"
                 android:layout_width="match_parent"
                 android:layout_height="54dp"
                 android:background="@drawable/boder_editprofile"
@@ -78,10 +82,12 @@
             android:layout_width="match_parent"
             android:layout_height="10dp"/>
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout_username"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
         <com.example.btl_mxh.base.BaseTextInputEditText
+            android:id="@+id/edt_user_name"
             android:layout_width="match_parent"
             android:layout_height="54dp"
             android:background="@drawable/boder_editprofile"
@@ -95,10 +101,12 @@
             android:layout_height="10dp"/>
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout_email"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <com.example.btl_mxh.base.BaseTextInputEditText
+                android:id="@+id/edt_email"
                 android:layout_width="match_parent"
                 android:layout_height="54dp"
                 android:background="@drawable/boder_editprofile"
@@ -113,14 +121,16 @@
             android:layout_height="10dp"/>
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout_gender"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <com.example.btl_mxh.base.BaseTextInputEditText
+                android:id="@+id/edt_gender"
                 android:layout_width="match_parent"
                 android:layout_height="54dp"
                 android:background="@drawable/boder_editprofile"
-                android:hint="@string/genger"
+                android:hint="@string/gender"
                 android:paddingStart="10dp"
                 android:fontFamily="@font/comfortaaregular"
                 />
@@ -131,10 +141,12 @@
             android:layout_height="10dp"/>
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout_birthday"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <com.example.btl_mxh.base.BaseTextInputEditText
+                android:id="@+id/edt_birthday"
                 android:layout_width="match_parent"
                 android:layout_height="54dp"
                 android:background="@drawable/boder_editprofile"

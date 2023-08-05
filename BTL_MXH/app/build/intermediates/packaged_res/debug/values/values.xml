@@ -32,11 +32,14 @@
     <string name="email">Email</string>
     <string name="enter_mess">Enter message...</string>
     <string name="ex_abc_gmail_com">Ex: abc@gmail.com</string>
+    <string name="follower">Follower</string>
+    <string name="following">Following</string>
     <string name="forgot_password">Forgot password</string>
     <string name="full_name">Full Name</string>
+    <string name="gender">Gender</string>
     <string name="general_notification">General Notification</string>
-    <string name="genger">Genger</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hit_circle">HIT Circle</string>
     <string name="hoa_what_are_you_thinking">You, what are you thinking?</string>
     <string name="home">Home</string>
     <string name="log_in">LOG IN</string>
@@ -57,7 +60,7 @@
     <string name="recover_you_password_if_you_have_forgot_the_password">Recover you password if you have forgot the password!</string>
     <string name="save_post">save_post</string>
     <string name="search">Search</string>
-    <string name="sign_in">SIGN IN</string>
+    <string name="sign_in">LOG IN</string>
     <string name="submit">SUBMIT</string>
     <string name="system_and_services_update">System and services update</string>
     <string name="text_show_toast">Lỗi</string>
@@ -71,6 +74,7 @@
     <style name="Theme.BTL_MXH" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         
         <item name="colorPrimary">@color/purple_500</item>
+        <item name="android:textColor">#908e8e</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/white</item>
         
