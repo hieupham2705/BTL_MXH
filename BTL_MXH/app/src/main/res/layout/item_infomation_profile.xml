@@ -17,7 +17,6 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <androidx.cardview.widget.CardView
-            android:foreground="?android:attr/selectableItemBackground"
             android:layout_width="80dp"
             android:layout_height="80dp"
             app:cardCornerRadius="100dp">
@@ -49,11 +48,15 @@
                 android:textColor="@color/black"
                 android:textSize="16sp" />
 
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"/>
+
             <TextView
                 android:id="@+id/username"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/comfortaasemibold"
+                android:fontFamily="@font/comfortaamedium"
                 android:text="@string/user_name"
                 android:textSize="14sp" />
         </LinearLayout>
@@ -62,14 +65,54 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:gravity="end">
+            android:gravity="end"
+            android:orientation="vertical">
 
             <ImageView
-                android:foreground="?android:attr/selectableItemBackground"
                 android:id="@+id/setting"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/baseline_settings_24" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"/>
+
+           <LinearLayout
+               android:orientation="vertical"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+               <androidx.appcompat.widget.AppCompatButton
+                   android:id="@+id/btn_following"
+                   android:layout_width="wrap_content"
+                   android:layout_height="30dp"
+                   android:background="@drawable/border_follower"
+                   android:text="@string/following"
+                   android:textAllCaps="false"
+                   android:fontFamily="@font/comfortaasemibold"
+                   android:textColor="@color/black"
+                   android:gravity="center"
+                   android:textSize="13sp"
+                   />
+
+               <Space
+                   android:layout_width="wrap_content"
+                   android:layout_height="5dp"/>
+
+               <androidx.appcompat.widget.AppCompatButton
+                   android:id="@+id/follower"
+                   android:layout_width="wrap_content"
+                   android:layout_height="30dp"
+                   android:background="@drawable/border_follower"
+                   android:text="@string/follower"
+                   android:textAllCaps="false"
+                   android:fontFamily="@font/comfortaasemibold"
+                   android:textColor="@color/black"
+                   android:gravity="center"
+                   android:textSize="13sp"
+                   />
+           </LinearLayout>
+
         </LinearLayout>
     </LinearLayout>
 
@@ -77,7 +120,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:fontFamily="@font/comfortaasemibold"
+        android:fontFamily="@font/comfortaaregular"
         android:text="@string/you_only_live_one"
         android:textColor="@color/black"
         android:textSize="16sp"

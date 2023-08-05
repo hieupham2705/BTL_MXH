@@ -23,7 +23,7 @@
         android:layout_marginTop="20dp"
         android:fontFamily="@font/kavoonregular"
         android:gravity="center"
-        android:text="HIT Circle"
+        android:text="@string/hit_circle"
         android:textColor="@color/white"
         android:textSize="90sp"
         app:layout_constraintEnd_toEndOf="parent"

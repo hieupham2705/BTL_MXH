@@ -1,25 +1,23 @@
-package com.example.btl_mxh.ui.home
+package com.example.btl_mxh.ui.home.adapter
 
-import android.content.Context
-import android.util.Log
+import android.graphics.Color
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
-import androidx.core.view.isVisible
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.btl_mxh.R
 import com.example.btl_mxh.databinding.ItemCreatePostBinding
 import com.example.btl_mxh.databinding.ItemPostBinding
 import com.example.btl_mxh.databinding.ItemSearchBinding
 import com.example.btl_mxh.model.Auth
 import com.example.btl_mxh.model.Post
-import com.example.btl_mxh.model.PostGetAll
 import com.example.btl_mxh.utils.extension.loadImageFromUrl
 
-private const val TAG = "HomeAdapter"
-
 class HomeAdapter(
-    private val context: Context,
+    private val createPost: Auth,
+    private val listPost: List<Post>,
     private val onClickPost: () -> Unit,
     private val onClickSearch: () -> Unit,
     private val onClickCreatePost: () -> Unit,
@@ -30,10 +28,6 @@ class HomeAdapter(
     val typeSearch = 13424832
     val typeCreatePost = 2509345
     val typePost = 34230843
-
-    private lateinit var createPost: Auth
-    private var listPost = mutableListOf<Post>()
-
 
     class ViewHolder(val binding: ItemPostBinding) : RecyclerView.ViewHolder(binding.root) {
 
@@ -90,42 +84,56 @@ class HomeAdapter(
             holder.binding.apply {
                 imvAvatar.setOnClickListener { onClickimvavatarpost.invoke() }
                 imvAvatar.loadImageFromUrl(createPost.avatar.toString())
-                content.text = listPost[position].caption
-                hour.text = listPost[position].createdDate
-                when (listPost.size) {
+                content.text = listPost[position - 2].caption
+                content.visibility = View.GONE
+                content.visibility = View.VISIBLE
+                hour.text = listPost[position - 2].createdDate
+                when (listPost[position - 2].mediaFiles!!.size) {
                     0 -> {
-                        recyclerview.isVisible = false
+                        content.visibility = View.GONE
+                        content.visibility = View.VISIBLE
                     }
                     1 -> {
-                        recyclerview.layoutManager = LinearLayoutManager(context)
+                        content.visibility = View.GONE
+                        content.visibility = View.VISIBLE
+                        recyclerview.layoutManager = LinearLayoutManager(holder.itemView.context)
                     }
                     2 -> {
+                        content.visibility = View.GONE
+                        content.visibility = View.VISIBLE
                         recyclerview.layoutManager =
-                            GridLayoutManager(context, 2, RecyclerView.VERTICAL, false)
+                            GridLayoutManager(
+                                holder.itemView.context,
+                                2,
+                                RecyclerView.VERTICAL,
+                                false
+                            )
                     }
                     else -> {
+                        content.visibility = View.GONE
+                        content.visibility = View.VISIBLE
                         recyclerview.layoutManager =
-                            GridLayoutManager(context, 3, RecyclerView.VERTICAL, false)
+                            GridLayoutManager(
+                                holder.itemView.context,
+                                3,
+                                RecyclerView.VERTICAL,
+                                false
+                            )
                     }
                 }
-                listPost[position].mediaFiles?.let {
-                    PostAdapter().setListImage(it)
+                recyclerview.adapter = PostImageAdapter(listPost[position - 2].mediaFiles!!)
+                tvLove.setOnClickListener {
+                    if (tvLove.currentTextColor != Color.RED)
+                        tvLove.setTextColor(Color.RED)
+                    else
+                        tvLove.setTextColor(Color.parseColor("#908e8e"))
                 }
-                recyclerview.adapter = PostAdapter()
-                Log.e(TAG, listPost[position].mediaFiles.toString())
             }
 
         }
 
     }
 
-    fun setAdapter(auth: Auth, list: List<Post>) {
-        createPost = auth
-        listPost.clear()
-        listPost.addAll(list)
-        notifyDataSetChanged()
-    }
 
-
-    override fun getItemCount(): Int = listPost.size
+    override fun getItemCount(): Int = listPost.size + 2
 }

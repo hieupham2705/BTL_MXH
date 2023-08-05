@@ -27,10 +27,14 @@ class ProfileFragment : BaseFragment<FragmentProfileBinding>(FragmentProfileBind
 
     override fun bindData() {
         viewModel.stateAuth.observe(viewLifecycleOwner) {
+            viewModel.getAllByUsername(it.username)
             adapterProfile.setData(it)
-            binding.recyclerviewProfile.adapter = adapterProfile
             Log.e(TAG, it.toString())
         }
+        viewModel.stateAllPost.observe(viewLifecycleOwner) {
+            adapterProfile.setData(list = it)
+        }
+        binding.recyclerviewProfile.adapter = adapterProfile
     }
 
 }

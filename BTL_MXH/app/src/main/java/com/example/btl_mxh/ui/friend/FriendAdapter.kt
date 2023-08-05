@@ -49,14 +49,6 @@ class FriendAdapter (
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
 
         if (holder is ViewHolderImage) {
-            listfriend[position].image1?.let { holder.binding.imageView1.setImageResource(it) }
-            listfriend[position].image2?.let { holder.binding.imageView2.setImageResource(it) }
-            listfriend[position].image3?.let { holder.binding.imageView3.setImageResource(it) }
-            holder.binding.apply {
-                imageView1.setOnClickListener { onClickImage() }
-                imageView2.setOnClickListener { onClickImage() }
-                imageView3.setOnClickListener { onClickImage() }
-            }
         }
     }
 

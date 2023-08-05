@@ -1,12 +1,13 @@
 package com.example.btl_mxh.data.remote.datasource.search
 
-import com.example.btl_mxh.model.Search
+import Search
+import com.example.btl_mxh.base.BaseResponse
 
 interface ISearchDataSource {
     interface Local{
-        suspend  fun searchByNameLocal(searchKey: String): Search
+
     }
     interface Remote{
-      suspend  fun searchByName(searchKey: String): Search
+        suspend fun searchUserId(id:String) : BaseResponse<Search>
     }
 }

@@ -71,13 +71,15 @@
 
     <TextView
         android:id="@+id/content"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:textSize="15sp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
         android:fontFamily="@font/comfortaalight"
+        android:text="Một ngày bình thường của dânIT:>>"
         android:textColor="@color/black"
-        android:text="Một ngày bình thường của dân IT :>>"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/cardView2"
         app:layout_constraintTop_toBottomOf="@+id/cardView2" />
 
@@ -108,6 +110,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/borderctlo"
         android:orientation="horizontal"
+        android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/recyclerview">
@@ -116,8 +119,8 @@
         android:id="@+id/linearLayout2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
         android:gravity="center"
+        android:layout_marginRight="100dp"
         android:orientation="horizontal">
 
         <ImageView
@@ -138,7 +141,7 @@
         android:id="@+id/linearLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
+        android:layout_marginLeft="100dp"
         android:gravity="center"
         android:orientation="horizontal">
 
@@ -157,12 +160,13 @@
     </LinearLayout>
 
     <LinearLayout
-        android:paddingVertical="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/borderctlo"
         android:orientation="horizontal"
+        android:paddingVertical="5dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
 
@@ -171,15 +175,17 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
+            android:foreground="?android:attr/selectableItemBackground"
             android:orientation="horizontal">
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                app:srcCompat="@drawable/heart"  />
+                app:srcCompat="@drawable/heart" />
 
             <TextView
+                android:id="@+id/tv_love"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"
@@ -201,6 +207,7 @@
                 app:srcCompat="@drawable/comment" />
 
             <TextView
+                android:id="@+id/tv_comment"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"

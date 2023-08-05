@@ -40,10 +40,6 @@
         "source": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\layout\\item_friend.xml"
     },
     {
-        "merged": "com.example.btl_mxh.app-mergeDebugResources-70:/layout/item_post.xml",
-        "source": "com.example.btl_mxh.app-main-73:/layout/item_post.xml"
-    },
-    {
         "merged": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-mergeDebugResources-70:\\layout\\fragment_saved_posts.xml",
         "source": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\layout\\fragment_saved_posts.xml"
     },
@@ -146,6 +142,10 @@
     {
         "merged": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-mergeDebugResources-70:\\layout\\item_list_search.xml",
         "source": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\layout\\item_list_search.xml"
+    },
+    {
+        "merged": "com.example.btl_mxh.app-mergeDebugResources-70:/layout/item_infomation_profile.xml",
+        "source": "com.example.btl_mxh.app-main-73:/layout/item_infomation_profile.xml"
     },
     {
         "merged": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-mergeDebugResources-70:\\layout\\fragment_setting.xml",
