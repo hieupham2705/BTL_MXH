@@ -4,15 +4,18 @@ import android.content.SharedPreferences
 import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.example.btl_mxh.base.BaseResponse
+
+import androidx.lifecycle.viewModelScope
 import com.example.btl_mxh.base.BaseViewModel
+import com.example.btl_mxh.base.DataResult
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
+import com.example.btl_mxh.base.BaseResponse
 import com.example.btl_mxh.data.remote.repository.account.IAccountRepository
 import com.example.btl_mxh.model.Auth
 import com.example.btl_mxh.model.Login
 import com.example.btl_mxh.model.LoginEntity
 import com.example.btl_mxh.utils.extension.saveTokenLogin
-
-
 private const val TAG = "SignInViewModel"
 
 class SignInViewModel(

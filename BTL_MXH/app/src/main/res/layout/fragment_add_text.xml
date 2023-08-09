@@ -10,7 +10,8 @@
     android:clickable="true"
     android:focusable="true"
     android:focusableInTouchMode="true"
-    tools:context=".ui.addpost.AddPostFragment">
+    tools:context=".ui.addpost.AddPostFragment"
+    tools:ignore="ExtraText">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -69,7 +70,20 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
         android:id="@+id/textiplu"
         android:layout_width="match_parent"
+<<<<<<< HEAD
+        android:layout_height="300dp"
+        android:hint="Hoa, what are you thinking?"
+        android:gravity="top"
+        android:fontFamily="@font/comfortaasemibold"
+        android:textSize="16sp"
+        android:paddingStart="10sp"
+        android:paddingTop="10dp"
+        android:background="@drawable/boder_post_text"
+        />
+        android:layout_height="70dp"
+=======
         android:layout_height="wrap_content"
+>>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
         android:layout_marginBottom="8dp"
         android:paddingTop="10dp">
 
@@ -80,30 +94,37 @@
             android:fontFamily="@font/comfortaasemibold"
             android:gravity="top|start"
             android:hint="@string/hoa_what_are_you_thinking"
+<<<<<<< HEAD
+            android:inputType="text"
+            android:textSize="16sp"
+            tools:ignore="MissingClass" />
+    </LinearLayout>
+=======
             android:inputType="textMultiLine"
             android:maxLines="10"
             android:textSize="16sp" />
     </com.google.android.material.textfield.TextInputLayout>
+>>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerview"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/recyclerview"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content" />-->
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="15dp" />
+<!--    <Space-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="15dp" />-->
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/post"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@drawable/boder_update"
-        android:fontFamily="@font/nunito_extrabold"
-        android:foreground="?android:attr/selectableItemBackground"
-        android:text="@string/post"
-        android:textColor="@color/white"
-        android:textSize="18sp" />
+<!--    <androidx.appcompat.widget.AppCompatButton-->
+<!--        android:id="@+id/post"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:background="@drawable/boder_update"-->
+<!--        android:fontFamily="@font/nunito_extrabold"-->
+<!--        android:foreground="?android:attr/selectableItemBackground"-->
+<!--        android:text="@string/post"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="18sp" />-->
 
 
-</LinearLayout>
+<!--</LinearLayout>-->

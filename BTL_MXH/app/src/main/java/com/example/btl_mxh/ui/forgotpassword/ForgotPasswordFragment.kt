@@ -5,11 +5,12 @@ import androidx.lifecycle.ViewModel
 import androidx.navigation.fragment.findNavController
 import com.example.btl_mxh.R
 import com.example.btl_mxh.base.BaseFragment
+import com.example.btl_mxh.base.BaseViewModel
 import com.example.btl_mxh.databinding.FragmentForgotPasswordBinding
+import com.example.btl_mxh.ui.profile.viewModel
 import com.example.btl_mxh.ui.sign_in.SignInViewModel
 import com.example.btl_mxh.utils.extension.openDialogNotification
 import com.example.btl_mxh.utils.extension.showToast
-import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class ForgotPasswordFragment :
     BaseFragment<FragmentForgotPasswordBinding>(FragmentForgotPasswordBinding::inflate) {
@@ -21,7 +22,7 @@ class ForgotPasswordFragment :
 
     override fun handleEvent() {
         binding.apply {
-            signIn.setOnClickListener {
+            logIn.setOnClickListener {
                 findNavController().navigate(R.id.action_forgotPasswordFragment_to_signInFragment)
             }
             submit.setOnClickListener {

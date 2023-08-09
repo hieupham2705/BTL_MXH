@@ -8,12 +8,21 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.btl_mxh.databinding.ItemImageProfileBinding
 import com.example.btl_mxh.databinding.ItemInfomationProfileBinding
+
+import com.example.btl_mxh.model.friend
+import com.example.btl_mxh.ui.my_posts.MyPostsAdapter
+
 import com.example.btl_mxh.model.Auth
 import com.example.btl_mxh.model.profile
 import com.example.btl_mxh.utils.extension.loadImageFromUrl
 
+
 class ProfileAdapter(
-    private val onclickSetting: () -> Unit
+
+    private val onclickSetting: () -> Unit,
+    private val onClickImage: () -> Unit
+
+
 ) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     private var listAllImagePost = mutableListOf<String>()
     private var information: Auth? = null
@@ -62,12 +71,31 @@ class ProfileAdapter(
             }
         }
         if (holder is ViewHolderImage) {
+<<<<<<< HEAD
+            listprofile[position].image1?.let { holder.binding.imageView1.setImageResource(it) }
+            listprofile[position].image2?.let { holder.binding.imageView2.setImageResource(it) }
+            listprofile[position].image3?.let { holder.binding.imageView3.setImageResource(it) }
+            holder.binding.apply {
+                imageView1.setOnClickListener { onClickImage() }
+                imageView2.setOnClickListener { onClickImage() }
+                imageView3.setOnClickListener { onClickImage() }
+            }
+        }
+    }
+
+    fun setListProfile(list: List<profile>) {
+        listprofile = list
+//            listprofile[position].image1?.let { holder.binding.imageView1.setImageResource(it) }
+//            listprofile[position].image2?.let { holder.binding.imageView2.setImageResource(it) }
+//            listprofile[position].image3?.let { holder.binding.imageView3.setImageResource(it) }
+=======
             holder.binding.apply {
                 recyclerview.layoutManager =
                     GridLayoutManager(holder.itemView.context, 3, RecyclerView.VERTICAL, false)
                 recyclerview.adapter = adapterListImagePostProfile
             }
             adapterListImagePostProfile.setListImage(listAllImagePost)
+>>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
         }
     }
 
@@ -81,4 +109,5 @@ class ProfileAdapter(
         }
         notifyDataSetChanged()
     }
+
 }

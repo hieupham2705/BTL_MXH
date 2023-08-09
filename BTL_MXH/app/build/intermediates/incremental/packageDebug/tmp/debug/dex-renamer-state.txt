@@ -1,4 +1,31 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+#Mon Jul 31 00:23:28 GMT+07:00 2023
+path.4=14/classes.dex
+path.3=13/classes.dex
+path.2=11/classes.dex
+path.1=0/classes.dex
+path.8=4/classes.dex
+path.7=3/classes.dex
+path.6=1/classes.dex
+path.5=2/classes.dex
+path.0=classes.dex
+base.4=D\:\\BTL_N4_HIT\\BTL_MXH\\BTL_MXH\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\14\\classes.dex
+base.3=D\:\\BTL_N4_HIT\\BTL_MXH\\BTL_MXH\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\13\\classes.dex
+base.2=D\:\\BTL_N4_HIT\\BTL_MXH\\BTL_MXH\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\11\\classes.dex
+base.1=D\:\\BTL_N4_HIT\\BTL_MXH\\BTL_MXH\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.0=D\:\\BTL_N4_HIT\\BTL_MXH\\BTL_MXH\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+path.9=5/classes.dex
+base.9=D\:\\BTL_N4_HIT\\BTL_MXH\\BTL_MXH\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\5\\classes.dex
+base.8=D\:\\BTL_N4_HIT\\BTL_MXH\\BTL_MXH\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\4\\classes.dex
+base.7=D\:\\BTL_N4_HIT\\BTL_MXH\\BTL_MXH\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\3\\classes.dex
+base.6=D\:\\BTL_N4_HIT\\BTL_MXH\\BTL_MXH\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1\\classes.dex
+base.5=D\:\\BTL_N4_HIT\\BTL_MXH\\BTL_MXH\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\2\\classes.dex
+=======
+#Wed Aug 02 20:45:45 ICT 2023
+=======
 #Sat Aug 05 04:10:19 ICT 2023
+>>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
 path.4=12/classes.dex
 path.3=11/classes.dex
 path.2=10/classes.dex
@@ -20,6 +47,7 @@ base.7=E\:\\code\\android\\BTL\\BTL_MXH\\app\\build\\intermediates\\dex\\debug\\
 base.6=E\:\\code\\android\\BTL\\BTL_MXH\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\14\\classes.dex
 base.5=E\:\\code\\android\\BTL\\BTL_MXH\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\13\\classes.dex
 renamed.17=classes18.dex
+>>>>>>> b2688cf5b5e6252568cfe597835f70eb2d803a7e
 renamed.9=classes10.dex
 renamed.16=classes17.dex
 renamed.8=classes9.dex
@@ -29,10 +57,16 @@ renamed.13=classes14.dex
 renamed.12=classes13.dex
 renamed.11=classes12.dex
 renamed.10=classes11.dex
+<<<<<<< HEAD
+base.16=D\:\\BTL_N4_HIT\\BTL_MXH\\BTL_MXH\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\12\\classes.dex
+base.15=D\:\\BTL_N4_HIT\\BTL_MXH\\BTL_MXH\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\10\\classes.dex
+base.14=D\:\\BTL_N4_HIT\\BTL_MXH\\BTL_MXH\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+=======
 base.17=E\:\\code\\android\\BTL\\BTL_MXH\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes3.dex
 base.16=E\:\\code\\android\\BTL\\BTL_MXH\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
 base.15=E\:\\code\\android\\BTL\\BTL_MXH\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\9\\classes.dex
 base.14=E\:\\code\\android\\BTL\\BTL_MXH\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\8\\classes.dex
+>>>>>>> b2688cf5b5e6252568cfe597835f70eb2d803a7e
 renamed.3=classes4.dex
 path.12=6/classes.dex
 renamed.2=classes3.dex
@@ -40,6 +74,20 @@ path.13=7/classes.dex
 renamed.1=classes2.dex
 path.10=4/classes.dex
 renamed.0=classes.dex
+<<<<<<< HEAD
+path.11=7/classes.dex
+renamed.7=classes8.dex
+path.16=12/classes.dex
+renamed.6=classes7.dex
+renamed.5=classes6.dex
+path.14=classes2.dex
+renamed.4=classes5.dex
+path.15=10/classes.dex
+base.13=D\:\\BTL_N4_HIT\\BTL_MXH\\BTL_MXH\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\9\\classes.dex
+base.12=D\:\\BTL_N4_HIT\\BTL_MXH\\BTL_MXH\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\8\\classes.dex
+base.11=D\:\\BTL_N4_HIT\\BTL_MXH\\BTL_MXH\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\7\\classes.dex
+base.10=D\:\\BTL_N4_HIT\\BTL_MXH\\BTL_MXH\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\6\\classes.dex
+=======
 path.11=5/classes.dex
 renamed.7=classes8.dex
 path.16=classes2.dex
@@ -53,3 +101,4 @@ base.13=E\:\\code\\android\\BTL\\BTL_MXH\\app\\build\\intermediates\\dex\\debug\
 base.12=E\:\\code\\android\\BTL\\BTL_MXH\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\6\\classes.dex
 base.11=E\:\\code\\android\\BTL\\BTL_MXH\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\5\\classes.dex
 base.10=E\:\\code\\android\\BTL\\BTL_MXH\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\4\\classes.dex
+>>>>>>> b2688cf5b5e6252568cfe597835f70eb2d803a7e

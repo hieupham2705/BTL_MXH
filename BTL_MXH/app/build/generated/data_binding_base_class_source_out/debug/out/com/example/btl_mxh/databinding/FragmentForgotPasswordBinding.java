@@ -30,6 +30,9 @@ public final class FragmentForgotPasswordBinding implements ViewBinding {
   public final ImageView imageView2;
 
   @NonNull
+  public final TextView logIn;
+
+  @NonNull
   public final TextView signIn;
 
   @NonNull
@@ -48,12 +51,14 @@ public final class FragmentForgotPasswordBinding implements ViewBinding {
   public final TextView textView9;
 
   private FragmentForgotPasswordBinding(@NonNull FrameLayout rootView,
-      @NonNull BaseTextInputEditText email, @NonNull ImageView imageView2, @NonNull TextView signIn,
-      @NonNull AppCompatButton submit, @NonNull TextInputLayout textInputLayout8,
-      @NonNull TextView textView10, @NonNull TextView textView12, @NonNull TextView textView9) {
+      @NonNull BaseTextInputEditText email, @NonNull ImageView imageView2, @NonNull TextView logIn,
+      @NonNull TextView signIn, @NonNull AppCompatButton submit,
+      @NonNull TextInputLayout textInputLayout8, @NonNull TextView textView10,
+      @NonNull TextView textView12, @NonNull TextView textView9) {
     this.rootView = rootView;
     this.email = email;
     this.imageView2 = imageView2;
+    this.logIn = logIn;
     this.signIn = signIn;
     this.submit = submit;
     this.textInputLayout8 = textInputLayout8;
@@ -101,6 +106,12 @@ public final class FragmentForgotPasswordBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.log_in;
+      TextView logIn = ViewBindings.findChildViewById(rootView, id);
+      if (logIn == null) {
+        break missingId;
+      }
+
       id = R.id.sign_in;
       TextView signIn = ViewBindings.findChildViewById(rootView, id);
       if (signIn == null) {
@@ -137,8 +148,8 @@ public final class FragmentForgotPasswordBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentForgotPasswordBinding((FrameLayout) rootView, email, imageView2, signIn,
-          submit, textInputLayout8, textView10, textView12, textView9);
+      return new FragmentForgotPasswordBinding((FrameLayout) rootView, email, imageView2, logIn,
+          signIn, submit, textInputLayout8, textView10, textView12, textView9);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

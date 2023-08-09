@@ -53,19 +53,21 @@
             android:layout_height="wrap_content"
             android:text="23 minutes ago"
             android:textSize="9sp"
-            android:fontFamily="@font/comfortaabold"
+            android:fontFamily="@font/comfortaalight"
             app:layout_constraintStart_toStartOf="@+id/username"
             app:layout_constraintTop_toBottomOf="@+id/username" />
 
         <ImageView
             android:id="@+id/imageView8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
+            android:layout_width="15dp"
+            android:layout_height="11dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="3dp"
             app:layout_constraintBottom_toBottomOf="@+id/hour"
             app:layout_constraintStart_toEndOf="@+id/hour"
             app:layout_constraintTop_toBottomOf="@+id/username"
-            app:srcCompat="@drawable/globe" />
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/resource_public" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -120,21 +122,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
+<<<<<<< HEAD
+        android:orientation="horizontal"
+
+        >
+=======
         android:layout_marginRight="100dp"
         android:orientation="horizontal">
+>>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
 
         <ImageView
             android:id="@+id/comment"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="18dp"
+            android:layout_height="19dp"
             android:layout_gravity="center"
-            app:srcCompat="@drawable/heart" />
+            app:srcCompat="@drawable/love" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
-            android:text="150" />
+            android:text="150"
+            android:fontFamily="@font/comfortaalight"/>
     </LinearLayout>
 
     <LinearLayout
@@ -143,19 +152,22 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="100dp"
         android:gravity="center"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingStart="10dp">
 
         <TextView
             android:text="50"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center" />
+            android:layout_gravity="center"
+            android:fontFamily="@font/comfortaalight"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
-            android:text="@string/comment" />
+            android:text="@string/comment"
+            android:fontFamily="@font/comfortaalight"/>
     </LinearLayout>
     </LinearLayout>
 
@@ -175,21 +187,31 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
+<<<<<<< HEAD
+            android:orientation="horizontal"
+            android:paddingStart="2dp">
+=======
             android:foreground="?android:attr/selectableItemBackground"
             android:orientation="horizontal">
+>>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="18dp"
+                android:layout_height="22dp"
                 android:layout_gravity="center"
+<<<<<<< HEAD
+                app:srcCompat="@drawable/love" />
+=======
                 app:srcCompat="@drawable/heart" />
+>>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
 
             <TextView
                 android:id="@+id/tv_love"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"
-                android:text="@string/love" />
+                android:text="@string/love"
+                android:fontFamily="@font/comfortaalight"/>
         </LinearLayout>
 
         <LinearLayout
@@ -201,17 +223,18 @@
 
             <ImageView
                 android:id="@+id/heart"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
                 android:layout_gravity="center"
-                app:srcCompat="@drawable/comment" />
+                app:srcCompat="@drawable/cmt" />
 
             <TextView
                 android:id="@+id/tv_comment"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"
-                android:text="@string/comment" />
+                android:text="@string/comment"
+                android:fontFamily="@font/comfortaalight"/>
         </LinearLayout>
 
 
