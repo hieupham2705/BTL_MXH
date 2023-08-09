@@ -74,6 +74,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::infl
                     setNavigationVisible(name = "Search")
                     binding.tbBack.setNavigationIcon(R.drawable.baseline_arrow_back_ios_24)
                 }
+<<<<<<< HEAD
                 R.id.friendPostsFragment -> {
                     setNavigationVisible(name = "Friend Posts")
                     binding.tbBack.setNavigationIcon(R.drawable.baseline_arrow_back_ios_24)
@@ -85,6 +86,8 @@ class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::infl
                 R.id.savedPostsFragment -> {
                     setNavigationVisible(name = "Saved Posts")
 
+=======
+>>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
                 else -> {
                     setNavigationVisible(false, name = "")
                 }

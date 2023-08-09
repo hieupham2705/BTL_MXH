@@ -15,7 +15,7 @@ class RegisterViewModel : BaseViewModel() {
 
 
     fun checkEmail(email: String): Boolean {
-        if (email.contains("@gmail.com"))
+        if (email.contains("@gmail.com")&&email.length>15)
             return true
         return false
     }

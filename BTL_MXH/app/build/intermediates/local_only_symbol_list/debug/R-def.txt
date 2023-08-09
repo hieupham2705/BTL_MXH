@@ -109,7 +109,10 @@ font nunito_semibold
 font nunito_semibolditalic
 id action_addTextFragment_to_homeFragment
 id action_forgotPasswordFragment_to_signInFragment
+<<<<<<< HEAD
 id action_friendFragment_to_friendPostsFragment
+=======
+>>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
 id action_friendPostsFragment_to_friendFragment
 id action_homeFragment_to_addTextFragment
 id action_homeFragment_to_friendFragment
@@ -129,6 +132,10 @@ id action_settingFragment_to_changePasswordFragment
 id action_settingFragment_to_editProfileFragment
 id action_settingFragment_to_notificationSettingFragment
 id action_settingFragment_to_savedPostsFragment
+<<<<<<< HEAD
+=======
+id action_settingFragment_to_signInFragment
+>>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
 id action_signInFragment_to_forgotPasswordFragment
 id action_signInFragment_to_homeFragment
 id action_signInFragment_to_registerFragment
@@ -140,6 +147,7 @@ id avatar_notification
 id avatar_search
 id btn_cancle
 id btn_confirm
+id btn_following
 id btn_search
 id button_call
 id button_image
@@ -162,10 +170,16 @@ id current_password
 id custom_toast_container
 id editProfileFragment
 id edit_profile
+id edt_birthday
 id edt_caption
 id edt_creact_post
+id edt_email
+id edt_full_name
+id edt_gender
 id edt_search
+id edt_user_name
 id email
+id follower
 id forgotPasswordFragment
 id forgot_password
 id friendFragment
@@ -184,15 +198,15 @@ id imageView6
 id imageView8
 id imageView9
 id image_avatar
-id image_view_1
-id image_view_2
-id image_view_3
 id image_view_message
-id imagepost
 id imv_add_image
 id imv_avatar
+<<<<<<< HEAD
 id imv_avatar_friend
 id imv_avatar_my_posts
+=======
+id imv_camera
+>>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
 id imv_gallery_photo
 id item_information_friend
 id layout_noti
@@ -219,9 +233,13 @@ id password_again
 id phone
 id profileFragment
 id recyclerview
+<<<<<<< HEAD
 id recyclerview_friend
 id recyclerview_friend_posts
 id recyclerview_home
+=======
+id recyclerview_friend_posts
+>>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
 id recyclerview_my_posts
 id recyclerview_notification
 id recyclerview_profile
@@ -258,6 +276,11 @@ id textInputLayout8
 id textInputLayout9
 id textInputLayoutEmail
 id textInputLayoutPhone
+id textInputLayout_birthday
+id textInputLayout_email
+id textInputLayout_fullname
+id textInputLayout_gender
+id textInputLayout_username
 id textView
 id textView10
 id textView11
@@ -284,8 +307,10 @@ id text_screen
 id text_status
 id textiplu
 id tool_bar
+id tv_comment
 id tv_error_condition
 id tv_error_joint
+id tv_love
 id tv_name
 id update
 id username
@@ -318,8 +343,11 @@ layout fragment_splash
 layout item_add_image
 layout item_create_post
 layout item_friend
+<<<<<<< HEAD
 layout item_friend_posts
 layout item_image_friend
+=======
+>>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
 layout item_image_profile
 layout item_infomation_profile
 layout item_list_search
@@ -357,9 +385,10 @@ string follower
 string following
 string forgot_password
 string full_name
+string gender
 string general_notification
-string genger
 string hello_blank_fragment
+string hit_circle
 string hoa_what_are_you_thinking
 string home
 string log_in

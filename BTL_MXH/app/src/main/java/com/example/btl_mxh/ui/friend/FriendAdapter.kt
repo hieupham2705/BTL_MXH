@@ -6,11 +6,16 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.btl_mxh.databinding.ItemFriendBinding
+<<<<<<< HEAD
 import com.example.btl_mxh.databinding.ItemImageFriendBinding
 import com.example.btl_mxh.databinding.ItemImageProfileBinding
 import com.example.btl_mxh.databinding.ItemInfomationProfileBinding
 import com.example.btl_mxh.model.friend
 import com.example.btl_mxh.model.profile
+=======
+import com.example.btl_mxh.databinding.ItemImageProfileBinding
+import com.example.btl_mxh.model.friend
+>>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
 
 class FriendAdapter (
 
@@ -25,7 +30,11 @@ class FriendAdapter (
         RecyclerView.ViewHolder(binding.root) {
     }
 
+<<<<<<< HEAD
     class ViewHolderImage(val binding: ItemImageFriendBinding) :
+=======
+    class ViewHolderImage(val binding: ItemImageProfileBinding) :
+>>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
         RecyclerView.ViewHolder(binding.root) {
     }
 
@@ -40,7 +49,11 @@ class FriendAdapter (
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
         val bindingInfomation = ItemFriendBinding.inflate(layoutInflater, parent, false)
+<<<<<<< HEAD
         val bindingImage = ItemImageFriendBinding.inflate(layoutInflater, parent, false)
+=======
+        val bindingImage = ItemImageProfileBinding.inflate(layoutInflater, parent, false)
+>>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
         return when (viewType) {
             typeInformation -> ViewHolderInformation(bindingInfomation)
             else -> ViewHolderImage(bindingImage)
@@ -52,6 +65,7 @@ class FriendAdapter (
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
 
         if (holder is ViewHolderImage) {
+<<<<<<< HEAD
             listfriend[position].image1?.let { holder.binding.imageView1.setImageResource(it) }
             listfriend[position].image2?.let { holder.binding.imageView2.setImageResource(it) }
             listfriend[position].image3?.let { holder.binding.imageView3.setImageResource(it) }
@@ -60,6 +74,8 @@ class FriendAdapter (
                 imageView2.setOnClickListener { onClickImage() }
                 imageView3.setOnClickListener { onClickImage() }
             }
+=======
+>>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
         }
     }
 

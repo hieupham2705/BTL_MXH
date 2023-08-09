@@ -8,14 +8,29 @@ import android.graphics.BitmapFactory
 import android.net.Uri
 import android.os.Environment
 import android.util.Log
+<<<<<<< HEAD
 import android.view.ViewGroup
+=======
+import androidx.activity.result.ActivityResultLauncher
+import androidx.activity.result.contract.ActivityResultContracts
+>>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.btl_mxh.R
 import com.example.btl_mxh.base.BaseFragment
 import com.example.btl_mxh.databinding.FragmentAddTextBinding
+<<<<<<< HEAD
 import com.example.btl_mxh.ui.profile.viewModel
+=======
+import com.example.btl_mxh.utils.extension.showToast
+import okhttp3.MediaType.Companion.toMediaType
+import okhttp3.MediaType.Companion.toMediaTypeOrNull
+import okhttp3.MultipartBody
+import okhttp3.RequestBody
+import okhttp3.RequestBody.Companion.asRequestBody
+import org.koin.androidx.viewmodel.ext.android.viewModel
+>>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
 import java.io.File
 import java.io.FileOutputStream
 import java.io.IOException
@@ -26,13 +41,14 @@ private const val TAG = "AddTextFragment"
 class AddPostFragment : BaseFragment<FragmentAddTextBinding>(FragmentAddTextBinding::inflate) {
 
     private lateinit var galleryLauncher: ActivityResultLauncher<Intent>
-    private lateinit var pngFilePath: List<String>
+    private var pngFilePath: List<String>? = null
     private val adapterPost by lazy { AdapterImage() }
     override val viewModel by viewModel<AddPostViewModel>()
 
     override fun initData() {
 
     }
+
     override fun handleEvent() {
         binding.apply {
             imvAddImage.setOnClickListener {
@@ -40,9 +56,28 @@ class AddPostFragment : BaseFragment<FragmentAddTextBinding>(FragmentAddTextBind
             }
             post.setOnClickListener {
                 Log.e(TAG, pngFilePath.toString())
+                val textPart = RequestBody.create(
+                    "caption/plain".toMediaTypeOrNull(),
+                    edtCaption.text.toString()
+                )
+                val imageFiles: List<File>? = null
+                val imageRequestBodyList = mutableListOf<MultipartBody.Part>()
+                if (pngFilePath != null) {
+                    pngFilePath?.forEach { image ->
+                        val imageFile = File(image)
+                        val imageRequestBody = imageFile.asRequestBody("image/*".toMediaType())
+                        val imagePart = MultipartBody.Part.createFormData(
+                            "image",
+                            imageFile.name,
+                            imageRequestBody
+                        )
+                        imageRequestBodyList.add(imagePart)
+                    }
+                }
+
                 viewModel.createNewPost(
-                    edtCaption.text.toString(),
-                    pngFilePath as ArrayList<String>
+                    textPart,
+                    imageRequestBodyList
                 )
             }
         }
@@ -51,9 +86,14 @@ class AddPostFragment : BaseFragment<FragmentAddTextBinding>(FragmentAddTextBind
     override fun bindData() {
         viewModel.stageCreateNewPost.observe(viewLifecycleOwner) {
             Log.e(TAG, it.toString())
+            showToast("success")
             findNavController().navigate(R.id.action_addTextFragment_to_homeFragment)
         }
-        binding.recyclerview.layoutManager = GridLayoutManager(context, 3, RecyclerView.VERTICAL, false)
+        viewModel.isError.observe(viewLifecycleOwner) {
+            showToast(it)
+        }
+        binding.recyclerview.layoutManager =
+            GridLayoutManager(context, 3, RecyclerView.VERTICAL, false)
         binding.recyclerview.adapter = adapterPost
     }
 
@@ -81,7 +121,7 @@ class AddPostFragment : BaseFragment<FragmentAddTextBinding>(FragmentAddTextBind
                         }
                         // Sử dụng imageUris để làm gì đó với các ảnh đã chọn
                         pngFilePath = convertUrisToPngs(context!!.contentResolver, imageUris)
-                        Log.e(TAG,imageUris.toString())
+                        Log.e(TAG, imageUris.toString())
                         adapterPost.setAdapter(imageUris)
 
                     }

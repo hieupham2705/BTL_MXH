@@ -1,5 +1,6 @@
 package com.example.btl_mxh.ui.saved_posts
 
+<<<<<<< HEAD
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -12,6 +13,13 @@ import com.example.btl_mxh.databinding.FragmentSavedPostsBinding
 import com.example.btl_mxh.ui.friend_posts.FriendPostsAdapter
 import com.example.btl_mxh.base.BaseFragment
 import com.example.btl_mxh.base.BaseViewModel
+=======
+import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
+import com.example.btl_mxh.R
+import com.example.btl_mxh.base.BaseFragment
+import com.example.btl_mxh.databinding.FragmentSavedPostsBinding
+>>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
 
 class SavedPostsFragment : BaseFragment<FragmentSavedPostsBinding>(FragmentSavedPostsBinding :: inflate) {
 

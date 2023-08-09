@@ -70,6 +70,7 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
         android:id="@+id/textiplu"
         android:layout_width="match_parent"
+<<<<<<< HEAD
         android:layout_height="300dp"
         android:hint="Hoa, what are you thinking?"
         android:gravity="top"
@@ -80,20 +81,30 @@
         android:background="@drawable/boder_post_text"
         />
         android:layout_height="70dp"
+=======
+        android:layout_height="wrap_content"
+>>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
         android:layout_marginBottom="8dp"
         android:paddingTop="10dp">
 
         <com.example.btl_mxh.base.BaseTextInputEditText
             android:id="@+id/edt_caption"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:fontFamily="@font/comfortaasemibold"
-            android:gravity="top"
+            android:gravity="top|start"
             android:hint="@string/hoa_what_are_you_thinking"
+<<<<<<< HEAD
             android:inputType="text"
             android:textSize="16sp"
             tools:ignore="MissingClass" />
     </LinearLayout>
+=======
+            android:inputType="textMultiLine"
+            android:maxLines="10"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+>>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
 
 <!--    <androidx.recyclerview.widget.RecyclerView-->
 <!--        android:id="@+id/recyclerview"-->

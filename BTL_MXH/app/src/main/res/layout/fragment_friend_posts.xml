@@ -4,7 +4,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+<<<<<<< HEAD
     tools:context=".ui.friend_posts.FriendPostsFragment"
+=======
+>>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
     android:background="@drawable/bgr">
 
     <androidx.constraintlayout.widget.ConstraintLayout

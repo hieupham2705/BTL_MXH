@@ -58,11 +58,11 @@ class RegisterFragment : BaseFragment<FragmentRegisterBinding>(FragmentRegisterB
             val Phone = viewModel.checkPhone(phone.text.toString())
             if (!Email||!Phone){
                 if(!Email)
-                    textInputLayoutEmail.error = "Vui lòng nhập địa chỉ Email hợp lệ !"
+                    textInputLayoutEmail.error = "Please enter a valid email address !"
                 else
                     textInputLayoutEmail.error = null
                 if(!Phone)
-                    textInputLayoutPhone.error = "Số điện thoại phải 10 số !"
+                    textInputLayoutPhone.error = "Phone number must be 10 digits !"
                 else
                     textInputLayoutPhone.error = null
                 return false

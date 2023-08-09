@@ -3235,7 +3235,10 @@ id action_container
 id action_context_bar
 id action_divider
 id action_forgotPasswordFragment_to_signInFragment
+<<<<<<< HEAD
 id action_friendFragment_to_friendPostsFragment
+=======
+>>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
 id action_friendPostsFragment_to_friendFragment
 id action_homeFragment_to_addTextFragment
 id action_homeFragment_to_friendFragment
@@ -3261,6 +3264,10 @@ id action_settingFragment_to_changePasswordFragment
 id action_settingFragment_to_editProfileFragment
 id action_settingFragment_to_notificationSettingFragment
 id action_settingFragment_to_savedPostsFragment
+<<<<<<< HEAD
+=======
+id action_settingFragment_to_signInFragment
+>>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
 id action_signInFragment_to_forgotPasswordFragment
 id action_signInFragment_to_homeFragment
 id action_signInFragment_to_registerFragment
@@ -3305,6 +3312,7 @@ id bounceEnd
 id bounceStart
 id btn_cancle
 id btn_confirm
+id btn_following
 id btn_search
 id buttonPanel
 id button_call
@@ -3403,9 +3411,14 @@ id edge
 id editProfileFragment
 id edit_profile
 id edit_query
+id edt_birthday
 id edt_caption
 id edt_creact_post
+id edt_email
+id edt_full_name
+id edt_gender
 id edt_search
+id edt_user_name
 id elastic
 id email
 id embed
@@ -3430,6 +3443,7 @@ id fixed
 id fl
 id flip
 id floating
+id follower
 id forever
 id forgotPasswordFragment
 id forgot_password
@@ -3474,16 +3488,16 @@ id imageView6
 id imageView8
 id imageView9
 id image_avatar
-id image_view_1
-id image_view_2
-id image_view_3
 id image_view_message
-id imagepost
 id immediateStop
 id imv_add_image
 id imv_avatar
+<<<<<<< HEAD
 id imv_avatar_friend
 id imv_avatar_my_posts
+=======
+id imv_camera
+>>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
 id imv_gallery_photo
 id included
 id indeterminate
@@ -3643,9 +3657,13 @@ id radio
 id ratio
 id rectangles
 id recyclerview
+<<<<<<< HEAD
 id recyclerview_friend
 id recyclerview_friend_posts
 id recyclerview_home
+=======
+id recyclerview_friend_posts
+>>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
 id recyclerview_my_posts
 id recyclerview_notification
 id recyclerview_profile
@@ -3785,6 +3803,11 @@ id textInputLayout8
 id textInputLayout9
 id textInputLayoutEmail
 id textInputLayoutPhone
+id textInputLayout_birthday
+id textInputLayout_email
+id textInputLayout_fullname
+id textInputLayout_gender
+id textInputLayout_username
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
@@ -3841,9 +3864,11 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tv_comment
 id tv_count
 id tv_error_condition
 id tv_error_joint
+id tv_love
 id tv_name
 id unchecked
 id uniform
@@ -4031,8 +4056,11 @@ layout fragment_splash
 layout item_add_image
 layout item_create_post
 layout item_friend
+<<<<<<< HEAD
 layout item_friend_posts
 layout item_image_friend
+=======
+>>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
 layout item_image_profile
 layout item_infomation_profile
 layout item_list_search
@@ -4183,10 +4211,11 @@ string follower
 string following
 string forgot_password
 string full_name
+string gender
 string general_notification
-string genger
 string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
+string hit_circle
 string hoa_what_are_you_thinking
 string home
 string icon_content_description

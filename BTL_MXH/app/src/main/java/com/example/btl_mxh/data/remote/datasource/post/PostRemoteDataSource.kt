@@ -9,12 +9,16 @@ import okhttp3.RequestBody
 
 class PostRemoteDataSource(private val service: ApiService.PostService) :
     IPostDataSource.Remote {
-    override suspend fun createNewPost(caption: RequestBody,  files: Array<MultipartBody.Part>): BaseResponse<CreateNewPost> {
-        return service.createNewPost(caption,files)
+    override suspend fun createNewPost(caption: RequestBody, images: List<MultipartBody.Part>?): BaseResponse<CreateNewPost> {
+        return service.createNewPost(caption,images)
     }
 
-    override suspend fun postGetAll(): BaseResponse<PostGetAll> {
+    override suspend fun postGetAll(): BaseResponse<List<Post>> {
         return service.postGetAll()
+    }
+
+    override suspend fun getAllByUsername(userName: String): BaseResponse<List<Post>> {
+        return service.getAllByUsername(userName)
     }
 
 

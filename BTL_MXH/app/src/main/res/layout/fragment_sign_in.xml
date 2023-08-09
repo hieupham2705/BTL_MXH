@@ -71,10 +71,20 @@
                 android:id="@+id/email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+<<<<<<< HEAD
                 android:hint="@string/email"
                 android:fontFamily="@font/comfortaaregular"
                 android:inputType="textEmailAddress"/>
         </com.google.android.material.textfield.TextInputLayout>
+=======
+                android:layout_marginBottom="16dp"
+                android:text="@string/hit_circle"
+                android:textColor="@color/black"
+                android:fontFamily="@font/comfortaabold"
+                android:textSize="32sp"
+                app:layout_constraintBottom_toTopOf="@+id/textInputLayout3"
+                app:layout_constraintStart_toStartOf="@+id/textInputLayout3" />
+>>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textInputLayout"

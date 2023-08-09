@@ -8,11 +8,14 @@
             <LayoutPositions>
               <option name="myPositions">
                 <map>
+<<<<<<< HEAD
                   <entry key="action_listMessFragment_to_messengerFragment">
                     <value>
                       <LayoutPositions />
                     </value>
                   </entry>
+=======
+>>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
                   <entry key="addTextFragment">
                     <value>
                       <LayoutPositions>
@@ -121,6 +124,27 @@
                       </LayoutPositions>
                     </value>
                   </entry>
+                  <entry key="friendPostsFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="1482" />
+                            <option name="y" value="716" />
+                          </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_friendPostsFragment_to_friendFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
                   <entry key="homeFragment">
                     <value>
                       <LayoutPositions>
@@ -186,8 +210,13 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
+<<<<<<< HEAD
                             <option name="x" value="744" />
                             <option name="y" value="1147" />
+=======
+                            <option name="x" value="2" />
+                            <option name="y" value="796" />
+>>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
                           </Point>
                         </option>
                         <option name="myPositions">
@@ -313,8 +342,13 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
+<<<<<<< HEAD
                             <option name="x" value="988" />
                             <option name="y" value="2191" />
+=======
+                            <option name="x" value="581" />
+                            <option name="y" value="277" />
+>>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
                           </Point>
                         </option>
                         <option name="myPositions">

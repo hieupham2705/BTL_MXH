@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 #Mon Jul 31 00:23:28 GMT+07:00 2023
 path.4=14/classes.dex
 path.3=13/classes.dex
@@ -22,6 +23,9 @@ base.6=D\:\\BTL_N4_HIT\\BTL_MXH\\BTL_MXH\\app\\build\\intermediates\\dex\\debug\
 base.5=D\:\\BTL_N4_HIT\\BTL_MXH\\BTL_MXH\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\2\\classes.dex
 =======
 #Wed Aug 02 20:45:45 ICT 2023
+=======
+#Sat Aug 05 04:10:19 ICT 2023
+>>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
 path.4=12/classes.dex
 path.3=11/classes.dex
 path.2=10/classes.dex
