@@ -1,40 +1,18 @@
 package com.example.btl_mxh.ui.home
 
-<<<<<<< HEAD
-
-=======
 import Search
->>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
 import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.example.btl_mxh.base.BaseViewModel
-<<<<<<< HEAD
-import com.example.btl_mxh.base.DataResult
-import kotlinx.coroutines.delay
-import com.example.btl_mxh.base.BaseResponse
-=======
->>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
 import com.example.btl_mxh.data.remote.repository.account.IAccountRepository
 import com.example.btl_mxh.data.remote.repository.post.IPostRepository
 import com.example.btl_mxh.data.remote.repository.profile.IProfileRepository
 import com.example.btl_mxh.data.remote.repository.search.ISearchRepository
 import com.example.btl_mxh.model.Auth
-<<<<<<< HEAD
-import com.example.btl_mxh.model.PostGetAll
-import kotlinx.coroutines.delay
-=======
 import com.example.btl_mxh.model.Post
 
->>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
 private const val TAG = "HomeViewModel"
-
-class HomeViewModel: BaseViewModel() {
-    private val _stateLogin = MutableLiveData<List<String>>()
-    val stateLogin: LiveData<List<String>> = _stateLogin
-
-
-
 
 class HomeViewModel(
     private val accountRepo: IAccountRepository,

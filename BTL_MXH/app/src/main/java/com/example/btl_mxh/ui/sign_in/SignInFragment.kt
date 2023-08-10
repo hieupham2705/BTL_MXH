@@ -5,11 +5,9 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.example.btl_mxh.R
 import com.example.btl_mxh.base.BaseFragment
-import com.example.btl_mxh.base.BaseViewModel
 import com.example.btl_mxh.databinding.FragmentSignInBinding
-import com.example.btl_mxh.ui.profile.viewModel
 import com.example.btl_mxh.utils.extension.showToast
-
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 
 class SignInFragment : BaseFragment<FragmentSignInBinding>(FragmentSignInBinding::inflate) {

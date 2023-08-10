@@ -1,6 +1,5 @@
 [
     {
-<<<<<<< HEAD
         "merged": "com.example.btl_mxh.app-merged_res-72:/mipmap-hdpi_ic_launcher.webp.flat",
         "source": "com.example.btl_mxh.app-main-74:/mipmap-hdpi/ic_launcher.webp"
     },
@@ -59,85 +58,12 @@
     {
         "merged": "com.example.btl_mxh.app-merged_res-72:/font_nunito_mediumitalic.ttf.flat",
         "source": "com.example.btl_mxh.app-main-74:/font/nunito_mediumitalic.ttf"
-=======
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_home_den.png.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\home_den.png"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_rounded_toast_background.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\rounded_toast_background.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\font_comfortaamedium.ttf.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\font\\comfortaamedium.ttf"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\layout_item_image_friend.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\layout\\item_image_friend.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_img_forgotpasswordscr.png.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\img_forgotpasswordscr.png"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\layout_item_image_profile.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\layout\\item_image_profile.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\mipmap-anydpi-v33_ic_launcher.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\mipmap-anydpi-v33\\ic_launcher.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_visibility.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\visibility.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\layout_fragment_profile.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\layout\\fragment_profile.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\layout_fragment_splash.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\layout\\fragment_splash.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\layout_fragment_sign_in.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\layout\\fragment_sign_in.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\font_interthin.ttf.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\font\\interthin.ttf"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\mipmap-mdpi\\ic_launcher_round.webp"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\layout_item_post.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\layout\\item_post.xml"
-    },
-    {
-<<<<<<< HEAD
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_baseline_arrow_back_ios_24.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\baseline_arrow_back_ios_24.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_ic_baseline_image_24.png.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\ic_baseline_image_24.png"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_border_btm_dialog.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\border_btm_dialog.xml"
-=======
-        "merged": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_boder_search.xml.flat",
-        "source": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\boder_search.xml"
->>>>>>> a25a11749b92dc3d6ab447639a8b7168424c83db
     },
     {
         "merged": "com.example.btl_mxh.app-merged_res-72:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
         "source": "com.example.btl_mxh.app-main-74:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-<<<<<<< HEAD
         "merged": "com.example.btl_mxh.app-merged_res-72:/font_nunito_extralightitalic.ttf.flat",
         "source": "com.example.btl_mxh.app-main-74:/font/nunito_extralightitalic.ttf"
     },
@@ -176,80 +102,12 @@
     {
         "merged": "com.example.btl_mxh.app-merged_res-72:/layout_activity_main.xml.flat",
         "source": "com.example.btl_mxh.app-main-74:/layout/activity_main.xml"
-=======
-        "merged": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\layout_fragment_setting.xml.flat",
-        "source": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\layout\\fragment_setting.xml"
->>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\font_nunito_extralightitalic.ttf.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\font\\nunito_extralightitalic.ttf"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\font_interbold.ttf.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\font\\interbold.ttf"
-    },
-    {
-<<<<<<< HEAD
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_border_dialog.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\border_dialog.xml"
-=======
-        "merged": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\layout_custom_toast_layout.xml.flat",
-        "source": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\layout\\custom_toast_layout.xml"
->>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\layout_fragment_my_posts.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\layout\\fragment_my_posts.xml"
-    },
-    {
-<<<<<<< HEAD
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\font_interregular.ttf.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\font\\interregular.ttf"
-=======
-        "merged": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\font_comfortaalight.ttf.flat",
-        "source": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\font\\comfortaalight.ttf"
->>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\layout_fragment_saved_posts.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\layout\\fragment_saved_posts.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\navigation_nav_main.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\navigation\\nav_main.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\xml_backup_rules.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\xml\\backup_rules.xml"
-    },
-    {
-<<<<<<< HEAD
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\font_nunito_extralight.ttf.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\font\\nunito_extralight.ttf"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\font_comfortaaregular.ttf.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\font\\comfortaaregular.ttf"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\font_nunito_mediumitalic.ttf.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\font\\nunito_mediumitalic.ttf"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\font_comfortaalight.ttf.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\font\\comfortaalight.ttf"
-=======
-        "merged": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_baseline_close_24.xml.flat",
-        "source": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\baseline_close_24.xml"
->>>>>>> a25a11749b92dc3d6ab447639a8b7168424c83db
     },
     {
         "merged": "com.example.btl_mxh.app-merged_res-72:/drawable_ic_baseline_camera_alt_24.xml.flat",
         "source": "com.example.btl_mxh.app-main-74:/drawable/ic_baseline_camera_alt_24.xml"
     },
     {
-<<<<<<< HEAD
         "merged": "com.example.btl_mxh.app-merged_res-72:/font_intermedium.ttf.flat",
         "source": "com.example.btl_mxh.app-main-74:/font/intermedium.ttf"
     },
@@ -296,83 +154,12 @@
     {
         "merged": "com.example.btl_mxh.app-merged_res-72:/drawable_ic_baseline_call_24.png.flat",
         "source": "com.example.btl_mxh.app-main-74:/drawable/ic_baseline_call_24.png"
-=======
-        "merged": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\font_nunito_extralightitalic.ttf.flat",
-        "source": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\font\\nunito_extralightitalic.ttf"
->>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_heart.png.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\heart.png"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_visibility_off.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\visibility_off.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_baseline_person_outline_24.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\baseline_person_outline_24.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\layout_item_saved_posts.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\layout\\item_saved_posts.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\mipmap-anydpi-v26\\ic_launcher.xml"
-    },
-    {
-<<<<<<< HEAD
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_borderappcombatbutton.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\borderappcombatbutton.xml"
-=======
-        "merged": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_search.png.flat",
-        "source": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\search.png"
->>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_padlock.png.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\padlock.png"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\layout_item_friend.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\layout\\item_friend.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\font_kavoonregular.ttf.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\font\\kavoonregular.ttf"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\font_interextralight.ttf.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\font\\interextralight.ttf"
-    },
-    {
-<<<<<<< HEAD
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\layout_fragment_change_password.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\layout\\fragment_change_password.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\font_nunito_bold.ttf.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\font\\nunito_bold.ttf"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_baseline_more_vert_24.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\baseline_more_vert_24.xml"
-=======
-        "merged": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\layout_fragment_messenger.xml.flat",
-        "source": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\layout\\fragment_messenger.xml"
->>>>>>> a25a11749b92dc3d6ab447639a8b7168424c83db
     },
     {
         "merged": "com.example.btl_mxh.app-merged_res-72:/font_interlight.ttf.flat",
         "source": "com.example.btl_mxh.app-main-74:/font/interlight.ttf"
     },
     {
-<<<<<<< HEAD
         "merged": "com.example.btl_mxh.app-merged_res-72:/font_kavoonregular.ttf.flat",
         "source": "com.example.btl_mxh.app-main-74:/font/kavoonregular.ttf"
     },
@@ -499,143 +286,6 @@
     {
         "merged": "com.example.btl_mxh.app-merged_res-72:/layout_fragment_add_text.xml.flat",
         "source": "com.example.btl_mxh.app-main-74:/layout/fragment_add_text.xml"
-=======
-        "merged": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\font_interbold.ttf.flat",
-        "source": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\font\\interbold.ttf"
->>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\font_intermedium.ttf.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\font\\intermedium.ttf"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_bg_toolbar_border_bottom.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\bg_toolbar_border_bottom.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_borderctlo.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\borderctlo.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_baseline_settings_24.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\baseline_settings_24.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\font_nunito_regular.ttf.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\font\\nunito_regular.ttf"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_boder_search.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\boder_search.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_ic_baseline_send_24.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\ic_baseline_send_24.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\layout_item_friend_posts.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\layout\\item_friend_posts.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_bgr.png.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\bgr.png"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\layout_item_search_user.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\layout\\item_search_user.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\layout_fragment_friend.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\layout\\fragment_friend.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_baseline_notifications_none_24.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\baseline_notifications_none_24.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\layout_item_my_posts.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\layout\\item_my_posts.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\mipmap-xxhdpi\\ic_launcher_round.webp"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_ic_baseline_call_24.png.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\ic_baseline_call_24.png"
-    },
-    {
-        "merged": "com.example.btl_mxh.app-merged_res-71:/layout_fragment_change_password.xml.flat",
-        "source": "com.example.btl_mxh.app-main-73:/layout/fragment_change_password.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_theme.png.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\theme.png"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\layout_fragment_edit_profile.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\layout\\fragment_edit_profile.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_globe.png.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\globe.png"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_image_register_signin.png.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\image_register_signin.png"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\layout_item_create_post.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\layout\\item_create_post.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\layout_dialog_notification.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\layout\\dialog_notification.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_ic_baseline_videocam_24.png.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\ic_baseline_videocam_24.png"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_image_change_password.png.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\image_change_password.png"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\layout_item_send.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\layout\\item_send.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_love.png.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\love.png"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\mipmap-mdpi\\ic_launcher.webp"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_bookmark.png.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\bookmark.png"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\font_intersemibold.ttf.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\font\\intersemibold.ttf"
-    },
-    {
-<<<<<<< HEAD
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\layout_custom_toast_layout.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\layout\\custom_toast_layout.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\color_bottom_navigation_selected.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\color\\bottom_navigation_selected.xml"
-=======
-        "merged": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\layout_fragment_saved_posts.xml.flat",
-        "source": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\layout\\fragment_saved_posts.xml"
->>>>>>> a25a11749b92dc3d6ab447639a8b7168424c83db
     },
     {
         "merged": "com.example.btl_mxh.app-merged_res-72:/font_interblack.ttf.flat",
@@ -646,7 +296,6 @@
         "source": "com.example.btl_mxh.app-main-74:/font/interthin.ttf"
     },
     {
-<<<<<<< HEAD
         "merged": "com.example.btl_mxh.app-merged_res-72:/layout_fragment_messenger.xml.flat",
         "source": "com.example.btl_mxh.app-main-74:/layout/fragment_messenger.xml"
     },
@@ -681,51 +330,6 @@
     {
         "merged": "com.example.btl_mxh.app-merged_res-72:/drawable_border_follower.xml.flat",
         "source": "com.example.btl_mxh.app-main-74:/drawable/border_follower.xml"
-=======
-        "merged": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\xml_backup_rules.xml.flat",
-        "source": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\xml\\backup_rules.xml"
->>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\layout_fragment_forgot_password.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\layout\\fragment_forgot_password.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\font_nunito_italic.ttf.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\font\\nunito_italic.ttf"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_baseline_favorite_24.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\baseline_favorite_24.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\mipmap-xhdpi\\ic_launcher_round.webp"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\layout_fragment_register_password.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\layout\\fragment_register_password.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_boder_editprofile.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\boder_editprofile.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\font_nunito_lightitalic.ttf.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\font\\nunito_lightitalic.ttf"
-    },
-    {
-<<<<<<< HEAD
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_change_password.png.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\change_password.png"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_edit.png.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\edit.png"
-=======
-        "merged": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\layout_fragment_my_posts.xml.flat",
-        "source": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\layout\\fragment_my_posts.xml"
->>>>>>> a25a11749b92dc3d6ab447639a8b7168424c83db
     },
     {
         "merged": "com.example.btl_mxh.app-merged_res-72:/font_nunito_extrabold.ttf.flat",
@@ -736,7 +340,6 @@
         "source": "com.example.btl_mxh.app-main-74:/drawable/bg_green3a_border_15dp.xml"
     },
     {
-<<<<<<< HEAD
         "merged": "com.example.btl_mxh.app-merged_res-72:/font_nunito_lightitalic.ttf.flat",
         "source": "com.example.btl_mxh.app-main-74:/font/nunito_lightitalic.ttf"
     },
@@ -879,180 +482,12 @@
     {
         "merged": "com.example.btl_mxh.app-merged_res-72:/drawable_boder_update.xml.flat",
         "source": "com.example.btl_mxh.app-main-74:/drawable/boder_update.xml"
-=======
-        "merged": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\font_nunito_medium.ttf.flat",
-        "source": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\font\\nunito_medium.ttf"
->>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_boder_add.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\boder_add.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\layout_fragment_notification_setting.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\layout\\fragment_notification_setting.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\layout_item_notification.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\layout\\item_notification.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\color_setmenu.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\color\\setmenu.xml"
-    },
-    {
-<<<<<<< HEAD
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\layout_fragment_home.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\layout\\fragment_home.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_photo.png.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\photo.png"
-=======
-        "merged": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\font_kavoonregular.ttf.flat",
-        "source": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\font\\kavoonregular.ttf"
->>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_messenger.png.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\messenger.png"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\layout_item_search.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\layout\\item_search.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable-v24\\ic_launcher_foreground.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\font_comfortaasemibold.ttf.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\font\\comfortaasemibold.ttf"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\font_interlight.ttf.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\font\\interlight.ttf"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\layout_fragment_list_mess.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\layout\\fragment_list_mess.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_baseline_close_24.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\baseline_close_24.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_img_registerscr.png.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\img_registerscr.png"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\mipmap-xxxhdpi\\ic_launcher.webp"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_border_edittext.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\border_edittext.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\font_nunito_semibolditalic.ttf.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\font\\nunito_semibolditalic.ttf"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\font_nunito_semibold.ttf.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\font\\nunito_semibold.ttf"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\font_nunito_bolditalic.ttf.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\font\\nunito_bolditalic.ttf"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\layout_dialog_delete.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\layout\\dialog_delete.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\font_nunito_blackitalic.ttf.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\font\\nunito_blackitalic.ttf"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\font_interextrabold.ttf.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\font\\interextrabold.ttf"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\layout_fragment_register.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\layout\\fragment_register.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_mayanh.png.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\mayanh.png"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\font_nunito_light.ttf.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\font\\nunito_light.ttf"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\layout\\activity_main.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\layout_item_listmess.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\layout\\item_listmess.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\layout_item_list_search.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\layout\\item_list_search.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\font_nunito_medium.ttf.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\font\\nunito_medium.ttf"
-    },
-    {
-<<<<<<< HEAD
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_bell_den.png.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\bell_den.png"
-=======
-        "merged": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_border_follower.xml.flat",
-        "source": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\border_follower.xml"
-    },
-    {
-        "merged": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\layout_item_listmess.xml.flat",
-        "source": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\layout\\item_listmess.xml"
->>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_baseline_home_24.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\baseline_home_24.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_user_den.png.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\user_den.png"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\layout_fragment_search.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\layout\\fragment_search.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\layout_fragment_setting.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\layout\\fragment_setting.xml"
-    },
-    {
-<<<<<<< HEAD
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_bg_green3a_border_15dp.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\bg_green3a_border_15dp.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\layout_item_add_image.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\layout\\item_add_image.xml"
-=======
-        "merged": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\layout_item_my_posts.xml.flat",
-        "source": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\layout\\item_my_posts.xml"
->>>>>>> a25a11749b92dc3d6ab447639a8b7168424c83db
     },
     {
         "merged": "com.example.btl_mxh.app-merged_res-72:/drawable_rounded_toast_background.xml.flat",
         "source": "com.example.btl_mxh.app-main-74:/drawable/rounded_toast_background.xml"
     },
     {
-<<<<<<< HEAD
         "merged": "com.example.btl_mxh.app-merged_res-72:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
         "source": "com.example.btl_mxh.app-main-74:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
@@ -1139,147 +574,5 @@
     {
         "merged": "com.example.btl_mxh.app-merged_res-72:/drawable_mayanh.png.flat",
         "source": "com.example.btl_mxh.app-main-74:/drawable/mayanh.png"
-=======
-        "merged": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\mipmap-xxhdpi\\ic_launcher_round.webp"
->>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\layout_dl_loading_common.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\layout\\dl_loading_common.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\ic_launcher_background.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\layout_fragment_notification.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\layout\\fragment_notification.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_boder_update.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\boder_update.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\mipmap-hdpi\\ic_launcher_round.webp"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\font_comfortaavariablefontwght.ttf.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\font\\comfortaavariablefontwght.ttf"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_ic_baseline_camera_alt_24.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\ic_baseline_camera_alt_24.xml"
-    },
-    {
-<<<<<<< HEAD
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\mipmap-xhdpi\\ic_launcher.webp"
-=======
-        "merged": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\layout_fragment_friend_posts.xml.flat",
-        "source": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\layout\\fragment_friend_posts.xml"
-    },
-    {
-        "merged": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\layout_fragment_search.xml.flat",
-        "source": "C:\\Users\\fckho\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\layout\\fragment_search.xml"
->>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_cmt.png.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\cmt.png"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\font_nunito_extrabolditalic.ttf.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\font\\nunito_extrabolditalic.ttf"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\font_nunito_extrabold.ttf.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\font\\nunito_extrabold.ttf"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\font_interblack.ttf.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\font\\interblack.ttf"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_logout.png.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\logout.png"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\layout_fragment_add_text.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\layout\\fragment_add_text.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_border_settingscr.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\border_settingscr.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_baseline_chat_bubble_24.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\baseline_chat_bubble_24.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\font_comfortaabold.ttf.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\font\\comfortaabold.ttf"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_resource_public.png.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\resource_public.png"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_comment.png.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\comment.png"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\layout_item_infomation_profile.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\layout\\item_infomation_profile.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\layout_fragment_friend_posts.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\layout\\fragment_friend_posts.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\mipmap-xxhdpi\\ic_launcher.webp"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_border_follower.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\border_follower.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_hit.png.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\hit.png"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\menu_btnv_home.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\menu\\btnv_home.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\xml_data_extraction_rules.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\xml\\data_extraction_rules.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_search.png.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\search.png"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_img_signinscr.png.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\img_signinscr.png"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\mipmap-hdpi\\ic_launcher.webp"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\font_nunito_black.ttf.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\font\\nunito_black.ttf"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\layout_fragment_messenger.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\layout\\fragment_messenger.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-merged_res-71:\\drawable_boder_post_text.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.btl_mxh.app-main-73:\\drawable\\boder_post_text.xml"
->>>>>>> a25a11749b92dc3d6ab447639a8b7168424c83db
     }
 ]

@@ -1,8 +1,5 @@
 package com.example.btl_mxh.ui.register
 
-<<<<<<< HEAD
-import com.example.btl_mxh.base.BaseViewModel
-=======
 import android.provider.ContactsContract.CommonDataKinds.Email
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

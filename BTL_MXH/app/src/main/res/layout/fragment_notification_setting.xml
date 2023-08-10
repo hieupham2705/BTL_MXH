@@ -4,21 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.notificationsetting.NotificationSettingFragment"
-    android:background="@drawable/bgr"
-    >
+    tools:context=".ui.notificationsetting.NotificationSettingFragment">
 
 
     <TextView
         android:id="@+id/textView8"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="70dp"
         android:text="@string/common"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

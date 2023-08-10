@@ -65,8 +65,4 @@ class EditProfileViewModel(
         return false
     }
 
-<<<<<<< HEAD
-class EditProfileViewModel: BaseViewModel() {
-=======
->>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
 }

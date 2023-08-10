@@ -4,15 +4,15 @@ import android.content.SharedPreferences
 import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import com.example.btl_mxh.base.BaseViewModel
 import com.example.btl_mxh.data.remote.repository.account.IAccountRepository
 import com.example.btl_mxh.model.Logout
-import com.example.btl_mxh.base.BaseViewModel
 import com.example.btl_mxh.utils.extension.saveTokenLogin
 
 class SettingViewModel(
     private val accountRepo: IAccountRepository,
     private val sharedPreferences: SharedPreferences
-    ) : BaseViewModel() {
+) : BaseViewModel() {
     private val _logoutstage = MutableLiveData<Logout>()
     val logoutstage: LiveData<Logout> = _logoutstage
 

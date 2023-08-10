@@ -31,12 +31,12 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginStart="8dp"
-            android:backgroundTint="#D0FFFFFF"
-            app:cardCornerRadius="300dp"
+            android:backgroundTint="#f5eae4"
+            app:cardCornerRadius="100dp"
             app:layout_constraintBottom_toBottomOf="@+id/cardView"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/cardView"
-            app:layout_constraintTop_toTopOf="@+id/cardView"/>
+            app:layout_constraintTop_toTopOf="@+id/cardView">
 
             <EditText
                 android:foreground="?android:attr/selectableItemBackground"
@@ -47,11 +47,11 @@
                 android:drawablePadding="10dp"
                 android:focusable="false"
                 android:hint="@string/what_are_you_thinking"
-                android:textSize="16sp"
-                android:fontFamily="@font/comfortaabold"
                 android:inputType="text"
                 android:maxLines="1"
                 android:padding="10dp"
                 android:textColorHint="#9B8A8A" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 </FrameLayout>

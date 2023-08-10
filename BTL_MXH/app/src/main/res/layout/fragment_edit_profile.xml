@@ -67,18 +67,6 @@
             android:id="@+id/textInputLayout_fullname"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            tools:ignore="ExtraText">
-
-            <com.example.btl_mxh.base.BaseTextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="54dp"
-                android:background="@drawable/boder_editprofile"
-                android:hint="@string/full_name"
-                android:paddingStart="10dp"
-                android:fontFamily="@font/comfortaaregular"
-                android:textColor="@color/black"
-                />
             android:layout_height="wrap_content">
 
             <com.example.btl_mxh.base.BaseTextInputEditText
@@ -88,9 +76,7 @@
                 android:background="@drawable/boder_editprofile"
                 android:fontFamily="@font/comfortaaregular"
                 android:hint="@string/full_name"
-                android:paddingStart="10dp"
-                tools:ignore="MissingClass" />
-
+                android:paddingStart="10dp" />
         </com.google.android.material.textfield.TextInputLayout>
         <Space
             android:layout_width="match_parent"
@@ -100,7 +86,6 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-
         <com.example.btl_mxh.base.BaseTextInputEditText
             android:id="@+id/edt_user_name"
             android:layout_width="match_parent"
@@ -109,10 +94,8 @@
             android:hint="@string/user_name"
             android:paddingStart="10dp"
             android:fontFamily="@font/comfortaaregular"
-            tools:ignore="MissingClass" />
-
+            />
         </com.google.android.material.textfield.TextInputLayout>
-
         <Space
             android:layout_width="match_parent"
             android:layout_height="10dp"/>
@@ -121,31 +104,7 @@
             android:id="@+id/textInputLayout_email"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
-
-            <com.example.btl_mxh.base.BaseTextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="54dp"
-                android:background="@drawable/boder_editprofile"
-                android:hint="@string/user_name"
-                android:paddingStart="10dp"
-                android:fontFamily="@font/comfortaaregular"
-                android:textColor="@color/black"
-                />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="10dp"/>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
-            >
-
+            android:layout_height="wrap_content">
             <com.example.btl_mxh.base.BaseTextInputEditText
                 android:id="@+id/edt_email"
                 android:layout_width="match_parent"
@@ -154,9 +113,7 @@
                 android:hint="@string/email"
                 android:paddingStart="10dp"
                 android:fontFamily="@font/comfortaaregular"
-                android:textColor="@color/black"
                 />
-
         </com.google.android.material.textfield.TextInputLayout>
 
         <Space
@@ -167,9 +124,7 @@
             android:id="@+id/textInputLayout_gender"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
-
+            android:layout_height="wrap_content">
             <com.example.btl_mxh.base.BaseTextInputEditText
                 android:id="@+id/edt_gender"
                 android:layout_width="match_parent"
@@ -178,9 +133,7 @@
                 android:hint="@string/gender"
                 android:paddingStart="10dp"
                 android:fontFamily="@font/comfortaaregular"
-                android:textColor="@color/black"
                 />
-
         </com.google.android.material.textfield.TextInputLayout>
 
         <Space
@@ -191,9 +144,7 @@
             android:id="@+id/textInputLayout_birthday"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
-
+            android:layout_height="wrap_content">
             <com.example.btl_mxh.base.BaseTextInputEditText
                 android:id="@+id/edt_birthday"
                 android:layout_width="match_parent"
@@ -202,9 +153,7 @@
                 android:hint="@string/birthday"
                 android:paddingStart="10dp"
                 android:fontFamily="@font/comfortaaregular"
-                android:textColor="@color/black"
                 />
-
         </com.google.android.material.textfield.TextInputLayout>
 
         <Space
@@ -218,10 +167,9 @@
             android:layout_height="60dp"
             android:background="@drawable/boder_update"
             android:text="@string/update"
-            android:gravity="center"
             android:textColor="@color/white"
-            android:textSize="18sp"
-            android:fontFamily="@font/nunito_extrabold"
+            android:textSize="17sp"
+            android:fontFamily="@font/comfortaabold"
             />
 
     </LinearLayout>

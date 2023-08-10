@@ -46,8 +46,7 @@
                 android:fontFamily="@font/comfortaabold"
                 android:hint="@string/search"
                 android:paddingStart="20dp"
-                android:textSize="14sp"
-                tools:ignore="MissingClass" />
+                android:textSize="14sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <androidx.recyclerview.widget.RecyclerView

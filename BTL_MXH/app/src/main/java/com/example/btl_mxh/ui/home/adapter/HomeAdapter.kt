@@ -37,6 +37,7 @@ class HomeAdapter(
 
     }
 
+
     class ViewHolderCreatePost(val binding: ItemCreatePostBinding) :
         RecyclerView.ViewHolder(binding.root) {
 

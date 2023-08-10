@@ -8,25 +8,15 @@ import android.graphics.BitmapFactory
 import android.net.Uri
 import android.os.Environment
 import android.util.Log
-<<<<<<< HEAD
-import android.view.ViewGroup
-=======
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
->>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.btl_mxh.R
 import com.example.btl_mxh.base.BaseFragment
 import com.example.btl_mxh.databinding.FragmentAddTextBinding
-<<<<<<< HEAD
 import com.example.btl_mxh.utils.extension.FileUtils
-=======
-<<<<<<< HEAD
-import com.example.btl_mxh.ui.profile.viewModel
-=======
->>>>>>> a25a11749b92dc3d6ab447639a8b7168424c83db
 import com.example.btl_mxh.utils.extension.showToast
 import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
@@ -34,7 +24,6 @@ import okhttp3.MultipartBody
 import okhttp3.RequestBody
 import okhttp3.RequestBody.Companion.asRequestBody
 import org.koin.androidx.viewmodel.ext.android.viewModel
->>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
 import java.io.File
 import java.io.FileOutputStream
 import java.io.IOException
