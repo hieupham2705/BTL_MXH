@@ -3033,6 +3033,7 @@ drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable change_password
+drawable cmt
 drawable comment
 drawable design_fab_background
 drawable design_ic_visibility
@@ -3069,6 +3070,7 @@ drawable img_forgotpasswordscr
 drawable img_registerscr
 drawable img_signinscr
 drawable logout
+drawable love
 drawable m3_appbar_background
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
@@ -3144,6 +3146,7 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable padlock
 drawable photo
+drawable resource_public
 drawable rounded_toast_background
 drawable search
 drawable selection_band_overlay
@@ -3151,7 +3154,7 @@ drawable test_level_drawable
 drawable theme
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
-drawable user_en
+drawable user_den
 drawable visibility
 drawable visibility_off
 font comfortaabold
@@ -3249,6 +3252,10 @@ id action_container
 id action_context_bar
 id action_divider
 id action_forgotPasswordFragment_to_signInFragment
+<<<<<<< HEAD
+id action_friendFragment_to_friendPostsFragment
+=======
+>>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
 id action_friendPostsFragment_to_friendFragment
 id action_homeFragment_to_addTextFragment
 id action_homeFragment_to_friendFragment
@@ -3263,6 +3270,7 @@ id action_mode_bar_stub
 id action_mode_close_button
 id action_myPostsFragment_to_profileFragment
 id action_notificationFragment_to_friendFragment
+id action_profileFragment_to_myPostsFragment
 id action_profileFragment_to_settingFragment
 id action_registerFragment_to_registerPasswordFragment
 id action_registerFragment_to_signInFragment
@@ -3273,7 +3281,10 @@ id action_settingFragment_to_changePasswordFragment
 id action_settingFragment_to_editProfileFragment
 id action_settingFragment_to_notificationSettingFragment
 id action_settingFragment_to_savedPostsFragment
+<<<<<<< HEAD
+=======
 id action_settingFragment_to_signInFragment
+>>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
 id action_signInFragment_to_forgotPasswordFragment
 id action_signInFragment_to_homeFragment
 id action_signInFragment_to_registerFragment
@@ -3499,7 +3510,12 @@ id image_view_message
 id immediateStop
 id imv_add_image
 id imv_avatar
+<<<<<<< HEAD
+id imv_avatar_friend
+id imv_avatar_my_posts
+=======
 id imv_camera
+>>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
 id imv_gallery_photo
 id included
 id indeterminate
@@ -3534,6 +3550,7 @@ id listMessFragment
 id listMode
 id list_item
 id locale
+id log_in
 id log_out
 id ltr
 id m3_side_sheet
@@ -3652,7 +3669,6 @@ id phone
 id pin
 id pooling_container_listener_holder_tag
 id position
-id post
 id postLayout
 id power_background
 id power_menu_card
@@ -3665,7 +3681,13 @@ id radio
 id ratio
 id rectangles
 id recyclerview
+<<<<<<< HEAD
+id recyclerview_friend
 id recyclerview_friend_posts
+id recyclerview_home
+=======
+id recyclerview_friend_posts
+>>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
 id recyclerview_my_posts
 id recyclerview_notification
 id recyclerview_profile
@@ -3798,7 +3820,9 @@ id textInputLayout12
 id textInputLayout2
 id textInputLayout3
 id textInputLayout4
+id textInputLayout5
 id textInputLayout6
+id textInputLayout7
 id textInputLayout8
 id textInputLayout9
 id textInputLayoutEmail
@@ -4056,13 +4080,23 @@ layout fragment_splash
 layout item_add_image
 layout item_create_post
 layout item_friend
+<<<<<<< HEAD
+layout item_friend_posts
+layout item_image_friend
+=======
+>>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
 layout item_image_profile
 layout item_infomation_profile
 layout item_list_search
 layout item_listmess
+layout item_my_posts
 layout item_notification
 layout item_post
+<<<<<<< HEAD
 layout item_power_menu_library_skydoves
+=======
+layout item_saved_posts
+>>>>>>> a25a11749b92dc3d6ab447639a8b7168424c83db
 layout item_search
 layout item_search_user
 layout item_send

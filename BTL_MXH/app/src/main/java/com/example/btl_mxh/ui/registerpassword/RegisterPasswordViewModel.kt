@@ -3,12 +3,15 @@ package com.example.btl_mxh.ui.registerpassword
 import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.example.btl_mxh.base.BaseViewModel
 import com.example.btl_mxh.data.remote.repository.account.IAccountRepository
 import com.example.btl_mxh.model.Register
 import com.example.btl_mxh.model.RegisterEntity
-
+import com.example.btl_mxh.base.BaseViewModel
 private const val TAG = "RegisterViewModel"
+
+class RegisterPasswordViewModel: BaseViewModel() {
+
+
 
 class RegisterPasswordViewModel(
     private val accountRepo: IAccountRepository

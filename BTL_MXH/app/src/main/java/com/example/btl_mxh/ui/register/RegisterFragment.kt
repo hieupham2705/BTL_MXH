@@ -5,7 +5,12 @@ import android.provider.ContactsContract.CommonDataKinds.Phone
 import androidx.core.os.bundleOf
 import androidx.navigation.fragment.findNavController
 import com.example.btl_mxh.R
+<<<<<<< HEAD
 import com.example.btl_mxh.base.BaseFragment
+import com.example.btl_mxh.base.BaseViewModel
+=======
+import com.example.btl_mxh.base.BaseFragment
+>>>>>>> b2688cf5b5e6252568cfe597835f70eb2d803a7e
 import com.example.btl_mxh.databinding.FragmentRegisterBinding
 import com.example.btl_mxh.model.RegisterEntity
 import com.example.btl_mxh.utils.extension.showToast
@@ -24,7 +29,7 @@ class RegisterFragment : BaseFragment<FragmentRegisterBinding>(FragmentRegisterB
 
     override fun handleEvent() {
         binding.apply {
-            signIn.setOnClickListener {
+            logIn.setOnClickListener {
                 findNavController().navigate(R.id.action_registerFragment_to_signInFragment)
             }
             next.setOnClickListener {

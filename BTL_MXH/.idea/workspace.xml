@@ -13,6 +13,9 @@
     <list default="true" id="43c78165-e82c-481a-ae26-d1238ed62562" name="Changes" comment="" />
 =======
     <list default="true" id="43c78165-e82c-481a-ae26-d1238ed62562" name="Changes" comment="">
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/btl_mxh/ui/profile/ProfileFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/btl_mxh/ui/profile/ProfileFragment.kt" afterDir="false" />
+=======
       <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/btl_mxh/ui/addpost/AddPostViewModel.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5/executionHistory/executionHistory.lock" afterDir="false" />
@@ -220,6 +223,7 @@
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_add_image.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_add_image.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/navigation/nav_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/navigation/nav_main.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+>>>>>>> b2688cf5b5e6252568cfe597835f70eb2d803a7e
     </list>
 >>>>>>> b2688cf5b5e6252568cfe597835f70eb2d803a7e
     <option name="SHOW_DIALOG" value="false" />
@@ -227,7 +231,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[ec6fe26]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\Admin\.android\avd\Pixel_5_API_28.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -275,12 +279,19 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="navigationResourceFile" />
+<<<<<<< HEAD
+        <option value="Kotlin Data Class" />
+        <option value="Kotlin File" />
+        <option value="resourceFile" />
+        <option value="Class" />
+=======
         <option value="Kotlin File" />
         <option value="Kotlin Object" />
         <option value="Kotlin Interface" />
         <option value="Class" />
         <option value="resourceFile" />
         <option value="Kotlin Data Class" />
+>>>>>>> b2688cf5b5e6252568cfe597835f70eb2d803a7e
         <option value="layoutResourceFile" />
         <option value="Kotlin Class" />
       </list>
@@ -308,6 +319,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;android-custom-viewD:/BTL_N4_HIT/BTL_MXH/BTL_MXH/app/src/main/java/com/example/btl_mxh/base/BaseTextInputEditText.kt_SELECTED&quot;: &quot;BaseTextInputEditText&quot;,
+    &quot;android-custom-viewE:/code/android/BTL/BTL_MXH/app/src/main/java/com/example/btl_mxh/base/BaseTextInputEditText.kt_SELECTED&quot;: &quot;BaseTextInputEditText&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;E:/code/android/BTL/BTL_MXH/app/src/test/java&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/BTL_N4_HIT/BTL_MXH/BTL_MXH&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+=======
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ApkExportedModule": "BTL_MXH.app",
@@ -325,6 +351,7 @@
     "project.structure.proportion": "0.17",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.idesettings.quicklists"
+>>>>>>> b2688cf5b5e6252568cfe597835f70eb2d803a7e
   }
 }]]></component>
   <component name="RecentsManager">
@@ -364,8 +391,12 @@
       <recent name="com.example.btl_mxh" />
     </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+<<<<<<< HEAD
+      <recent name="com.example.btl_mxh.model" />
+=======
       <recent name="com.example.btl_mxh.data.remote.datasource.search" />
       <recent name="com.example.btl_mxh.data.remote.datasource.login" />
+>>>>>>> b2688cf5b5e6252568cfe597835f70eb2d803a7e
     </key>
     <key name="android.template.100455216">
       <recent name="com.example.btl_mxh" />

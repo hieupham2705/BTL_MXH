@@ -20,11 +20,12 @@ public final class FragmentHomeBinding implements ViewBinding {
   private final FrameLayout rootView;
 
   @NonNull
-  public final RecyclerView recyclerview;
+  public final RecyclerView recyclerviewHome;
 
-  private FragmentHomeBinding(@NonNull FrameLayout rootView, @NonNull RecyclerView recyclerview) {
+  private FragmentHomeBinding(@NonNull FrameLayout rootView,
+      @NonNull RecyclerView recyclerviewHome) {
     this.rootView = rootView;
-    this.recyclerview = recyclerview;
+    this.recyclerviewHome = recyclerviewHome;
   }
 
   @Override
@@ -54,13 +55,13 @@ public final class FragmentHomeBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.recyclerview;
-      RecyclerView recyclerview = ViewBindings.findChildViewById(rootView, id);
-      if (recyclerview == null) {
+      id = R.id.recyclerview_home;
+      RecyclerView recyclerviewHome = ViewBindings.findChildViewById(rootView, id);
+      if (recyclerviewHome == null) {
         break missingId;
       }
 
-      return new FragmentHomeBinding((FrameLayout) rootView, recyclerview);
+      return new FragmentHomeBinding((FrameLayout) rootView, recyclerviewHome);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

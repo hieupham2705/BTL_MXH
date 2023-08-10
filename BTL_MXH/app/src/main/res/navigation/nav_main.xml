@@ -40,6 +40,9 @@
         <action
             android:id="@+id/action_profileFragment_to_settingFragment"
             app:destination="@id/settingFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_myPostsFragment"
+            app:destination="@id/myPostsFragment" />
     </fragment>
     <fragment
         android:id="@+id/signInFragment"
@@ -99,11 +102,17 @@
             android:id="@+id/action_settingFragment_to_editProfileFragment"
             app:destination="@id/editProfileFragment" />
         <action
+<<<<<<< HEAD
+            android:id="@+id/action_settingFragment_to_savedPostsFragment"
+            app:destination="@id/savedPostsFragment" />
+
+=======
             android:id="@+id/action_settingFragment_to_signInFragment"
             app:destination="@id/signInFragment"/>
         <action
             android:id="@+id/action_settingFragment_to_savedPostsFragment"
             app:destination="@id/savedPostsFragment" />
+>>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
     </fragment>
     <fragment
         android:id="@+id/changePasswordFragment"
@@ -133,7 +142,11 @@
         android:id="@+id/friendFragment"
         android:name="com.example.btl_mxh.ui.friend.FriendFragment"
         android:label="fragment_friend"
-        tools:layout="@layout/fragment_friend" />
+        tools:layout="@layout/fragment_friend" >
+        <action
+            android:id="@+id/action_friendFragment_to_friendPostsFragment"
+            app:destination="@id/friendPostsFragment" />
+    </fragment>
     <fragment
         android:id="@+id/addTextFragment"
         android:name="com.example.btl_mxh.ui.addpost.AddPostFragment"
@@ -151,11 +164,39 @@
         android:id="@+id/listMessFragment"
         android:name="com.example.btl_mxh.ui.listmess.ListMessFragment"
         android:label="fragment_list_mess"
-        tools:layout="@layout/fragment_list_mess" >
+        tools:layout="@layout/fragment_list_mess" />
+    <fragment
+        android:id="@+id/friendPostsFragment"
+        android:name="com.example.btl_mxh.ui.friend_posts.FriendPostsFragment"
+        android:label="fragment_friend_posts"
+        tools:layout="@layout/fragment_friend_posts" >
+        <action
+            android:id="@+id/action_friendPostsFragment_to_friendFragment"
+            app:destination="@id/friendFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myPostsFragment"
+        android:name="com.example.btl_mxh.ui.my_posts.MyPostsFragment"
+        android:label="fragment_my_posts"
+        tools:layout="@layout/fragment_my_posts" >
+        <action
+            android:id="@+id/action_myPostsFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/savedPostsFragment"
+        android:name="com.example.btl_mxh.ui.saved_posts.SavedPostsFragment"
+        android:label="fragment_saved_posts"
+        tools:layout="@layout/fragment_saved_posts" >
+        <action
+            android:id="@+id/action_savedPostsFragment_to_friendFragment"
+            app:destination="@id/friendFragment" />
+    </fragment>
+
         <action
             android:id="@+id/action_listMessFragment_to_messengerFragment"
             app:destination="@id/messengerFragment" />
-    </fragment>
+
     <fragment
         android:id="@+id/splashFragment"
         android:name="com.example.btl_mxh.ui.splas.SplashFragment"

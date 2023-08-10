@@ -9,11 +9,18 @@ import androidx.navigation.fragment.findNavController
 import com.example.btl_mxh.R
 import com.example.btl_mxh.base.BaseFragment
 import com.example.btl_mxh.databinding.FragmentHomeBinding
+<<<<<<< HEAD
+import com.example.btl_mxh.model.Auth
+import com.example.btl_mxh.model.RegisterEntity
+import com.example.btl_mxh.ui.profile.viewModel
+
+=======
 import com.example.btl_mxh.ui.home.adapter.HomeAdapter
 import com.skydoves.powermenu.MenuAnimation
 import com.skydoves.powermenu.PowerMenu
 import com.skydoves.powermenu.PowerMenuItem
 import org.koin.androidx.viewmodel.ext.android.viewModel
+>>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
 
 
 private const val TAG = "HomeFragment"
@@ -29,6 +36,23 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::infl
     }
 
     override fun bindData() {
+<<<<<<< HEAD
+
+        viewModel.stateLogin.observe(this) {
+            adapterPost.setAdapter(it)
+        }
+        binding.recyclerviewHome.adapter = adapterPost
+
+//        viewModel.stateAuth.observe(viewLifecycleOwner) { _auth ->
+//            viewModel.statePostGetAll.observe(viewLifecycleOwner) { postGetAll ->
+//                Log.e(TAG,postGetAll.toString())
+//                adapter.setAdapter(viewModel.stateAuth.value!!, postGetAll)
+                binding.recyclerview.adapter = adapter
+//            }
+
+//        }
+
+=======
         viewModel.stateAuth.observe(viewLifecycleOwner) { _auth ->
             viewModel.statePostGetAll.observe(viewLifecycleOwner) { _postGetAll ->
                 Log.e(TAG, _postGetAll.toString())
@@ -52,6 +76,7 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::infl
             }
 
         }
+>>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
     }
 
     private fun onClickMoreVert() {

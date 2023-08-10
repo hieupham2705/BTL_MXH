@@ -33,6 +33,9 @@ public final class FragmentRegisterBinding implements ViewBinding {
   public final ImageView imageView4;
 
   @NonNull
+  public final TextView logIn;
+
+  @NonNull
   public final AppCompatButton next;
 
   @NonNull
@@ -45,7 +48,13 @@ public final class FragmentRegisterBinding implements ViewBinding {
   public final TextInputLayout textInputLayout4;
 
   @NonNull
+  public final TextInputLayout textInputLayout5;
+
+  @NonNull
   public final TextInputLayout textInputLayout6;
+
+  @NonNull
+  public final TextInputLayout textInputLayout7;
 
   @NonNull
   public final TextInputLayout textInputLayoutEmail;
@@ -64,9 +73,10 @@ public final class FragmentRegisterBinding implements ViewBinding {
 
   private FragmentRegisterBinding(@NonNull FrameLayout rootView,
       @NonNull BaseTextInputEditText email, @NonNull BaseTextInputEditText fullname,
-      @NonNull ImageView imageView4, @NonNull AppCompatButton next,
+      @NonNull ImageView imageView4, @NonNull TextView logIn, @NonNull AppCompatButton next,
       @NonNull BaseTextInputEditText phone, @NonNull TextView signIn,
-      @NonNull TextInputLayout textInputLayout4, @NonNull TextInputLayout textInputLayout6,
+      @NonNull TextInputLayout textInputLayout4, @NonNull TextInputLayout textInputLayout5,
+      @NonNull TextInputLayout textInputLayout6, @NonNull TextInputLayout textInputLayout7,
       @NonNull TextInputLayout textInputLayoutEmail, @NonNull TextInputLayout textInputLayoutPhone,
       @NonNull TextView textView4, @NonNull TextView textView7,
       @NonNull BaseTextInputEditText username) {
@@ -74,11 +84,14 @@ public final class FragmentRegisterBinding implements ViewBinding {
     this.email = email;
     this.fullname = fullname;
     this.imageView4 = imageView4;
+    this.logIn = logIn;
     this.next = next;
     this.phone = phone;
     this.signIn = signIn;
     this.textInputLayout4 = textInputLayout4;
+    this.textInputLayout5 = textInputLayout5;
     this.textInputLayout6 = textInputLayout6;
+    this.textInputLayout7 = textInputLayout7;
     this.textInputLayoutEmail = textInputLayoutEmail;
     this.textInputLayoutPhone = textInputLayoutPhone;
     this.textView4 = textView4;
@@ -131,6 +144,12 @@ public final class FragmentRegisterBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.log_in;
+      TextView logIn = ViewBindings.findChildViewById(rootView, id);
+      if (logIn == null) {
+        break missingId;
+      }
+
       id = R.id.next;
       AppCompatButton next = ViewBindings.findChildViewById(rootView, id);
       if (next == null) {
@@ -155,9 +174,21 @@ public final class FragmentRegisterBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.textInputLayout5;
+      TextInputLayout textInputLayout5 = ViewBindings.findChildViewById(rootView, id);
+      if (textInputLayout5 == null) {
+        break missingId;
+      }
+
       id = R.id.textInputLayout6;
       TextInputLayout textInputLayout6 = ViewBindings.findChildViewById(rootView, id);
       if (textInputLayout6 == null) {
+        break missingId;
+      }
+
+      id = R.id.textInputLayout7;
+      TextInputLayout textInputLayout7 = ViewBindings.findChildViewById(rootView, id);
+      if (textInputLayout7 == null) {
         break missingId;
       }
 
@@ -191,9 +222,10 @@ public final class FragmentRegisterBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentRegisterBinding((FrameLayout) rootView, email, fullname, imageView4, next,
-          phone, signIn, textInputLayout4, textInputLayout6, textInputLayoutEmail,
-          textInputLayoutPhone, textView4, textView7, username);
+      return new FragmentRegisterBinding((FrameLayout) rootView, email, fullname, imageView4, logIn,
+          next, phone, signIn, textInputLayout4, textInputLayout5, textInputLayout6,
+          textInputLayout7, textInputLayoutEmail, textInputLayoutPhone, textView4, textView7,
+          username);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
