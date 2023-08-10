@@ -3,18 +3,19 @@ package com.example.btl_mxh.data.remote.datasource.profile
 import com.example.btl_mxh.base.BaseResponse
 import com.example.btl_mxh.data.service.ApiService
 import com.example.btl_mxh.model.*
-import java.io.File
+import okhttp3.MultipartBody
+import okhttp3.RequestBody
 
 
 class ProfileRemoteDataSource(private val service: ApiService.ProfileService) :
     IProfileDataSource.Remote {
     override suspend fun updateProfile(
-        birthday: String,
-        gender: String,
-        avatar: File,
-        fullName: String,
-        username: String,
-        email: String
+        birthday: RequestBody,
+        gender: RequestBody,
+        avatar: MultipartBody.Part,
+        fullName: RequestBody,
+        username: RequestBody,
+        email: RequestBody
     ): BaseResponse<UpdateProfiledata> {
         return service.updatePost(
             birthday,

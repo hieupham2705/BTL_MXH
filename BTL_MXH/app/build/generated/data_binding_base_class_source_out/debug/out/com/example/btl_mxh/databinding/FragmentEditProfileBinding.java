@@ -8,6 +8,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.btl_mxh.R;
@@ -20,6 +21,9 @@ import java.lang.String;
 public final class FragmentEditProfileBinding implements ViewBinding {
   @NonNull
   private final LinearLayout rootView;
+
+  @NonNull
+  public final AppCompatButton btnUpdate;
 
   @NonNull
   public final BaseTextInputEditText edtBirthday;
@@ -58,15 +62,17 @@ public final class FragmentEditProfileBinding implements ViewBinding {
   public final TextInputLayout textInputLayoutUsername;
 
   private FragmentEditProfileBinding(@NonNull LinearLayout rootView,
-      @NonNull BaseTextInputEditText edtBirthday, @NonNull BaseTextInputEditText edtEmail,
-      @NonNull BaseTextInputEditText edtFullName, @NonNull BaseTextInputEditText edtGender,
-      @NonNull BaseTextInputEditText edtUserName, @NonNull ImageView imvAvatar,
-      @NonNull ImageView imvCamera, @NonNull TextInputLayout textInputLayoutBirthday,
+      @NonNull AppCompatButton btnUpdate, @NonNull BaseTextInputEditText edtBirthday,
+      @NonNull BaseTextInputEditText edtEmail, @NonNull BaseTextInputEditText edtFullName,
+      @NonNull BaseTextInputEditText edtGender, @NonNull BaseTextInputEditText edtUserName,
+      @NonNull ImageView imvAvatar, @NonNull ImageView imvCamera,
+      @NonNull TextInputLayout textInputLayoutBirthday,
       @NonNull TextInputLayout textInputLayoutEmail,
       @NonNull TextInputLayout textInputLayoutFullname,
       @NonNull TextInputLayout textInputLayoutGender,
       @NonNull TextInputLayout textInputLayoutUsername) {
     this.rootView = rootView;
+    this.btnUpdate = btnUpdate;
     this.edtBirthday = edtBirthday;
     this.edtEmail = edtEmail;
     this.edtFullName = edtFullName;
@@ -108,6 +114,12 @@ public final class FragmentEditProfileBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btn_update;
+      AppCompatButton btnUpdate = ViewBindings.findChildViewById(rootView, id);
+      if (btnUpdate == null) {
+        break missingId;
+      }
+
       id = R.id.edt_birthday;
       BaseTextInputEditText edtBirthday = ViewBindings.findChildViewById(rootView, id);
       if (edtBirthday == null) {
@@ -180,10 +192,10 @@ public final class FragmentEditProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentEditProfileBinding((LinearLayout) rootView, edtBirthday, edtEmail,
-          edtFullName, edtGender, edtUserName, imvAvatar, imvCamera, textInputLayoutBirthday,
-          textInputLayoutEmail, textInputLayoutFullname, textInputLayoutGender,
-          textInputLayoutUsername);
+      return new FragmentEditProfileBinding((LinearLayout) rootView, btnUpdate, edtBirthday,
+          edtEmail, edtFullName, edtGender, edtUserName, imvAvatar, imvCamera,
+          textInputLayoutBirthday, textInputLayoutEmail, textInputLayoutFullname,
+          textInputLayoutGender, textInputLayoutUsername);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

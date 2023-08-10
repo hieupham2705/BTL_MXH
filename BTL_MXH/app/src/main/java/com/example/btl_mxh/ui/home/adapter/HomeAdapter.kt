@@ -18,7 +18,7 @@ import com.example.btl_mxh.utils.extension.loadImageFromUrl
 class HomeAdapter(
     private val createPost: Auth,
     private val listPost: List<Post>,
-    private val onClickPost: () -> Unit,
+    private val onClickMoreVert: () -> Unit,
     private val onClickSearch: () -> Unit,
     private val onClickCreatePost: () -> Unit,
     private val onClickMessage: () -> Unit,
@@ -36,6 +36,7 @@ class HomeAdapter(
     class ViewHolderSearch(val binding: ItemSearchBinding) : RecyclerView.ViewHolder(binding.root) {
 
     }
+
 
     class ViewHolderCreatePost(val binding: ItemCreatePostBinding) :
         RecyclerView.ViewHolder(binding.root) {
@@ -126,6 +127,9 @@ class HomeAdapter(
                         tvLove.setTextColor(Color.RED)
                     else
                         tvLove.setTextColor(Color.parseColor("#908e8e"))
+                }
+                moreVert.setOnClickListener {
+                    onClickMoreVert.invoke()
                 }
             }
 

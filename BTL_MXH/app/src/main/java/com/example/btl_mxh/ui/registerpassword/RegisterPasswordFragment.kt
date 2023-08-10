@@ -6,11 +6,10 @@ import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.example.btl_mxh.R
 import com.example.btl_mxh.base.BaseFragment
-import com.example.btl_mxh.base.BaseViewModel
 import com.example.btl_mxh.databinding.FragmentRegisterPasswordBinding
 import com.example.btl_mxh.model.RegisterEntity
-import com.example.btl_mxh.ui.profile.viewModel
 import com.example.btl_mxh.utils.extension.showToast
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 
 class RegisterPasswordFragment :
@@ -23,7 +22,7 @@ class RegisterPasswordFragment :
 
     override fun handleEvent() {
         binding.apply {
-            logIn.setOnClickListener {
+            signIn.setOnClickListener {
                 findNavController().navigate(R.id.action_registerPasswordFragment_to_signInFragment)
             }
             create.setOnClickListener {

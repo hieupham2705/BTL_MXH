@@ -8,21 +8,15 @@ import android.graphics.BitmapFactory
 import android.net.Uri
 import android.os.Environment
 import android.util.Log
-<<<<<<< HEAD
-import android.view.ViewGroup
-=======
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
->>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.btl_mxh.R
 import com.example.btl_mxh.base.BaseFragment
 import com.example.btl_mxh.databinding.FragmentAddTextBinding
-<<<<<<< HEAD
-import com.example.btl_mxh.ui.profile.viewModel
-=======
+import com.example.btl_mxh.utils.extension.FileUtils
 import com.example.btl_mxh.utils.extension.showToast
 import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
@@ -30,7 +24,6 @@ import okhttp3.MultipartBody
 import okhttp3.RequestBody
 import okhttp3.RequestBody.Companion.asRequestBody
 import org.koin.androidx.viewmodel.ext.android.viewModel
->>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
 import java.io.File
 import java.io.FileOutputStream
 import java.io.IOException
@@ -65,6 +58,7 @@ class AddPostFragment : BaseFragment<FragmentAddTextBinding>(FragmentAddTextBind
                 if (pngFilePath != null) {
                     pngFilePath?.forEach { image ->
                         val imageFile = File(image)
+                        Log.e(TAG,"link image : ${imageFile.toString()}")
                         val imageRequestBody = imageFile.asRequestBody("image/*".toMediaType())
                         val imagePart = MultipartBody.Part.createFormData(
                             "image",
@@ -121,7 +115,7 @@ class AddPostFragment : BaseFragment<FragmentAddTextBinding>(FragmentAddTextBind
                         }
                         // Sử dụng imageUris để làm gì đó với các ảnh đã chọn
                         pngFilePath = convertUrisToPngs(context!!.contentResolver, imageUris)
-                        Log.e(TAG, imageUris.toString())
+                        Log.e(TAG, pngFilePath.toString())
                         adapterPost.setAdapter(imageUris)
 
                     }
@@ -140,7 +134,7 @@ class AddPostFragment : BaseFragment<FragmentAddTextBinding>(FragmentAddTextBind
     fun convertUrisToPngs(contentResolver: ContentResolver, uris: List<Uri>): List<String> {
         val pngPaths = mutableListOf<String>()
         for (uri in uris) {
-            val pngPath = uriToJpg(contentResolver, uri)
+            val pngPath = FileUtils.uriToJpg(contentResolver, uri,requireContext())
             pngPath?.let {
                 pngPaths.add(it)
             }
@@ -148,29 +142,29 @@ class AddPostFragment : BaseFragment<FragmentAddTextBinding>(FragmentAddTextBind
         return pngPaths
     }
 
-    fun uriToJpg(contentResolver: ContentResolver, uri: Uri): String? {
-        try {
-            val inputStream = contentResolver.openInputStream(uri)
-            inputStream?.use {
-                // Chuyển đổi dữ liệu của tập tin ảnh thành đối tượng Bitmap
-                val bitmap = BitmapFactory.decodeStream(inputStream)
-
-                // Tạo một tập tin mới với định dạng JPG trong thư mục lưu trữ ngoài của ứng dụng
-                val storageDir = context?.getExternalFilesDir(Environment.DIRECTORY_PICTURES)
-                val file = File.createTempFile("image", ".jpg", storageDir)
-
-                // Ghi dữ liệu của Bitmap vào tập tin mới với định dạng JPG
-                val outputStream: OutputStream = FileOutputStream(file)
-                bitmap.compress(Bitmap.CompressFormat.JPEG, 100, outputStream)
-                outputStream.flush()
-                outputStream.close()
-
-                return file.absolutePath
-            }
-        } catch (e: IOException) {
-            e.printStackTrace()
-        }
-        return null
-    }
+//    fun uriToJpg(contentResolver: ContentResolver, uri: Uri): String? {
+//        try {
+//            val inputStream = contentResolver.openInputStream(uri)
+//            inputStream?.use {
+//                // Chuyển đổi dữ liệu của tập tin ảnh thành đối tượng Bitmap
+//                val bitmap = BitmapFactory.decodeStream(inputStream)
+//
+//                // Tạo một tập tin mới với định dạng JPG trong thư mục lưu trữ ngoài của ứng dụng
+//                val storageDir = context?.getExternalFilesDir(Environment.DIRECTORY_PICTURES)
+//                val file = File.createTempFile("image", ".jpg", storageDir)
+//
+//                // Ghi dữ liệu của Bitmap vào tập tin mới với định dạng JPG
+//                val outputStream: OutputStream = FileOutputStream(file)
+//                bitmap.compress(Bitmap.CompressFormat.JPEG, 100, outputStream)
+//                outputStream.flush()
+//                outputStream.close()
+//
+//                return file.absolutePath
+//            }
+//        } catch (e: IOException) {
+//            e.printStackTrace()
+//        }
+//        return null
+//    }
 
 }

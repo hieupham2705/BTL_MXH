@@ -4,11 +4,11 @@ import android.app.Dialog
 import androidx.navigation.fragment.findNavController
 import com.example.btl_mxh.R
 import com.example.btl_mxh.base.BaseFragment
-import com.example.btl_mxh.base.BaseViewModel
 import com.example.btl_mxh.databinding.FragmentSettingBinding
-import com.example.btl_mxh.ui.profile.viewModel
 import com.example.btl_mxh.utils.extension.openDialogQuestion
 import com.example.btl_mxh.utils.extension.showToast
+import org.koin.androidx.viewmodel.ext.android.viewModel
+
 class SettingFragment : BaseFragment<FragmentSettingBinding>(FragmentSettingBinding::inflate) {
     override val viewModel by viewModel<SettingViewModel>()
 

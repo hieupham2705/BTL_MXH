@@ -78,35 +78,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="5dp"/>
 
-<<<<<<< HEAD
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:background="@drawable/border_follower"
-                android:text="@string/follower"
-                android:textAllCaps="false"
-                android:fontFamily="@font/comfortaasemibold"
-                android:textColor="@color/black"
-                android:gravity="center"
-                android:textSize="13sp"
-                />
-
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="5dp"/>
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:background="@drawable/border_follower"
-                android:text="@string/following"
-                android:textAllCaps="false"
-                android:fontFamily="@font/comfortaasemibold"
-                android:textColor="@color/black"
-                android:gravity="center"
-                android:textSize="13sp"
-                />
-=======
            <LinearLayout
                android:orientation="vertical"
                android:layout_width="wrap_content"
@@ -141,7 +112,6 @@
                    android:textSize="13sp"
                    />
            </LinearLayout>
->>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
 
         </LinearLayout>
     </LinearLayout>

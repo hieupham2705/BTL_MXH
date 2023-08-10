@@ -43,7 +43,6 @@ drawable border_settingscr
 drawable borderappcombatbutton
 drawable borderctlo
 drawable change_password
-drawable cmt
 drawable comment
 drawable edit
 drawable globe
@@ -63,16 +62,14 @@ drawable img_forgotpasswordscr
 drawable img_registerscr
 drawable img_signinscr
 drawable logout
-drawable love
 drawable mayanh
 drawable messenger
 drawable padlock
 drawable photo
-drawable resource_public
 drawable rounded_toast_background
 drawable search
 drawable theme
-drawable user_den
+drawable user_en
 drawable visibility
 drawable visibility_off
 font comfortaabold
@@ -109,10 +106,6 @@ font nunito_semibold
 font nunito_semibolditalic
 id action_addTextFragment_to_homeFragment
 id action_forgotPasswordFragment_to_signInFragment
-<<<<<<< HEAD
-id action_friendFragment_to_friendPostsFragment
-=======
->>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
 id action_friendPostsFragment_to_friendFragment
 id action_homeFragment_to_addTextFragment
 id action_homeFragment_to_friendFragment
@@ -121,7 +114,6 @@ id action_homeFragment_to_searchFragment
 id action_listMessFragment_to_messengerFragment
 id action_myPostsFragment_to_profileFragment
 id action_notificationFragment_to_friendFragment
-id action_profileFragment_to_myPostsFragment
 id action_profileFragment_to_settingFragment
 id action_registerFragment_to_registerPasswordFragment
 id action_registerFragment_to_signInFragment
@@ -132,10 +124,7 @@ id action_settingFragment_to_changePasswordFragment
 id action_settingFragment_to_editProfileFragment
 id action_settingFragment_to_notificationSettingFragment
 id action_settingFragment_to_savedPostsFragment
-<<<<<<< HEAD
-=======
 id action_settingFragment_to_signInFragment
->>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
 id action_signInFragment_to_forgotPasswordFragment
 id action_signInFragment_to_homeFragment
 id action_signInFragment_to_registerFragment
@@ -149,6 +138,7 @@ id btn_cancle
 id btn_confirm
 id btn_following
 id btn_search
+id btn_update
 id button_call
 id button_image
 id button_send
@@ -201,12 +191,7 @@ id image_avatar
 id image_view_message
 id imv_add_image
 id imv_avatar
-<<<<<<< HEAD
-id imv_avatar_friend
-id imv_avatar_my_posts
-=======
 id imv_camera
->>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
 id imv_gallery_photo
 id item_information_friend
 id layout_noti
@@ -215,7 +200,6 @@ id linearLayout2
 id linearLayout3
 id linearLayout4
 id listMessFragment
-id log_in
 id log_out
 id messengerFragment
 id more_vert
@@ -231,15 +215,10 @@ id notificationSettingFragment
 id password
 id password_again
 id phone
+id post
 id profileFragment
 id recyclerview
-<<<<<<< HEAD
-id recyclerview_friend
 id recyclerview_friend_posts
-id recyclerview_home
-=======
-id recyclerview_friend_posts
->>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
 id recyclerview_my_posts
 id recyclerview_notification
 id recyclerview_profile
@@ -269,9 +248,7 @@ id textInputLayout12
 id textInputLayout2
 id textInputLayout3
 id textInputLayout4
-id textInputLayout5
 id textInputLayout6
-id textInputLayout7
 id textInputLayout8
 id textInputLayout9
 id textInputLayoutEmail
@@ -343,19 +320,12 @@ layout fragment_splash
 layout item_add_image
 layout item_create_post
 layout item_friend
-<<<<<<< HEAD
-layout item_friend_posts
-layout item_image_friend
-=======
->>>>>>> 5d9c199773c4c8868da2936495f681d6398018bb
 layout item_image_profile
 layout item_infomation_profile
 layout item_list_search
 layout item_listmess
-layout item_my_posts
 layout item_notification
 layout item_post
-layout item_saved_posts
 layout item_search
 layout item_search_user
 layout item_send

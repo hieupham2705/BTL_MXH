@@ -30,13 +30,13 @@ public final class FragmentRegisterPasswordBinding implements ViewBinding {
   public final ImageView imageView4;
 
   @NonNull
-  public final TextView logIn;
-
-  @NonNull
   public final BaseTextInputEditText password;
 
   @NonNull
   public final BaseTextInputEditText passwordAgain;
+
+  @NonNull
+  public final TextView signIn;
 
   @NonNull
   public final TextInputLayout textInputLayout1;
@@ -57,17 +57,18 @@ public final class FragmentRegisterPasswordBinding implements ViewBinding {
   public final TextView tvErrorJoint;
 
   private FragmentRegisterPasswordBinding(@NonNull FrameLayout rootView,
-      @NonNull AppCompatButton create, @NonNull ImageView imageView4, @NonNull TextView logIn,
+      @NonNull AppCompatButton create, @NonNull ImageView imageView4,
       @NonNull BaseTextInputEditText password, @NonNull BaseTextInputEditText passwordAgain,
-      @NonNull TextInputLayout textInputLayout1, @NonNull TextInputLayout textInputLayout2,
-      @NonNull TextView textView4, @NonNull TextView textView7, @NonNull TextView tvErrorCondition,
+      @NonNull TextView signIn, @NonNull TextInputLayout textInputLayout1,
+      @NonNull TextInputLayout textInputLayout2, @NonNull TextView textView4,
+      @NonNull TextView textView7, @NonNull TextView tvErrorCondition,
       @NonNull TextView tvErrorJoint) {
     this.rootView = rootView;
     this.create = create;
     this.imageView4 = imageView4;
-    this.logIn = logIn;
     this.password = password;
     this.passwordAgain = passwordAgain;
+    this.signIn = signIn;
     this.textInputLayout1 = textInputLayout1;
     this.textInputLayout2 = textInputLayout2;
     this.textView4 = textView4;
@@ -115,12 +116,6 @@ public final class FragmentRegisterPasswordBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.log_in;
-      TextView logIn = ViewBindings.findChildViewById(rootView, id);
-      if (logIn == null) {
-        break missingId;
-      }
-
       id = R.id.password;
       BaseTextInputEditText password = ViewBindings.findChildViewById(rootView, id);
       if (password == null) {
@@ -130,6 +125,12 @@ public final class FragmentRegisterPasswordBinding implements ViewBinding {
       id = R.id.password_again;
       BaseTextInputEditText passwordAgain = ViewBindings.findChildViewById(rootView, id);
       if (passwordAgain == null) {
+        break missingId;
+      }
+
+      id = R.id.sign_in;
+      TextView signIn = ViewBindings.findChildViewById(rootView, id);
+      if (signIn == null) {
         break missingId;
       }
 
@@ -169,8 +170,8 @@ public final class FragmentRegisterPasswordBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentRegisterPasswordBinding((FrameLayout) rootView, create, imageView4, logIn,
-          password, passwordAgain, textInputLayout1, textInputLayout2, textView4, textView7,
+      return new FragmentRegisterPasswordBinding((FrameLayout) rootView, create, imageView4,
+          password, passwordAgain, signIn, textInputLayout1, textInputLayout2, textView4, textView7,
           tvErrorCondition, tvErrorJoint);
     }
     String missingId = rootView.getResources().getResourceName(id);
