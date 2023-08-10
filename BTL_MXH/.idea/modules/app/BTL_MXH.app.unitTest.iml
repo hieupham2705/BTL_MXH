@@ -15,6 +15,7 @@
             <stringArg name="classpath">
               <args>
                 <arg>$MODULE_DIR$/../../../app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/6df41c852dd68a868c49dfc9eeb3a4f0/transformed/jetified-powermenu-2.2.4-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/afc7c1e028af8bdff1db953e4a6fa422/transformed/jetified-meow-bottom-navigation-1.3.1-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/080732198d7a13c0f085648ae0326b82/transformed/databinding-adapters-4.0.0-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/8a3fa06b318826eed437fae59dd77f91/transformed/databinding-runtime-4.0.0-api.jar</arg>
@@ -81,7 +82,7 @@
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/550e346f3a8a997bedc522758689f898/transformed/jetified-kotlinx-coroutines-core-jvm-1.6.4.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/6905de67d778b77cd4eed11395eab972/transformed/jetified-kotlinx-coroutines-android-1.6.4.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/c3d9dcb6953ca4b12dec9ca7a8d59aa0/transformed/jetified-koin-core-jvm-3.2.2.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/3bf6ee315f78f6863f39c2361ded0cb3/transformed/jetified-kotlin-stdlib-jdk8-1.8.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/7ea316fa359512771f1aef323340d02c/transformed/jetified-kotlin-stdlib-jdk8-1.8.20.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/35e161229bb56739022dab8275298fb2/transformed/jetified-kotlin-parcelize-runtime-1.8.0.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/2f40dbc81b8f11d53a8dc7118504846b/transformed/constraintlayout-2.1.4-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/1f4eceeb0bf4c283831e56370f621d06/transformed/jetified-firebase-crashlytics-buildtools-2.9.6.jar</arg>
@@ -90,7 +91,7 @@
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/0d0152e0efed978e230c8d264c10dbdc/transformed/jetified-retrofit-2.9.0.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/da2280fa147c6baeb136729d8bcbee7a/transformed/jetified-logging-interceptor-4.7.2.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/b3bf9b28e9e60299215db1436cb4b028/transformed/jetified-okhttp-4.7.2.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/15f3687c4006f4b169725390a4297c2b/transformed/jetified-kotlin-stdlib-jdk7-1.8.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/7c4ee857d55d15f040322a0d25af85f5/transformed/jetified-kotlin-stdlib-jdk7-1.8.20.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/1ae2b38d8355a75db413b6fbd7874396/transformed/jetified-kotlin-android-extensions-runtime-1.8.0.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/1d54aae26a5094751837a721e724da73/transformed/jetified-savedstate-ktx-1.2.1-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/a9f888a9f8cdc3084906660f9a2db3fa/transformed/jetified-savedstate-1.2.1-api.jar</arg>
@@ -189,11 +190,11 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="BTL_MXH.app.main" scope="TEST" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.annotation:annotation:1.3.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.20" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.8.20" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.8.20" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.20" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-parcelize-runtime:1.8.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.8.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.github.bumptech.glide:disklrucache:4.15.1" level="project" />
@@ -300,6 +301,7 @@
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.compose.animation:animation:1.0.1@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.compose.animation:animation-core:1.0.1@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.compose.foundation:foundation-layout:1.0.1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.github.skydoves:powermenu:2.2.4@aar" level="project" />
   </component>
   <component name="TestModuleProperties" production-module="BTL_MXH.app.main" />
 </module>

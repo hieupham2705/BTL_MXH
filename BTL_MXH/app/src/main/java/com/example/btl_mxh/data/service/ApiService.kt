@@ -56,14 +56,14 @@ interface ApiService {
 
     interface ProfileService {
         @PATCH(ApiConstant.ENDPOINT.USER)
-        @FormUrlEncoded
+        @Multipart
         suspend fun updatePost(
-            @Field("birthday") birthday: String,
-            @Field("gender") gender: String,
-            @Field("avatar") avatar: File,
-            @Field("fullName") fullName: String,
-            @Field("username") username: String,
-            @Field("email") email: String,
+            @Part("birthday") birthday: RequestBody,
+            @Part("gender") gender: RequestBody,
+            @Part avatar: MultipartBody.Part,
+            @Part("fullName") fullName: RequestBody,
+            @Part("username") username: RequestBody,
+            @Part("email") email: RequestBody,
         ): BaseResponse<UpdateProfiledata>
     }
 }

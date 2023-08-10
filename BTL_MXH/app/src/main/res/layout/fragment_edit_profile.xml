@@ -161,6 +161,7 @@
             android:layout_height="10dp"/>
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_update"
             android:foreground="?android:attr/selectableItemBackground"
             android:layout_width="match_parent"
             android:layout_height="60dp"

@@ -88,4 +88,6 @@ dependencies {
     def okhttp_version = "4.7.2"
     implementation "com.squareup.okhttp3:okhttp:${okhttp_version}"
     implementation "com.squareup.okhttp3:logging-interceptor:${okhttp_version}"
+
+    implementation "com.github.skydoves:powermenu:2.2.4"
 }

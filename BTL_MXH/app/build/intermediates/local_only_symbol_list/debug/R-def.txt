@@ -138,6 +138,7 @@ id btn_cancle
 id btn_confirm
 id btn_following
 id btn_search
+id btn_update
 id button_call
 id button_image
 id button_send

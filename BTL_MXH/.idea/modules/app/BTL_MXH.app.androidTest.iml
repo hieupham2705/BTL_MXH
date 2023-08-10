@@ -27,6 +27,7 @@
               <args>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/9601e061cc7a6857218d8096dc79bbe7/transformed/jetified-junit-1.1.5-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/ce6db96c5cc4dbe1d0556e8de0fe2a32/transformed/espresso-core-3.5.1-api.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/6df41c852dd68a868c49dfc9eeb3a4f0/transformed/jetified-powermenu-2.2.4-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/afc7c1e028af8bdff1db953e4a6fa422/transformed/jetified-meow-bottom-navigation-1.3.1-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/080732198d7a13c0f085648ae0326b82/transformed/databinding-adapters-4.0.0-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/8a3fa06b318826eed437fae59dd77f91/transformed/databinding-runtime-4.0.0-api.jar</arg>
@@ -94,7 +95,7 @@
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/977d7dc45ea52239f637736ec134f260/transformed/jetified-animation-core-1.0.1-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/550e346f3a8a997bedc522758689f898/transformed/jetified-kotlinx-coroutines-core-jvm-1.6.4.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/6905de67d778b77cd4eed11395eab972/transformed/jetified-kotlinx-coroutines-android-1.6.4.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/3bf6ee315f78f6863f39c2361ded0cb3/transformed/jetified-kotlin-stdlib-jdk8-1.8.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/7ea316fa359512771f1aef323340d02c/transformed/jetified-kotlin-stdlib-jdk8-1.8.20.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/35e161229bb56739022dab8275298fb2/transformed/jetified-kotlin-parcelize-runtime-1.8.0.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/2f40dbc81b8f11d53a8dc7118504846b/transformed/constraintlayout-2.1.4-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/1f4eceeb0bf4c283831e56370f621d06/transformed/jetified-firebase-crashlytics-buildtools-2.9.6.jar</arg>
@@ -132,9 +133,9 @@
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/a9f888a9f8cdc3084906660f9a2db3fa/transformed/jetified-savedstate-1.2.1-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.annotation/annotation/1.3.0/21f49f5f9b85fc49de712539f79123119740595/annotation-1.3.0.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/526e7c7f75ac899b7c2f1bb44eb3bd3f/transformed/jetified-annotation-experimental-1.3.0-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/15f3687c4006f4b169725390a4297c2b/transformed/jetified-kotlin-stdlib-jdk7-1.8.0.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/1ae2b38d8355a75db413b6fbd7874396/transformed/jetified-kotlin-android-extensions-runtime-1.8.0.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/b7d64132f66a266730bc51d2851cac80/transformed/jetified-okio-jvm-2.6.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/7c4ee857d55d15f040322a0d25af85f5/transformed/jetified-kotlin-stdlib-jdk7-1.8.20.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/20ad5945c9c801cb4d6d563f7a68bb50/transformed/jetified-kotlin-stdlib-1.8.20.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/600e03e9ad4c78892817893625f60a9e/transformed/jetified-kotlin-stdlib-common-1.8.20.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/36d498c45bbb4806e16c86fe829360ed/transformed/jetified-annotations-13.0.jar</arg>
@@ -217,8 +218,8 @@
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.lifecycle:lifecycle-common:2.6.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.4" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.20" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.20" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.guava:listenablefuture:1.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.concurrent:concurrent-futures:1.1.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.squareup:javawriter:2.1.1" level="project" />
@@ -334,6 +335,7 @@
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.compose.animation:animation:1.0.1@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.compose.animation:animation-core:1.0.1@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.compose.foundation:foundation-layout:1.0.1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.github.skydoves:powermenu:2.2.4@aar" level="project" />
   </component>
   <component name="TestModuleProperties" production-module="BTL_MXH.app.main" />
 </module>

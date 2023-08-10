@@ -49,7 +49,8 @@ class HomeViewModel(
             },
             onError = {
                 Log.e(TAG, "login:${it.message.toString()}")
-            }
+            },
+            showLoading = true
         )
     }
 
