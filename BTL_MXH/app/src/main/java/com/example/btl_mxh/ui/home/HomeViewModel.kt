@@ -10,6 +10,7 @@ import com.example.btl_mxh.data.remote.repository.post.IPostRepository
 import com.example.btl_mxh.data.remote.repository.profile.IProfileRepository
 import com.example.btl_mxh.data.remote.repository.search.ISearchRepository
 import com.example.btl_mxh.model.Auth
+import com.example.btl_mxh.model.DeletePost
 import com.example.btl_mxh.model.Post
 
 private const val TAG = "HomeViewModel"
@@ -27,6 +28,11 @@ class HomeViewModel(
 
     private val _stateSearchUserId = MutableLiveData<Search>()
     val stateSearchUserId: LiveData<Search> = _stateSearchUserId
+
+
+    private val _stateDeletePost = MutableLiveData<DeletePost>()
+    val stateDeletePost: LiveData<DeletePost> = _stateDeletePost
+
     fun auth() {
         executeTask(
             request = { accountRepo.authLogin() },
@@ -54,6 +60,25 @@ class HomeViewModel(
         )
     }
 
+    fun deletePost(id: String) {
+        executeTask(
+            request = { postRepo.deletePost(id) },
+            onSuccess = {
+                if (it.status == "SUCCESS") {
+                    it.data?.let { _delete ->
+                        _stateDeletePost.value = _delete
+                    }
+                }
+                else{
+                    Log.e(TAG, "home:${it.message.toString()}")
+                }
+            },
+            onError = {
+                Log.e(TAG, "home:${it.message.toString()}")
+            }
+        )
+    }
+
     fun searchUserId(id: String) {
         executeTask(
             request = { searchRepo.searchUserId(id) },
@@ -63,11 +88,16 @@ class HomeViewModel(
                         _stateSearchUserId.value = _search
                     }
                 } else
-                    Log.e(TAG, "login:${it.message.toString()}")
+                    Log.e(TAG, "home:${it.message.toString()}")
             },
             onError = {
-                Log.e(TAG, "login:${it.message.toString()}")
+                Log.e(TAG, "home:${it.message.toString()}")
             }
         )
+    }
+    val data: MutableLiveData<List<String>> = MutableLiveData()
+
+    fun deleteItem() {
+        _statePostGetAll.value = emptyList()
     }
 }

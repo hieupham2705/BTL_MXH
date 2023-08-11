@@ -2,12 +2,14 @@ package com.example.btl_mxh.ui.addpost
 
 import android.app.Activity
 import android.content.ContentResolver
+import android.content.Context
 import android.content.Intent
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.net.Uri
 import android.os.Environment
 import android.util.Log
+import android.webkit.MimeTypeMap
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.navigation.fragment.findNavController
@@ -34,7 +36,7 @@ private const val TAG = "AddTextFragment"
 class AddPostFragment : BaseFragment<FragmentAddTextBinding>(FragmentAddTextBinding::inflate) {
 
     private lateinit var galleryLauncher: ActivityResultLauncher<Intent>
-    private var pngFilePath: List<String>? = null
+    private var pngFilePath: List<File>? = null
     private val adapterPost by lazy { AdapterImage() }
     override val viewModel by viewModel<AddPostViewModel>()
 
@@ -49,29 +51,12 @@ class AddPostFragment : BaseFragment<FragmentAddTextBinding>(FragmentAddTextBind
             }
             post.setOnClickListener {
                 Log.e(TAG, pngFilePath.toString())
-                val textPart = RequestBody.create(
-                    "caption/plain".toMediaTypeOrNull(),
-                    edtCaption.text.toString()
-                )
-                val imageFiles: List<File>? = null
-                val imageRequestBodyList = mutableListOf<MultipartBody.Part>()
-                if (pngFilePath != null) {
-                    pngFilePath?.forEach { image ->
-                        val imageFile = File(image)
-                        Log.e(TAG,"link image : ${imageFile.toString()}")
-                        val imageRequestBody = imageFile.asRequestBody("image/*".toMediaType())
-                        val imagePart = MultipartBody.Part.createFormData(
-                            "image",
-                            imageFile.name,
-                            imageRequestBody
-                        )
-                        imageRequestBodyList.add(imagePart)
-                    }
-                }
 
+               // val fileAsss = File("file:///android_asset/a.jpg")
+                //Log.e(TAG, "file ass: ${fileAsss.absoluteFile}", )
                 viewModel.createNewPost(
-                    textPart,
-                    imageRequestBodyList
+                    edtCaption.text.toString(),
+                    pngFilePath
                 )
             }
         }
@@ -112,6 +97,7 @@ class AddPostFragment : BaseFragment<FragmentAddTextBinding>(FragmentAddTextBind
                             // Người dùng đã chọn một ảnh
                             val uri = data.data
                             imageUris.add(uri!!)
+                            Log.e(TAG, "onAttach: me ${getMimeType(requireContext(), uri)}", )
                         }
                         // Sử dụng imageUris để làm gì đó với các ảnh đã chọn
                         pngFilePath = convertUrisToPngs(context!!.contentResolver, imageUris)
@@ -123,20 +109,27 @@ class AddPostFragment : BaseFragment<FragmentAddTextBinding>(FragmentAddTextBind
             }
     }
 
+    fun getMimeType(context: Context, uri: Uri): String? {
+        return if (uri.scheme == ContentResolver.SCHEME_CONTENT) {
+            MimeTypeMap.getSingleton().getExtensionFromMimeType(context.contentResolver.getType(uri))
+        } else{
+            MimeTypeMap.getFileExtensionFromUrl(Uri.fromFile(File(uri.path!!)).toString())
+        }
+    }
     // Hàm mở cửa sổ chọn ảnh
     private fun openGallery() {
         val intent = Intent(Intent.ACTION_GET_CONTENT)
-        intent.type = "image/*"
+        intent.type = "image/png"
         intent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true)
         galleryLauncher.launch(intent)
     }
 
-    fun convertUrisToPngs(contentResolver: ContentResolver, uris: List<Uri>): List<String> {
-        val pngPaths = mutableListOf<String>()
+    fun convertUrisToPngs(contentResolver: ContentResolver, uris: List<Uri>): List<File> {
+        val pngPaths = mutableListOf<File>()
         for (uri in uris) {
             val pngPath = FileUtils.uriToJpg(contentResolver, uri,requireContext())
             pngPath?.let {
-                pngPaths.add(it)
+                pngPaths.add(File(it))
             }
         }
         return pngPaths
