@@ -11,7 +11,7 @@ object ApiConstant {
     object TIMEOUT {
         const val CONNECT = 10L
         const val READ = 10L
-        const val WRITE = 10L
+        const val WRITE = 30L
     }
 
     object ENDPOINT {

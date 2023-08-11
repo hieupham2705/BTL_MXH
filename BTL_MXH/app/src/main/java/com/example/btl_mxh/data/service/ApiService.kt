@@ -7,7 +7,6 @@ import com.example.btl_mxh.utils.constant.ApiConstant
 import okhttp3.MultipartBody
 import okhttp3.RequestBody
 import retrofit2.http.*
-import java.io.File
 
 // chueyn doi giao thuc thanh code
 interface ApiService {
@@ -50,8 +49,18 @@ interface ApiService {
 
         @GET(ApiConstant.ENDPOINT.GET_ALL_BY_USER_NAME + "/{user_name}")
         suspend fun getAllByUsername(
-            @retrofit2.http.Path("user_name") userName : String,
+            @retrofit2.http.Path("user_name") userName: String,
         ): BaseResponse<List<Post>>
+
+        @DELETE(ApiConstant.ENDPOINT.POST + "/{id}")
+        suspend fun deletePost(@Path("id") id: String): BaseResponse<DeletePost>
+
+        @Multipart
+        @PATCH(ApiConstant.ENDPOINT.GET_ALL_BY_USER_NAME + "/{user_name}")
+        suspend fun editPost(
+            @Part(ApiConstant.FILED.CAPTION) caption: RequestBody,
+            @Part files: List<MultipartBody.Part>?
+        ):BaseResponse<CreateNewPost>
     }
 
     interface ProfileService {

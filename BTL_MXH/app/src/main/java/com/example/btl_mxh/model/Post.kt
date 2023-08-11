@@ -8,5 +8,7 @@ data class Post(
     val id: String? = null,
     val caption: String? = null,
     val userId: String? = null,
+    val username: String? = null,
+    val avatar: String? = null,
     val mediaFiles: List<String>? = null,
 )

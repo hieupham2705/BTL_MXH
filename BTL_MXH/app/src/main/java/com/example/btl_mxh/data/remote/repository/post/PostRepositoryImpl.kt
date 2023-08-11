@@ -12,10 +12,21 @@ class PostRepositoryImpl(private val remote: IPostDataSource.Remote) : BaseRepos
     IPostRepository {
     override suspend fun createNewPost(
         caption: RequestBody,
-        images: List<MultipartBody.Part>?
+        files: List<MultipartBody.Part>?
     ): DataResult<BaseResponse<CreateNewPost>> =
         getResult {
             remote.createNewPost(
+                caption,
+                files
+            )
+        }
+
+    override suspend fun editPost(
+        caption: RequestBody,
+        images: List<MultipartBody.Part>?
+    ): DataResult<BaseResponse<CreateNewPost>> =
+        getResult {
+            remote.editPost(
                 caption,
                 images
             )
@@ -26,6 +37,10 @@ class PostRepositoryImpl(private val remote: IPostDataSource.Remote) : BaseRepos
 
     override suspend fun getAllByUsername(userName: String): DataResult<BaseResponse<List<Post>>> = getResult {
         remote.getAllByUsername(userName)
+    }
+
+    override suspend fun deletePost(id: String): DataResult<BaseResponse<DeletePost>> = getResult {
+        remote.deletePost(id)
     }
 
 
