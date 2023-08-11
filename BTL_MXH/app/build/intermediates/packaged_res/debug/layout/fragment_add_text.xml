@@ -95,7 +95,7 @@
         android:layout_height="15dp" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/post"
+        android:id="@+id/btn_post"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="@drawable/boder_update"

@@ -9,13 +9,31 @@
     android:orientation="vertical"
     >
 
-    <LinearLayout
-        android:gravity="center"
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="The user hasn't made any posts yet!"-->
+<!--        android:gravity="center"-->
+<!--        android:textSize="25sp"-->
+<!--        android:padding="20dp"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:fontFamily="@font/comfortaaregular"-->
+<!--        />-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingHorizontal="30dp"
-        android:paddingVertical="10dp"
-        android:layout_marginTop="10dp">
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview_friend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="5dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.cardview.widget.CardView
             android:foreground="?android:attr/selectableItemBackground"
@@ -88,32 +106,30 @@
 
     </LinearLayout>
 
-    <TextView
-        android:textSize="16sp"
-        android:textColor="@color/black"
-        android:layout_marginStart="30dp"
-        android:fontFamily="@font/comfortaaregular"
-        android:text="slogan_friend"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+<!--    <TextView-->
+<!--        android:textSize="16sp"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:layout_marginStart="30dp"-->
+<!--        android:fontFamily="@font/comfortaaregular"-->
+<!--        android:text="slogan_friend"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"/>-->
 
-    <LinearLayout
-        android:layout_marginTop="10dp"
-        android:background="@color/orange"
-        android:layout_width="match_parent"
-        android:layout_height="3dp"/>
+<!--    <LinearLayout-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:background="@color/orange"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="3dp"/>-->
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="The user hasn't made any posts yet!"
-        android:gravity="center"
-        android:textSize="25sp"
-        android:padding="20dp"
-        android:textColor="@color/black"
-        android:fontFamily="@font/comfortaaregular"
-        />
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="The user hasn't made any posts yet!"-->
+<!--        android:gravity="center"-->
+<!--        android:textSize="25sp"-->
+<!--        android:padding="20dp"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:fontFamily="@font/comfortaaregular"-->
+<!--        />-->
 
-
-
-</LinearLayout>
+<!--</LinearLayout>-->

@@ -53,8 +53,5 @@
     <string name="text_show_toast">Lỗi</string>
     <string name="we_have_just_sent_you_a_new_password_please_check_your_email">We have just sent you a new password, please check your email!!!</string>
     <string name="hoa_what_are_you_thinking">You, what are you thinking?</string>
-    <string name="save_post">save_post</string>
     <string name="hit_circle">HIT Circle</string>
-    <string name="following">Following</string>
-    <string name="follower">Follower</string>
 </resources>

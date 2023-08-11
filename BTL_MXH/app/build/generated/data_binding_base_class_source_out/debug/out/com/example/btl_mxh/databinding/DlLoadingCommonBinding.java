@@ -4,25 +4,33 @@ package com.example.btl_mxh.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RelativeLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
+import com.airbnb.lottie.LottieAnimationView;
 import com.example.btl_mxh.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
+import java.lang.String;
 
 public final class DlLoadingCommonBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final RelativeLayout rootView;
 
-  private DlLoadingCommonBinding(@NonNull ConstraintLayout rootView) {
+  @NonNull
+  public final LottieAnimationView animLoading;
+
+  private DlLoadingCommonBinding(@NonNull RelativeLayout rootView,
+      @NonNull LottieAnimationView animLoading) {
     this.rootView = rootView;
+    this.animLoading = animLoading;
   }
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public RelativeLayout getRoot() {
     return rootView;
   }
 
@@ -43,10 +51,19 @@ public final class DlLoadingCommonBinding implements ViewBinding {
 
   @NonNull
   public static DlLoadingCommonBinding bind(@NonNull View rootView) {
-    if (rootView == null) {
-      throw new NullPointerException("rootView");
-    }
+    // The body of this method is generated in a way you would not otherwise write.
+    // This is done to optimize the compiled bytecode for size and performance.
+    int id;
+    missingId: {
+      id = R.id.anim_loading;
+      LottieAnimationView animLoading = ViewBindings.findChildViewById(rootView, id);
+      if (animLoading == null) {
+        break missingId;
+      }
 
-    return new DlLoadingCommonBinding((ConstraintLayout) rootView);
+      return new DlLoadingCommonBinding((RelativeLayout) rootView, animLoading);
+    }
+    String missingId = rootView.getResources().getResourceName(id);
+    throw new NullPointerException("Missing required view with ID: ".concat(missingId));
   }
 }

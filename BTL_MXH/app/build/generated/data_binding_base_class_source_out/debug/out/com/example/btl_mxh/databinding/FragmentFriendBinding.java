@@ -10,6 +10,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.btl_mxh.R;
@@ -28,16 +29,21 @@ public final class FragmentFriendBinding implements ViewBinding {
   public final ImageView imvAvatar;
 
   @NonNull
+  public final RecyclerView recyclerviewFriend;
+
+  @NonNull
   public final Button setting;
 
   @NonNull
   public final TextView username;
 
   private FragmentFriendBinding(@NonNull LinearLayout rootView, @NonNull TextView fullname,
-      @NonNull ImageView imvAvatar, @NonNull Button setting, @NonNull TextView username) {
+      @NonNull ImageView imvAvatar, @NonNull RecyclerView recyclerviewFriend,
+      @NonNull Button setting, @NonNull TextView username) {
     this.rootView = rootView;
     this.fullname = fullname;
     this.imvAvatar = imvAvatar;
+    this.recyclerviewFriend = recyclerviewFriend;
     this.setting = setting;
     this.username = username;
   }
@@ -81,6 +87,12 @@ public final class FragmentFriendBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.recyclerview_friend;
+      RecyclerView recyclerviewFriend = ViewBindings.findChildViewById(rootView, id);
+      if (recyclerviewFriend == null) {
+        break missingId;
+      }
+
       id = R.id.setting;
       Button setting = ViewBindings.findChildViewById(rootView, id);
       if (setting == null) {
@@ -93,8 +105,8 @@ public final class FragmentFriendBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentFriendBinding((LinearLayout) rootView, fullname, imvAvatar, setting,
-          username);
+      return new FragmentFriendBinding((LinearLayout) rootView, fullname, imvAvatar,
+          recyclerviewFriend, setting, username);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
