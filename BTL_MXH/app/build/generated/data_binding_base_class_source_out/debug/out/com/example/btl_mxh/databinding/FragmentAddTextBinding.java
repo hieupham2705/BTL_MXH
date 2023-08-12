@@ -24,13 +24,13 @@ public final class FragmentAddTextBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
-  public final AppCompatButton btnPost;
-
-  @NonNull
   public final BaseTextInputEditText edtCaption;
 
   @NonNull
   public final ImageView imvAddImage;
+
+  @NonNull
+  public final AppCompatButton post;
 
   @NonNull
   public final RecyclerView recyclerview;
@@ -38,13 +38,14 @@ public final class FragmentAddTextBinding implements ViewBinding {
   @NonNull
   public final TextInputLayout textiplu;
 
-  private FragmentAddTextBinding(@NonNull LinearLayout rootView, @NonNull AppCompatButton btnPost,
+  private FragmentAddTextBinding(@NonNull LinearLayout rootView,
       @NonNull BaseTextInputEditText edtCaption, @NonNull ImageView imvAddImage,
-      @NonNull RecyclerView recyclerview, @NonNull TextInputLayout textiplu) {
+      @NonNull AppCompatButton post, @NonNull RecyclerView recyclerview,
+      @NonNull TextInputLayout textiplu) {
     this.rootView = rootView;
-    this.btnPost = btnPost;
     this.edtCaption = edtCaption;
     this.imvAddImage = imvAddImage;
+    this.post = post;
     this.recyclerview = recyclerview;
     this.textiplu = textiplu;
   }
@@ -76,12 +77,6 @@ public final class FragmentAddTextBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.btn_post;
-      AppCompatButton btnPost = ViewBindings.findChildViewById(rootView, id);
-      if (btnPost == null) {
-        break missingId;
-      }
-
       id = R.id.edt_caption;
       BaseTextInputEditText edtCaption = ViewBindings.findChildViewById(rootView, id);
       if (edtCaption == null) {
@@ -91,6 +86,12 @@ public final class FragmentAddTextBinding implements ViewBinding {
       id = R.id.imv_add_image;
       ImageView imvAddImage = ViewBindings.findChildViewById(rootView, id);
       if (imvAddImage == null) {
+        break missingId;
+      }
+
+      id = R.id.post;
+      AppCompatButton post = ViewBindings.findChildViewById(rootView, id);
+      if (post == null) {
         break missingId;
       }
 
@@ -106,7 +107,7 @@ public final class FragmentAddTextBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentAddTextBinding((LinearLayout) rootView, btnPost, edtCaption, imvAddImage,
+      return new FragmentAddTextBinding((LinearLayout) rootView, edtCaption, imvAddImage, post,
           recyclerview, textiplu);
     }
     String missingId = rootView.getResources().getResourceName(id);

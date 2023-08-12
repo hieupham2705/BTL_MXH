@@ -20,8 +20,12 @@
             android:id="@+id/btn_search"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
-            android:background="@drawable/borderappcombatbutton"
-            android:text="@string/timkiem"
+            android:background="@drawable/border_search_done"
+            android:text="@string/search"
+            android:textAllCaps="false"
+            android:fontFamily="@font/comfortaabold"
+            android:textSize="14sp"
+            android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="@+id/textInputLayout12"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/textInputLayout12" />
@@ -44,10 +48,9 @@
                 android:layout_marginTop="10dp"
                 android:background="@drawable/boder_search"
                 android:fontFamily="@font/comfortaabold"
-                android:hint="@string/search"
+                android:hint="Aa"
                 android:paddingStart="20dp"
-                android:textSize="14sp"
-                tools:ignore="MissingClass" />
+                android:textSize="14sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <androidx.recyclerview.widget.RecyclerView

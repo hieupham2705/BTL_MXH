@@ -86,15 +86,15 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-        <com.example.btl_mxh.base.BaseTextInputEditText
-            android:id="@+id/edt_user_name"
-            android:layout_width="match_parent"
-            android:layout_height="54dp"
-            android:background="@drawable/boder_editprofile"
-            android:hint="@string/user_name"
-            android:paddingStart="10dp"
-            android:fontFamily="@font/comfortaaregular"
-            />
+            <com.example.btl_mxh.base.BaseTextInputEditText
+                android:id="@+id/edt_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:background="@drawable/boder_editprofile"
+                android:hint="@string/user_name"
+                android:paddingStart="10dp"
+                android:fontFamily="@font/comfortaaregular"
+                />
         </com.google.android.material.textfield.TextInputLayout>
         <Space
             android:layout_width="match_parent"
@@ -169,7 +169,7 @@
             android:text="@string/update"
             android:textColor="@color/white"
             android:textSize="17sp"
-            android:fontFamily="@font/comfortaabold"
+            android:fontFamily="@font/nunito_extrabold"
             />
 
     </LinearLayout>

@@ -4,19 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.notificationsetting.NotificationSettingFragment">
+    tools:context=".ui.notificationsetting.NotificationSettingFragment"
+    android:background="@drawable/bgr"
+    >
 
 
     <TextView
         android:id="@+id/textView8"
-        android:textSize="16sp"
-        android:textColor="@color/black"
-        android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="24dp"
         android:text="@string/common"
+        android:fontFamily="@font/nunito_extrabold"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -28,6 +31,7 @@
         android:textColor="@color/black"
         android:textSize="14sp"
         android:text="@string/general_notification"
+        android:fontFamily="@font/comfortaasemibold"
         app:layout_constraintStart_toStartOf="@+id/textView8"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
@@ -48,6 +52,7 @@
         android:layout_marginTop="16dp"
         android:textColor="@color/black"
         android:text="Sound"
+        android:fontFamily="@font/comfortaasemibold"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="@+id/textView11"
         app:layout_constraintTop_toBottomOf="@+id/textView11" />
@@ -69,6 +74,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/vibrate"
+        android:fontFamily="@font/comfortaasemibold"
         android:textColor="@color/black"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="@+id/textView13"
@@ -92,6 +98,7 @@
         android:textColor="@color/black"
         android:textStyle="bold"
         android:text="@string/system_and_services_update"
+        android:fontFamily="@font/nunito_extrabold"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="@+id/textView14"
         app:layout_constraintTop_toBottomOf="@+id/textView14" />
@@ -104,6 +111,7 @@
         android:textSize="14sp"
         android:textColor="@color/black"
         android:text="@string/app_updates"
+        android:fontFamily="@font/comfortaasemibold"
         app:layout_constraintStart_toStartOf="@+id/textView15"
         app:layout_constraintTop_toBottomOf="@+id/textView15" />
 

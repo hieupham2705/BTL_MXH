@@ -29,6 +29,9 @@ public final class FragmentMessengerBinding implements ViewBinding {
   public final ImageView buttonImage;
 
   @NonNull
+  public final ImageView buttonMenu;
+
+  @NonNull
   public final ImageView buttonSend;
 
   @NonNull
@@ -53,13 +56,14 @@ public final class FragmentMessengerBinding implements ViewBinding {
   public final ConstraintLayout toolBar;
 
   private FragmentMessengerBinding(@NonNull FrameLayout rootView, @NonNull ImageView buttonCall,
-      @NonNull ImageView buttonImage, @NonNull ImageView buttonSend,
+      @NonNull ImageView buttonImage, @NonNull ImageView buttonMenu, @NonNull ImageView buttonSend,
       @NonNull ImageView buttonVideoCall, @NonNull ConstraintLayout containerTextBox,
       @NonNull ImageView imageAvatar, @NonNull TextInputEditText textMessage,
       @NonNull TextView textName, @NonNull TextView textStatus, @NonNull ConstraintLayout toolBar) {
     this.rootView = rootView;
     this.buttonCall = buttonCall;
     this.buttonImage = buttonImage;
+    this.buttonMenu = buttonMenu;
     this.buttonSend = buttonSend;
     this.buttonVideoCall = buttonVideoCall;
     this.containerTextBox = containerTextBox;
@@ -106,6 +110,12 @@ public final class FragmentMessengerBinding implements ViewBinding {
       id = R.id.button_image;
       ImageView buttonImage = ViewBindings.findChildViewById(rootView, id);
       if (buttonImage == null) {
+        break missingId;
+      }
+
+      id = R.id.button_menu;
+      ImageView buttonMenu = ViewBindings.findChildViewById(rootView, id);
+      if (buttonMenu == null) {
         break missingId;
       }
 
@@ -158,8 +168,8 @@ public final class FragmentMessengerBinding implements ViewBinding {
       }
 
       return new FragmentMessengerBinding((FrameLayout) rootView, buttonCall, buttonImage,
-          buttonSend, buttonVideoCall, containerTextBox, imageAvatar, textMessage, textName,
-          textStatus, toolBar);
+          buttonMenu, buttonSend, buttonVideoCall, containerTextBox, imageAvatar, textMessage,
+          textName, textStatus, toolBar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

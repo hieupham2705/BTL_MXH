@@ -73,7 +73,7 @@
                 android:id="@+id/setting"
                 android:layout_width="110dp"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#2196F3"
+                android:backgroundTint="#FFA767"
                 android:gravity="center"
                 android:text="Follow"
                 android:fontFamily="@font/comfortaasemibold"

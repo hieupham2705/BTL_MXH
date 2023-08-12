@@ -79,7 +79,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/comfortaasemibold"
             android:gravity="top|start"
-            android:hint="@string/hoa_what_are_you_thinking"
+            android:hint="@string/What_are_you_thinking"
             android:inputType="textMultiLine"
             android:maxLines="10"
             android:textSize="16sp" />
@@ -95,7 +95,7 @@
         android:layout_height="15dp" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_post"
+        android:id="@+id/post"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="@drawable/boder_update"
