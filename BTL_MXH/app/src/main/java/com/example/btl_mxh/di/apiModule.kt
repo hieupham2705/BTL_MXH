@@ -9,4 +9,5 @@ val apiModule = module {
     single { get<Retrofit>().create(ApiService.AccountService::class.java) }
     single { get<Retrofit>().create(ApiService.PostService::class.java) }
     single { get<Retrofit>().create(ApiService.ProfileService::class.java) }
+    single { get<Retrofit>().create(ApiService.FollowService::class.java) }
 }

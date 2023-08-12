@@ -12,7 +12,10 @@ private const val TAG = "ProfileFragment"
 class ProfileFragment : BaseFragment<FragmentProfileBinding>(FragmentProfileBinding::inflate) {
     private val adapterProfile by lazy {
         ProfileAdapter(
-            onclickSetting = { findNavController().navigate(R.id.action_profileFragment_to_settingFragment) }
+            requireContext(),
+            onclickSetting = { findNavController().navigate(R.id.action_profileFragment_to_settingFragment)},
+            onClickFollower = {},
+            onClickFollowing = {}
         )
     }
     override val viewModel by viewModel<ProfileViewModel>()

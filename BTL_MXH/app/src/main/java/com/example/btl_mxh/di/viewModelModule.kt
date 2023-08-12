@@ -1,8 +1,10 @@
 package com.example.btl_mxh.di
 
 import com.example.btl_mxh.ui.addpost.AddPostViewModel
+import com.example.btl_mxh.ui.changepassword.ChangePasswordViewModel
 import com.example.btl_mxh.ui.editprofile.EditProfileViewModel
 import com.example.btl_mxh.ui.forgotpassword.FogotPasswordViewModel
+import com.example.btl_mxh.ui.friend.FriendViewModel
 import com.example.btl_mxh.ui.home.HomeViewModel
 import com.example.btl_mxh.ui.messenger.MessengerViewModel
 import com.example.btl_mxh.ui.profile.ProfileViewModel
@@ -27,5 +29,7 @@ val viewModelModule = module {
     viewModel { FogotPasswordViewModel(get()) }
     viewModel { ProfileViewModel(get(),get()) }
     viewModel { AddPostViewModel(get()) }
-    viewModel { EditProfileViewModel(get()) }
+    viewModel { EditProfileViewModel(get(),get()) }
+    viewModel { ChangePasswordViewModel(get()) }
+    viewModel { FriendViewModel(get(),get(),get(),get()) }
 }

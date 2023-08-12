@@ -31,7 +31,9 @@ class HomeAdapter(
     private val onClickSearch: () -> Unit,
     private val onClickCreatePost: () -> Unit,
     private val onClickMessage: () -> Unit,
-    private val onClickimvavatarpost: () -> Unit
+    private val onClickimvavatarpost: (String) -> Unit,
+    private val onClickSavePost: () -> Unit,
+    private val onClickImageCrearePost: () -> Unit
 
 ) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     private var idPost: String? = ""
@@ -41,7 +43,8 @@ class HomeAdapter(
         .addItemList(
             listOf(
                 PowerMenuItem("Delete"),
-                PowerMenuItem("Edit")
+                PowerMenuItem("Edit"),
+                PowerMenuItem("Save")
             )
         ) // list has "Novel", "Poetry", "Art"
         .setAnimation(MenuAnimation.SHOWUP_TOP_RIGHT) // Animation start point (TOP | LEFT).
@@ -52,7 +55,7 @@ class HomeAdapter(
         .setTextTypeface(Typeface.create("sans-serif-medium", Typeface.BOLD))
         .setSelectedTextColor(Color.WHITE)
         .setMenuColor(Color.parseColor("#FFA767"))
-        .setSelectedMenuColor(ContextCompat.getColor(context!!, com.example.btl_mxh.R.color.Red))
+        .setSelectedMenuColor(ContextCompat.getColor(context!!, com.example.btl_mxh.R.color.orange))
         .build()
     val typeSearch = 13424832
     val typeCreatePost = 2509345
@@ -108,12 +111,16 @@ class HomeAdapter(
             holder.binding.edtCreactPost.setOnClickListener {
                 onClickCreatePost.invoke()
             }
+            holder.binding.imvAvatar.setOnClickListener {
+                onClickImageCrearePost.invoke()
+            }
         }
         if (holder is ViewHolder) {
             holder.binding.apply {
-                imvAvatar.setOnClickListener { onClickimvavatarpost.invoke() }
-                imvAvatar.loadImageFromUrl(listPost[position-2].avatar.toString())
-                username.text = listPost[position-2].username
+                imvAvatar.setOnClickListener { onClickimvavatarpost(listPost[position-2].userId.toString()) }
+                username.setOnClickListener { onClickimvavatarpost(listPost[position-2].userId.toString()) }
+                imvAvatar.loadImageFromUrl(listPost[position - 2].avatar.toString())
+                username.text = listPost[position - 2].username
                 content.text = listPost[position - 2].caption
                 hour.text = listPost[position - 2].createdDate
                 when (listPost[position - 2].mediaFiles!!.size) {
@@ -141,7 +148,7 @@ class HomeAdapter(
                             )
                     }
                 }
-                recyclerview.adapter = PostImageAdapter(listPost[position - 2].mediaFiles!!)
+                recyclerview.adapter = PostImageAdapter(context,listPost[position - 2].mediaFiles!!)
                 tvLove.setOnClickListener {
                     if (tvLove.currentTextColor != Color.RED)
                         tvLove.setTextColor(Color.RED)
@@ -160,7 +167,7 @@ class HomeAdapter(
 
 
     override fun getItemCount(): Int = listPost.size + 2
-    fun setDataAdapter(auth: Auth ?= null, list: List<Post>) {
+    fun setDataAdapter(auth: Auth? = null, list: List<Post>) {
         createPost = auth
         listPost.clear()
         listPost.addAll(list)
@@ -175,12 +182,13 @@ class HomeAdapter(
     private val onMenuItemClickListener = object : OnMenuItemClickListener<PowerMenuItem> {
         override fun onItemClick(position: Int, item: PowerMenuItem) {
             Log.e("hiih", "hi")
-            if (item.title == "Delete") {
+            if (item.title == "Delete")
                 deletePost(idPost.toString())
-
-            } else {
+            else if (item.title == "Edit")
                 onClickCreatePost.invoke()
-            }
+            else
+                onClickSavePost.invoke()
+
             powerMenu.setSelectedPosition(position) // change selected item
             powerMenu.dismiss()
         }

@@ -28,7 +28,11 @@ class PostRemoteDataSource(private val service: ApiService.PostService) :
         return service.getAllByUsername(userName)
     }
 
-    override suspend fun deletePost(id: String): BaseResponse<DeletePost> {
+    override suspend fun getAllByUserId(userId: String): BaseResponse<List<Post>> {
+        return service.getAllByUserid(userId)
+    }
+
+    override suspend fun deletePost(id: String): BaseResponse<Delete> {
         return service.deletePost(id)
     }
 

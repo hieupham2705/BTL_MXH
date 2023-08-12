@@ -10,4 +10,6 @@ interface IAccountRepository {
     suspend fun register(registerEntity: RegisterEntity): DataResult<BaseResponse<Register>>
     suspend fun logout(): DataResult<BaseResponse<Logout>>
     suspend fun resetPassword(email: String): DataResult<BaseResponse<ResetPasword>>
+    suspend fun changePassword(changePassword: ChangePassword): DataResult<BaseResponse<ResetPasword>>
+    suspend fun getById(userid:String) : DataResult<BaseResponse<GetById>>
 }

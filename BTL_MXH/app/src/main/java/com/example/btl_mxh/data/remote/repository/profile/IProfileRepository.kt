@@ -10,7 +10,7 @@ interface IProfileRepository {
     suspend fun updateProfile(
         birthday : RequestBody,
         gender : RequestBody,
-        avatar : MultipartBody.Part,
+        avatar : MultipartBody.Part?,
         fullName : RequestBody,
         username : RequestBody,
         email : RequestBody

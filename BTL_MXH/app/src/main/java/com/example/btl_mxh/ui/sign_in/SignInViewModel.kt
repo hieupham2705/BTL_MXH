@@ -11,6 +11,7 @@ import com.example.btl_mxh.model.Auth
 import com.example.btl_mxh.model.Login
 import com.example.btl_mxh.model.LoginEntity
 import com.example.btl_mxh.utils.extension.saveTokenLogin
+import com.example.btl_mxh.utils.extension.saveUserId
 
 
 private const val TAG = "SignInViewModel"
@@ -31,6 +32,7 @@ class SignInViewModel(
                     it.data?.let { _login ->
                         if (checkSavePassword)
                             sharedPreferences.saveTokenLogin(_login.accessToken)
+                        sharedPreferences.saveUserId(_login.id)
                         _stateLogin.value = _login
                     }
                 } else {

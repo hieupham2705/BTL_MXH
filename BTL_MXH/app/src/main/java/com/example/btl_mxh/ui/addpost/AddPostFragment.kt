@@ -51,9 +51,6 @@ class AddPostFragment : BaseFragment<FragmentAddTextBinding>(FragmentAddTextBind
             }
             post.setOnClickListener {
                 Log.e(TAG, pngFilePath.toString())
-
-               // val fileAsss = File("file:///android_asset/a.jpg")
-                //Log.e(TAG, "file ass: ${fileAsss.absoluteFile}", )
                 viewModel.createNewPost(
                     edtCaption.text.toString(),
                     pngFilePath

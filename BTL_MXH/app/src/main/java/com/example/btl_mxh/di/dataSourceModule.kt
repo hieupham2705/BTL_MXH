@@ -2,6 +2,8 @@ package com.example.btl_mxh.di
 
 import com.example.btl_mxh.data.remote.datasource.account.IAccountDataSource
 import com.example.btl_mxh.data.remote.datasource.account.AccountRemoteDataSource
+import com.example.btl_mxh.data.remote.datasource.follow.FollowRemoteDataSource
+import com.example.btl_mxh.data.remote.datasource.follow.IFollowDataSource
 import com.example.btl_mxh.data.remote.datasource.post.IPostDataSource
 import com.example.btl_mxh.data.remote.datasource.post.PostRemoteDataSource
 import com.example.btl_mxh.data.remote.datasource.profile.IProfileDataSource
@@ -15,4 +17,5 @@ val dataSourceModule = module {
     single<IAccountDataSource.Remote> { AccountRemoteDataSource(get()) }
     single<IPostDataSource.Remote> { PostRemoteDataSource(get()) }
     single<IProfileDataSource.Remote> { ProfileRemoteDataSource(get()) }
+    single<IFollowDataSource.Remote> { FollowRemoteDataSource(get()) }
 }

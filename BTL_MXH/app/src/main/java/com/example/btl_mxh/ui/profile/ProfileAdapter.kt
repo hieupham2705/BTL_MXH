@@ -3,6 +3,7 @@ package com.example.btl_mxh.ui.profile
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.app.Dialog
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
@@ -11,13 +12,17 @@ import com.example.btl_mxh.databinding.ItemInfomationProfileBinding
 import com.example.btl_mxh.model.Auth
 import com.example.btl_mxh.model.profile
 import com.example.btl_mxh.utils.extension.loadImageFromUrl
+import com.example.btl_mxh.utils.extension.showImage
 
 class ProfileAdapter(
-    private val onclickSetting: () -> Unit
+    private val context: Context,
+    private val onclickSetting: () -> Unit,
+    private val onClickFollowing: () -> Unit,
+    private val onClickFollower: () -> Unit
 ) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     private var listAllImagePost = mutableListOf<String>()
     private var information: Auth? = null
-    private val adapterListImagePostProfile by lazy { ImageProfileAdapter() }
+    private val adapterListImagePostProfile by lazy { ImageProfileAdapter(context) }
     private val typeInformation = 0;
     private val typeImage = 1;
 
@@ -59,6 +64,14 @@ class ProfileAdapter(
                 fullname.text = information?.fullName
                 username.text = information?.username
                 imvAvatar.loadImageFromUrl(information?.avatar.toString())
+                imvAvatar.setOnClickListener {
+                    context?.let {
+                        val dialogShow = Dialog(it)
+                        dialogShow.showImage(information?.avatar.toString())
+                    }
+                }
+                btnFollowing.setOnClickListener { onClickFollowing.invoke()  }
+                btnFollower.setOnClickListener { onClickFollower.invoke() }
             }
         }
         if (holder is ViewHolderImage) {
@@ -66,6 +79,7 @@ class ProfileAdapter(
                 recyclerview.layoutManager =
                     GridLayoutManager(holder.itemView.context, 3, RecyclerView.VERTICAL, false)
                 recyclerview.adapter = adapterListImagePostProfile
+
             }
             adapterListImagePostProfile.setListImage(listAllImagePost)
         }

@@ -73,6 +73,15 @@ class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::infl
                 R.id.searchFragment -> {
                     setNavigationVisible(name = "Search")
                     binding.tbBack.setNavigationIcon(R.drawable.baseline_arrow_back_ios_24)
+                } R.id.savedPostsFragment -> {
+                    setNavigationVisible(name = "Saved Posts")
+                    binding.tbBack.setNavigationIcon(R.drawable.baseline_arrow_back_ios_24)
+                } R.id.myPostsFragment -> {
+                    setNavigationVisible(name = "My Posts")
+                    binding.tbBack.setNavigationIcon(R.drawable.baseline_arrow_back_ios_24)
+                } R.id.friendFragment -> {
+                    setNavigationVisible(name = "Friend Posts")
+                    binding.tbBack.setNavigationIcon(R.drawable.baseline_arrow_back_ios_24)
                 }
                 else -> {
                     setNavigationVisible(false, name = "")

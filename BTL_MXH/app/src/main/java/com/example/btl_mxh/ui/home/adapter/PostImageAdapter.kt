@@ -1,5 +1,7 @@
 package com.example.btl_mxh.ui.home.adapter
 
+import android.app.Dialog
+import android.content.Context
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -8,10 +10,12 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.example.btl_mxh.databinding.ItemAddImageBinding
 import com.example.btl_mxh.utils.extension.loadImageFromUrl
+import com.example.btl_mxh.utils.extension.showImage
 
 private const val TAG = "PostImageAdapter"
 
 class PostImageAdapter(
+    private val context: Context,
     private val listImage: List<String> = listOf<String>()
 ) : RecyclerView.Adapter<PostImageAdapter.ViewHolder>() {
 
@@ -31,5 +35,11 @@ class PostImageAdapter(
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         Log.e(TAG, listImage.toString() + position.toString())
         holder.binding.imvGalleryPhoto.loadImageFromUrl(listImage[position])
+        holder.binding.imvGalleryPhoto.setOnClickListener {
+            context?.let {
+                val dialogQuestion = Dialog(it)
+                dialogQuestion.showImage(listImage[position])
+            }
+        }
     }
 }

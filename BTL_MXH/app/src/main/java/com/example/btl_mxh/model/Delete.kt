@@ -1,6 +1,6 @@
 package com.example.btl_mxh.model
 
-data class DeletePost (
+data class Delete (
     val status: Boolean, 
     val message: String, 
 )

@@ -39,7 +39,11 @@ class PostRepositoryImpl(private val remote: IPostDataSource.Remote) : BaseRepos
         remote.getAllByUsername(userName)
     }
 
-    override suspend fun deletePost(id: String): DataResult<BaseResponse<DeletePost>> = getResult {
+    override suspend fun getAllByUserId(userId: String): DataResult<BaseResponse<List<Post>>> =getResult {
+        remote.getAllByUserId(userId)
+    }
+
+    override suspend fun deletePost(id: String): DataResult<BaseResponse<Delete>> = getResult {
         remote.deletePost(id)
     }
 

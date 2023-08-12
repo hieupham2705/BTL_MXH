@@ -13,7 +13,7 @@ class ProfileRepositoryImpl(private val remote: IProfileDataSource.Remote) : Bas
     override suspend fun updateProfile(
         birthday: RequestBody,
         gender: RequestBody,
-        avatar: MultipartBody.Part,
+        avatar: MultipartBody.Part?,
         fullName: RequestBody,
         username: RequestBody,
         email: RequestBody

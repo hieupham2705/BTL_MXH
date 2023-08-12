@@ -1,5 +1,6 @@
 package com.example.btl_mxh.data.service
 
+import GetFollowing
 import Search
 import com.example.btl_mxh.base.BaseResponse
 import com.example.btl_mxh.model.*
@@ -34,6 +35,11 @@ interface ApiService {
 
         @POST(ApiConstant.ENDPOINT.AUTH_RESET_PASSWORD)
         suspend fun resetPassword(@Body email: String): BaseResponse<ResetPasword>
+
+        @POST(ApiConstant.ENDPOINT.CHANGE_PASSWORD)
+        suspend fun changePassword(@Body changePassword: ChangePassword): BaseResponse<ResetPasword>
+        @GET(ApiConstant.ENDPOINT.USER + "/{userId}")
+        suspend fun getById(@Path("userId") userId: String):BaseResponse<GetById>
     }
 
     interface PostService {
@@ -44,16 +50,20 @@ interface ApiService {
         @POST(ApiConstant.ENDPOINT.POST_CREATE_NEW_POST)
         suspend fun createNewPost(
             @Part(ApiConstant.FILED.CAPTION) caption: RequestBody,
-            @Part images: List<MultipartBody.Part>?
+            @Part files: List<MultipartBody.Part>?
         ): BaseResponse<CreateNewPost>
 
         @GET(ApiConstant.ENDPOINT.GET_ALL_BY_USER_NAME + "/{user_name}")
         suspend fun getAllByUsername(
             @retrofit2.http.Path("user_name") userName: String,
         ): BaseResponse<List<Post>>
+        @GET(ApiConstant.ENDPOINT.GET_ALL_BY_USER_ID + "/{userId}")
+        suspend fun getAllByUserid(
+            @retrofit2.http.Path("userId") userId: String,
+        ): BaseResponse<List<Post>>
 
         @DELETE(ApiConstant.ENDPOINT.POST + "/{id}")
-        suspend fun deletePost(@Path("id") id: String): BaseResponse<DeletePost>
+        suspend fun deletePost(@Path("id") id: String): BaseResponse<Delete>
 
         @Multipart
         @PATCH(ApiConstant.ENDPOINT.GET_ALL_BY_USER_NAME + "/{user_name}")
@@ -69,10 +79,26 @@ interface ApiService {
         suspend fun updatePost(
             @Part("birthday") birthday: RequestBody,
             @Part("gender") gender: RequestBody,
-            @Part avatar: MultipartBody.Part,
+            @Part avatar: MultipartBody.Part?,
             @Part("fullName") fullName: RequestBody,
             @Part("username") username: RequestBody,
             @Part("email") email: RequestBody,
         ): BaseResponse<UpdateProfiledata>
+    }
+    interface FollowService{
+        @GET(ApiConstant.ENDPOINT.USER+"/{userId}/followers")
+        suspend fun getFolowers(
+            @Path("userId") userId: String
+        ):BaseResponse<GetFollowers>
+        @DELETE(ApiConstant.ENDPOINT.FOLLOW+"/{userId}")
+        suspend fun unFollow(
+            @Path("userId") userId: String
+        ):BaseResponse<Delete>
+        @POST(ApiConstant.ENDPOINT.FOLLOW+"/{userId}")
+        suspend fun follow(
+            @Path("userId") userId: String
+        ):BaseResponse<Follow>
+        @GET(ApiConstant.ENDPOINT.USER+"/{userId}"+"followers")
+        suspend fun getFollowing(@Path("userId") userId: String):BaseResponse<GetFollowing>
     }
 }

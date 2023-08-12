@@ -16,7 +16,6 @@ class ForgotPasswordFragment :
     override val viewModel by viewModel<FogotPasswordViewModel>()
 
     override fun initData() {
-
     }
 
     override fun handleEvent() {

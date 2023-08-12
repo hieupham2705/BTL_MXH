@@ -14,6 +14,7 @@ interface IPostDataSource {
         suspend fun editPost(caption: RequestBody, files: List<MultipartBody.Part>?): BaseResponse<CreateNewPost>
         suspend fun postGetAll():BaseResponse<List<Post>>
         suspend fun getAllByUsername(userName:String):BaseResponse<List<Post>>
-        suspend fun deletePost(id:String):BaseResponse<DeletePost>
+        suspend fun getAllByUserId(userId:String):BaseResponse<List<Post>>
+        suspend fun deletePost(id:String):BaseResponse<Delete>
     }
 }
