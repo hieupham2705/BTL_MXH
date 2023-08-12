@@ -27,7 +27,8 @@ class FogotPasswordViewModel(
                     Log.e(TAG, "logIn: ${it.message}")
                 }
 
-            }
+            },
+            showLoading = true
         )
     }
 }

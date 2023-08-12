@@ -11,13 +11,11 @@ import okhttp3.RequestBody
 class PostRepositoryImpl(private val remote: IPostDataSource.Remote) : BaseRepository(),
     IPostRepository {
     override suspend fun createNewPost(
-        caption: RequestBody,
-        files: List<MultipartBody.Part>?
+        caption: String, files: List<MultipartBody.Part>
     ): DataResult<BaseResponse<CreateNewPost>> =
         getResult {
             remote.createNewPost(
-                caption,
-                files
+                caption, files
             )
         }
 

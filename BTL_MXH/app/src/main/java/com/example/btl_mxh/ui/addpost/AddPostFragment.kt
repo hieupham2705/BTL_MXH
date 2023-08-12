@@ -36,7 +36,7 @@ private const val TAG = "AddTextFragment"
 class AddPostFragment : BaseFragment<FragmentAddTextBinding>(FragmentAddTextBinding::inflate) {
 
     private lateinit var galleryLauncher: ActivityResultLauncher<Intent>
-    private var pngFilePath: List<File>? = null
+    private var pngFilePath = mutableListOf<File>()
     private val adapterPost by lazy { AdapterImage() }
     override val viewModel by viewModel<AddPostViewModel>()
 
@@ -97,7 +97,7 @@ class AddPostFragment : BaseFragment<FragmentAddTextBinding>(FragmentAddTextBind
                             Log.e(TAG, "onAttach: me ${getMimeType(requireContext(), uri)}", )
                         }
                         // Sử dụng imageUris để làm gì đó với các ảnh đã chọn
-                        pngFilePath = convertUrisToPngs(context!!.contentResolver, imageUris)
+                        pngFilePath = convertUrisToPngs(context!!.contentResolver, imageUris).toMutableList()
                         Log.e(TAG, pngFilePath.toString())
                         adapterPost.setAdapter(imageUris)
 

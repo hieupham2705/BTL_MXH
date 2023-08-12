@@ -6,12 +6,12 @@ import androidx.lifecycle.MutableLiveData
 import com.example.btl_mxh.base.BaseViewModel
 import com.example.btl_mxh.data.remote.repository.post.IPostRepository
 import com.example.btl_mxh.model.CreateNewPost
+import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okhttp3.MultipartBody
 import okhttp3.RequestBody
 import okhttp3.RequestBody.Companion.asRequestBody
 import java.io.File
-import java.util.concurrent.Flow
 
 private const val TAG = "AddTextViewModel"
 
@@ -22,23 +22,20 @@ class AddPostViewModel(
     val stageCreateNewPost: LiveData<CreateNewPost> = _stageCreateNewPost
     fun createNewPost(
         caption: String,
-        files: List<File>?
+        files: List<File>
     ) {
-        val textPart = RequestBody.create(
-            "caption/plain".toMediaTypeOrNull(),
-            caption
-        )
-        val imageParts = files?.map { file ->
-            val requestFile = file.asRequestBody("image/*".toMediaTypeOrNull())
-            MultipartBody.Part.createFormData("files", file.name, requestFile)
+        val file = files.map {
+            MultipartBody.Part.createFormData(
+                "file", it.name,
+                it.asRequestBody("multipart/form-data".toMediaType())
+            )
         }
         Log.e(TAG, files.toString())
         executeTask(
             request = {
                 Log.e(TAG, "request")
                 postRepo.createNewPost(
-                    textPart,
-                    imageParts
+                    caption, file
                 )
             },
             onSuccess = {
@@ -52,7 +49,7 @@ class AddPostViewModel(
             },
             onError = {
                 Log.e("logout :", it.message.toString())
-            }, showLoading = true
+            }
         )
     }
 }

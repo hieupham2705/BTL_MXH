@@ -9,7 +9,7 @@ import okhttp3.RequestBody
 
 class PostRemoteDataSource(private val service: ApiService.PostService) :
     IPostDataSource.Remote {
-    override suspend fun createNewPost(caption: RequestBody, files: List<MultipartBody.Part>?): BaseResponse<CreateNewPost> {
+    override suspend fun createNewPost(caption: String, files: List<MultipartBody.Part>): BaseResponse<CreateNewPost> {
         return service.createNewPost(caption,files)
     }
 
