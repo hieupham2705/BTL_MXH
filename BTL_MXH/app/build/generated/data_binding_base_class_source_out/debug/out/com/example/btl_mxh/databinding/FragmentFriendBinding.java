@@ -4,7 +4,7 @@ package com.example.btl_mxh.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
+import android.widget.FrameLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
@@ -17,20 +17,19 @@ import java.lang.String;
 
 public final class FragmentFriendBinding implements ViewBinding {
   @NonNull
-  private final LinearLayout rootView;
+  private final FrameLayout rootView;
 
   @NonNull
-  public final RecyclerView recyclerviewFriend;
+  public final RecyclerView recyclerview;
 
-  private FragmentFriendBinding(@NonNull LinearLayout rootView,
-      @NonNull RecyclerView recyclerviewFriend) {
+  private FragmentFriendBinding(@NonNull FrameLayout rootView, @NonNull RecyclerView recyclerview) {
     this.rootView = rootView;
-    this.recyclerviewFriend = recyclerviewFriend;
+    this.recyclerview = recyclerview;
   }
 
   @Override
   @NonNull
-  public LinearLayout getRoot() {
+  public FrameLayout getRoot() {
     return rootView;
   }
 
@@ -55,13 +54,13 @@ public final class FragmentFriendBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.recyclerview_friend;
-      RecyclerView recyclerviewFriend = ViewBindings.findChildViewById(rootView, id);
-      if (recyclerviewFriend == null) {
+      id = R.id.recyclerview;
+      RecyclerView recyclerview = ViewBindings.findChildViewById(rootView, id);
+      if (recyclerview == null) {
         break missingId;
       }
 
-      return new FragmentFriendBinding((LinearLayout) rootView, recyclerviewFriend);
+      return new FragmentFriendBinding((FrameLayout) rootView, recyclerview);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -4,10 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:paddingHorizontal="40dp"
     android:paddingVertical="20dp"
-    android:background="#FFA767"
+    android:background="@drawable/border_dialog"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:elevation="20dp">
+    android:elevation="20dp"
+    >
 
     <TextView
         android:id="@+id/textView17"
@@ -38,6 +39,7 @@
         android:layout_height="30dp"
         android:layout_marginTop="24dp"
         android:text="@string/cancle"
+        android:elevation="20dp"
         android:textColor="@color/white"
         android:background="@drawable/border_btm_dialog"
         app:layout_constraintStart_toStartOf="@+id/textView17"

@@ -70,8 +70,8 @@ class ProfileAdapter(
                         dialogShow.showImage(information?.avatar.toString())
                     }
                 }
-                btnFollowing.setOnClickListener { onClickFollowing.invoke()  }
-                btnFollower.setOnClickListener { onClickFollower.invoke() }
+                btnFollwing.setOnClickListener { onClickFollowing.invoke()  }
+                btnFollwer.setOnClickListener { onClickFollower.invoke() }
             }
         }
         if (holder is ViewHolderImage) {

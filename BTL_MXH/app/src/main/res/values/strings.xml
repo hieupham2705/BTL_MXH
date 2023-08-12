@@ -52,7 +52,7 @@
     <string name="text_show_toast">Error</string>
     <string name="enter_mess">Enter message...</string>
     <string name="mimi_just_added_3_new_photos_to_her_diary">MiMi just added 3 new photos to her diary</string>
-    <string name="we_have_just_sent_you_a_new_password_please_check_your_email">We have just sent you a new password, please check your email!!!</string>
+    <string name="we_have_just_sent_you_a_new_password_please_check_your_email">We have just sent you a new password, please check your email !!!</string>
     <string name="What_are_you_thinking">What are you thinking?</string>
     <string name="password_incorrect">Password incorrect!</string>
     <string name="password_regulation">Password contains letters, numbers, does not contain special characters and is larger than 8 characters!</string>
