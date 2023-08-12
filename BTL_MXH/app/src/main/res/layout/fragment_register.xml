@@ -36,8 +36,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/create_your_account"
+            android:fontFamily="@font/comfortaabold"
             android:textColor="@color/black"
-            android:textSize="32sp"
+            android:textSize="28sp"
             app:layout_constraintBottom_toTopOf="@+id/textView7"
             app:layout_constraintStart_toStartOf="@+id/textView7" />
 
@@ -47,7 +48,8 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="24dp"
             android:text="@string/do_you_already_have_an_account"
-            android:textSize="16sp"
+            android:fontFamily="@font/comfortaaregular"
+            android:textSize="14sp"
             app:layout_constraintBottom_toTopOf="@+id/textInputLayout4"
             app:layout_constraintStart_toStartOf="@+id/textInputLayout4" />
 
@@ -58,6 +60,7 @@
             android:layout_marginStart="8dp"
             android:foreground="?android:attr/selectableItemBackground"
             android:text="@string/log_in"
+            android:fontFamily="@font/comfortaabold"
             android:textColor="@color/orange"
             android:textSize="16sp"
             app:layout_constraintStart_toEndOf="@+id/textView7"
@@ -78,6 +81,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/phone"
+                android:fontFamily="@font/comfortaaregular"
                 android:inputType="phone" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -96,6 +100,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/user_name"
+                android:fontFamily="@font/comfortaaregular"
                 android:inputType="textPersonName" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -114,6 +119,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/email"
+                android:fontFamily="@font/comfortaaregular"
                 android:inputType="textEmailAddress" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -133,6 +139,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/full_name"
+                android:fontFamily="@font/comfortaaregular"
                 android:inputType="textPersonName" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -146,6 +153,7 @@
             android:background="@drawable/borderappcombatbutton"
             android:foreground="?android:attr/selectableItemBackground"
             android:text="@string/next"
+            android:fontFamily="@font/nunito_extrabold"
             android:textColor="@color/white"
             android:textSize="18dp"
             app:layout_constraintBottom_toBottomOf="parent"

@@ -13,5 +13,7 @@
     <color name="Blue1">#67B6FF</color>
     <color name="Red">#FF0000</color>
     <color name="Green_3A">#ffdabf</color>
+    <color name="orange1">#FFDCC2</color>
+    <color name="black1">#0F000000</color>
     <color name="transparent">#00FFFFFF</color>
 </resources>

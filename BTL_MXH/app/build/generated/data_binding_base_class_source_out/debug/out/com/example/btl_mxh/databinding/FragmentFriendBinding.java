@@ -4,12 +4,10 @@ package com.example.btl_mxh.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.btl_mxh.R;
@@ -22,24 +20,12 @@ public final class FragmentFriendBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
-  public final TextView fullname;
+  public final RecyclerView recyclerviewFriend;
 
-  @NonNull
-  public final ImageView imvAvatar;
-
-  @NonNull
-  public final Button setting;
-
-  @NonNull
-  public final TextView username;
-
-  private FragmentFriendBinding(@NonNull LinearLayout rootView, @NonNull TextView fullname,
-      @NonNull ImageView imvAvatar, @NonNull Button setting, @NonNull TextView username) {
+  private FragmentFriendBinding(@NonNull LinearLayout rootView,
+      @NonNull RecyclerView recyclerviewFriend) {
     this.rootView = rootView;
-    this.fullname = fullname;
-    this.imvAvatar = imvAvatar;
-    this.setting = setting;
-    this.username = username;
+    this.recyclerviewFriend = recyclerviewFriend;
   }
 
   @Override
@@ -69,32 +55,13 @@ public final class FragmentFriendBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.fullname;
-      TextView fullname = ViewBindings.findChildViewById(rootView, id);
-      if (fullname == null) {
+      id = R.id.recyclerview_friend;
+      RecyclerView recyclerviewFriend = ViewBindings.findChildViewById(rootView, id);
+      if (recyclerviewFriend == null) {
         break missingId;
       }
 
-      id = R.id.imv_avatar;
-      ImageView imvAvatar = ViewBindings.findChildViewById(rootView, id);
-      if (imvAvatar == null) {
-        break missingId;
-      }
-
-      id = R.id.setting;
-      Button setting = ViewBindings.findChildViewById(rootView, id);
-      if (setting == null) {
-        break missingId;
-      }
-
-      id = R.id.username;
-      TextView username = ViewBindings.findChildViewById(rootView, id);
-      if (username == null) {
-        break missingId;
-      }
-
-      return new FragmentFriendBinding((LinearLayout) rootView, fullname, imvAvatar, setting,
-          username);
+      return new FragmentFriendBinding((LinearLayout) rootView, recyclerviewFriend);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

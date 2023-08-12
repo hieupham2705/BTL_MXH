@@ -10,7 +10,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintDimensionRatio="1,1"
         app:cardUseCompatPadding="true"
-        app:cardElevation="5dp"
+        app:cardElevation="20dp"
         app:cardCornerRadius="8sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -20,8 +20,10 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
+            android:layout_gravity="center"
             android:paddingVertical="12dp"
-            android:paddingHorizontal="16dp">
+            android:paddingHorizontal="16dp"
+            >
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

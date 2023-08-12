@@ -42,7 +42,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/mimi_just_added_3_new_photos_to_her_diary"
-            android:layout_gravity="start"
+            android:layout_gravity="start|center"
             android:paddingStart="5dp"
             android:textSize="14sp"
             android:textColor="@color/black"

@@ -1422,6 +1422,7 @@ color background_floating_material_light
 color background_material_dark
 color background_material_light
 color black
+color black1
 color bottom_navigation_selected
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
@@ -2109,6 +2110,7 @@ color mtrl_textinput_hovered_box_stroke_color
 color notification_action_color_filter
 color notification_icon_bg_color
 color orange
+color orange1
 color primary_dark_material_dark
 color primary_dark_material_light
 color primary_material_dark
@@ -2998,6 +3000,7 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
+drawable ba_cham
 drawable baseline_arrow_back_ios_24
 drawable baseline_chat_bubble_24
 drawable baseline_close_24
@@ -3021,6 +3024,7 @@ drawable border_btm_dialog
 drawable border_dialog
 drawable border_edittext
 drawable border_follower
+drawable border_search_done
 drawable border_settingscr
 drawable borderappcombatbutton
 drawable borderctlo
@@ -3033,6 +3037,7 @@ drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable change_password
+drawable cmt
 drawable comment
 drawable design_fab_background
 drawable design_ic_visibility
@@ -3065,10 +3070,13 @@ drawable ic_mtrl_chip_close_circle
 drawable ic_search_black_24
 drawable image_change_password
 drawable image_register_signin
+drawable img
 drawable img_forgotpasswordscr
 drawable img_registerscr
 drawable img_signinscr
+drawable logo
 drawable logout
+drawable love
 drawable m3_appbar_background
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
@@ -3143,7 +3151,10 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable padlock
+drawable paper_plane
+drawable phone
 drawable photo
+drawable resource_public
 drawable rounded_toast_background
 drawable search
 drawable selection_band_overlay
@@ -3152,6 +3163,7 @@ drawable theme
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable user_en
+drawable video_camera
 drawable visibility
 drawable visibility_off
 font comfortaabold
@@ -3318,12 +3330,12 @@ id bounceEnd
 id bounceStart
 id btn_cancle
 id btn_confirm
-id btn_following
 id btn_search
 id btn_update
 id buttonPanel
 id button_call
 id button_image
+id button_menu
 id button_send
 id button_video_call
 id cache_measures
@@ -3450,7 +3462,6 @@ id fixed
 id fl
 id flip
 id floating
-id follower
 id forever
 id forgotPasswordFragment
 id forgot_password
@@ -3665,6 +3676,7 @@ id radio
 id ratio
 id rectangles
 id recyclerview
+id recyclerview_friend
 id recyclerview_friend_posts
 id recyclerview_my_posts
 id recyclerview_notification
@@ -4136,6 +4148,7 @@ mipmap ic_launcher
 mipmap ic_launcher_round
 navigation nav_main
 plurals mtrl_badge_content_description
+string What_are_you_thinking
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -4213,7 +4226,6 @@ string general_notification
 string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string hit_circle
-string hoa_what_are_you_thinking
 string home
 string icon_content_description
 string in_progress
@@ -4237,8 +4249,6 @@ string m3_sys_motion_easing_linear
 string m3_sys_motion_easing_standard
 string m3_sys_motion_easing_standard_accelerate
 string m3_sys_motion_easing_standard_decelerate
-string m_t_kh_u_kh_ng_c_k_t_c_bi_t_v_l_n_h_n_8_k_t
-string m_t_kh_u_kh_ng_kh_p
 string material_clock_display_divider
 string material_clock_toggle_content_description
 string material_hour_24h_suffix
@@ -4336,6 +4346,8 @@ string off
 string on
 string password
 string password_again
+string password_incorrect
+string password_regulation
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
@@ -4363,7 +4375,6 @@ string system_and_services_update
 string tab
 string template_percent
 string text_show_toast
-string timkiem
 string update
 string user_name
 string vibrate

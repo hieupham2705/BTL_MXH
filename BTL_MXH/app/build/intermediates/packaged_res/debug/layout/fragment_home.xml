@@ -7,22 +7,22 @@
     android:background="@drawable/bgr"
     tools:context=".ui.home.HomeFragment">
 
-   <androidx.constraintlayout.widget.ConstraintLayout
-       android:layout_width="match_parent"
-       android:layout_height="match_parent">
-       <androidx.recyclerview.widget.RecyclerView
-           android:id="@+id/recyclerview"
-           android:layout_width="match_parent"
-           android:nestedScrollingEnabled="false"
-           android:layout_height="match_parent"
-           tools:listitem="@layout/item_post"
-           tools:itemCount="3"
-           app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-           app:layout_constraintBottom_toBottomOf="parent"
-           app:layout_constraintEnd_toEndOf="parent"
-           app:layout_constraintStart_toStartOf="parent"
-           app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:nestedScrollingEnabled="false"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/item_post"
+            tools:itemCount="3"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-   </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>
