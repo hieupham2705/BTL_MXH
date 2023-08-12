@@ -1,25 +1,34 @@
-
 package com.example.btl_mxh.ui.friend
 
+import android.util.Log
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.example.btl_mxh.R
 import com.example.btl_mxh.base.BaseFragment
 import com.example.btl_mxh.databinding.FragmentFriendBinding
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
-class FriendFragment : BaseFragment<FragmentFriendBinding>(FragmentFriendBinding :: inflate){
+private const val TAG = "FriendFragment"
 
+class FriendFragment : BaseFragment<FragmentFriendBinding>(FragmentFriendBinding::inflate) {
     private val adapterFriend by lazy {
         FriendAdapter(
-            :: onClickImage
+            requireContext(),
+            onClickImage = {},
+            onClickFollow = {viewModel.follow(viewModel.stageGetById.value?.id.toString())},
+            onClickUnFollow = {viewModel.unFollow(viewModel.stageGetById.value?.id.toString())}
         )
     }
 
-    override val viewModel: FriendViewModel
-        get() = ViewModelProvider (this) [FriendViewModel :: class.java ]
+    override val viewModel by viewModel<FriendViewModel>()
 
     override fun initData() {
-
+        val idUser = arguments?.getString("idUserPost")
+        Log.e(TAG, "initData: $idUser")
+        if (idUser != null) {
+            viewModel.getUserById(idUser)
+            viewModel.getFollowers(idUser)
+        }
     }
 
     override fun handleEvent() {
@@ -27,13 +36,21 @@ class FriendFragment : BaseFragment<FragmentFriendBinding>(FragmentFriendBinding
     }
 
     override fun bindData() {
-        binding.apply {
-            adapterFriend.setListFriend(viewModel.list)
-//            recyclerviewFriend.adapter = adapterFriend
+        viewModel.stageGetById.observe(viewLifecycleOwner) {
+            viewModel.getAllUserById(it.id.toString())
         }
+        viewModel.stageListPost.observe(viewLifecycleOwner) { _listPost ->
+            viewModel.stageGetFollowers.observe(viewLifecycleOwner) {
+                if (viewModel.checkUserId(it)) {
+                    adapterFriend.setListFriend(viewModel.stageGetById.value!!, _listPost, true)
+                } else {
+                    adapterFriend.setListFriend(viewModel.stageGetById.value!!, _listPost)
+                }
+
+            }
+        }
+
+        binding.recyclerview.adapter = adapterFriend
     }
 
-    private fun onClickImage() {
-//        findNavController().navigate(R.id.action_friendFragment_to_friendPostsFragment)
-    }
 }

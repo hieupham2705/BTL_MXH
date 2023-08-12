@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     >
@@ -67,18 +67,21 @@
             android:gravity="end"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
             android:layout_weight="1">
 
-            <Button
-                android:id="@+id/setting"
-                android:layout_width="110dp"
-                android:layout_height="wrap_content"
-                android:backgroundTint="#FFA767"
-                android:gravity="center"
-                android:text="Follow"
-                android:fontFamily="@font/comfortaasemibold"
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_follow"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="@drawable/border_follow_false"
+                android:text="@string/following"
                 android:textAllCaps="false"
-                android:textSize="17sp"/>
+                android:fontFamily="@font/comfortaasemibold"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textSize="13sp"
+                />
 
         </LinearLayout>
 
@@ -87,6 +90,7 @@
     <TextView
         android:id="@+id/slogan_friend"
         android:textSize="16sp"
+        android:visibility="gone"
         android:textColor="@color/black"
         android:layout_marginStart="30dp"
         android:fontFamily="@font/comfortaaregular"

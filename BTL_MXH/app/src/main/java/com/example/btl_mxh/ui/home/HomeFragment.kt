@@ -1,11 +1,6 @@
 package com.example.btl_mxh.ui.home
 
-import android.content.Context
-import android.graphics.Color
-import android.graphics.Typeface
 import android.util.Log
-import android.view.Gravity
-import androidx.core.content.ContextCompat
 import androidx.core.os.bundleOf
 import androidx.navigation.fragment.findNavController
 import com.example.btl_mxh.R
@@ -13,16 +8,13 @@ import com.example.btl_mxh.base.BaseFragment
 import com.example.btl_mxh.databinding.FragmentHomeBinding
 import com.example.btl_mxh.model.EditPost
 import com.example.btl_mxh.ui.home.adapter.HomeAdapter
-import com.skydoves.powermenu.MenuAnimation
-import com.skydoves.powermenu.PowerMenu
-import com.skydoves.powermenu.PowerMenuItem
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 
 private const val TAG = "HomeFragment"
 
 class HomeFragment : BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::inflate) {
-    private var imformationPost : EditPost ?= null
+    private var imformationPost: EditPost? = null
     override val viewModel by viewModel<HomeViewModel>()
     private val adapterHome by lazy {
         HomeAdapter(
@@ -34,7 +26,8 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::infl
                 findNavController().navigate(R.id.action_homeFragment_to_searchFragment)
             },
             onClickCreatePost = {
-                findNavController().navigate(R.id.action_homeFragment_to_addTextFragment,
+                findNavController().navigate(
+                    R.id.action_homeFragment_to_addTextFragment,
                     bundleOf("editpost" to imformationPost)
                 )
             },
@@ -42,7 +35,20 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::infl
                 findNavController().navigate(R.id.action_homeFragment_to_listMessFragment)
             },
             onClickimvavatarpost = {
-                findNavController().navigate(R.id.action_homeFragment_to_friendFragment)
+                Log.e(TAG, " ${it}" )
+                if (viewModel.stateAuth.value?.id != it)
+                    findNavController().navigate(R.id.action_homeFragment_to_friendFragment,
+                        bundleOf("idUserPost" to it)
+                    )
+                else{
+                    findNavController().navigate(R.id.action_homeFragment_to_profileFragment)
+                }
+            },
+            onClickSavePost = {
+
+            },
+            onClickImageCrearePost = {
+                findNavController().navigate(R.id.action_homeFragment_to_profileFragment)
             }
         )
     }
@@ -62,11 +68,11 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::infl
                 adapterHome.setDataAdapter(_auth, _postGetAll)
             }
         }
-        viewModel.stateDeletePost.observe(viewLifecycleOwner) {
+        viewModel.stateDelete.observe(viewLifecycleOwner) {
             viewModel.postGetAll()
             viewModel.statePostGetAll.observe(viewLifecycleOwner) {
                 Log.e(TAG, "test")
-                adapterHome.setDataAdapter(viewModel.stateAuth.value,it)
+                adapterHome.setDataAdapter(viewModel.stateAuth.value, it)
             }
         }
         binding.recyclerview.adapter = adapterHome

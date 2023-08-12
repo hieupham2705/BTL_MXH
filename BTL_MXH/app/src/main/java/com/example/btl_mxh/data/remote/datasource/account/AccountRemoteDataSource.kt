@@ -25,4 +25,16 @@ class AccountRemoteDataSource(private val service: ApiService.AccountService) :
         return service.resetPassword(email)
     }
 
+    override suspend fun changePassword(
+        changePassword: ChangePassword
+    ): BaseResponse<ResetPasword> {
+        return service.changePassword(changePassword)
+    }
+
+    override suspend fun getbyId(userId: String): BaseResponse<GetById> {
+        return service.getById(userId)
+    }
+
+
+
 }

@@ -9,7 +9,6 @@ import com.example.btl_mxh.ui.home.adapter.HomeAdapter
 
 
 class FriendPostsFragment : BaseFragment<FragmentFriendPostsBinding>(FragmentFriendPostsBinding :: inflate) {
-
     private val adapterPost by lazy {
         FriendPostsAdapter(
             ::onClickAvatarFriend

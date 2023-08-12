@@ -8,6 +8,7 @@ import com.example.btl_mxh.base.BaseResponse
 import com.example.btl_mxh.base.BaseViewModel
 import com.example.btl_mxh.data.remote.repository.account.IAccountRepository
 import com.example.btl_mxh.model.Auth
+import com.example.btl_mxh.utils.extension.saveUserId
 
 private const val TAG = "SplashViewModel"
 
@@ -25,6 +26,7 @@ class SplashViewModel(
                 Log.e(TAG, it.toString())
                 _stateAuth.value = it
                 Log.e(TAG, it.toString())
+                it.data?.let { it1 -> sharedPreferences.saveUserId(it1.id) }
             },
             onError = {
                 Log.e(TAG, "login:${it.message.toString()}")

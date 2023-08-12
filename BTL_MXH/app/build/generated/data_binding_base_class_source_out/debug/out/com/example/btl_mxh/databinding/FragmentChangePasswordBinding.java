@@ -26,6 +26,12 @@ public final class FragmentChangePasswordBinding implements ViewBinding {
   public final BaseTextInputEditText currentPassword;
 
   @NonNull
+  public final BaseTextInputEditText edtNewpassword;
+
+  @NonNull
+  public final BaseTextInputEditText edtNewpasswordAgain;
+
+  @NonNull
   public final ImageView imageView6;
 
   @NonNull
@@ -41,11 +47,14 @@ public final class FragmentChangePasswordBinding implements ViewBinding {
   public final AppCompatButton update;
 
   private FragmentChangePasswordBinding(@NonNull FrameLayout rootView,
-      @NonNull BaseTextInputEditText currentPassword, @NonNull ImageView imageView6,
+      @NonNull BaseTextInputEditText currentPassword, @NonNull BaseTextInputEditText edtNewpassword,
+      @NonNull BaseTextInputEditText edtNewpasswordAgain, @NonNull ImageView imageView6,
       @NonNull TextInputLayout textInputLayout10, @NonNull TextInputLayout textInputLayout11,
       @NonNull TextInputLayout textInputLayout9, @NonNull AppCompatButton update) {
     this.rootView = rootView;
     this.currentPassword = currentPassword;
+    this.edtNewpassword = edtNewpassword;
+    this.edtNewpasswordAgain = edtNewpasswordAgain;
     this.imageView6 = imageView6;
     this.textInputLayout10 = textInputLayout10;
     this.textInputLayout11 = textInputLayout11;
@@ -86,6 +95,18 @@ public final class FragmentChangePasswordBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.edt_newpassword;
+      BaseTextInputEditText edtNewpassword = ViewBindings.findChildViewById(rootView, id);
+      if (edtNewpassword == null) {
+        break missingId;
+      }
+
+      id = R.id.edt_newpassword_again;
+      BaseTextInputEditText edtNewpasswordAgain = ViewBindings.findChildViewById(rootView, id);
+      if (edtNewpasswordAgain == null) {
+        break missingId;
+      }
+
       id = R.id.imageView6;
       ImageView imageView6 = ViewBindings.findChildViewById(rootView, id);
       if (imageView6 == null) {
@@ -116,8 +137,9 @@ public final class FragmentChangePasswordBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentChangePasswordBinding((FrameLayout) rootView, currentPassword, imageView6,
-          textInputLayout10, textInputLayout11, textInputLayout9, update);
+      return new FragmentChangePasswordBinding((FrameLayout) rootView, currentPassword,
+          edtNewpassword, edtNewpasswordAgain, imageView6, textInputLayout10, textInputLayout11,
+          textInputLayout9, update);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

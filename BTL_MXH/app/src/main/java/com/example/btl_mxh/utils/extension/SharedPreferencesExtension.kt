@@ -10,6 +10,12 @@ fun SharedPreferences.getTokenLogin(): String? {
 fun SharedPreferences.saveTokenLogin(token: String) {
     this.edit().putString(Constant.SHARED_PREF_TOKEN_LOGIN, token).apply()
 }
+fun SharedPreferences.saveUserId(userId: String) {
+    this.edit().putString(Constant.SHARED_PREF_USER_ID, userId).apply()
+}
+fun SharedPreferences.getUserId(): String? {
+    return this.getString(Constant.SHARED_PREF_USER_ID, Constant.SHARED_PREF_DEFAULT_STRING)
+}
 
 fun SharedPreferences.destroyTokenLogin(): Boolean {
     return this.edit().remove(Constant.SHARED_PREF_TOKEN_LOGIN).commit()

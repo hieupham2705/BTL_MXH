@@ -12,5 +12,9 @@ interface IAccountDataSource {
         suspend  fun register(reisterEntity: RegisterEntity): BaseResponse<Register>
         suspend fun logout():BaseResponse<Logout>
         suspend fun resetPasword(email:String):BaseResponse<ResetPasword>
+
+        suspend fun changePassword(changePassword: ChangePassword ): BaseResponse<ResetPasword>
+        suspend fun getbyId(userId : String) : BaseResponse<GetById>
+
     }
 }

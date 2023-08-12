@@ -24,4 +24,14 @@ class AccountRepositoryImpl(private val remote: IAccountDataSource.Remote) : Bas
 
     override suspend fun resetPassword(email: String): DataResult<BaseResponse<ResetPasword>> =
         getResult { remote.resetPasword(email) }
+
+    override suspend fun changePassword(
+        changePassword: ChangePassword
+    ): DataResult<BaseResponse<ResetPasword>> = getResult {
+        remote.changePassword(changePassword)
+    }
+
+    override suspend fun getById(userid: String): DataResult<BaseResponse<GetById>> = getResult {
+        remote.getbyId(userid)
+    }
 }

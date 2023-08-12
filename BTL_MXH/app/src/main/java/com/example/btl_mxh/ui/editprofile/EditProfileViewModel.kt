@@ -4,35 +4,51 @@ import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.example.btl_mxh.base.BaseViewModel
+import com.example.btl_mxh.data.remote.repository.account.IAccountRepository
 import com.example.btl_mxh.data.remote.repository.profile.IProfileRepository
+import com.example.btl_mxh.model.Auth
 import com.example.btl_mxh.model.UpdateProfiledata
+import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.MultipartBody
 import okhttp3.RequestBody
+import okhttp3.RequestBody.Companion.asRequestBody
 import java.io.File
 
 private const val TAG = "EditProfileViewModel"
 
 class EditProfileViewModel(
-    private val profilerepo: IProfileRepository
+    private val profilerepo: IProfileRepository,
+    private val accountRepo : IAccountRepository
 ) : BaseViewModel() {
     private val _stateUpdateProfile = MutableLiveData<UpdateProfiledata>()
     val stateUpdateProfile: LiveData<UpdateProfiledata>
         get() = _stateUpdateProfile
 
+    private val _stateAuth = MutableLiveData<Auth>()
+    val stateAuth: LiveData<Auth> = _stateAuth
+
     fun updateProfile(
         birthday: RequestBody,
         gender: RequestBody,
-        avatar: MultipartBody.Part,
+        image: File?,
         fullName: RequestBody,
         username: RequestBody,
         email: RequestBody
     ) {
+        val imageRequestBody = image?.asRequestBody("image/*".toMediaType())
+        val imagePart = imageRequestBody?.let {
+            MultipartBody.Part.createFormData(
+                "avatar",
+                image?.name,
+                it
+            )
+        }
         executeTask(
             request = {
                 profilerepo.updateProfile(
                     birthday,
                     gender,
-                    avatar,
+                    imagePart,
                     fullName,
                     username,
                     email
@@ -50,6 +66,18 @@ class EditProfileViewModel(
 
             onError = { Log.e(TAG, "update : ${it.message}") },
             showLoading = true
+        )
+    }
+    fun auth() {
+        executeTask(
+            request = { accountRepo.authLogin() },
+            onSuccess = {
+                _stateAuth.value = it.data!!
+            },
+            onError = {
+                Log.e(TAG, "login:${it.message.toString()}")
+
+            }
         )
     }
 

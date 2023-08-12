@@ -16,6 +16,7 @@ import com.example.btl_mxh.base.BaseFragment
 import com.example.btl_mxh.base.BaseViewModel
 import com.example.btl_mxh.databinding.FragmentEditProfileBinding
 import com.example.btl_mxh.utils.extension.FileUtils
+import com.example.btl_mxh.utils.extension.loadImageFromUrl
 import com.example.btl_mxh.utils.extension.showToast
 import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
@@ -26,13 +27,14 @@ import org.koin.androidx.viewmodel.ext.android.viewModel
 import java.io.File
 
 private const val TAG = "EditProfileFragment"
+
 class EditProfileFragment :
     BaseFragment<FragmentEditProfileBinding>(FragmentEditProfileBinding::inflate) {
-    private var image: String? = null
+    private var image: File? = null
     override val viewModel by viewModel<EditProfileViewModel>()
 
     override fun initData() {
-        // khoong duoc viet binding
+        viewModel.auth()
     }
 
     override fun handleEvent() {
@@ -43,41 +45,32 @@ class EditProfileFragment :
                 galleryLauncher.launch(intent)
             }
             btnUpdate.setOnClickListener {
+                if (!checkInput())
+                    showToast("Please enter full information !")
                 if (check() && checkInput()) {
-                    if (image == null)
-                        showToast("Please choose a profile picture !")
-                    else {
-                        val imageFile = File(image)
-                        val imageRequestBody = imageFile.asRequestBody("image/*".toMediaType())
-                        val imagePart = MultipartBody.Part.createFormData(
-                            "avatar",
-                            imageFile.name,
-                            imageRequestBody
+                    viewModel.updateProfile(
+                        RequestBody.create(
+                            "birthday/plain".toMediaTypeOrNull(),
+                            edtBirthday.text.toString()
+                        ),
+                        RequestBody.create(
+                            "gender/plain".toMediaTypeOrNull(),
+                            edtGender.text.toString()
+                        ),
+                        image,
+                        RequestBody.create(
+                            "fullName/plain".toMediaTypeOrNull(),
+                            edtFullName.text.toString()
+                        ),
+                        RequestBody.create(
+                            "username/plain".toMediaTypeOrNull(),
+                            edtUserName.text.toString()
+                        ),
+                        RequestBody.create(
+                            "email/plain".toMediaTypeOrNull(),
+                            edtEmail.text.toString()
                         )
-                        viewModel.updateProfile(
-                            RequestBody.create(
-                                "birthday/plain".toMediaTypeOrNull(),
-                                edtBirthday.text.toString()
-                            ),
-                            RequestBody.create(
-                                "gender/plain".toMediaTypeOrNull(),
-                                edtGender.text.toString()
-                            ),
-                            imagePart,
-                            RequestBody.create(
-                                "fullName/plain".toMediaTypeOrNull(),
-                                edtFullName.text.toString()
-                            ),
-                            RequestBody.create(
-                                "username/plain".toMediaTypeOrNull(),
-                                edtUserName.text.toString()
-                            ),
-                            RequestBody.create(
-                                "email/plain".toMediaTypeOrNull(),
-                                edtEmail.text.toString()
-                            )
-                        )
-                    }
+                    )
 
                 }
 
@@ -87,8 +80,16 @@ class EditProfileFragment :
     }
 
     override fun bindData() {
-        if (!checkInput())
-            showToast("Please enter full information !")
+        viewModel.stateAuth.observe(viewLifecycleOwner){
+            binding.apply {
+                imvAvatar.loadImageFromUrl(it.avatar.toString())
+                edtUserName.setText(it.username)
+                edtFullName.setText(it.fullName)
+                edtEmail.setText(it.email)
+                edtGender.setText(it.gender.toString())
+                edtBirthday.setText(it.birthday.toString())
+            }
+        }
         viewModel.stateUpdateProfile.observe(viewLifecycleOwner) {
             findNavController().popBackStack()
             showToast("success !")
@@ -104,6 +105,7 @@ class EditProfileFragment :
             val gender = edtGender.text.toString()
             if (gender != "MALE" && gender != "FEMALE") {
                 textInputLayoutGender.error = "MALE OR FEMALE"
+                return false
             }
             if (!email) {
                 textInputLayoutEmail.error = "Please enter a valid email address !"
@@ -128,16 +130,22 @@ class EditProfileFragment :
 
     private val galleryLauncher =
         registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
-            Log.e(TAG,"hiu")
+            Log.e(TAG, "hiu")
             if (result.resultCode == Activity.RESULT_OK) {
                 val data = result.data
-                Log.e(TAG,image.toString())
+                Log.e(TAG, image.toString())
                 if (data != null) {
                     val imageUri = data.data
                     if (imageUri != null) {
                         binding.imvAvatar.setImageURI(imageUri)
-                        image = FileUtils.uriToJpg(context!!.contentResolver,imageUri,requireContext())
-                        Log.e(TAG,image.toString())
+                        image = File(
+                            FileUtils.uriToJpg(
+                                context!!.contentResolver,
+                                imageUri,
+                                requireContext()
+                            )
+                        )
+                        Log.e(TAG, image.toString())
                     }
                 }
             }

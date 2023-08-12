@@ -11,5 +11,6 @@ interface IPostRepository {
     suspend fun editPost(caption: RequestBody, images: List<MultipartBody.Part>?): DataResult<BaseResponse<CreateNewPost>>
     suspend fun postGetAll():DataResult<BaseResponse<List<Post>>>
     suspend fun getAllByUsername(userName:String):DataResult<BaseResponse<List<Post>>>
-    suspend fun deletePost(id:String):DataResult<BaseResponse<DeletePost>>
+    suspend fun getAllByUserId(userId:String):DataResult<BaseResponse<List<Post>>>
+    suspend fun deletePost(id:String):DataResult<BaseResponse<Delete>>
 }

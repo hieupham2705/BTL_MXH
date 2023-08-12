@@ -48,18 +48,18 @@ open class BaseViewModel : ViewModel() {
                             Log.e(TAG, "hihi")
                         } catch (e: Exception) {
                             // Xử lý nếu có lỗi khi phân tích dữ liệu phản hồi JSON
+                            Log.e(TAG, "executeTask: ihi")
                             error.postValue(response.exception.toString())
                         }
-                        hideLoading()
                     } else {
-                        error.postValue(response.exception.toString())
-                        onError(response.exception)
+                        // Xử lý các tình huống lỗi khác (không phải HttpException)
+                        Log.e(TAG, "Other error: ${response.exception}")
+                        error.postValue("An error occurred")
                     }
+                    onError(response.exception)
                 }
             }
         }
-
-
     }
 
     private fun showLoading() {

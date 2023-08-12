@@ -7,10 +7,9 @@ import androidx.lifecycle.MutableLiveData
 import com.example.btl_mxh.base.BaseViewModel
 import com.example.btl_mxh.data.remote.repository.account.IAccountRepository
 import com.example.btl_mxh.data.remote.repository.post.IPostRepository
-import com.example.btl_mxh.data.remote.repository.profile.IProfileRepository
 import com.example.btl_mxh.data.remote.repository.search.ISearchRepository
 import com.example.btl_mxh.model.Auth
-import com.example.btl_mxh.model.DeletePost
+import com.example.btl_mxh.model.Delete
 import com.example.btl_mxh.model.Post
 
 private const val TAG = "HomeViewModel"
@@ -30,8 +29,8 @@ class HomeViewModel(
     val stateSearchUserId: LiveData<Search> = _stateSearchUserId
 
 
-    private val _stateDeletePost = MutableLiveData<DeletePost>()
-    val stateDeletePost: LiveData<DeletePost> = _stateDeletePost
+    private val _stateDelete = MutableLiveData<Delete>()
+    val stateDelete: LiveData<Delete> = _stateDelete
 
     fun auth() {
         executeTask(
@@ -66,7 +65,7 @@ class HomeViewModel(
             onSuccess = {
                 if (it.status == "SUCCESS") {
                     it.data?.let { _delete ->
-                        _stateDeletePost.value = _delete
+                        _stateDelete.value = _delete
                     }
                 }
                 else{
