@@ -38,8 +38,9 @@ interface ApiService {
 
         @POST(ApiConstant.ENDPOINT.CHANGE_PASSWORD)
         suspend fun changePassword(@Body changePassword: ChangePassword): BaseResponse<ResetPasword>
+
         @GET(ApiConstant.ENDPOINT.USER + "/{userId}")
-        suspend fun getById(@Path("userId") userId: String):BaseResponse<GetById>
+        suspend fun getById(@Path("userId") userId: String): BaseResponse<GetById>
     }
 
     interface PostService {
@@ -49,14 +50,15 @@ interface ApiService {
         @Multipart
         @POST(ApiConstant.ENDPOINT.POST_CREATE_NEW_POST)
         suspend fun createNewPost(
-            @Part(ApiConstant.FILED.CAPTION) caption: RequestBody,
-            @Part files: List<MultipartBody.Part>?
+            @Part(ApiConstant.FILED.CAPTION) caption: String,
+            @Part files : List<MultipartBody.Part>
         ): BaseResponse<CreateNewPost>
 
         @GET(ApiConstant.ENDPOINT.GET_ALL_BY_USER_NAME + "/{user_name}")
         suspend fun getAllByUsername(
             @retrofit2.http.Path("user_name") userName: String,
         ): BaseResponse<List<Post>>
+
         @GET(ApiConstant.ENDPOINT.GET_ALL_BY_USER_ID + "/{userId}")
         suspend fun getAllByUserid(
             @retrofit2.http.Path("userId") userId: String,
@@ -70,7 +72,7 @@ interface ApiService {
         suspend fun editPost(
             @Part(ApiConstant.FILED.CAPTION) caption: RequestBody,
             @Part files: List<MultipartBody.Part>?
-        ):BaseResponse<CreateNewPost>
+        ): BaseResponse<CreateNewPost>
     }
 
     interface ProfileService {
@@ -85,20 +87,24 @@ interface ApiService {
             @Part("email") email: RequestBody,
         ): BaseResponse<UpdateProfiledata>
     }
-    interface FollowService{
-        @GET(ApiConstant.ENDPOINT.USER+"/{userId}/followers")
+
+    interface FollowService {
+        @GET(ApiConstant.ENDPOINT.USER + "/{userId}/followers")
         suspend fun getFolowers(
             @Path("userId") userId: String
-        ):BaseResponse<GetFollowers>
-        @DELETE(ApiConstant.ENDPOINT.FOLLOW+"/{userId}")
+        ): BaseResponse<GetFollowers>
+
+        @DELETE(ApiConstant.ENDPOINT.FOLLOW + "/{userId}")
         suspend fun unFollow(
             @Path("userId") userId: String
-        ):BaseResponse<Delete>
-        @POST(ApiConstant.ENDPOINT.FOLLOW+"/{userId}")
+        ): BaseResponse<Delete>
+
+        @POST(ApiConstant.ENDPOINT.FOLLOW + "/{userId}")
         suspend fun follow(
             @Path("userId") userId: String
-        ):BaseResponse<Follow>
-        @GET(ApiConstant.ENDPOINT.USER+"/{userId}"+"followers")
-        suspend fun getFollowing(@Path("userId") userId: String):BaseResponse<GetFollowing>
+        ): BaseResponse<Follow>
+
+        @GET(ApiConstant.ENDPOINT.USER + "/{userId}" + "followers")
+        suspend fun getFollowing(@Path("userId") userId: String): BaseResponse<GetFollowing>
     }
 }
