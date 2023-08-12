@@ -41,6 +41,7 @@ drawable bookmark
 drawable border_btm_dialog
 drawable border_dialog
 drawable border_edittext
+drawable border_follow_false
 drawable border_follower
 drawable border_search_done
 drawable border_settingscr
@@ -122,6 +123,7 @@ id action_friendPostsFragment_to_friendFragment
 id action_homeFragment_to_addTextFragment
 id action_homeFragment_to_friendFragment
 id action_homeFragment_to_listMessFragment
+id action_homeFragment_to_profileFragment
 id action_homeFragment_to_searchFragment
 id action_listMessFragment_to_messengerFragment
 id action_myPostsFragment_to_profileFragment
@@ -148,6 +150,9 @@ id avatar_notification
 id avatar_search
 id btn_cancle
 id btn_confirm
+id btn_follow
+id btn_follwer
+id btn_follwing
 id btn_search
 id btn_update
 id button_call
@@ -178,6 +183,8 @@ id edt_creact_post
 id edt_email
 id edt_full_name
 id edt_gender
+id edt_newpassword
+id edt_newpassword_again
 id edt_search
 id edt_user_name
 id email
@@ -229,7 +236,6 @@ id phone
 id post
 id profileFragment
 id recyclerview
-id recyclerview_friend
 id recyclerview_friend_posts
 id recyclerview_my_posts
 id recyclerview_notification
@@ -299,6 +305,7 @@ id tool_bar
 id tv_comment
 id tv_error_condition
 id tv_error_joint
+id tv_image
 id tv_love
 id tv_name
 id update
@@ -308,6 +315,7 @@ layout activity_main
 layout custom_toast_layout
 layout dialog_delete
 layout dialog_notification
+layout dialog_show_image
 layout dl_loading_common
 layout fragment_add_text
 layout fragment_change_password
@@ -345,6 +353,8 @@ menu btnv_home
 mipmap ic_launcher
 mipmap ic_launcher_round
 navigation nav_main
+raw gpay_tick
+raw loading
 string What_are_you_thinking
 string add
 string app_name

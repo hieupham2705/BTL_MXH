@@ -9,7 +9,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.btl_mxh.R;
@@ -19,7 +19,13 @@ import java.lang.String;
 
 public final class ItemInfomationProfileBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final LinearLayout rootView;
+
+  @NonNull
+  public final AppCompatButton btnFollwer;
+
+  @NonNull
+  public final AppCompatButton btnFollwing;
 
   @NonNull
   public final TextView fullname;
@@ -36,10 +42,13 @@ public final class ItemInfomationProfileBinding implements ViewBinding {
   @NonNull
   public final TextView username;
 
-  private ItemInfomationProfileBinding(@NonNull ConstraintLayout rootView,
+  private ItemInfomationProfileBinding(@NonNull LinearLayout rootView,
+      @NonNull AppCompatButton btnFollwer, @NonNull AppCompatButton btnFollwing,
       @NonNull TextView fullname, @NonNull ImageView imvAvatar, @NonNull LinearLayout linearLayout3,
       @NonNull ImageView setting, @NonNull TextView username) {
     this.rootView = rootView;
+    this.btnFollwer = btnFollwer;
+    this.btnFollwing = btnFollwing;
     this.fullname = fullname;
     this.imvAvatar = imvAvatar;
     this.linearLayout3 = linearLayout3;
@@ -49,7 +58,7 @@ public final class ItemInfomationProfileBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public LinearLayout getRoot() {
     return rootView;
   }
 
@@ -74,6 +83,18 @@ public final class ItemInfomationProfileBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btn_follwer;
+      AppCompatButton btnFollwer = ViewBindings.findChildViewById(rootView, id);
+      if (btnFollwer == null) {
+        break missingId;
+      }
+
+      id = R.id.btn_follwing;
+      AppCompatButton btnFollwing = ViewBindings.findChildViewById(rootView, id);
+      if (btnFollwing == null) {
+        break missingId;
+      }
+
       id = R.id.fullname;
       TextView fullname = ViewBindings.findChildViewById(rootView, id);
       if (fullname == null) {
@@ -104,8 +125,8 @@ public final class ItemInfomationProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ItemInfomationProfileBinding((ConstraintLayout) rootView, fullname, imvAvatar,
-          linearLayout3, setting, username);
+      return new ItemInfomationProfileBinding((LinearLayout) rootView, btnFollwer, btnFollwing,
+          fullname, imvAvatar, linearLayout3, setting, username);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

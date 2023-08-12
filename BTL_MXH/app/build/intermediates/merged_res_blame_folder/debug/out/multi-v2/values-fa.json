@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.btl_mxh.app-mergeDebugResources-70:/values-fa/values-fa.xml",
+            "outputFile": "com.example.btl_mxh.app-mergeDebugResources-71:/values-fa/values-fa.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-3\\7c17ec530a582ee93364914402f6f204\\transformed\\material-1.9.0\\res\\values-fa\\values-fa.xml",
